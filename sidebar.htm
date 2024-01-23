@@ -1,69 +1,113 @@
+<aside id="sidebar" class="sidebar">
 
-    <!-- Search Box -->
-    <!-- <section id="search" class="alt">
-      <form method="get" action="#">
-        <input type="text" name="search" id="search" placeholder="Search..." />
-      </form>
-    </section> -->
-          
-    <!-- Menu -->
-    <nav id="menu">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li>
-          <span class="opener">DevOps</span>
-          <ul>
-            <li><a href="DevOps 101.html">DevOps 101</a></li>
-            <li><a href="#">Azure DevOps</a></li>
-            <li><a href="#">Developing CICD pipeline for SQL server</a></li>
-            <li><a href="Dev Containers 101.html">Dev Containers 101</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Docker</a></li>
-        <li><a href="#">C# & OOP</a></li>
-        <li>
-          <span class="opener">Python</span>
-          <ul>
-            <li><a href="https://github.com/ArchieFan/CS50P">CS50P</a></li>
-            <li><a href="https://github.com/ArchieFan/learning-Python">Learning Python</a></li>
-          </ul>
-        </li>
-        <li><a href="#">SQL</a></li>
-        <li><a href="#">Design Patterns</a></li>
-        <li><a href="#">External Link</a></li>
-      </ul>
-    </nav>
+    <ul class="sidebar-nav" id="sidebar-nav">
 
-    <!-- Featured Posts -->
-    <div class="featured-posts">
-      <div class="heading">
-        <h2>Featured Posts</h2>
-      </div>
-      <div class="owl-carousel owl-theme">
-        <a href="#">
-          <div class="featured-item">
-            <img src="assets/images/featured_post_01.jpg" alt="featured one">
-            <p>Aliquam egestas convallis eros sed gravida. Curabitur consequat sit.</p>
-          </div>
+      <li class="nav-item">
+        <a class="nav-link " href="index.html">
+          <i class="bi bi-grid"></i>
+          <span>Dashboard</span>
         </a>
-        <a href="#">
-          <div class="featured-item">
-            <img src="assets/images/featured_post_01.jpg" alt="featured two">
-            <p>Donec a scelerisque massa. Aliquam non iaculis quam. Duis arcu turpis.</p>
-          </div>
-        </a>
-        <a href="#">
-          <div class="featured-item">
-            <img src="assets/images/featured_post_01.jpg" alt="featured three">
-            <p>Suspendisse ac convallis urna, vitae luctus ante. Donec sit amet.</p>
-          </div>
-        </a>
-      </div>
-    </div>
+      </li><!-- End Dashboard Nav -->
 
-    <!-- Footer -->
-    <footer id="footer">
-      <p class="copyright">Copyright &copy; 2024
-      <br>Designed by <a rel="nofollow" href="https://www.facebook.com/templatemo">Template Mo</a></p>
-    </footer>
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-menu-button-wide"></i><span>DevOps</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="DevOps 101.html">
+              <i class="bi bi-circle"></i><span>DevOps 101</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Azure DevOps</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Developing CICD pipeline for SQL server</span>
+            </a>
+          </li>
+          <li>
+            <a href="Dev Containers 101.html">
+              <i class="bi bi-circle"></i><span>Dev Containers 101</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Nav -->
 
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-journal-text"></i><span>Docker</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Docker 101</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-layout-text-window-reverse"></i><span>C# & OOP</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>C# 101</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-bar-chart"></i><span>Python</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="https://github.com/ArchieFan/CS50P">
+              <i class="bi bi-circle"></i><span>CS50P</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/ArchieFan/learning-Python">
+              <i class="bi bi-circle"></i><span>Learning Python</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-gem"></i><span>SQL</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>SQL 101</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#DP-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-gem"></i><span>Design Patterns</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="DP-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Design Patterns 101</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Nav -->
+
+
+    </ul>
+
+  </aside><!-- End Sidebar-->
