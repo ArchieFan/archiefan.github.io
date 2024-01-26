@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>My Portfolio</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <script src="assets/js/layout.js"></script>
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+
+        <div class="d-flex align-items-center justify-content-between">
+            <i class="bi bi-list toggle-sidebar-btn"></i>
+        </div><!-- End Logo -->
+
+        <nav class="header-nav ms-auto">
+
+            <ul class="d-flex align-items-center">
+                <div w3-include-html="header.htm"></div>
+            </ul>
+        </nav><!-- End Icons Navigation -->
+    </header><!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <div w3-include-html="sidebar.htm"></div>
+
+    <main id="main" class="main">
+
+        <p align=center>
+            <span>Catalog</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p><span><span><a href="#_Toc22181 "><span>Why using Best Practices?</span><span>&#9;</span></a></span><span>
+                    <o:p></o:p>
+                </span></p>
+        <p><span><a href="#_Toc14527 "><span>1. Use an official and verified Docker image as a base image, whenever
+                        available.</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span><a href="#_Toc25616 "><span>2. </span><span>Use specific Docker image
+                        versions</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span><a href="#_Toc556 "><span>3. </span><span>Use Small-Sized Official
+                        Images</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span><a href="#_Toc18652 "><span>4. </span><span>Optimize caching for image layers when building an
+                        image</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span><a href="#_Toc20017 "><span>5.
+                    </span><span>Use</span><span>&nbsp;</span><span>.dockerignore</span><span>&nbsp;file</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span><a href="#_Toc15545 "><span>6. </span><span>Make use of Multi-Stage
+                        Builds</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span><a href="#_Toc5499 "><span>7. </span><span>Use the Least Privileged
+                        User</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span><a href="#_Toc32340 "><span>8. </span><span>Scan your Images for Security
+                        Vulnerabilities</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <h1></span><b><span>
+                    <o:p>&nbsp;</o:p>
+                </span></b></h1>
+        <h1><b><span>
+                    <o:p>&nbsp;</o:p>
+                </span></b></h1>
+        <h1><b><span>
+                    <o:p>&nbsp;</o:p>
+                </span></b></h1>
+        <h1><a name="_Toc22181"></a><b><span>Why using Best Practices?</span></b><b><span>
+                    <o:p></o:p>
+                </span></b></h1>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <font face="Segoe UI">&#9989;</font>
+            </span><span>&nbsp;</span><b><span>improve security</span></b><span>,</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <font face="Segoe UI">&#9989;&nbsp;</font>
+            </span><b><span>optimize</span></b><span>&nbsp;the&nbsp;</span><b><span>image
+                    size</span></b><span>,</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <font face="Segoe UI">&#9989; take advantage of some of the useful Docker features</font>
+            </span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <font face="Segoe UI">&#9989; and also write&nbsp;</font>
+            </span><b><span>cleaner and more maintainable Dockerfiles</span></b><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc14527"></a>
+            <span><span>1.<span>&nbsp;</span></span></span>
+            <b><span>Use an official and verified Docker image as a base image, whenever
+                    available.</span></b><b><span>
+                    <o:p></o:p>
+                </span></b>
+        </h1>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="311" src="Docker in Prod.files/Docker in Prod1171.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>Improvements:</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p>
+            <span>-<span>&nbsp;</span></span></span>
+            <span>Cleaner Dockerfile</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p>
+            <span>-<span>&nbsp;</span></span></span>
+            <span>Official and verified image, which is already built with the best practices</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc25616"></a>
+            <span><span>2.<span>&nbsp;</span></span></span>
+            <b><span>Use specific Docker image versions</span></b><b><span>
+                    <o:p></o:p>
+                </span></b>
+        </h1>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="317" src="Docker in Prod.files/Docker in Prod1320.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="554" height="256" src="Docker in Prod.files/Docker in Prod1323.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>Improvements:</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p>
+            <span>-<span>&nbsp;</span></span></span>
+            <span>Transparency to know exactly what version of the base image you're using</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc556"></a>
+            <span><span>3.<span>&nbsp;</span></span></span>
+            <b><span>Use Small-Sized Official Images</span></b><b><span>
+                    <o:p></o:p>
+                </span></b>
+        </h1>
+        <p><img width="553" height="272" src="Docker in Prod.files/Docker in Prod1447.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="304" src="Docker in Prod.files/Docker in Prod1450.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="223" src="Docker in Prod.files/Docker in Prod1453.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="139" src="Docker in Prod.files/Docker in Prod1456.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="208" src="Docker in Prod.files/Docker in Prod1459.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="552" height="123" src="Docker in Prod.files/Docker in Prod1462.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="554" height="276" src="Docker in Prod.files/Docker in Prod1465.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="311" src="Docker in Prod.files/Docker in Prod1468.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc18652"></a>
+            <span><span>4.<span>&nbsp;</span></span></span>
+            <b><span>Optimize caching for image layers when building an image</span></b><b><span>
+                    <o:p></o:p>
+                </span></b>
+        </h1>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="512" height="132" src="Docker in Prod.files/Docker in Prod1529.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="428" height="173" src="Docker in Prod.files/Docker in Prod1532.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="226" src="Docker in Prod.files/Docker in Prod1535.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="248" src="Docker in Prod.files/Docker in Prod1538.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>I</span><span>n a Dockerfile</span><span>,</span><span>&nbsp;</span><b><span
+                    style="font-weight:bold;">each command or instruction creates an image layer</span></b><b><span
+                    style="font-weight:bold;">. &nbsp;</span></b><span>So when we use a base image of node
+                alpine like in the above example it already has layers, because it was already built using its own
+                Dockerfile.
+                Plus, in our Dockerfile on top of that we have a couple of other commands that each will add a new layer
+                to this
+                image.</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="232" src="Docker in Prod.files/Docker in Prod1879.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="217" src="Docker in Prod.files/Docker in Prod1882.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="419" height="284" src="Docker in Prod.files/Docker in Prod1885.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="212" src="Docker in Prod.files/Docker in Prod1888.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="248" src="Docker in Prod.files/Docker in Prod1891.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="554" height="218" src="Docker in Prod.files/Docker in Prod1893.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="228" src="Docker in Prod.files/Docker in Prod1896.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="226" src="Docker in Prod.files/Docker in Prod1899.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="263" src="Docker in Prod.files/Docker in Prod1903.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="215" src="Docker in Prod.files/Docker in Prod1906.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="232" src="Docker in Prod.files/Docker in Prod1909.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="263" src="Docker in Prod.files/Docker in Prod1912.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="265" src="Docker in Prod.files/Docker in Prod1915.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>Once a layer changes,&nbsp;</span><b><span>all following or downstream layers have to be re-created as
+                    well</span></b><span>. In other words: when you change the contents of one line in the Dockerfile,
+                caches of
+                all the following lines or layers will be busted and invalidated. </span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>So the rule here and the best practice is:</span><span><br></span><b><span>Order your
+                    commands</span></b><span>&nbsp;in the Dockerfile&nbsp;</span><b><span>from the least to the most
+                    frequently changing commands</span></b><span>&nbsp;to take advantage of caching and this way
+                optimize how fast the image gets
+                built.</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><img width="541" height="237" src="Docker in Prod.files/Docker in Prod2378.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="272" src="Docker in Prod.files/Docker in Prod2381.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc20017"></a>
+            <span><span>5.<span>&nbsp;</span></span></span>
+            <b><span>Use</span></b><b><span>&nbsp;</span></b><b><span>.dockerignore</span></b><b><span>&nbsp;file</span></b><b><span>
+                    <o:p></o:p>
+                </span></b>
+        </h1>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="554" height="165" src="Docker in Prod.files/Docker in Prod2408.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="254" src="Docker in Prod.files/Docker in Prod2411.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="220" src="Docker in Prod.files/Docker in Prod2414.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>Improvements:</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p>
+            <span>-<span>&nbsp;</span></span></span>
+            <span>Reduced image size</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc15545"></a>
+            <span><span>6.<span>&nbsp;</span></span></span>
+            <b><span>Make use of Multi-Stage Builds</span></b><b><span>
+                    <o:p></o:p>
+                </span></b>
+        </h1>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="131" src="Docker in Prod.files/Docker in Prod2483.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="128" src="Docker in Prod.files/Docker in Prod2486.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="533" height="271" src="Docker in Prod.files/Docker in Prod2489.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="469" height="172" src="Docker in Prod.files/Docker in Prod2492.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="543" height="176" src="Docker in Prod.files/Docker in Prod2495.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="554" height="123" src="Docker in Prod.files/Docker in Prod2498.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="104" src="Docker in Prod.files/Docker in Prod2501.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="456" height="312" src="Docker in Prod.files/Docker in Prod2504.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>The multi-stage builds feature allows you to use multiple temporary images during the
+                build process, but keep only</span><span>&nbsp;</span><span>the latest image as the final
+                artifact:</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="140" src="Docker in Prod.files/Docker in Prod2663.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="554" height="89" src="Docker in Prod.files/Docker in Prod2666.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>Improvements:</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p>
+            <span>-<span>&nbsp;</span></span></span>
+            <span>Separation of Build Tools and Dependencies from what's needed for runtime</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p>
+            <span>-<span>&nbsp;</span></span></span>
+            <span>Less dependencies and reduced image size</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc5499"></a>
+            <span><span>7.<span>&nbsp;</span></span></span>
+            <b><span>Use the Least Privileged User</span></b><b><span>
+                    <o:p></o:p>
+                </span></b>
+        </h1>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="436" height="159" src="Docker in Prod.files/Docker in Prod2830.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="328" height="161" src="Docker in Prod.files/Docker in Prod2833.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="196" src="Docker in Prod.files/Docker in Prod2836.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="273" src="Docker in Prod.files/Docker in Prod2839.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>By default, when a Dockerfile does not specify a user, it uses a&nbsp;</span><b><span>root
+                    user</span></b><span>. </span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <font face="Segoe UI">&#10060; This basically introduces a security issue, because when container starts
+                    on the
+                    host it, will potentially have root access on the Docker host.</font>
+            </span><span><br></span><span>So running an application inside the container with a root user will make
+                it&nbsp;</span><b><span>easier for an attacker to escalate privileges on the
+                    host</span></b><span>&nbsp;and basically get hold of the underlying host and its processes, not only
+                the
+                container itself </span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <font face="Segoe UI">&#9989; To avoid this, the best practice is to simply&nbsp;</font>
+            </span><b><span>create a dedicated user</span></b><span>&nbsp;and a dedicated group in the Docker image to
+                run the application and
+                also&nbsp;</span><b><span>run the application</span></b><span>&nbsp;inside the
+                container&nbsp;</span><b><span>with that user</span></b><b><span>.</span></b><b><span>
+                    <o:p></o:p>
+                </span></b></p>
+        <p><img width="553" height="244" src="Docker in Prod.files/Docker in Prod3498.png"><b><span>
+                    <o:p>&nbsp;</o:p>
+                </span></b></p>
+        <p><b><span>Tip:</span></b><span>&nbsp;Some images already have a&nbsp;</span><b><span>generic
+                    user</span></b><span>&nbsp;bundled in, which you can use. So you don't have to create a new one. For
+                example
+                the node.js image already bundles a generic user called&nbsp;</span><span>node</span><span>, which you
+                can simply use to run the application inside the container.</span><b><span>
+                    <o:p></o:p>
+                </span></b></p>
+        <h1><a name="_Toc32340"></a>
+            <span><span>8.<span>&nbsp;</span></span></span>
+            <b><span>Scan your Images for Security Vulnerabilities</span></b><b><span>
+                    <o:p></o:p>
+                </span></b>
+        </h1>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="520" height="282" src="Docker in Prod.files/Docker in Prod3806.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="116" src="Docker in Prod.files/Docker in Prod3809.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="199" src="Docker in Prod.files/Docker in Prod3812.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="357" src="Docker in Prod.files/Docker in Prod3815.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="260" src="Docker in Prod.files/Docker in Prod3818.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="265" src="Docker in Prod.files/Docker in Prod3821.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><b><span>Automate the scanning </span></b><span><br></span><span>In addition to scanning your images
+                manually with&nbsp;</span><span>docker scan</span><span>&nbsp;command on a CLI, you can
+                also&nbsp;</span><b><span>configure Docker Hub</span></b><span>&nbsp;to&nbsp;</span><b><span>scan the
+                    images automatically</span></b><span>, when they get pushed to the
+                repository. And of course you can&nbsp;</span><b><span>integrate</span></b><span>&nbsp;this check in
+                your&nbsp;</span><b><span>CI/CD pipeline</span></b><span>&nbsp;when building your Docker
+                images.</span><span>
+                <o:p></o:p>
+            </span></p>
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <div w3-include-html="footer.htm"></div>
+    <script>includeHTML();</script>
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
