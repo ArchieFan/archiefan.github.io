@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>My Portfolio</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <script src="assets/js/layout.js"></script>
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+
+        <div class="d-flex align-items-center justify-content-between">
+            <i class="bi bi-list toggle-sidebar-btn"></i>
+        </div><!-- End Logo -->
+
+        <nav class="header-nav ms-auto">
+
+            <ul class="d-flex align-items-center">
+                <div w3-include-html="header.htm"></div>
+            </ul>
+        </nav><!-- End Icons Navigation -->
+    </header><!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <div w3-include-html="sidebar.htm"></div>
+
+    <main id="main" class="main">
+
+
+        <p align=center>
+            <span>Catalog</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p><span><span><a href="#_Toc22745 "><span>Building .Net console App Docker
+                            Container</span><span>&#9;</span></a></span><span>
+                    <o:p></o:p>
+                </span></p>
+        <p><span><a href="#_Toc27176 "><span>Step #1 - Create app and
+                        publish</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span><a href="#_Toc16968 "><span>Step #2 - Create Docker
+                        Image</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc2><span><a href="#_Toc16558 "><span>Create the docker
+                        file</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc2><span><a href="#_Toc28762 "><span>Build the image</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span><a href="#_Toc25389 "><span>Step #3 - Run Docker
+                        Image</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span><a href="#_Toc15841 "><span>For https:</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span><a href="#_Toc10800 "><span>Trivy Docker Desktop Extension for unlimited vulnerability
+                        scanning</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span><a href="#_Toc28213 "><span>Docker Network</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p></span></w:Sdt><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+
+
+
+        <h1><a name="_Toc22745"></a><b><span>Building .Net console App Docker Container</span></b><b><span>
+                    <o:p></o:p>
+                </span></b></h1>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="424" height="179"
+                src="DotNet App Docker Container.files/DotNet App Docker Container852.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc27176"></a><b><span>Step #1 - Create app and publish</span></b><b><span>
+                    <o:p></o:p>
+                </span></b></h1>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="311"
+                src="DotNet App Docker Container.files/DotNet App Docker Container889.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>Publish the executable to folder</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="321" height="131"
+                src="DotNet App Docker Container.files/DotNet App Docker Container926.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc16968"></a><b><span>Step #2 - Create Docker Image</span></b><b><span>
+                    <o:p></o:p>
+                </span></b></h1>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h2><a name="_Toc16558"></a><b><span>Create the docker file</span></b><b><span>
+                    <o:p></o:p>
+                </span></b></h2>
+        <p><span>example 1:</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><img width="553" height="183"
+                src="DotNet App Docker Container.files/DotNet App Docker Container995.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p style="">
+            <span><span>1)</span></span>
+            <span>Get the base image </span><span>
+                <p><span></span>
+                    <o:p></o:p>
+            </span>
+        </p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <font face="Cascadia Mono">FROM</font>
+            </span><span>&nbsp;<font face="Cascadia Mono">mcr.microsoft.com/dotnet/runtime:6.0</font>
+            </span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p>
+            <span><span>2)</span></span>
+            <span>Copy all published files to image working directory</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p style="text-align:left;"><span>
+                <font face="Cascadia Mono">COPY</font>
+            </span><span>&nbsp;<font face="Cascadia Mono">bin/Release/net6.0/publish .</font></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p style="text-align:left;"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p style="margin-left:0.0000pt;
+text-indent:0.0000pt;
+text-align:left;">
+            <span><span>3)</span></span>
+            <span>Set the entry point of Docker image</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <font face="Cascadia Mono">ENTRYPOINT [</font>
+            </span><span style="font-family:'Cascadia Mono';
+color:rgb(163,21,21);">
+                <font face="Cascadia Mono">"dotnet"</font>
+            </span><span>
+                <font face="Cascadia Mono">, </font>
+            </span><span style="font-family:'Cascadia Mono';
+color:rgb(163,21,21);">
+                <font face="Cascadia Mono">"DockerConsoleAppDemo.dll"</font>
+            </span><span>
+                <font face="Cascadia Mono">]</font>
+            </span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>Example 2:</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="540" height="201"
+                src="DotNet App Docker Container.files/DotNet App Docker Container1250.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p>
+            <span><span>1)</span></span>
+            <span>Get the base image</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p>
+            <span><span>2)</span></span>
+            <span>Set Working directory in the base image</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p>
+            <span><span>3)</span></span>
+            <span>Copy *.* to working directory /app</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p>
+            <span><span>4)</span></span>
+            <span>Run the build command inside the docker image with -c (solution configuration) &nbsp;of
+                “Release”</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p>
+            <span><span>5)</span></span>
+            <span>Set the entry point to specify the command when the container is started. &nbsp;In this
+                case, that is dotnet “run” with the no launch profile flag </span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><i><span style="font-family:Calibri;font-style:italic;">Note: In this case, because we haven't specified very
+                    explicitly what
+                    files we wanted to be into this docker image so all of the files under our project directory will
+                    have got copied and that will include things like the launch Settings JSON file. by default, asp.net
+                    core 2-0 will now look at that</span></i><i><span style="font-family:Calibri;font-style:italic;background:rgb(255,255,0);
+">&nbsp;launch settings file</span></i><i><span style="font-family:Calibri;font-style:italic;">&nbsp;and use the port
+                    and environment from that file. If it finds it in
+                    this case, we don't want to do that. Once, this image is running. I want it to be running on the
+                    default asp.net core port or 80. So by adding the no launch profile flag, I can avoid that launch
+                    settings file and its values being used.</span></i><i><span
+                    style="font-family:Calibri;font-style:italic;">
+                    <o:p></o:p>
+                </span></i></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="482" height="188"
+                src="DotNet App Docker Container.files/DotNet App Docker Container2209.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h2><a name="_Toc28762"></a><b><span>Build the image</span></b><b><span>
+                    <o:p></o:p>
+                </span></b></h2>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>Example 1</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>&gt; Docker build -t &nbsp;dockerdotnet_image .</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>Note: (.) is the path of the build context. Build context specifies all of the files
+                that
+                we want to potentially make up our build.</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>(--tag) = -t</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><i><span style="font-family:Calibri;font-style:italic;">Note: docker image must be lower
+                    case.</span></i><i><span style="font-family:Calibri;font-style:italic;">
+                    <o:p></o:p>
+                </span></i></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc25389"></a><b><span>Step #3 - Run Docker Image</span></b><b><span>
+                    <o:p></o:p>
+                </span></b></h1>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="45"
+                src="DotNet App Docker Container.files/DotNet App Docker Container2503.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>&gt; docker run --rm -p 6061:80 dockerdotnet_image</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>&gt; docker run --rm -p 6061:80 dockerdotnet_image</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>&gt; </span><span>docker run --rm -p </span><span>6061</span><span>:</span><span>80 -e
+                ASPNETCORE_URLS=http://+:80 dockerdotnet_image</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>Note: Publish the port 80 of the container to 6001 on my host.
+                &nbsp;T</span><span>hat's needed so that we can actually communicate with the application that's running
+                inside that container which is listening on port 80. If we didn't do that, we wouldn't have a way to
+                pass the address from our localhost through into the container.</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc15841"></a><b><span>For https:</span></b><b><span>
+                    <o:p></o:p>
+                </span></b></h1>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p>
+            <span><span>1)</span></span>
+            <span>Create localhost self-cert</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p><span style="font-family:Calibri;background:rgb(255,255,0);">&gt; dotnet dev-certs https
+                --trust</span><span style="font-family:Calibri;background:rgb(255,255,0);">
+                <o:p></o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;background:rgb(255,255,0);">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p style="margin-left:0.0000pt;text-indent:0.0000pt;">
+            <span><span>2)</span></span>
+            <span>Generate certificate</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p><span style="font-family:Calibri;background:rgb(255,255,0);">&gt; dotnet dev-certs https -ep
+                $env:USERPROFILE\.aspnet\https\dockerdotnethttp.pfx -p pa55w0rd!</span><span
+                style="font-family:Calibri;background:rgb(255,255,0);">
+                <o:p></o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;background:rgb(255,255,0);">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p style="margin-left:0.0000pt;text-indent:0.0000pt;">
+            <span><span>3)</span></span>
+            <span>Manage User Secrets</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p><span style="font-family:Calibri;background:rgb(255,255,0);">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p style="margin-left:21.0000pt;text-indent:-21.0000pt;">
+            <span style="font-family:Wingdings;"><span>&#108;</span></span>
+            <span>Get any GUID from “Insert GUID” extension</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p><img width="554" height="135"
+                src="DotNet App Docker Container.files/DotNet App Docker Container3251.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="197"
+                src="DotNet App Docker Container.files/DotNet App Docker Container3254.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="199"
+                src="DotNet App Docker Container.files/DotNet App Docker Container3257.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>&gt; dotnet user-secrets set "Kestrel:Certificates:Development:Password"
+                "pa55w0rd!"</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="60"
+                src="DotNet App Docker Container.files/DotNet App Docker Container3343.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>C:\Users\Archie
+                Fan\AppData\Roaming\Microsoft\UserSecrets\7331af0-7244-40d2-9017-1fd47e10df17\secrets.json</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p style="margin-left:21.0000pt;text-indent:-21.0000pt;
+">
+            <span style="font-family:Wingdings;"><span>&#108;</span></span>
+            <span>Rebuild the docker image</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p style="margin-left:21.0000pt;text-indent:-21.0000pt;
+">
+            <span style="font-family:Wingdings;"><span>&#108;</span></span>
+            <span>Docker run</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>docker run --rm</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>-p 8080:80 -p 8081:443 </span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>-e ASPNETCORE_URLS="https://+;http://+" </span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>-e ASPNETCORE_HTTPS_PORT=8081 </span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>-e ASPNETCORE_ENVIRONMENT=Development</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>-v
+                $env:APPDATA\microsoft\UserSecrets\:/root/.microsoft/usersecrets</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>-v
+                $env:USERPROFILE\.aspnet\https:/root/.aspnet/https/</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>dockerdotnethttp_image</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>&gt; docker run --rm -p 8080:80 -p 8081:443 -e
+                ASPNETCORE_URLS="https://+;http://+" -e
+                ASPNETCORE_HTTPS_PORT=8081 &nbsp;-e ASPNETCORE_ENVIRONMENT=Development -v
+                $env:APPDATA\microsoft\UserSecrets\:/root/.microsoft/usersecrets -v
+                $env:USERPROFILE\.aspnet\https:/root/.aspnet/https/ dockerdotnethttp_image</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p<img width="553" height="208" src="DotNet App Docker Container.files/DotNet App Docker Container4085.png">
+            <span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+            <p><span>
+                    <o:p>&nbsp;</o:p>
+                </span></p>
+            <p style="margin-left:21.0000pt;text-indent:-21.0000pt;">
+                <span style="font-family:Wingdings;"><span>&#108;</span></span>
+                <span>Create Docker-compose file</span><span>
+                    <o:p></o:p>
+                </span>
+            </p>
+            <p<img width="553" height="271" src="DotNet App Docker Container.files/DotNet App Docker Container4115.png">
+                <span>
+                    <o:p>&nbsp;</o:p>
+                </span></p>
+                <p><span>
+                        <o:p>&nbsp;</o:p>
+                    </span></p>
+                <p><span>
+                        <o:p>&nbsp;</o:p>
+                    </span></p>
+                <p style="text-align:left;"><span>
+                        <font face="Cascadia Mono">version:</font>
+                    </span><span style="font-family:'Cascadia Mono';
+color:rgb(163,21,21);">
+                        <font face="Cascadia Mono">'3.4'</font>
+                    </span><span>
+                        <o:p></o:p>
+                    </span></p>
+                <p style="text-align:left;"><span>
+                        <o:p>&nbsp;</o:p>
+                    </span></p>
+                <p style="text-align:left;"><span>
+                        <font face="Cascadia Mono">services:</font>
+                    </span><span>
+                        <o:p></o:p>
+                    </span></p>
+                <p style="text-align:left;">
+                    <span>&nbsp;&nbsp;</span><span>
+                        <font face="Cascadia Mono">backend:</font>
+                    </span><span>
+                        <o:p></o:p>
+                    </span>
+                </p>
+                <p style="text-align:left;">
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span>
+                        <font face="Cascadia Mono">image:</font>
+                    </span><span style="font-family:'Cascadia Mono';
+color:rgb(163,21,21);">
+                        <font face="Cascadia Mono">${DOCKER_REGISTRY-}backend</font>
+                    </span><span>
+                        <o:p></o:p>
+                    </span>
+                </p>
+                <p style="text-align:left;">
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span>
+                        <font face="Cascadia Mono">build:</font>
+                    </span><span>
+                        <o:p></o:p>
+                    </span>
+                </p>
+                <p style="text-align:left;">
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>
+                        <font face="Cascadia Mono">context:</font>
+                    </span><span>
+                        <font face="Cascadia Mono">.</font>
+                    </span><span>
+                        <o:p></o:p>
+                    </span>
+                </p>
+                <p style="text-align:left;">
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>
+                        <font face="Cascadia Mono">dockerfile:</font>
+                    </span><span style="font-family:'Cascadia Mono';
+color:rgb(163,21,21);">
+                        <font face="Cascadia Mono">backend/Dockerfile</font>
+                    </span><span>
+                        <o:p></o:p>
+                    </span>
+                </p>
+                <p style="text-align:left;">
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span>
+                        <font face="Cascadia Mono">environment:</font>
+                    </span><span>
+                        <o:p></o:p>
+                    </span>
+                </p>
+                <p style="text-align:left;">
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font face="Cascadia Mono">- </font>
+                    </span><span style="font-family:'Cascadia Mono';
+color:rgb(163,21,21);">
+                        <font face="Cascadia Mono">ASPNETCORE_ENVIRONMENT=Development</font>
+                    </span><span>
+                        <o:p></o:p>
+                    </span>
+                </p>
+                <p style="text-align:left;">
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font face="Cascadia Mono">- </font>
+                    </span><span style="font-family:'Cascadia Mono';
+color:rgb(163,21,21);">
+                        <font face="Cascadia Mono">ASPNETCORE_URLS=https://+;http://+</font>
+                    </span><span>
+                        <o:p></o:p>
+                    </span>
+                </p>
+                <p style="text-align:left;">
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font face="Cascadia Mono">- </font>
+                    </span><span style="font-family:'Cascadia Mono';
+color:rgb(163,21,21);">
+                        <font face="Cascadia Mono">ASPNETCORE_HTTPS_PORT=5803</font>
+                    </span><span>
+                        <o:p></o:p>
+                    </span>
+                </p>
+                <p style="text-align:left;">
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Cascadia Mono';
+color:rgb(0,128,0);">
+                        <font face="Cascadia Mono">#ASPNETCORE_URLS: "https://+;http://+"</font>
+                    </span><span style="font-family:'Cascadia Mono';
+color:rgb(0,128,0);">
+                        <o:p></o:p>
+                    </span>
+                </p>
+                <p style="text-align:left;">
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Cascadia Mono';
+color:rgb(0,128,0);">
+                        <font face="Cascadia Mono">#ASPNETCORE_HTTPS_PORT: "5803"</font>
+                    </span><span style="font-family:'Cascadia Mono';
+color:rgb(0,128,0);">
+                        <o:p></o:p>
+                    </span>
+                </p>
+                <p style="text-align:left;">
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Cascadia Mono';
+color:rgb(0,128,0);">
+                        <font face="Cascadia Mono">#ASPNETCORE_ENVIRONMENT: "Development"</font>
+                    </span><span style="font-family:'Cascadia Mono';
+color:rgb(0,128,0);">
+                        <o:p></o:p>
+                    </span>
+                </p>
+                <p style="text-align:left;">
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span>
+                        <font face="Cascadia Mono">ports:</font>
+                    </span><span>
+                        <o:p></o:p>
+                    </span>
+                </p>
+                <p style="text-align:left;">
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font face="Cascadia Mono">- </font>
+                    </span><span style="font-family:'Cascadia Mono';
+color:rgb(163,21,21);">
+                        <font face="Cascadia Mono">"5800:80"</font>
+                    </span><span>
+                        <o:p></o:p>
+                    </span>
+                </p>
+                <p style="text-align:left;">
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font face="Cascadia Mono">- </font>
+                    </span><span style="font-family:'Cascadia Mono';
+color:rgb(163,21,21);">
+                        <font face="Cascadia Mono">"5803:443"</font>
+                    </span><span>
+                        <o:p></o:p>
+                    </span>
+                </p>
+                <p style="text-align:left;">
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span>
+                        <font face="Cascadia Mono">volumes:</font>
+                    </span><span>
+                        <o:p></o:p>
+                    </span>
+                </p>
+                <p style="text-align:left;">
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font face="Cascadia Mono">- </font>
+                    </span><span style="font-family:'Cascadia Mono';
+color:rgb(163,21,21);">
+                        <font face="Cascadia Mono">${APPDATA}\Microsoft\UserSecrets\:/root/.microsoft/usersecrets</font>
+                    </span><span>
+                        <o:p></o:p>
+                    </span>
+                </p>
+                <p><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font face="Cascadia Mono">-
+                        </font>
+                    </span><span style="font-family:'Cascadia Mono';
+color:rgb(163,21,21);">
+                        <font face="Cascadia Mono">${USERPROFILE}\.aspnet\https\:/root/.aspnet/https/</font>
+                    </span><span>
+                        <o:p></o:p>
+                    </span></p>
+                <p><span>
+                        <o:p>&nbsp;</o:p>
+                    </span></p>
+                <p style="margin-left:21.0000pt;text-indent:-21.0000pt;
+">
+                    <span style="font-family:Wingdings;"><span>&#108;</span></span>
+                    <span>Run docker compose</span><span>
+                        <o:p></o:p>
+                    </span>
+                </p>
+                <p><span>
+                        <o:p>&nbsp;</o:p>
+                    </span></p>
+                <p><span>&gt; docker-compose up --build</span><span>
+                        <o:p></o:p>
+                    </span></p>
+                <p><span>
+                        <o:p>&nbsp;</o:p>
+                    </span></p>
+                <p><span>&gt; docker-compose run build</span><span>
+                        <o:p></o:p>
+                    </span></p>
+                <p><span>
+                        <o:p>&nbsp;</o:p>
+                    </span></p>
+                <p><span>
+                        <o:p>&nbsp;</o:p>
+                    </span></p>
+                <p><span>
+                        <o:p>&nbsp;</o:p>
+                    </span></p>
+                <p><span>
+                        <o:p>&nbsp;</o:p>
+                    </span></p>
+
+                <h1><a name="_Toc10800"></a><b><span>Trivy Docker Desktop Extension for unlimited vulnerability
+                            scanning</span></b><b><span>
+                            <o:p></o:p>
+                        </span></b></h1>
+                <p><span>
+                        <o:p>&nbsp;</o:p>
+                    </span></p>
+                <p <span>mcr.microsoft.com/dotnet/sdk:6.0.300-alpine3.14-amd64</span><span>
+                        <o:p></o:p>
+                    </span>
+                </p>
+                <p><span>mcr.microsoft.com/dotnet/aspnet:latest</span><span>
+                        <o:p></o:p>
+                    </span></p>
+                <p><span>mcr.microsoft.com/dotnet/runtime:</span><span>latest</span><span>
+                        <o:p></o:p>
+                    </span></p>
+                <p><span>mcr.microsoft.com/dotnet/runtime-deps:</span><span>latest</span><span>
+                        <o:p></o:p>
+                    </span></p>
+                <p><span>mcr.microsoft.com/mssql/server:</span><span>latest</span><span>
+                        <o:p></o:p>
+                    </span></p>
+                <p<img width="553" height="354"
+                    src="DotNet App Docker Container.files/DotNet App Docker Container5092.png"><span>
+                        <o:p>&nbsp;</o:p>
+                    </span></p>
+                    <p><span>
+                            <o:p>&nbsp;</o:p>
+                        </span></p>
+                    <p><span>
+                            <o:p>&nbsp;</o:p>
+                        </span></p>
+                    <h1><a name="_Toc28213"></a><b><span>Docker Network</span></b><b><span>
+                                <o:p></o:p>
+                            </span></b></h1>
+                    <p><span>
+                            <o:p>&nbsp;</o:p>
+                        </span></p>
+                    <p><span>&gt; docker network ls</span><span>
+                            <o:p></o:p>
+                        </span></p>
+                    <p><span>
+                            <o:p>&nbsp;</o:p>
+                        </span></p>
+                    <p><img width="553" height="256"
+                            src="DotNet App Docker Container.files/DotNet App Docker Container5133.png"><span>
+                            <o:p>&nbsp;</o:p>
+                        </span></p>
+                    <p><span>
+                            <o:p>&nbsp;</o:p>
+                        </span></p>
+                    <p><img width="553" height="285"
+                            src="DotNet App Docker Container.files/DotNet App Docker Container5136.png"><span>
+                            <o:p>&nbsp;</o:p>
+                        </span></p>
+                    <p><span>
+                            <o:p>&nbsp;</o:p>
+                        </span></p>
+                    <p><img width="553" height="215"
+                            src="DotNet App Docker Container.files/DotNet App Docker Container5139.png"><span>
+                            <o:p>&nbsp;</o:p>
+                        </span></p>
+                    <p><span>
+                            <o:p>&nbsp;</o:p>
+                        </span></p>
+                    <p><img width="316" height="29"
+                            src="DotNet App Docker Container.files/DotNet App Docker Container5142.png"><span>
+                            <o:p>&nbsp;</o:p>
+                        </span></p>
+
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <div w3-include-html="footer.htm"></div>
+    <script>includeHTML();</script>
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
