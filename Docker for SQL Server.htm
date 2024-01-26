@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>My Portfolio</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <script src="assets/js/layout.js"></script>
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+
+        <div class="d-flex align-items-center justify-content-between">
+            <i class="bi bi-list toggle-sidebar-btn"></i>
+        </div><!-- End Logo -->
+
+        <nav class="header-nav ms-auto">
+
+            <ul class="d-flex align-items-center">
+                <div w3-include-html="header.htm"></div>
+            </ul>
+        </nav><!-- End Icons Navigation -->
+    </header><!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <div w3-include-html="sidebar.htm"></div>
+
+    <main id="main" class="main">
+
+        <h1><b><span>Download SQL Server Linux images</span></b><b><span>
+                    <o:p></o:p>
+                </span></b></h1>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>docker pull
+                mcr.microsoft.com/mssql/server:2019-latest</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>docker pull
+                mcr.microsoft.com/mssql/server:2017-latest</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><b><span>Run the docker images</span></b><b><span>
+                    <o:p></o:p>
+                </span></b></h1>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>docker run --name sql_2017 -e
+                "ACCEPT_EULA=Y" -e "SA_PASSWORD=</span><span
+                style="font-family:Calibri;font-size:12.0000pt;background:rgb(255,255,0);">1Secure*Password1</span><span>"
+                -e "MSSQL_PID=Enterprise" -e </span><span>
+                <font face="Calibri">“</font>
+            </span><span>MSSQL_AGENT_ENABLED=True</span><span>
+                <font face="Calibri">” </font>
+            </span><span>-p 1433:1433 -d
+                mcr.microsoft.com/mssql/server:2017-latest</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>docker run</span><span>&nbsp;</span><span>--name sql_2019_1436 -e "ACCEPT_EULA=Y"
+                -e</span><span>&nbsp;</span><span>"SA_PASSWORD=1Secure*Password1" -e
+                "MSSQL_PID=Enterprise"</span><span>&nbsp;</span><span>-e </span><span>
+                <font face="Calibri">“</font>
+            </span><span>MSSQL_AGENT_ENABLED=True</span><span>
+                <font face="Calibri">” </font>
+            </span><span>-p 1436:1433 -d
+                mcr.microsoft.com/mssql/server:2019-latest</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><b><span>To test connection</span></b><b><span>
+                    <o:p></o:p>
+                </span></b></h1>
+        <p><span>docker exec -it sql_2017
+                /opt/mssql-tools/bin/sqlcmd -S localhost -U sa</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>docker exec -it </span><span
+                style="font-family:Calibri;font-size:12.0000pt;background:rgb(255,255,0);">sql_2019_1436</span><span>&nbsp;/opt/mssql-tools/bin/sqlcmd
+                -S
+                localhost -U sa</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><b><span>Connect to SQL Server instance using SSMS</span></b><b><span>
+                    <o:p></o:p>
+                </span></b></h1>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>Connect to the SQL Server 2017 instance
+                using the default port, 1433, on the localhost.</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="477" height="315" src="Docker for SQL Server.files/Docker for SQL Server874.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>Let’s check SQL Server version, it
+                shows:</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>Microsoft SQL Server 2017 (RTM-CU25)
+                (KB5003830) - 14.0.3401.7 (X64) Jun 25 2021 14:02:48 Copyright (C) 2017 Microsoft Corporation Enterprise
+                Edition (64-bit) on Linux (Ubuntu 16.04.7 LTS)</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p style="text-align:left;"><img width="625" height="262"
+                src="Docker for SQL Server.files/Docker for SQL Server1109.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>Connect to the SQL Server 2019 instance
+                using port 1436 on the localhost.</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><img width="477" height="315" src="Docker for SQL Server.files/Docker for SQL Server1186.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>Let’s check SQL Server version, it
+                shows:</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>Microsoft SQL Server 2019 (RTM-CU11)
+                (KB5003249) - 15.0.4138.2 (X64) May 27 2021 17:34:14 Copyright (C) 2019 Microsoft Corporation Enterprise
+                Edition (64-bit) on Linux (Ubuntu 20.04.2 LTS) &lt;X64&gt;</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p style="text-align:left;"><img width="594" height="248"
+                src="Docker for SQL Server.files/Docker for SQL Server1428.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <div w3-include-html="footer.htm"></div>
+    <script>includeHTML();</script>
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
