@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>My Portfolio</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <script src="assets/js/layout.js"></script>
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+
+        <div class="d-flex align-items-center justify-content-between">
+            <i class="bi bi-list toggle-sidebar-btn"></i>
+        </div><!-- End Logo -->
+
+        <nav class="header-nav ms-auto">
+
+            <ul class="d-flex align-items-center">
+                <div w3-include-html="header.htm"></div>
+            </ul>
+        </nav><!-- End Icons Navigation -->
+    </header><!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <div w3-include-html="sidebar.htm"></div>
+
+    <main id="main" class="main">
+
+        <h1>
+            <span><span>1)<span>&nbsp;</span></span></span>
+            <b><span>Install .net 6.0 SDK</span></b><b><span>
+                    <o:p></o:p>
+                </span></b>
+        </h1>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>$ </span><span>sudo apt-get
+                update; </span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>$ </span><span>sudo apt-get
+                install -y apt-transport-https &nbsp;</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>$ </span><span>sudo apt-get
+                update && \ sudo apt-get install -y dotnet-sdk-6.0</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1>
+            <span><span>2)<span>&nbsp;</span></span></span>
+            <b><span>Publish your App</span></b><b><span>
+                    <o:p></o:p>
+                </span></b>
+        </h1>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>&gt; dotnet publish -c Release -r ubuntu.18.04-x64
+            </span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1>
+            <span><span>3)<span>&nbsp;</span></span></span>
+            <b><span>Create a Docker container</span></b><b><span>
+                    <o:p></o:p>
+                </span></b>
+        </h1>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>&gt; </span><span>docker run
+                -it ubuntu</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1>
+            <span><span>4)<span>&nbsp;</span></span></span>
+            <b><span>Copy the Release to Docker container</span></b><b><span>
+                    <o:p></o:p>
+                </span></b>
+        </h1>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>&gt; docker cp . 3b3b9f94f5a8:/app1</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>using docker ps to get the ID</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="554" height="102"
+                src="DotNet core in Linux Docker.files/DotNet core in Linux Docker384.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="117"
+                src="DotNet core in Linux Docker.files/DotNet core in Linux Docker388.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1>
+            <span><span>5)<span>&nbsp;</span></span></span>
+            <b><span>Set permission</span></b><b><span>
+                    <o:p></o:p>
+                </span></b>
+        </h1>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>chmod 777 ./dockerdotnetdemo</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="545" height="66"
+                src="DotNet core in Linux Docker.files/DotNet core in Linux Docker437.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1>
+            <span><span>6)<span>&nbsp;</span></span></span>
+            <b><span>Run the App</span></b><b><span>
+                    <o:p></o:p>
+                </span></b>
+        </h1>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="460" height="72"
+                src="DotNet core in Linux Docker.files/DotNet core in Linux Docker454.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <div w3-include-html="footer.htm"></div>
+    <script>includeHTML();</script>
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
