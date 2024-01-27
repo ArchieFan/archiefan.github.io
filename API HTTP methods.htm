@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>My Portfolio</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <script src="assets/js/layout.js"></script>
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+
+        <div class="d-flex align-items-center justify-content-between">
+            <i class="bi bi-list toggle-sidebar-btn"></i>
+        </div><!-- End Logo -->
+
+        <nav class="header-nav ms-auto">
+
+            <ul class="d-flex align-items-center">
+                <div w3-include-html="header.htm"></div>
+            </ul>
+        </nav><!-- End Icons Navigation -->
+    </header><!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <div w3-include-html="sidebar.htm"></div>
+
+    <main id="main" class="main">
+
+        <p align=center>
+            <span>Catalog</span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p><span><span><a href="#_Toc25437 "><span style="font-family:Calibri;">E</span><span
+                            style="font-family:Calibri;">xploring and testing APIs.</span><span
+                            style="font-family:Calibri;">&#9;</span></a></span><span style="font-family:Calibri;">
+                    <o:p></o:p>
+                </span></p>
+        <p><span><a href="#_Toc2588 "><span style="font-family:Calibri;">1. </span><span style="font-family:Consolas;letter-spacing:0.0000pt;
+text-transform:none;font-style:normal;background:rgb(247,247,249);
+">GET</span><span style="font-family:Calibri;">&#9;</span></a></span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p><span><a href="#_Toc11211 "><span style="font-family:Calibri;">2. </span><span style="font-family:Consolas;letter-spacing:0.0000pt;
+text-transform:none;font-style:normal;background:rgb(247,247,249);
+">POST</span><span style="font-family:Calibri;">&#9;</span></a></span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p><span><a href="#_Toc4201 "><span style="font-family:Calibri;">3. </span><span style="font-family:Consolas;letter-spacing:0.0000pt;
+text-transform:none;font-style:normal;background:rgb(247,247,249);
+">PUT</span><span style="font-family:Calibri;">&#9;</span></a></span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p><span><a href="#_Toc9020 "><span style="font-family:Calibri;">4. </span><span style="font-family:Consolas;letter-spacing:0.0000pt;
+text-transform:none;font-style:normal;background:rgb(247,247,249);
+">PATCH</span><span style="font-family:Calibri;">&#9;</span></a></span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p><span><a href="#_Toc4012 "><span style="font-family:Calibri;">5. </span><span style="font-family:Consolas;letter-spacing:0.0000pt;
+text-transform:none;font-style:normal;background:rgb(247,247,249);
+">DELETE</span><span style="font-family:Calibri;">&#9;</span></a></span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p><span><a href="#_Toc26322 "><span style="font-family:Calibri;">6. </span><span style="font-family:Consolas;letter-spacing:0.0000pt;
+text-transform:none;font-style:normal;background:rgb(247,247,249);
+">HEAD</span><span style="font-family:Calibri;">&#9;</span></a></span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p><span><a href="#_Toc10864 "><span style="font-family:Calibri;">7. </span><span style="font-family:Consolas;letter-spacing:0.0000pt;
+text-transform:none;font-style:normal;background:rgb(247,247,249);
+">OPTIONS</span><span style="font-family:Calibri;">&#9;</span></a></span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p><span><a href="#_Toc26897 "><span style="font-family:Calibri;">GET</span><span
+                        style="font-family:Calibri;">&#9;</span></a></span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p><span><a href="#_Toc8876 "><span style="font-family:Calibri;">Testing an API with GET
+                        requests</span><span style="font-family:Calibri;">&#9;</span></a></span><span
+                style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p><span><a href="#_Toc8086 "><span style="font-family:Calibri;">POST</span><span
+                        style="font-family:Calibri;">&#9;</span></a></span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p><span><a href="#_Toc19739 "><span style="font-family:Calibri;">Testing an API with POST
+                        requests</span><span style="font-family:Calibri;">&#9;</span></a></span><span
+                style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p><span><a href="#_Toc13170 "><span style="font-family:Calibri;">PUT</span><span
+                        style="font-family:Calibri;">&#9;</span></a></span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p><span><a href="#_Toc24746 "><span style="font-family:Calibri;">Testing an API with PUT
+                        requests</span><span style="font-family:Calibri;">&#9;</span></a></span><span
+                style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p><span><a href="#_Toc29053 "><span style="font-family:Calibri;">PATCH</span><span
+                        style="font-family:Calibri;">&#9;</span></a></span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p><span><a href="#_Toc2564 "><span style="font-family:Calibri;">Testing an API with PATCH
+                        requests</span><span style="font-family:Calibri;">&#9;</span></a></span><span
+                style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p><span><a href="#_Toc25115 "><span style="font-family:Calibri;">DELETE</span><span
+                        style="font-family:Calibri;">&#9;</span></a></span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p><span><a href="#_Toc11456 "><span style="font-family:Calibri;">Testing an API with DELETE
+                        requests</span><span style="font-family:Calibri;">&#9;</span></a></span><span
+                style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p><span><a href="#_Toc27718 "><span style="font-family:Calibri;">HEAD</span><span
+                        style="font-family:Calibri;">&#9;</span></a></span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p><span><a href="#_Toc18112 "><span style="font-family:Calibri;">Testing an API with HEAD
+                        requests</span><span style="font-family:Calibri;">&#9;</span></a></span><span
+                style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p><span><a href="#_Toc17890 "><span style="font-family:Calibri;">OPTIONS</span><span
+                        style="font-family:Calibri;">&#9;</span></a></span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p><span><a href="#_Toc20412 "><span style="font-family:Calibri;">Testing an API with OPTIONS
+                        requests</span><span style="font-family:Calibri;">&#9;</span></a></span><span
+                style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p></span></w:Sdt><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1 style="page-break-after:avoid;page-break-before:always;
+"><a name="_Toc25437"></a><b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;
+">E</span></b><b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;
+">xploring and testing APIs.</span></b><b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="532" height="320" src="API HTTP methods.files/API HTTP methods1606.png"><span
+                style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">HTTP Methods</span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p style="margin-left:21.2500pt;text-indent:-21.2500pt;
+"><a name="_Toc2588"></a>
+            <span style="font-family:Calibri;"><span>1.</span></span>
+            <span><a href="#get"><span class="29" style="font-family:Consolas;color:rgb(189,65,71);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+background:rgb(247,247,249);">GET</span></a></span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p style="margin-left:21.2500pt;text-indent:-21.2500pt;
+"><a name="_Toc11211"></a>
+            <span style="font-family:Calibri;"><span>2.</span></span>
+            <span><a href="#post"><span class="29" style="font-family:Consolas;color:rgb(189,65,71);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+background:rgb(247,247,249);">POST</span></a></span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p style="margin-left:21.2500pt;text-indent:-21.2500pt;
+"><a name="_Toc4201"></a>
+            <span style="font-family:Calibri;"><span>3.</span></span>
+            <span><a href="#put"><span class="29" style="font-family:Consolas;color:rgb(189,65,71);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+background:rgb(247,247,249);">PUT</span></a></span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p style="margin-left:21.2500pt;text-indent:-21.2500pt;
+"><a name="_Toc9020"></a>
+            <span style="font-family:Calibri;"><span>4.</span></span>
+            <span><a href="#patch"><span class="29" style="font-family:Consolas;color:rgb(189,65,71);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+background:rgb(247,247,249);">PATCH</span></a></span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p style="margin-left:21.2500pt;text-indent:-21.2500pt;
+"><a name="_Toc4012"></a>
+            <span style="font-family:Calibri;"><span>5.</span></span>
+            <span><a href="#delete"><span class="29" style="font-family:Consolas;color:rgb(189,65,71);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+background:rgb(247,247,249);">DELETE</span></a></span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p style="margin-left:21.2500pt;text-indent:-21.2500pt;
+"><a name="_Toc26322"></a>
+            <span style="font-family:Calibri;"><span>6.</span></span>
+            <span><a href="#head"><span class="29" style="font-family:Consolas;color:rgb(189,65,71);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+background:rgb(247,247,249);">HEAD</span></a></span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p style="margin-left:21.2500pt;text-indent:-21.2500pt;
+"><a name="_Toc10864"></a>
+            <span style="font-family:Calibri;"><span>7.</span></span>
+            <span><a href="#options"><span class="29" style="font-family:Consolas;color:rgb(189,65,71);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+background:rgb(247,247,249);">OPTIONS</span></a></span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc26897"></a><b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;
+">GET</span></b><b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p><span style="font-family:Calibri;color:rgb(255,0,0);">GET </span><span style="font-family:Calibri;">method is
+                used to</span><span style="font-family:Calibri;">&nbsp;</span><u><span style="font-family:Calibri;font-weight:normal;text-decoration:underline;
+">retrieve data from a server at the specified resource.</span></u><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc8876"></a><b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;
+">Testing an API with GET requests</span></b><b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p><span style="font-family:Calibri;color:rgb(255,0,0);">GET </span><span style="font-family:Calibri;">is often
+                the</span><span style="font-family:Calibri;">&nbsp;default method
+                in HTTP clients</span><span style="font-family:Calibri;">. I</span><span
+                style="font-family:Calibri;">t's important to&nbsp;</span><u><span
+                    style="font-family:Calibri;text-decoration:underline;">check every known
+                    endpoint with a GET
+                    request.</span></u><span style="font-family:Calibri;">&nbsp;</span><span
+                style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">At a basic level, these things should be
+                validated:</span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p style="margin-left:21.0000pt;text-indent:-21.0000pt;">
+            <span style="font-family:Wingdings;"><span>&#110;</span></span>
+            <span style="font-family:Calibri;">Check that a valid GET request returns a</span><span
+                style="font-family:Calibri;background:rgb(255,255,0);mso-highlight:rgb(255,255,0);">&nbsp;</span><span
+                style="font-family:Calibri;color:rgb(255,0,0);background:rgb(255,255,0);
+mso-highlight:rgb(255,255,0);">200</span><span style="font-family:Calibri;color:rgb(255,0,0);">&nbsp;</span><span
+                style="font-family:Calibri;">status code.</span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p style="margin-left:21.0000pt;text-indent:-21.0000pt;">
+            <span style="font-family:Wingdings;"><span>&#110;</span></span>
+            <span style="font-family:Calibri;">Ensure that a GET request to a specific resource returns the
+                correct data. For
+                example,&nbsp;</span><span style="font-family:Calibri;color:rgb(255,0,0);background:rgb(255,255,0);
+mso-highlight:rgb(255,255,0);">GET /users</span><span style="font-family:Calibri;">&nbsp;returns a list of
+                users.</span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p><b><span class="31" style="font-family:sans-serif;color:rgb(55,58,60);
+letter-spacing:0.0000pt;font-weight:bold;text-transform:none;
+font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);
+mso-shading:rgb(255,255,255);">
+                    <o:p>&nbsp;</o:p>
+                </span></b></p>
+        <h1><a name="_Toc8086"></a><b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;
+">POST</span></b><b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p><span style="font-family:Calibri;color:rgb(255,0,0);">POST&nbsp;</span><span
+                style="font-family:Calibri;">requests are used to&nbsp;</span><u><span
+                    style="font-family:Calibri;text-decoration:underline;">send data to the API
+                    server&nbsp;to create
+                    or update a resource</span></u><span style="font-family:Calibri;">. The data sent to the server is
+                stored in the&nbsp;</span><span><a
+                    href="https://stackoverflow.com/questions/22034144/what-does-it-mean-http-request-body"><span
+                        style="font-family:Calibri;color:rgb(255,0,0);">request body</span></a></span><span
+                style="font-family:Calibri;">&nbsp;of the HTTP request.</span><span
+                style="font-family:Calibri;">&nbsp;&nbsp;You have to add the</span><span
+                style="font-family:Calibri;color:rgb(255,0,0);">&nbsp;content-type</span><span
+                style="font-family:Calibri;">&nbsp;in header to tell what kind of </span><span
+                style="font-family:Calibri;">the</span><span style="font-family:Calibri;">&nbsp;data/</span><span
+                style="font-family:Calibri;">media type</span><span style="font-family:Calibri;">&nbsp;you are
+                using.</span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">The simplest example is</span><span
+                style="font-family:Calibri;">&nbsp;</span><span><a href="https://assertible.com/contact"><span
+                        style="font-family:Calibri;color:rgb(255,0,0);">a contact form</span></a></span><span
+                style="font-family:Calibri;">&nbsp;on a website. When you fill out the inputs in a form and
+                hit&nbsp;Send, that data is
+                put in the&nbsp;</span><span style="font-family:Calibri;color:rgb(255,0,0);">response body</span><span
+                style="font-family:Calibri;">&nbsp;of the request and sent to the server.</span><span
+                style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">POST&nbsp;</span><span style="font-family:Calibri;">request
+                is&nbsp;non-idempotent.</span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">Note: </span><span style="font-family:Calibri;">Idempotence, in
+                programming and mathematics, is</span><span style="font-family:Calibri;">&nbsp;</span><u><span
+                    style="font-family:Calibri;text-decoration:underline;">a property of some
+                    operations such that no
+                    matter how many times you execute them, you achieve the same result</span></u><span
+                style="font-family:Calibri;">.</span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">Note: </span><u><span
+                    style="font-family:Calibri;text-decoration:underline;">The Content-Type
+                    representation header is
+                    used to indicate the original media type of the resource</span></u><u><span
+                    style="font-family:Calibri;text-decoration:underline;">.</span></u><span
+                style="font-family:Calibri;">&nbsp;</span><span style="font-family:Calibri;">(prior to any content
+                encoding applied for sending). In responses, a Content-Type header
+                provides the client with the actual content type of the returned content.</span><span
+                style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc19739"></a><b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;
+">Testing an API with POST requests</span></b><b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;color:rgb(255,0,0);">POST&nbsp;</span><span
+                style="font-family:Calibri;">requests are used to&nbsp;</span><u><span
+                    style="font-family:Calibri;text-decoration:underline;">send data to the API
+                    server&nbsp;and
+                    create or update a resource.</span></u><span style="font-family:Calibri;">&nbsp;Since POST requests
+                modify data, it's important to&nbsp;</span><u><span
+                    style="font-family:Calibri;text-decoration:underline;">have API tests for all
+                    of your POST
+                    methods.</span></u><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">Here are some tips for testing POST requests:</span><span
+                style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p style="margin-left:21.0000pt;text-indent:-21.0000pt;">
+            <span style="font-family:Wingdings;"><span>&#110;</span></span>
+            <span style="font-family:Calibri;">Create a resource with a&nbsp;</span><span
+                style="font-family:Calibri;color:rgb(255,0,0);">POST&nbsp;</span><span
+                style="font-family:Calibri;">request and ensure a&nbsp;</span><span
+                style="font-family:Calibri;color:rgb(255,0,0);">200&nbsp;</span><span
+                style="font-family:Calibri;">status code is returned.</span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p style="margin-left:21.0000pt;text-indent:-21.0000pt;">
+            <span style="font-family:Wingdings;"><span>&#110;</span></span>
+            <span style="font-family:Calibri;">Next, make a&nbsp;</span><span
+                style="font-family:Calibri;color:rgb(255,0,0);">GET&nbsp;</span><span
+                style="font-family:Calibri;">request for that resource, and ensure the data was saved
+                correctly.</span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p style="margin-left:21.0000pt;text-indent:-21.0000pt;">
+            <span style="font-family:Wingdings;"><span>&#110;</span></span>
+            <span style="font-family:Calibri;">Add tests that ensure&nbsp;</span><span
+                style="font-family:Calibri;color:rgb(255,0,0);">POST&nbsp;</span><span
+                style="font-family:Calibri;">requests&nbsp;</span><u><span
+                    style="font-family:Calibri;text-decoration:underline;">fail&nbsp;</span></u><span
+                style="font-family:Calibri;">with incorrect or ill-formatted data.</span><span
+                style="font-family:Calibri;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;
+">
+                    <o:p>&nbsp;</o:p>
+                </span></b></h1>
+        <h1><b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;
+">
+                    <o:p>&nbsp;</o:p>
+                </span></b></h1>
+        <h1><a name="_Toc13170"></a><b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;
+">PUT</span></b><b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;color:rgb(255,0,0);">PUT&nbsp;</span><span
+                style="font-family:Calibri;">requests are used to send data to the API to&nbsp;</span><u><span
+                    style="font-family:Calibri;text-decoration:underline;">update or create a
+                    resource</span></u><span style="font-family:Calibri;">.</span><span
+                style="font-family:Calibri;">&nbsp;</span><span><a
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PUT"><u><span
+                            style="font-family:Calibri;text-decoration:underline;">PUT requests
+                            are
+                            idempotent</span></u></a></span><u><span
+                    style="font-family:Calibri;text-decoration:underline;">.</span></u><span
+                style="font-family:Calibri;">&nbsp;</span><span style="font-family:Calibri;">That is, calling the same
+                PUT request multiple times</span><span style="font-family:Calibri;">&nbsp;</span><u><span
+                    style="font-family:Calibri;text-decoration:underline;">will always produce the
+                    same
+                    result</span></u><span style="font-family:Calibri;">.&nbsp;</span><span
+                style="font-family:Calibri;">In contrast, calling a POST request repeatedly make have side effects of
+                creating the same
+                resource multiple times.</span><span style="font-family:Calibri;">&nbsp;You have to add the</span><span
+                style="font-family:Calibri;color:rgb(255,0,0);">&nbsp;content-type</span><span
+                style="font-family:Calibri;">&nbsp;in header to tell what kind of </span><span
+                style="font-family:Calibri;">the</span><span style="font-family:Calibri;">&nbsp;data/</span><span
+                style="font-family:Calibri;">media type</span><span style="font-family:Calibri;">&nbsp;you are
+                using.</span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">Generally, when a</span><span
+                style="font-family:Calibri;">&nbsp;</span><span
+                style="font-family:Calibri;color:rgb(255,0,0);">PUT</span><span
+                style="font-family:Calibri;color:rgb(255,0,0);">&nbsp;</span><span
+                style="font-family:Calibri;">request&nbsp;creates&nbsp;a resource the server will respond with
+                a&nbsp;</span><span style="font-family:Calibri;color:rgb(255,0,0);">201&nbsp;(Created)</span><span
+                style="font-family:Calibri;">, and if the request&nbsp;modifies&nbsp;existing resource the server will
+                return
+                a&nbsp;</span><span style="font-family:Calibri;color:rgb(255,0,0);">200&nbsp;(OK)</span><span
+                style="font-family:Calibri;">&nbsp;or&nbsp;</span><span
+                style="font-family:Calibri;color:rgb(255,0,0);">204&nbsp;(No Content)</span><span
+                style="font-family:Calibri;">.</span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc24746"></a><b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;
+">Testing an API with PUT requests</span></b><b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">Check for these things when testing PUT
+                requests:</span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p style="margin-left:21.0000pt;text-indent:-21.0000pt;">
+            <span style="font-family:Wingdings;"><span>&#110;</span></span>
+            <span style="font-family:Calibri;">Repeatedly calling a&nbsp;</span><span
+                style="font-family:Calibri;color:rgb(255,0,0);">PUT&nbsp;</span><span
+                style="font-family:Calibri;">request always returns the same result (</span><span><a
+                    href="#put"><u><span
+                            style="font-family:Calibri;text-decoration:underline;">idempotent</span></u></a></span><span
+                style="font-family:Calibri;">).</span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p style="margin-left:21.0000pt;text-indent:-21.0000pt;">
+            <span style="font-family:Wingdings;"><span>&#110;</span></span>
+            <span style="font-family:Calibri;">The proper status code is returned when creating and updating a
+                resource
+                (eg,&nbsp;</span><span style="font-family:Calibri;color:rgb(255,0,0);">201&nbsp;</span><span
+                style="font-family:Calibri;">or&nbsp;</span><span
+                style="font-family:Calibri;color:rgb(255,0,0);">200</span><span
+                style="font-family:Calibri;">/</span><span
+                style="font-family:Calibri;color:rgb(255,0,0);">204</span><span
+                style="font-family:Calibri;">).</span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p style="margin-left:21.0000pt;text-indent:-21.0000pt;">
+            <span style="font-family:Wingdings;"><span>&#110;</span></span>
+            <span style="font-family:Calibri;">After updating a resource with a&nbsp;</span><span
+                style="font-family:Calibri;color:rgb(255,0,0);">PUT&nbsp;</span><span
+                style="font-family:Calibri;">request, a&nbsp;</span><span
+                style="font-family:Calibri;color:rgb(255,0,0);">GET&nbsp;</span><span
+                style="font-family:Calibri;">request for that resource should return the correct data.</span><span
+                style="font-family:Calibri;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p style="margin-left:21.0000pt;text-indent:-21.0000pt;">
+            <span style="font-family:Wingdings;
+color:rgb(255,0,0);"><span style='mso-list:Ignore;'>&#110;</span></span>
+            <span style="font-family:Calibri;color:rgb(255,0,0);">PUT&nbsp;</span><span
+                style="font-family:Calibri;">requests should fail if invalid data is supplied in the request
+                --&nbsp;</span><u><span style="font-family:Calibri;text-decoration:underline;">nothing should be
+                    updated</span></u><span style="font-family:Calibri;">.</span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <h1><b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;
+">
+                    <o:p>&nbsp;</o:p>
+                </span></b></h1>
+        <h1><b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;
+">
+                    <o:p>&nbsp;</o:p>
+                </span></b></h1>
+        <h1><b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;
+">
+                    <o:p>&nbsp;</o:p>
+                </span></b></h1>
+        <h1><a name="_Toc29053"></a><b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;
+">PATCH</span></b><b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">The difference with</span><span
+                style="font-family:Calibri;">&nbsp;</span><span
+                style="font-family:Calibri;color:rgb(255,0,0);">PATCH</span><span
+                style="font-family:Calibri;color:rgb(255,0,0);">&nbsp;</span><span style="font-family:Calibri;">is that
+                you&nbsp;</span><u><span style="font-family:Calibri;text-decoration:underline;">only apply partial
+                    modifications to the
+                    resource</span></u><span style="font-family:Calibri;">.</span><span
+                style="font-family:Calibri;">&nbsp;</span><span style="font-family:Calibri;">The difference between
+                PATCH and PUT, is that a</span><span style="font-family:Calibri;">&nbsp;</span><span><a
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PATCH"><u><span
+                            style="font-family:Calibri;text-decoration:underline;">PATCH request
+                            is
+                            non-idempotent</span></u></a></span><span style="font-family:Calibri;">&nbsp;(like a POST
+                request).</span><span style="font-family:Calibri;">&nbsp;You have to add the</span><span
+                style="font-family:Calibri;color:rgb(255,0,0);">&nbsp;content-type</span><span
+                style="font-family:Calibri;">&nbsp;in header to tell what kind of </span><span
+                style="font-family:Calibri;">the</span><span style="font-family:Calibri;">&nbsp;data/</span><span
+                style="font-family:Calibri;">media type</span><span style="font-family:Calibri;">&nbsp;you are
+                using.</span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">To expand on partial modification, say you're API has
+                a</span><span style="font-family:Calibri;">&nbsp;</span><span
+                style="font-family:Calibri;color:rgb(255,0,0);">/users/{{userid}}</span><span
+                style="font-family:Calibri;">&nbsp;endpoint, and a user has a&nbsp;username. With a PATCH
+                request,&nbsp;</span><u><span style="font-family:Calibri;text-decoration:underline;">you may only need
+                    to
+                    send the updated
+                    username</span></u><span style="font-family:Calibri;">&nbsp;in the request body - as opposed to POST
+                and PUT which require the full user
+                entity.</span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc2564"></a><b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;
+">Testing an API with PATCH requests</span></b><b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">What to look for when testing PATCH requests:</span><span
+                style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p style="margin-left:21.0000pt;text-indent:-21.0000pt;">
+            <span style="font-family:Wingdings;"><span>&#110;</span></span>
+            <span style="font-family:Calibri;">A successful&nbsp;</span><span
+                style="font-family:Calibri;color:rgb(255,0,0);">PATCH&nbsp;</span><span
+                style="font-family:Calibri;">request should return a&nbsp;</span><span
+                style="font-family:Calibri;color:rgb(255,0,0);">2xx&nbsp;</span><span
+                style="font-family:Calibri;">status code.</span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p style="margin-left:21.0000pt;text-indent:-21.0000pt;">
+            <span style="font-family:Wingdings;
+color:rgb(255,0,0);"><span style='mso-list:Ignore;'>&#110;</span></span>
+            <span style="font-family:Calibri;color:rgb(255,0,0);">PATCH&nbsp;</span><span
+                style="font-family:Calibri;">requests should fail if invalid data is supplied in the request
+                --&nbsp;</span><u><span style="font-family:Calibri;text-decoration:underline;">nothing should be
+                    updated.</span></u><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc25115"></a><b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;
+">DELETE</span></b><b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">The</span><span style="font-family:Calibri;">&nbsp;</span><span
+                style="font-family:Calibri;color:rgb(255,0,0);">DELETE</span><span
+                style="font-family:Calibri;color:rgb(255,0,0);">&nbsp;</span><span style="font-family:Calibri;">method
+                is exactly as it sounds:&nbsp;</span><u><span
+                    style="font-family:Calibri;text-decoration:underline;">delete the resource at
+                    the specified
+                    URL</span></u><span style="font-family:Calibri;">.</span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc11456"></a><b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;
+">Testing an API with DELETE requests</span></b><b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">A&nbsp;typical test case for a DELETE request&nbsp;would
+                look like this:</span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p style="margin-left:21.0000pt;text-indent:-21.0000pt;">
+            <span style="font-family:Wingdings;"><span>&#110;</span></span>
+            <span style="font-family:Calibri;">Create a new user with a&nbsp;</span><span
+                style="font-family:Calibri;color:rgb(255,0,0);">POST</span><span
+                style="font-family:Calibri;color:rgb(255,0,0);">&nbsp;</span><span style="font-family:Calibri;">request
+                to</span><span style="font-family:Calibri;color:rgb(255,0,0);">&nbsp;/users</span><span
+                style="font-family:Calibri;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p style="margin-left:21.0000pt;text-indent:-21.0000pt;">
+            <span style="font-family:Wingdings;"><span>&#110;</span></span>
+            <span style="font-family:Calibri;">With the user id returned from the&nbsp;</span><span
+                style="font-family:Calibri;color:rgb(255,0,0);">POST</span><span style="font-family:Calibri;">, make
+                a&nbsp;</span><span style="font-family:Calibri;color:rgb(255,0,0);">DELETE&nbsp;</span><span
+                style="font-family:Calibri;">request to&nbsp;</span><span
+                style="font-family:Calibri;color:rgb(255,0,0);">/users/{{userid}}</span><span
+                style="font-family:Calibri;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p style="margin-left:21.0000pt;text-indent:-21.0000pt;">
+            <span style="font-family:Wingdings;"><span>&#110;</span></span>
+            <span style="font-family:Calibri;">A subsequent&nbsp;</span><span
+                style="font-family:Calibri;color:rgb(255,0,0);">GET&nbsp;</span><span
+                style="font-family:Calibri;">request to&nbsp;</span><span
+                style="font-family:Calibri;color:rgb(255,0,0);">/users/{{userid}}</span><span
+                style="font-family:Calibri;">&nbsp;should return a </span><span
+                style="font-family:Calibri;color:rgb(255,0,0);">404 </span><span style="font-family:Calibri;">not found
+                status code.</span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc27718"></a><b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;
+">HEAD</span></b><b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">The</span><span style="font-family:Calibri;">&nbsp;</span><span
+                style="font-family:Calibri;color:rgb(255,0,0);">HEAD</span><span
+                style="font-family:Calibri;color:rgb(255,0,0);">&nbsp;</span><span style="font-family:Calibri;">method
+                is almost identical to&nbsp;</span><span style="font-family:Calibri;color:rgb(255,0,0);">GET</span><span
+                style="font-family:Calibri;">,&nbsp;</span><u><span
+                    style="font-family:Calibri;text-decoration:underline;">except without the
+                    response
+                    body</span></u><span style="font-family:Calibri;">.</span><span
+                style="font-family:Calibri;">&nbsp;</span><span style="font-family:Calibri;">In other words,
+                if</span><span style="font-family:Calibri;">&nbsp;</span><span
+                style="font-family:Calibri;color:rgb(255,0,0);">GET /users</span><span
+                style="font-family:Calibri;">&nbsp;returns a list of users, then&nbsp;</span><span
+                style="font-family:Calibri;color:rgb(255,0,0);">HEAD /users</span><span
+                style="font-family:Calibri;">&nbsp;will make the same request but won't get back the list of
+                users.</span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">HEAD requests are</span><span
+                style="font-family:Calibri;">&nbsp;</span><u><span
+                    style="font-family:Calibri;text-decoration:underline;">useful for checking
+                    what a GET request
+                    will return</span></u><span style="font-family:Calibri;">&nbsp;before actually making a GET request
+                -- like before downloading a large file or
+                response body.</span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc18112"></a><b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;
+">Testing an API with HEAD requests</span></b><b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">Making API requests with&nbsp;</span><span
+                style="font-family:Calibri;color:rgb(255,0,0);">HEAD&nbsp;</span><span
+                style="font-family:Calibri;">methods is actually an effective way of simply&nbsp;</span><u><span
+                    style="font-family:Calibri;text-decoration:underline;">verifying that a
+                    resource is
+                    available</span></u><span style="font-family:Calibri;">. It is good practice to have a test for HEAD
+                requests everywhere you have a test for GET
+                requests (as long as the API supports it).</span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">Check these things when testing an API with HEAD
+                requests:</span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p style="margin-left:21.0000pt;text-indent:-21.0000pt;">
+            <span style="font-family:Wingdings;"><span>&#110;</span></span>
+            <span style="font-family:Calibri;">Verify and check&nbsp;</span><span><a
+                    href="https://en.wikipedia.org/wiki/List_of_HTTP_header_fields"><u><span
+                            style="font-family:Calibri;text-decoration:underline;">HTTP
+                            headers</span></u></a></span><span style="font-family:Calibri;">&nbsp;returned from a HEAD
+                request</span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p style="margin-left:21.0000pt;text-indent:-21.0000pt;">
+            <span style="font-family:Wingdings;"><span>&#110;</span></span>
+            <span style="font-family:Calibri;">Make assertions against the status code of HEAD
+                requests</span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p style="margin-left:21.0000pt;text-indent:-21.0000pt;">
+            <span style="font-family:Wingdings;"><span>&#110;</span></span>
+            <span style="font-family:Calibri;">Test requests with various query parameter</span><span
+                style="font-family:Calibri;">s</span><span style="font-family:Calibri;">&nbsp;to ensure the API
+                responds</span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p><span style="font-family:Calibri;">Another useful case for&nbsp;</span><span
+                style="font-family:Calibri;color:rgb(255,0,0);">HEAD&nbsp;</span><span
+                style="font-family:Calibri;">requests is&nbsp;</span><span><a
+                    href="https://blog.codeship.com/add-post-deploy-smoke-tests-to-any-codeship-pipeline/"><u><span
+                            style="font-family:Calibri;text-decoration:underline;">API smoke
+                            testing</span></u></a></span><span style="font-family:Calibri;">&nbsp;-&nbsp;</span><u><span
+                    style="font-family:Calibri;text-decoration:underline;">make a HEAD request
+                    against every API
+                    endpoint</span></u><span style="font-family:Calibri;">&nbsp;to ensure they're available.</span><span
+                style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc17890"></a><b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;
+">OPTIONS</span></b><b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;color:rgb(255,0,0);">OPTIONS </span><span
+                style="font-family:Calibri;">request should</span><span
+                style="font-family:Calibri;">&nbsp;</span><u><span
+                    style="font-family:Calibri;text-decoration:underline;">return data describing
+                    what&nbsp;other&nbsp;methods and operations the server supports&nbsp;at the given
+                    URL</span></u><u><span style="font-family:Calibri;text-decoration:underline;">,</span></u><span
+                style="font-family:Calibri;">&nbsp;</span><span style="font-family:Calibri;">making them a good
+                candidate to</span><span style="font-family:Calibri;">&nbsp;</span><u><span
+                    style="font-family:Calibri;text-decoration:underline;">test for fatal API
+                    errors.</span></u><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc20412"></a><b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;
+">Testing an API with OPTIONS requests</span></b><b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">Testing an&nbsp;</span><span
+                style="font-family:Calibri;color:rgb(255,0,0);">OPTIONS&nbsp;</span><span
+                style="font-family:Calibri;">request is dependent on the web service; whether or not it supports that
+                and what is
+                supposed to return will&nbsp;</span><u><span
+                    style="font-family:Calibri;text-decoration:underline;">define how you should
+                    test
+                    it</span></u><span style="font-family:Calibri;">.</span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">How to validate an endpoint using OPTIONS:</span><span
+                style="font-family:Calibri;">
+                <o:p></o:p>
+            </span></p>
+        <p style="margin-left:21.0000pt;text-indent:-21.0000pt;">
+            <span style="font-family:Wingdings;"><span>&#110;</span></span>
+            <span style="font-family:Calibri;">Primarily, check the response headers and status code of the
+                request</span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p style="margin-left:21.0000pt;text-indent:-21.0000pt;">
+            <span style="font-family:Wingdings;"><span>&#110;</span></span>
+            <span style="font-family:Calibri;">Test endpoints that don't support OPTIONS, and ensure they fail
+                appropriately</span><span style="font-family:Calibri;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span style="font-family:Calibri;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <div w3-include-html="footer.htm"></div>
+    <script>includeHTML();</script>
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
