@@ -192,7 +192,7 @@
                 style="background:rgb(30,30,30);color:rgb(255,255,255); ">12</span><span>
                 <o:p></o:p>
             </span></p>
-        <p style="background:rgb(30,30,30);"><span style="font-family:Consolas;color:rgb(212,212,212);
+        <p style="background:rgb(30,30,30);"><span style="color:rgb(212,212,212);
 font-weight:normal;font-size:7.0000pt;color:rgb(255,255,255);">
                 <o:p>&nbsp;</o:p>
             </span></p>
@@ -259,140 +259,140 @@ font-weight:normal;font-size:7.0000pt;color:rgb(255,255,255);">
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,128,0);">
                 <font face="Cascadia Mono"># Build Stage</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,128,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,128,0);">
                 <font face="Cascadia Mono">FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,128,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,128,0);">
                 <font face="Cascadia Mono">WORKDIR /source</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,128,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,128,0);">
                 <font face="Cascadia Mono">COPY . .</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,128,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,128,0);">
                 <font face="Cascadia Mono">RUN dotnet restore "101DockerWeb.csproj" --disable-parallel</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,128,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,128,0);">
                 <font face="Cascadia Mono">RUN dotnet publish "101DockerWeb.csproj" -c Release -o /app --no-restore
                 </font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,128,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,128,0);">
                 <o:p>&nbsp;</o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,128,0);">
                 <font face="Cascadia Mono"># Server Stage</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,128,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,128,0);">
                 <font face="Cascadia Mono">FROM mcr.microsoft.com/dotnet/aspnet:6.0</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,128,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,128,0);">
                 <font face="Cascadia Mono">WORKDIR /app</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,128,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,128,0);">
                 <font face="Cascadia Mono">COPY --from=build /app ./</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,128,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,128,0);">
                 <o:p>&nbsp;</o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,128,0);">
                 <font face="Cascadia Mono">EXPOSE </font>
-            </span><span style="font-family:'Cascadia Mono';
-color:rgb(0,128,0);">8080</span><span style="font-family:'Cascadia Mono';
+            </span><span style="
+color:rgb(0,128,0);">8080</span><span style="
 color:rgb(0,128,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,128,0);">
                 <o:p>&nbsp;</o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;
 border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;
-text-align:left;"><span style="font-family:'Cascadia Mono';
+text-align:left;"><span style="
 color:rgb(0,128,0);">
                 <font face="Cascadia Mono">ENTRYPOINT ["dotnet", "101DockerWeb.dll"]</font>
             </span><span>
@@ -410,191 +410,191 @@ color:rgb(0,128,0);">
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,255);">
                 <font face="Cascadia Mono">FROM</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">&nbsp;<font face="Cascadia Mono">mcr.microsoft.com/dotnet/aspnet:6.0 AS base
-                </font></span><span style="font-family:'Cascadia Mono';
+                </font></span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">WORKDIR /app</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">EXPOSE 80</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <o:p>&nbsp;</o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">WORKDIR /src</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">COPY . . </font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">RUN dotnet restore &nbsp;</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(163,21,21);">
                 <font face="Cascadia Mono">"101DockerWeb.csproj"</font>
-            </span><span style="font-family:'Cascadia Mono';
-color:rgb(0,0,0);">&nbsp;</span><span style="font-family:'Cascadia Mono';
+            </span><span style="
+color:rgb(0,0,0);">&nbsp;</span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <o:p>&nbsp;</o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">RUN dotnet build </font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(163,21,21);">
                 <font face="Cascadia Mono">"101DockerWeb.csproj"</font>
-            </span><span style="font-family:'Cascadia Mono';
-color:rgb(0,0,0);">&nbsp;<font face="Cascadia Mono">-c Release -o /app/build</font></span><span style="font-family:'Cascadia Mono';
+            </span><span style="
+color:rgb(0,0,0);">&nbsp;<font face="Cascadia Mono">-c Release -o /app/build</font></span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <o:p>&nbsp;</o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">FROM build AS publish</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">RUN dotnet publish </font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(163,21,21);">
                 <font face="Cascadia Mono">"101DockerWeb.csproj"</font>
-            </span><span style="font-family:'Cascadia Mono';
-color:rgb(0,0,0);">&nbsp;<font face="Cascadia Mono">-c Release -o /app/publish</font></span><span style="font-family:'Cascadia Mono';
+            </span><span style="
+color:rgb(0,0,0);">&nbsp;<font face="Cascadia Mono">-c Release -o /app/publish</font></span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <o:p>&nbsp;</o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">FROM base AS final</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">WORKDIR /app</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">COPY --from=publish /app/publish .</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;
 border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;
-text-align:left;"><span style="font-family:'Cascadia Mono';
+text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">ENTRYPOINT [</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(163,21,21);">
                 <font face="Cascadia Mono">"dotnet"</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">, </font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(163,21,21);">
                 <font face="Cascadia Mono">"101DockerWeb.dll"</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">]</font>
             </span><span>
@@ -609,89 +609,89 @@ color:rgb(0,0,0);">
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,255);">
                 <font face="Cascadia Mono">FROM</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">&nbsp;<font face="Cascadia Mono">mcr.microsoft.com/dotnet/aspnet:6.0 AS base
-                </font></span><span style="font-family:'Cascadia Mono';
+                </font></span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">WORKDIR /app</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">EXPOSE 80</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <o:p>&nbsp;</o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">WORKDIR /src</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">COPY </font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);background:rgb(255,255,0);
 ">
                 <font face="Cascadia Mono">[</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(163,21,21);background:rgb(255,255,0);
 ">
                 <font face="Cascadia Mono">"102DockerWeb.csproj"</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);background:rgb(255,255,0);
 ">
                 <font face="Cascadia Mono">, </font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(163,21,21);background:rgb(255,255,0);
 ">
                 <font face="Cascadia Mono">"."</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);background:rgb(255,255,0);
 ">
                 <font face="Cascadia Mono">]</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);background:rgb(255,255,0);
 ">
                 <o:p></o:p>
@@ -699,31 +699,31 @@ color:rgb(0,0,0);background:rgb(255,255,0);
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">RUN dotnet restore </font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(163,21,21);">
                 <font face="Cascadia Mono">"</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(163,21,21);background:rgb(255,255,0);
 ">
                 <font face="Cascadia Mono">./</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(163,21,21);">
                 <font face="Cascadia Mono">102DockerWeb.csproj"</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);background:rgb(255,255,0);
 ">
                 <font face="Cascadia Mono">COPY . .</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);background:rgb(255,255,0);
 ">
                 <o:p></o:p>
@@ -731,15 +731,15 @@ color:rgb(0,0,0);background:rgb(255,255,0);
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);background:rgb(255,255,0);
 ">
                 <font face="Cascadia Mono">WORKDIR </font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(163,21,21);background:rgb(255,255,0);
 ">
                 <font face="Cascadia Mono">"/src/."</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);background:rgb(255,255,0);
 ">
                 <o:p></o:p>
@@ -747,101 +747,101 @@ color:rgb(0,0,0);background:rgb(255,255,0);
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">RUN dotnet build </font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(163,21,21);">
                 <font face="Cascadia Mono">"102DockerWeb.csproj"</font>
-            </span><span style="font-family:'Cascadia Mono';
-color:rgb(0,0,0);">&nbsp;<font face="Cascadia Mono">-c Release -o /app/build</font></span><span style="font-family:'Cascadia Mono';
+            </span><span style="
+color:rgb(0,0,0);">&nbsp;<font face="Cascadia Mono">-c Release -o /app/build</font></span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <o:p>&nbsp;</o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">FROM build AS publish</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">RUN dotnet publish </font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(163,21,21);">
                 <font face="Cascadia Mono">"102DockerWeb.csproj"</font>
-            </span><span style="font-family:'Cascadia Mono';
-color:rgb(0,0,0);">&nbsp;<font face="Cascadia Mono">-c Release -o /app/publish</font></span><span style="font-family:'Cascadia Mono';
+            </span><span style="
+color:rgb(0,0,0);">&nbsp;<font face="Cascadia Mono">-c Release -o /app/publish</font></span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <o:p>&nbsp;</o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">FROM base AS final</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">WORKDIR /app</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">COPY --from=publish /app/publish .</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;
 border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;
-text-align:left;"><span style="font-family:'Cascadia Mono';
+text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">ENTRYPOINT [</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(163,21,21);">
                 <font face="Cascadia Mono">"dotnet"</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">, </font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(163,21,21);">
                 <font face="Cascadia Mono">"102DockerWeb.dll"</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">]</font>
             </span><span>
@@ -856,240 +856,240 @@ color:rgb(0,0,0);">
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,255);">
                 <font face="Cascadia Mono">FROM</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">&nbsp;<font face="Cascadia Mono">mcr.microsoft.com/dotnet/aspnet:6.0 AS base
-                </font></span><span style="font-family:'Cascadia Mono';
+                </font></span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">WORKDIR /app</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">EXPOSE 80</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <o:p>&nbsp;</o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">WORKDIR /src</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">COPY [</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(163,21,21);background:rgb(255,255,0);">
                 <font face="Cascadia Mono">"103DockerWeb/</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(163,21,21);">
                 <font face="Cascadia Mono">103DockerWeb.csproj"</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">, </font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(163,21,21);">
                 <font face="Cascadia Mono">"</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(163,21,21);background:rgb(255,255,0);
 ">
                 <font face="Cascadia Mono">103DockerWeb/</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(163,21,21);">
                 <font face="Cascadia Mono">"</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">]</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">RUN dotnet restore </font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(163,21,21);">
                 <font face="Cascadia Mono">"</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(163,21,21);background:rgb(255,255,0);">
                 <font face="Cascadia Mono">103DockerWeb/</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(163,21,21);">
                 <font face="Cascadia Mono">103DockerWeb.csproj"</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">COPY . .</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">WORKDIR </font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(163,21,21);">
                 <font face="Cascadia Mono">"/src/</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(163,21,21);background:rgb(255,255,0);">
                 <font face="Cascadia Mono">103DockerWeb</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(163,21,21);">
                 <font face="Cascadia Mono">"</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">RUN dotnet build </font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(163,21,21);">
                 <font face="Cascadia Mono">"103DockerWeb.csproj"</font>
-            </span><span style="font-family:'Cascadia Mono';
-color:rgb(0,0,0);">&nbsp;<font face="Cascadia Mono">-c Release -o /app/build</font></span><span style="font-family:'Cascadia Mono';
+            </span><span style="
+color:rgb(0,0,0);">&nbsp;<font face="Cascadia Mono">-c Release -o /app/build</font></span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <o:p>&nbsp;</o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">FROM build AS publish</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">RUN dotnet publish </font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(163,21,21);">
                 <font face="Cascadia Mono">"103DockerWeb.csproj"</font>
-            </span><span style="font-family:'Cascadia Mono';
-color:rgb(0,0,0);">&nbsp;<font face="Cascadia Mono">-c Release -o /app/publish</font></span><span style="font-family:'Cascadia Mono';
+            </span><span style="
+color:rgb(0,0,0);">&nbsp;<font face="Cascadia Mono">-c Release -o /app/publish</font></span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <o:p>&nbsp;</o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">FROM base AS final</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">WORKDIR /app</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
-padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:'Cascadia Mono';
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">COPY --from=publish /app/publish .</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
         <p style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;
 border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;
-text-align:left;"><span style="font-family:'Cascadia Mono';
+text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">ENTRYPOINT [</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(163,21,21);">
                 <font face="Cascadia Mono">"dotnet"</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">, </font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(163,21,21);">
                 <font face="Cascadia Mono">"103DockerWeb.dll"</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">]</font>
             </span><span>
@@ -1119,14 +1119,14 @@ margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
 padding:0pt 0pt 0pt 0pt ;
-background:rgb(245,248,250);"><span class="26" style="font-family:Consolas;color:rgb(12,81,118);
-letter-spacing:0.0000pt;text-transform:none;background:rgb(245,248,250);">$ </span><span class="26" style="font-family:Consolas;color:rgb(12,81,118);
+background:rgb(245,248,250);"><span class="26" style="color:rgb(12,81,118);
+letter-spacing:0.0000pt;text-transform:none;background:rgb(245,248,250);">$ </span><span class="26" style="color:rgb(12,81,118);
 letter-spacing:0.0000pt;text-transform:none;background:rgb(245,248,250);">docker build
-            </span><span style="font-family:Consolas;color:rgb(12,81,118);
+            </span><span style="color:rgb(12,81,118);
 letter-spacing:0.0000pt;text-transform:none;background:rgb(245,248,250);
-">[</span><span class="26" style="font-family:Consolas;color:rgb(12,81,118);
+">[</span><span class="26" style="color:rgb(12,81,118);
 letter-spacing:0.0000pt;text-transform:none;background:rgb(245,248,250);">OPTIONS] PATH |
-                URL | -</span><span style="font-family:Consolas;color:rgb(12,81,118);
+                URL | -</span><span style="color:rgb(12,81,118);
 letter-spacing:0.0000pt;text-transform:none;">
                 <o:p></o:p>
             </span></p>
@@ -1158,7 +1158,7 @@ letter-spacing:0.0000pt;text-transform:none;">
         <p class=MsoNormal><span>Option</span><span>
                 <o:p></o:p>
             </span></p>
-        <p class=MsoNormal><span style="font-family:Arial;
+        <p class=MsoNormal><span style="
 color:rgb(15,22,30);letter-spacing:0.0000pt;text-transform:none;background:rgb(255,255,255);">
                 <o:p>&nbsp;</o:p>
             </span></p>
@@ -1167,16 +1167,16 @@ border:none;">
             <tr>
                 <td valign=center style="padding:5.0000pt 5.0000pt 5.0000pt 5.0000pt ;border-left:none;border-right:none;
 border-top:none;border-bottom:none;background:rgb(255,255,255);">
-                    <p style="text-align:left;"><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
-text-transform:none;">Name, shorthand</span><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
+                    <p style="text-align:left;"><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
+text-transform:none;">Name, shorthand</span><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
 text-transform:none;">
                             <o:p></o:p>
                         </span></p>
                 </td>
                 <td valign=center style="padding:5.0000pt 5.0000pt 5.0000pt 5.0000pt ;border-left:none;border-right:none;
 border-top:none;border-bottom:none;background:rgb(255,255,255);">
-                    <p style="text-align:left;"><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
-text-transform:none;">Default</span><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
+                    <p style="text-align:left;"><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
+text-transform:none;">Default</span><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
 text-transform:none;">
                             <o:p></o:p>
                         </span></p>
@@ -1184,8 +1184,8 @@ text-transform:none;">
                 <td width=527 valign=center style="width:316.6500pt;padding:5.0000pt 5.0000pt 5.0000pt 5.0000pt ;border-left:none;
 border-right:none;border-top:none;border-bottom:none;
 background:rgb(255,255,255);">
-                    <p style="text-align:left;"><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
-text-transform:none;">Description</span><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
+                    <p style="text-align:left;"><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
+text-transform:none;">Description</span><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
 text-transform:none;">
                             <o:p></o:p>
                         </span></p>
@@ -1194,17 +1194,17 @@ text-transform:none;">
             <tr>
                 <td valign=center style="padding:5.0000pt 5.0000pt 5.0000pt 5.0000pt ;border-left:none;border-right:none;
 border-top:none;border-bottom:none;background:rgb(255,255,255);">
-                    <p style="text-align:left;"><span class="26" style="font-family:Consolas;color:rgb(12,81,118);letter-spacing:0.0000pt;
-text-transform:none;background:rgb(245,248,250);">--tag</span><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
-text-transform:none;">&nbsp;,&nbsp;</span><span class="26" style="font-family:Consolas;color:rgb(12,81,118);letter-spacing:0.0000pt;
-text-transform:none;background:rgb(245,248,250);">-t</span><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
+                    <p style="text-align:left;"><span class="26" style="color:rgb(12,81,118);letter-spacing:0.0000pt;
+text-transform:none;background:rgb(245,248,250);">--tag</span><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
+text-transform:none;">&nbsp;,&nbsp;</span><span class="26" style="color:rgb(12,81,118);letter-spacing:0.0000pt;
+text-transform:none;background:rgb(245,248,250);">-t</span><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
 text-transform:none;">
                             <o:p></o:p>
                         </span></p>
                 </td>
                 <td valign=center style="padding:5.0000pt 5.0000pt 5.0000pt 5.0000pt ;border-left:none;border-right:none;
 border-top:none;border-bottom:none;background:rgb(255,255,255);">
-                    <p style="text-align:left;"><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
+                    <p style="text-align:left;"><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
 text-transform:none;">
                             <o:p>&nbsp;</o:p>
                         </span></p>
@@ -1212,15 +1212,15 @@ text-transform:none;">
                 <td width=527 valign=center style="width:316.6500pt;padding:5.0000pt 5.0000pt 5.0000pt 5.0000pt ;border-left:none;
 border-right:none;border-top:none;border-bottom:none;
 background:rgb(255,255,255);">
-                    <p style="text-align:left;"><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
-text-transform:none;">Name and optionally a tag in the 'name:tag' format</span><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
+                    <p style="text-align:left;"><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
+text-transform:none;">Name and optionally a tag in the 'name:tag' format</span><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
 text-transform:none;">
                             <o:p></o:p>
                         </span></p>
                 </td>
             </tr>
         </table>
-        <p class=MsoNormal><span style="font-family:Arial;
+        <p class=MsoNormal><span style="
 color:rgb(15,22,30);letter-spacing:0.0000pt;text-transform:none;background:rgb(255,255,255);">
                 <o:p>&nbsp;</o:p>
             </span></p>
@@ -1251,20 +1251,20 @@ margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;
 border-right:1.0000pt solid windowtext;
 border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
 padding:0pt 0pt 0pt 0pt ;
-background:rgb(245,248,250);"><span class="26" style="font-family:Consolas;color:rgb(12,81,118);
+background:rgb(245,248,250);"><span class="26" style="color:rgb(12,81,118);
 letter-spacing:0.0000pt;text-transform:none;background:rgb(245,248,250);">&nbsp;docker run
-            </span><span style="font-family:Consolas;color:rgb(12,81,118);
+            </span><span style="color:rgb(12,81,118);
 letter-spacing:0.0000pt;text-transform:none;background:rgb(245,248,250);
-">[</span><span class="26" style="font-family:Consolas;color:rgb(12,81,118);
+">[</span><span class="26" style="color:rgb(12,81,118);
 letter-spacing:0.0000pt;text-transform:none;background:rgb(245,248,250);">OPTIONS] IMAGE
-            </span><span style="font-family:Consolas;color:rgb(12,81,118);
+            </span><span style="color:rgb(12,81,118);
 letter-spacing:0.0000pt;text-transform:none;background:rgb(245,248,250);
-">[</span><span class="26" style="font-family:Consolas;color:rgb(12,81,118);
+">[</span><span class="26" style="color:rgb(12,81,118);
 letter-spacing:0.0000pt;text-transform:none;background:rgb(245,248,250);">COMMAND]
-            </span><span style="font-family:Consolas;color:rgb(12,81,118);
+            </span><span style="color:rgb(12,81,118);
 letter-spacing:0.0000pt;text-transform:none;background:rgb(245,248,250);
-">[</span><span class="26" style="font-family:Consolas;color:rgb(12,81,118);
-letter-spacing:0.0000pt;text-transform:none;background:rgb(245,248,250);">ARG...]</span><span style="font-family:SimSun;font-size:12.0000pt;
+">[</span><span class="26" style="color:rgb(12,81,118);
+letter-spacing:0.0000pt;text-transform:none;background:rgb(245,248,250);">ARG...]</span><span style="font-size:12.0000pt;
 ">
                 <o:p></o:p>
             </span></p>
@@ -1300,7 +1300,7 @@ letter-spacing:0.0000pt;text-transform:none;background:rgb(245,248,250);">ARG...
         <p class=MsoNormal><span>Option</span><span>
                 <o:p></o:p>
             </span></p>
-        <p class=MsoNormal><span style="font-family:Arial;
+        <p class=MsoNormal><span style="
 color:rgb(15,22,30);letter-spacing:0.0000pt;text-transform:none;background:rgb(255,255,255);">
                 <o:p>&nbsp;</o:p>
             </span></p>
@@ -1309,16 +1309,16 @@ border:none;">
             <tr>
                 <td valign=center style="padding:5.0000pt 5.0000pt 5.0000pt 5.0000pt ;border-left:none;border-right:none;
 border-top:none;border-bottom:none;background:rgb(255,255,255);">
-                    <p style="text-align:left;"><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
-text-transform:none;">Name, shorthand</span><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
+                    <p style="text-align:left;"><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
+text-transform:none;">Name, shorthand</span><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
 text-transform:none;">
                             <o:p></o:p>
                         </span></p>
                 </td>
                 <td valign=center style="padding:5.0000pt 5.0000pt 5.0000pt 5.0000pt ;border-left:none;border-right:none;
 border-top:none;border-bottom:none;background:rgb(255,255,255);">
-                    <p style="text-align:left;"><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
-text-transform:none;">Default</span><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
+                    <p style="text-align:left;"><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
+text-transform:none;">Default</span><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
 text-transform:none;">
                             <o:p></o:p>
                         </span></p>
@@ -1326,8 +1326,8 @@ text-transform:none;">
                 <td width=527 valign=center style="width:316.6500pt;padding:5.0000pt 5.0000pt 5.0000pt 5.0000pt ;border-left:none;
 border-right:none;border-top:none;border-bottom:none;
 background:rgb(255,255,255);">
-                    <p style="text-align:left;"><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
-text-transform:none;">Description</span><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
+                    <p style="text-align:left;"><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
+text-transform:none;">Description</span><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
 text-transform:none;">
                             <o:p></o:p>
                         </span></p>
@@ -1336,18 +1336,18 @@ text-transform:none;">
             <tr>
                 <td valign=center style="padding:5.0000pt 5.0000pt 5.0000pt 5.0000pt ;border-left:none;border-right:none;
 border-top:none;border-bottom:none;background:rgb(255,255,255);">
-                    <p style="text-align:left;"><span class="26" style="font-family:Consolas;color:rgb(12,81,118);letter-spacing:0.0000pt;
-text-transform:none;background:rgb(245,248,250);">--publish</span><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
-text-transform:none;background:rgb(247,247,247);">&nbsp;</span><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
-text-transform:none;background:rgb(247,247,247);">,&nbsp;</span><span class="26" style="font-family:Consolas;color:rgb(12,81,118);letter-spacing:0.0000pt;
-text-transform:none;background:rgb(245,248,250);">-p</span><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
+                    <p style="text-align:left;"><span class="26" style="color:rgb(12,81,118);letter-spacing:0.0000pt;
+text-transform:none;background:rgb(245,248,250);">--publish</span><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
+text-transform:none;background:rgb(247,247,247);">&nbsp;</span><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
+text-transform:none;background:rgb(247,247,247);">,&nbsp;</span><span class="26" style="color:rgb(12,81,118);letter-spacing:0.0000pt;
+text-transform:none;background:rgb(245,248,250);">-p</span><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
 text-transform:none;">
                             <o:p></o:p>
                         </span></p>
                 </td>
                 <td valign=center style="padding:5.0000pt 5.0000pt 5.0000pt 5.0000pt ;border-left:none;border-right:none;
 border-top:none;border-bottom:none;background:rgb(255,255,255);">
-                    <p style="text-align:left;"><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
+                    <p style="text-align:left;"><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
 text-transform:none;">
                             <o:p>&nbsp;</o:p>
                         </span></p>
@@ -1355,8 +1355,8 @@ text-transform:none;">
                 <td width=527 valign=center style="width:316.6500pt;padding:5.0000pt 5.0000pt 5.0000pt 5.0000pt ;border-left:none;
 border-right:none;border-top:none;border-bottom:none;
 background:rgb(255,255,255);">
-                    <p style="text-align:left;"><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
-text-transform:none;">Publish a container's port(s) to the host</span><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
+                    <p style="text-align:left;"><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
+text-transform:none;">Publish a container's port(s) to the host</span><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
 text-transform:none;">
                             <o:p></o:p>
                         </span></p>
@@ -1365,15 +1365,15 @@ text-transform:none;">
             <tr>
                 <td valign=center style="padding:5.0000pt 5.0000pt 5.0000pt 5.0000pt ;border-left:none;border-right:none;
 border-top:none;border-bottom:none;background:rgb(255,255,255);">
-                    <p style="text-align:left;"><span class="26" style="font-family:Consolas;color:rgb(12,81,118);letter-spacing:0.0000pt;
-text-transform:none;background:rgb(245,248,250);">--name</span><span class="26" style="font-family:Consolas;color:rgb(12,81,118);letter-spacing:0.0000pt;
+                    <p style="text-align:left;"><span class="26" style="color:rgb(12,81,118);letter-spacing:0.0000pt;
+text-transform:none;background:rgb(245,248,250);">--name</span><span class="26" style="color:rgb(12,81,118);letter-spacing:0.0000pt;
 text-transform:none;background:rgb(245,248,250);">
                             <o:p></o:p>
                         </span></p>
                 </td>
                 <td valign=center style="padding:5.0000pt 5.0000pt 5.0000pt 5.0000pt ;border-left:none;border-right:none;
 border-top:none;border-bottom:none;background:rgb(255,255,255);">
-                    <p style="text-align:left;"><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
+                    <p style="text-align:left;"><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
 text-transform:none;">
                             <o:p>&nbsp;</o:p>
                         </span></p>
@@ -1381,8 +1381,8 @@ text-transform:none;">
                 <td width=527 valign=center style="width:316.6500pt;padding:5.0000pt 5.0000pt 5.0000pt 5.0000pt ;border-left:none;
 border-right:none;border-top:none;border-bottom:none;
 background:rgb(255,255,255);">
-                    <p style="text-align:left;"><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
-text-transform:none;">Assign a name to the container</span><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
+                    <p style="text-align:left;"><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
+text-transform:none;">Assign a name to the container</span><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
 text-transform:none;">
                             <o:p></o:p>
                         </span></p>
@@ -1391,17 +1391,17 @@ text-transform:none;">
             <tr>
                 <td valign=center style="padding:5.0000pt 5.0000pt 5.0000pt 5.0000pt ;border-left:none;border-right:none;
 border-top:none;border-bottom:none;background:rgb(255,255,255);">
-                    <p style="text-align:left;"><span class="26" style="font-family:Consolas;color:rgb(12,81,118);letter-spacing:0.0000pt;
-text-transform:none;background:rgb(245,248,250);">--detach</span><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
-text-transform:none;">&nbsp;,&nbsp;</span><span class="26" style="font-family:Consolas;color:rgb(12,81,118);letter-spacing:0.0000pt;
-text-transform:none;background:rgb(245,248,250);">-d</span><span class="26" style="font-family:Consolas;color:rgb(12,81,118);letter-spacing:0.0000pt;
+                    <p style="text-align:left;"><span class="26" style="color:rgb(12,81,118);letter-spacing:0.0000pt;
+text-transform:none;background:rgb(245,248,250);">--detach</span><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
+text-transform:none;">&nbsp;,&nbsp;</span><span class="26" style="color:rgb(12,81,118);letter-spacing:0.0000pt;
+text-transform:none;background:rgb(245,248,250);">-d</span><span class="26" style="color:rgb(12,81,118);letter-spacing:0.0000pt;
 text-transform:none;background:rgb(245,248,250);">
                             <o:p></o:p>
                         </span></p>
                 </td>
                 <td valign=center style="padding:5.0000pt 5.0000pt 5.0000pt 5.0000pt ;border-left:none;border-right:none;
 border-top:none;border-bottom:none;background:rgb(255,255,255);">
-                    <p style="text-align:left;"><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
+                    <p style="text-align:left;"><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
 text-transform:none;">
                             <o:p>&nbsp;</o:p>
                         </span></p>
@@ -1409,8 +1409,8 @@ text-transform:none;">
                 <td width=527 valign=center style="width:316.6500pt;padding:5.0000pt 5.0000pt 5.0000pt 5.0000pt ;border-left:none;
 border-right:none;border-top:none;border-bottom:none;
 background:rgb(255,255,255);">
-                    <p style="text-align:left;"><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
-text-transform:none;">Run container in background and print container ID</span><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
+                    <p style="text-align:left;"><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
+text-transform:none;">Run container in background and print container ID</span><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
 text-transform:none;">
                             <o:p></o:p>
                         </span></p>
@@ -1419,15 +1419,15 @@ text-transform:none;">
             <tr>
                 <td valign=center style="padding:5.0000pt 5.0000pt 5.0000pt 5.0000pt ;border-left:none;border-right:none;
 border-top:none;border-bottom:none;background:rgb(255,255,255);">
-                    <p style="text-align:left;"><span class="26" style="font-family:Consolas;color:rgb(12,81,118);letter-spacing:0.0000pt;
-text-transform:none;background:rgb(245,248,250);">-it</span><span class="26" style="font-family:Consolas;color:rgb(12,81,118);letter-spacing:0.0000pt;
+                    <p style="text-align:left;"><span class="26" style="color:rgb(12,81,118);letter-spacing:0.0000pt;
+text-transform:none;background:rgb(245,248,250);">-it</span><span class="26" style="color:rgb(12,81,118);letter-spacing:0.0000pt;
 text-transform:none;background:rgb(245,248,250);">
                             <o:p></o:p>
                         </span></p>
                 </td>
                 <td valign=center style="padding:5.0000pt 5.0000pt 5.0000pt 5.0000pt ;border-left:none;border-right:none;
 border-top:none;border-bottom:none;background:rgb(255,255,255);">
-                    <p style="text-align:left;"><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
+                    <p style="text-align:left;"><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
 text-transform:none;">
                             <o:p>&nbsp;</o:p>
                         </span></p>
@@ -1435,12 +1435,12 @@ text-transform:none;">
                 <td width=527 valign=center style="width:316.6500pt;padding:5.0000pt 5.0000pt 5.0000pt 5.0000pt ;border-left:none;
 border-right:none;border-top:none;border-bottom:none;
 background:rgb(255,255,255);">
-                    <p style="text-align:left;"><span style="font-family:'Open Sans';color:rgb(32,33,36);
+                    <p style="text-align:left;"><span style="color:rgb(32,33,36);
 letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
 background:rgb(255,255,255);
 ">The -t and -i flags allocate a pseudo-tty and keep stdin open even if not attached. This
                             will&nbsp;allow you to use the container like a traditional VM as long as the bash prompt is
-                            running.</span><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
+                            running.</span><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
 text-transform:none;">
                             <o:p></o:p>
                         </span></p>
@@ -1449,15 +1449,15 @@ text-transform:none;">
             <tr>
                 <td valign=center style="padding:5.0000pt 5.0000pt 5.0000pt 5.0000pt ;border-left:none;border-right:none;
 border-top:none;border-bottom:none;background:rgb(255,255,255);">
-                    <p style="text-align:left;"><span class="26" style="font-family:Consolas;color:rgb(12,81,118);letter-spacing:0.0000pt;
-text-transform:none;background:rgb(245,248,250);">-rm</span><span class="26" style="font-family:Consolas;color:rgb(12,81,118);letter-spacing:0.0000pt;
+                    <p style="text-align:left;"><span class="26" style="color:rgb(12,81,118);letter-spacing:0.0000pt;
+text-transform:none;background:rgb(245,248,250);">-rm</span><span class="26" style="color:rgb(12,81,118);letter-spacing:0.0000pt;
 text-transform:none;background:rgb(245,248,250);">
                             <o:p></o:p>
                         </span></p>
                 </td>
                 <td valign=center style="padding:5.0000pt 5.0000pt 5.0000pt 5.0000pt ;border-left:none;border-right:none;
 border-top:none;border-bottom:none;background:rgb(255,255,255);">
-                    <p style="text-align:left;"><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
+                    <p style="text-align:left;"><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
 text-transform:none;">
                             <o:p>&nbsp;</o:p>
                         </span></p>
@@ -1465,9 +1465,9 @@ text-transform:none;">
                 <td width=527 valign=center style="width:316.6500pt;padding:5.0000pt 5.0000pt 5.0000pt 5.0000pt ;border-left:none;
 border-right:none;border-top:none;border-bottom:none;
 background:rgb(255,255,255);">
-                    <p style="text-align:left;"><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
+                    <p style="text-align:left;"><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
 text-transform:none;background:rgb(255,255,255);">Automatically remove the container when
-                            it exits</span><span style="font-family:'Open Sans';color:rgb(32,33,36);
+                            it exits</span><span style="color:rgb(32,33,36);
 letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
 background:rgb(255,255,255);">
                             <o:p></o:p>
@@ -1485,7 +1485,7 @@ background:rgb(255,255,255);">
                 to port&nbsp;</span><span>5000</span><span>&nbsp;of the host machine.</span><span>
                 <o:p></o:p>
             </span></p>
-        <p class=MsoNormal><span style="font-family:'Open Sans';color:rgb(15,22,30);
+        <p class=MsoNormal><span style="color:rgb(15,22,30);
 letter-spacing:0.0000pt;text-transform:none;font-size:7.0000pt;background:rgb(255,255,255);">
                 <o:p>&nbsp;</o:p>
             </span></p>
@@ -1541,7 +1541,7 @@ letter-spacing:0.0000pt;text-transform:none;font-size:7.0000pt;background:rgb(25
         <p class=MsoNormal><span>Option</span><span>
                 <o:p></o:p>
             </span></p>
-        <p class=MsoNormal><span style="font-family:Arial;
+        <p class=MsoNormal><span style="
 color:rgb(15,22,30);letter-spacing:0.0000pt;text-transform:none;background:rgb(255,255,255);
 ">
                 <o:p>&nbsp;</o:p>
@@ -1551,16 +1551,16 @@ border:none;">
             <tr>
                 <td valign=center style="padding:5.0000pt 5.0000pt 5.0000pt 5.0000pt ;border-left:none;border-right:none;
 border-top:none;border-bottom:none;background:rgb(255,255,255);">
-                    <p style="text-align:left;"><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
-text-transform:none;">Name, shorthand</span><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
+                    <p style="text-align:left;"><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
+text-transform:none;">Name, shorthand</span><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
 text-transform:none;">
                             <o:p></o:p>
                         </span></p>
                 </td>
                 <td valign=center style="padding:5.0000pt 5.0000pt 5.0000pt 5.0000pt ;border-left:none;border-right:none;
 border-top:none;border-bottom:none;background:rgb(255,255,255);">
-                    <p style="text-align:left;"><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
-text-transform:none;">Default</span><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
+                    <p style="text-align:left;"><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
+text-transform:none;">Default</span><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
 text-transform:none;">
                             <o:p></o:p>
                         </span></p>
@@ -1568,8 +1568,8 @@ text-transform:none;">
                 <td width=527 valign=center style="width:316.6500pt;padding:5.0000pt 5.0000pt 5.0000pt 5.0000pt ;border-left:none;
 border-right:none;border-top:none;border-bottom:none;
 background:rgb(255,255,255);">
-                    <p style="text-align:left;"><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
-text-transform:none;">Description</span><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
+                    <p style="text-align:left;"><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
+text-transform:none;">Description</span><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
 text-transform:none;">
                             <o:p></o:p>
                         </span></p>
@@ -1578,15 +1578,15 @@ text-transform:none;">
             <tr>
                 <td valign=center style="padding:5.0000pt 5.0000pt 5.0000pt 5.0000pt ;border-left:none;border-right:none;
 border-top:none;border-bottom:none;background:rgb(255,255,255);">
-                    <p style="text-align:left;"><span class="26" style="font-family:Consolas;color:rgb(12,81,118);letter-spacing:0.0000pt;
-text-transform:none;background:rgb(245,248,250);">--mount</span><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
+                    <p style="text-align:left;"><span class="26" style="color:rgb(12,81,118);letter-spacing:0.0000pt;
+text-transform:none;background:rgb(245,248,250);">--mount</span><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
 text-transform:none;">
                             <o:p></o:p>
                         </span></p>
                 </td>
                 <td valign=center style="padding:5.0000pt 5.0000pt 5.0000pt 5.0000pt ;border-left:none;border-right:none;
 border-top:none;border-bottom:none;background:rgb(255,255,255);">
-                    <p style="text-align:left;"><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
+                    <p style="text-align:left;"><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
 text-transform:none;">
                             <o:p>&nbsp;</o:p>
                         </span></p>
@@ -1594,8 +1594,8 @@ text-transform:none;">
                 <td width=527 valign=center style="width:316.6500pt;padding:5.0000pt 5.0000pt 5.0000pt 5.0000pt ;border-left:none;
 border-right:none;border-top:none;border-bottom:none;
 background:rgb(255,255,255);">
-                    <p style="text-align:left;"><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
-text-transform:none;">Attach a filesystem mount to the container</span><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
+                    <p style="text-align:left;"><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
+text-transform:none;">Attach a filesystem mount to the container</span><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
 text-transform:none;">
                             <o:p></o:p>
                         </span></p>
@@ -1604,17 +1604,17 @@ text-transform:none;">
             <tr>
                 <td valign=center style="padding:5.0000pt 5.0000pt 5.0000pt 5.0000pt ;border-left:none;border-right:none;
 border-top:none;border-bottom:none;background:rgb(255,255,255);">
-                    <p style="text-align:left;"><span class="26" style="font-family:Consolas;color:rgb(12,81,118);letter-spacing:0.0000pt;
-text-transform:none;background:rgb(245,248,250);">--interactive</span><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
-text-transform:none;">&nbsp;,&nbsp;</span><span class="26" style="font-family:Consolas;color:rgb(12,81,118);letter-spacing:0.0000pt;
-text-transform:none;background:rgb(245,248,250);">-i</span><span class="26" style="font-family:Consolas;color:rgb(12,81,118);letter-spacing:0.0000pt;
+                    <p style="text-align:left;"><span class="26" style="color:rgb(12,81,118);letter-spacing:0.0000pt;
+text-transform:none;background:rgb(245,248,250);">--interactive</span><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
+text-transform:none;">&nbsp;,&nbsp;</span><span class="26" style="color:rgb(12,81,118);letter-spacing:0.0000pt;
+text-transform:none;background:rgb(245,248,250);">-i</span><span class="26" style="color:rgb(12,81,118);letter-spacing:0.0000pt;
 text-transform:none;background:rgb(245,248,250);">
                             <o:p></o:p>
                         </span></p>
                 </td>
                 <td valign=center style="padding:5.0000pt 5.0000pt 5.0000pt 5.0000pt ;border-left:none;border-right:none;
 border-top:none;border-bottom:none;background:rgb(255,255,255);">
-                    <p style="text-align:left;"><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
+                    <p style="text-align:left;"><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
 text-transform:none;">
                             <o:p>&nbsp;</o:p>
                         </span></p>
@@ -1622,8 +1622,8 @@ text-transform:none;">
                 <td width=527 valign=center style="width:316.6500pt;padding:5.0000pt 5.0000pt 5.0000pt 5.0000pt ;border-left:none;
 border-right:none;border-top:none;border-bottom:none;
 background:rgb(255,255,255);">
-                    <p style="text-align:left;"><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
-text-transform:none;">Keep STDIN open even if not attached</span><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
+                    <p style="text-align:left;"><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
+text-transform:none;">Keep STDIN open even if not attached</span><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
 text-transform:none;">
                             <o:p></o:p>
                         </span></p>
@@ -1632,17 +1632,17 @@ text-transform:none;">
             <tr>
                 <td valign=center style="padding:5.0000pt 5.0000pt 5.0000pt 5.0000pt ;border-left:none;border-right:none;
 border-top:none;border-bottom:none;background:rgb(255,255,255);">
-                    <p style="text-align:left;"><span class="26" style="font-family:Consolas;color:rgb(12,81,118);letter-spacing:0.0000pt;
-text-transform:none;background:rgb(245,248,250);">--tty</span><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
-text-transform:none;">&nbsp;,&nbsp;</span><span class="26" style="font-family:Consolas;color:rgb(12,81,118);letter-spacing:0.0000pt;
-text-transform:none;background:rgb(245,248,250);">-t</span><span class="26" style="font-family:Consolas;color:rgb(12,81,118);letter-spacing:0.0000pt;
+                    <p style="text-align:left;"><span class="26" style="color:rgb(12,81,118);letter-spacing:0.0000pt;
+text-transform:none;background:rgb(245,248,250);">--tty</span><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
+text-transform:none;">&nbsp;,&nbsp;</span><span class="26" style="color:rgb(12,81,118);letter-spacing:0.0000pt;
+text-transform:none;background:rgb(245,248,250);">-t</span><span class="26" style="color:rgb(12,81,118);letter-spacing:0.0000pt;
 text-transform:none;background:rgb(245,248,250);">
                             <o:p></o:p>
                         </span></p>
                 </td>
                 <td valign=center style="padding:5.0000pt 5.0000pt 5.0000pt 5.0000pt ;border-left:none;border-right:none;
 border-top:none;border-bottom:none;background:rgb(255,255,255);">
-                    <p style="text-align:left;"><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
+                    <p style="text-align:left;"><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
 text-transform:none;">
                             <o:p>&nbsp;</o:p>
                         </span></p>
@@ -1650,8 +1650,8 @@ text-transform:none;">
                 <td width=527 valign=center style="width:316.6500pt;padding:5.0000pt 5.0000pt 5.0000pt 5.0000pt ;border-left:none;
 border-right:none;border-top:none;border-bottom:none;
 background:rgb(255,255,255);">
-                    <p style="text-align:left;"><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
-text-transform:none;">Allocate a pseudo-TTY</span><span style="font-family:'Open Sans';color:rgb(15,22,30);letter-spacing:0.0000pt;
+                    <p style="text-align:left;"><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
+text-transform:none;">Allocate a pseudo-TTY</span><span style="color:rgb(15,22,30);letter-spacing:0.0000pt;
 text-transform:none;">
                             <o:p></o:p>
                         </span></p>
@@ -1668,92 +1668,92 @@ text-transform:none;">
                 <o:p>&nbsp;</o:p>
             </span></p>
         <p style="margin-left:21.0000pt;text-indent:-21.0000pt;">
-            <span style="font-family:Wingdings;
+            <span style="
 color:rgb(15,22,30);letter-spacing:0.0000pt;text-transform:none;background:rgb(255,255,255);
 "><span>&#9724;</span></span>
-            <span style="font-family:'Open Sans';
+            <span style="
 color:rgb(15,22,30);letter-spacing:0.0000pt;text-transform:none;background:rgb(255,255,255);
-">The&nbsp;</span><span style="font-family:'Open Sans';
+">The&nbsp;</span><span style="
 color:rgb(15,22,30);letter-spacing:0.0000pt;text-transform:none;background:rgb(255,255,0);
-background:rgb(255,255,255);">source&nbsp;</span><span style="font-family:'Open Sans';
+background:rgb(255,255,255);">source&nbsp;</span><span style="
 color:rgb(15,22,30);letter-spacing:0.0000pt;text-transform:none;background:rgb(255,255,255);
 ">of the mount. For bind mounts, this is the path to the file or directory on the Docker
-                daemon host. May be specified as&nbsp;</span><span style="font-family:'Open Sans';
+                daemon host. May be specified as&nbsp;</span><span style="
 color:rgb(15,22,30);letter-spacing:0.0000pt;text-transform:none;background:rgb(255,255,0);
-background:rgb(255,255,255);">source&nbsp;</span><span style="font-family:'Open Sans';
+background:rgb(255,255,255);">source&nbsp;</span><span style="
 color:rgb(15,22,30);letter-spacing:0.0000pt;text-transform:none;background:rgb(255,255,255);
-">or&nbsp;</span><span style="font-family:'Open Sans';
+">or&nbsp;</span><span style="
 color:rgb(15,22,30);letter-spacing:0.0000pt;text-transform:none;background:rgb(255,255,0);
-background:rgb(255,255,255);">src</span><span style="font-family:'Open Sans';
+background:rgb(255,255,255);">src</span><span style="
 color:rgb(15,22,30);letter-spacing:0.0000pt;text-transform:none;background:rgb(255,255,255);
-">.</span><span style="font-family:'Open Sans';
+">.</span><span style="
 color:rgb(15,22,30);letter-spacing:0.0000pt;text-transform:none;background:rgb(255,255,255);">
                 <o:p></o:p>
             </span>
         </p>
         <p style="margin-left:21.0000pt;text-indent:-21.0000pt;">
-            <span style="font-family:Wingdings;
+            <span style="
 color:rgb(15,22,30);letter-spacing:0.0000pt;text-transform:none;background:rgb(255,255,255);
 "><span>&#9724;</span></span>
-            <span style="font-family:'Open Sans';
+            <span style="
 color:rgb(15,22,30);letter-spacing:0.0000pt;text-transform:none;background:rgb(255,255,255);
-">The&nbsp;</span><span style="font-family:'Open Sans';
+">The&nbsp;</span><span style="
 color:rgb(15,22,30);letter-spacing:0.0000pt;text-transform:none;background:rgb(255,255,0);
-background:rgb(255,255,255);">destination&nbsp;</span><span style="font-family:'Open Sans';
+background:rgb(255,255,255);">destination&nbsp;</span><span style="
 color:rgb(15,22,30);letter-spacing:0.0000pt;text-transform:none;background:rgb(255,255,255);">takes as its value the
                 path where the file or directory is mounted in the container. May
-                be specified as&nbsp;</span><span style="font-family:'Open Sans';
+                be specified as&nbsp;</span><span style="
 color:rgb(15,22,30);letter-spacing:0.0000pt;text-transform:none;background:rgb(255,255,0);
-background:rgb(255,255,255);">destination</span><span style="font-family:'Open Sans';
+background:rgb(255,255,255);">destination</span><span style="
 color:rgb(15,22,30);letter-spacing:0.0000pt;text-transform:none;background:rgb(255,255,255);
-">,&nbsp;</span><span style="font-family:'Open Sans';
+">,&nbsp;</span><span style="
 color:rgb(15,22,30);letter-spacing:0.0000pt;text-transform:none;background:rgb(255,255,0);
-background:rgb(255,255,255);">dst</span><span style="font-family:'Open Sans';
+background:rgb(255,255,255);">dst</span><span style="
 color:rgb(15,22,30);letter-spacing:0.0000pt;text-transform:none;background:rgb(255,255,255);
-">, or&nbsp;</span><span style="font-family:'Open Sans';
+">, or&nbsp;</span><span style="
 color:rgb(15,22,30);letter-spacing:0.0000pt;text-transform:none;background:rgb(255,255,0);
-background:rgb(255,255,255);">target</span><span style="font-family:'Open Sans';
+background:rgb(255,255,255);">target</span><span style="
 color:rgb(15,22,30);letter-spacing:0.0000pt;text-transform:none;background:rgb(255,255,255);
-">.</span><span style="font-family:'Open Sans';color:rgb(15,22,30);
+">.</span><span style="color:rgb(15,22,30);
 letter-spacing:0.0000pt;text-transform:none;background:rgb(255,255,255);">
                 <o:p></o:p>
             </span>
         </p>
-        <p class=MsoNormal><span style="font-family:'Open Sans';color:rgb(15,22,30);
+        <p class=MsoNormal><span style="color:rgb(15,22,30);
 letter-spacing:0.0000pt;text-transform:none;background:rgb(255,255,255);">
                 <o:p>&nbsp;</o:p>
             </span></p>
-        <p class=MsoNormal><span style="font-family:'Open Sans';color:rgb(15,22,30);
+        <p class=MsoNormal><span style="color:rgb(15,22,30);
 letter-spacing:0.0000pt;text-transform:none;background:rgb(255,255,255);">Consider a case
                 where you have a
-                directory</span><span style="font-family:'Open Sans';color:rgb(15,22,30);
-letter-spacing:0.0000pt;text-transform:none;background:rgb(255,255,255);">&nbsp;</span><span class="26" style="font-family:Consolas;color:rgb(12,81,118);
-letter-spacing:0.0000pt;text-transform:none;background:rgb(245,248,250);">source</span><span style="font-family:'Open Sans';color:rgb(15,22,30);
+                directory</span><span style="color:rgb(15,22,30);
+letter-spacing:0.0000pt;text-transform:none;background:rgb(255,255,255);">&nbsp;</span><span class="26" style="color:rgb(12,81,118);
+letter-spacing:0.0000pt;text-transform:none;background:rgb(245,248,250);">source</span><span style="color:rgb(15,22,30);
 letter-spacing:0.0000pt;text-transform:none;background:rgb(255,255,255);">&nbsp;and that
                 when you build the source
-                code, the artifacts are saved into another directory,&nbsp;</span><span class="26" style="font-family:Consolas;color:rgb(12,81,118);
-letter-spacing:0.0000pt;text-transform:none;background:rgb(245,248,250);">source/target/</span><span style="font-family:'Open Sans';color:rgb(15,22,30);
+                code, the artifacts are saved into another directory,&nbsp;</span><span class="26" style="color:rgb(12,81,118);
+letter-spacing:0.0000pt;text-transform:none;background:rgb(245,248,250);">source/target/</span><span style="color:rgb(15,22,30);
 letter-spacing:0.0000pt;text-transform:none;background:rgb(255,255,255);">. You want the
                 artifacts to be available
-                to the container at&nbsp;</span><span class="26" style="font-family:Consolas;color:rgb(12,81,118);
-letter-spacing:0.0000pt;text-transform:none;background:rgb(245,248,250);">/</span><span class="26" style="font-family:Consolas;color:rgb(12,81,118);
-letter-spacing:0.0000pt;text-transform:none;background:rgb(245,248,250);">stuff</span><span class="26" style="font-family:Consolas;color:rgb(12,81,118);
-letter-spacing:0.0000pt;text-transform:none;background:rgb(245,248,250);">/</span><span style="font-family:'Open Sans';color:rgb(15,22,30);
+                to the container at&nbsp;</span><span class="26" style="color:rgb(12,81,118);
+letter-spacing:0.0000pt;text-transform:none;background:rgb(245,248,250);">/</span><span class="26" style="color:rgb(12,81,118);
+letter-spacing:0.0000pt;text-transform:none;background:rgb(245,248,250);">stuff</span><span class="26" style="color:rgb(12,81,118);
+letter-spacing:0.0000pt;text-transform:none;background:rgb(245,248,250);">/</span><span style="color:rgb(15,22,30);
 letter-spacing:0.0000pt;text-transform:none;background:rgb(255,255,255);">, and you want
                 the container to get
                 access to a new build each time you build the source on your development host. Use the following command
-                to bind-mount the&nbsp;</span><span class="26" style="font-family:Consolas;color:rgb(12,81,118);
-letter-spacing:0.0000pt;text-transform:none;background:rgb(245,248,250);">target/</span><span style="font-family:'Open Sans';color:rgb(15,22,30);
+                to bind-mount the&nbsp;</span><span class="26" style="color:rgb(12,81,118);
+letter-spacing:0.0000pt;text-transform:none;background:rgb(245,248,250);">target/</span><span style="color:rgb(15,22,30);
 letter-spacing:0.0000pt;text-transform:none;background:rgb(255,255,255);">&nbsp;directory
                 into your container
-                at&nbsp;</span><span class="26" style="font-family:Consolas;color:rgb(12,81,118);
-letter-spacing:0.0000pt;text-transform:none;background:rgb(245,248,250);">/</span><span class="26" style="font-family:Consolas;color:rgb(12,81,118);
-letter-spacing:0.0000pt;text-transform:none;background:rgb(245,248,250);">stuff</span><span class="26" style="font-family:Consolas;color:rgb(12,81,118);
-letter-spacing:0.0000pt;text-transform:none;background:rgb(245,248,250);">/</span><span style="font-family:'Open Sans';color:rgb(15,22,30);
+                at&nbsp;</span><span class="26" style="color:rgb(12,81,118);
+letter-spacing:0.0000pt;text-transform:none;background:rgb(245,248,250);">/</span><span class="26" style="color:rgb(12,81,118);
+letter-spacing:0.0000pt;text-transform:none;background:rgb(245,248,250);">stuff</span><span class="26" style="color:rgb(12,81,118);
+letter-spacing:0.0000pt;text-transform:none;background:rgb(245,248,250);">/</span><span style="color:rgb(15,22,30);
 letter-spacing:0.0000pt;text-transform:none;background:rgb(255,255,255);">. Run the
                 command from within
-                the&nbsp;</span><span class="26" style="font-family:Consolas;color:rgb(12,81,118);
-letter-spacing:0.0000pt;text-transform:none;background:rgb(245,248,250);">source</span><span style="font-family:'Open Sans';color:rgb(15,22,30);
+                the&nbsp;</span><span class="26" style="color:rgb(12,81,118);
+letter-spacing:0.0000pt;text-transform:none;background:rgb(245,248,250);">source</span><span style="color:rgb(15,22,30);
 letter-spacing:0.0000pt;text-transform:none;background:rgb(255,255,255);">&nbsp;directory.</span><span>
                 <o:p></o:p>
             </span></p>
@@ -1801,13 +1801,13 @@ letter-spacing:0.0000pt;text-transform:none;background:rgb(255,255,255);">&nbsp;
                 <o:p>&nbsp;</o:p>
             </span></p>
         <p style="margin-left:21.0000pt;text-indent:-21.0000pt;">
-            <span style="font-family:Wingdings;"><span>&#9724;</span></span>
+            <span style=""><span>&#9724;</span></span>
             <span>Pull a base image</span><span>
                 <o:p></o:p>
             </span>
         </p>
         <p style="margin-left:21.0000pt;text-indent:-21.0000pt;">
-            <span style="font-family:Wingdings;"><span>&#9724;</span></span>
+            <span style=""><span>&#9724;</span></span>
             <span>
                 <o:p></o:p>
             </span>
@@ -1815,175 +1815,175 @@ letter-spacing:0.0000pt;text-transform:none;background:rgb(255,255,255);">&nbsp;
         <p class=MsoNormal><span>
                 <o:p>&nbsp;</o:p>
             </span></p>
-        <p style="text-align:left;"><span style="font-family:'Cascadia Mono';
+        <p style="text-align:left;"><span style="
 color:rgb(0,0,255);">
                 <font face="Cascadia Mono">FROM</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">&nbsp;<font face="Cascadia Mono">mcr.microsoft.com/dotnet/aspnet:6.0 AS base
-                </font></span><span style="font-family:'Cascadia Mono';
+                </font></span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
-        <p style="text-align:left;"><span style="font-family:'Cascadia Mono';
+        <p style="text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">WORKDIR /app</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
-        <p style="text-align:left;"><span style="font-family:'Cascadia Mono';
+        <p style="text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">EXPOSE 80</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
-        <p style="text-align:left;"><span style="font-family:'Cascadia Mono';
+        <p style="text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <o:p>&nbsp;</o:p>
             </span></p>
-        <p style="text-align:left;"><span style="font-family:'Cascadia Mono';
+        <p style="text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
-        <p style="text-align:left;"><span style="font-family:'Cascadia Mono';
+        <p style="text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">WORKDIR /src</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
-        <p style="text-align:left;"><span style="font-family:'Cascadia Mono';
+        <p style="text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">COPY [</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(163,21,21);">
                 <font face="Cascadia Mono">"101DockerWeb/101DockerWeb.csproj"</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">, </font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(163,21,21);">
                 <font face="Cascadia Mono">"101DockerWeb/"</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">]</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
-        <p style="text-align:left;"><span style="font-family:'Cascadia Mono';
+        <p style="text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">RUN dotnet restore </font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(163,21,21);">
                 <font face="Cascadia Mono">"101DockerWeb/101DockerWeb.csproj"</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
-        <p style="text-align:left;"><span style="font-family:'Cascadia Mono';
+        <p style="text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">COPY . .</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
-        <p style="text-align:left;"><span style="font-family:'Cascadia Mono';
+        <p style="text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">WORKDIR </font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(163,21,21);">
                 <font face="Cascadia Mono">"/src/101DockerWeb"</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
-        <p style="text-align:left;"><span style="font-family:'Cascadia Mono';
+        <p style="text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">RUN dotnet build </font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(163,21,21);">
                 <font face="Cascadia Mono">"101DockerWeb.csproj"</font>
-            </span><span style="font-family:'Cascadia Mono';
-color:rgb(0,0,0);">&nbsp;<font face="Cascadia Mono">-c Release -o /app/build</font></span><span style="font-family:'Cascadia Mono';
+            </span><span style="
+color:rgb(0,0,0);">&nbsp;<font face="Cascadia Mono">-c Release -o /app/build</font></span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
-        <p style="text-align:left;"><span style="font-family:'Cascadia Mono';
+        <p style="text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <o:p>&nbsp;</o:p>
             </span></p>
-        <p style="text-align:left;"><span style="font-family:'Cascadia Mono';
+        <p style="text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">FROM build AS publish</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
-        <p style="text-align:left;"><span style="font-family:'Cascadia Mono';
+        <p style="text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">RUN dotnet publish </font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(163,21,21);">
                 <font face="Cascadia Mono">"101DockerWeb.csproj"</font>
-            </span><span style="font-family:'Cascadia Mono';
-color:rgb(0,0,0);">&nbsp;<font face="Cascadia Mono">-c Release -o /app/publish</font></span><span style="font-family:'Cascadia Mono';
+            </span><span style="
+color:rgb(0,0,0);">&nbsp;<font face="Cascadia Mono">-c Release -o /app/publish</font></span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
-        <p style="text-align:left;"><span style="font-family:'Cascadia Mono';
+        <p style="text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <o:p>&nbsp;</o:p>
             </span></p>
-        <p style="text-align:left;"><span style="font-family:'Cascadia Mono';
+        <p style="text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">FROM base AS final</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
-        <p style="text-align:left;"><span style="font-family:'Cascadia Mono';
+        <p style="text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">WORKDIR /app</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
-        <p style="text-align:left;"><span style="font-family:'Cascadia Mono';
+        <p style="text-align:left;"><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">COPY --from=publish /app/publish .</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
-        <p class=MsoNormal><span style="font-family:'Cascadia Mono';
+        <p class=MsoNormal><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">ENTRYPOINT [</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(163,21,21);">
                 <font face="Cascadia Mono">"dotnet"</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">, </font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(163,21,21);">
                 <font face="Cascadia Mono">"101DockerWeb.dll"</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <font face="Cascadia Mono">]</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
-        <p class=MsoNormal><span style="font-family:'Cascadia Mono';
+        <p class=MsoNormal><span style="
 color:rgb(0,0,0);">
                 <o:p>&nbsp;</o:p>
             </span></p>
-        <p class=MsoNormal><span style="font-family:'Cascadia Mono';
+        <p class=MsoNormal><span style="
 color:rgb(0,0,0);">
                 <o:p>&nbsp;</o:p>
             </span></p>
@@ -2005,13 +2005,13 @@ color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
         <p style="margin-left:21.0000pt;text-indent:-21.0000pt;">
-            <span style="font-family:Wingdings;"><span>&#9724;</span></span>
+            <span style=""><span>&#9724;</span></span>
             <span>sudo docker pull ubuntu</span><span>
                 <o:p></o:p>
             </span>
         </p>
         <p style="margin-left:21.0000pt;text-indent:-21.0000pt;">
-            <span style="font-family:Wingdings;"><span>&#9724;</span></span>
+            <span style=""><span>&#9724;</span></span>
             <span>sudo docker images</span><span>
                 <o:p></o:p>
             </span>
@@ -2023,7 +2023,7 @@ color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
         <p style="margin-left:21.0000pt;text-indent:-21.0000pt;">
-            <span style="font-family:Wingdings;"><span>&#9724;</span></span>
+            <span style=""><span>&#9724;</span></span>
             <span>sudo docker run -it cf0f3ca922e0 bin/bash</span><span>
                 <o:p></o:p>
             </span>
@@ -2035,25 +2035,25 @@ color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
         <p style="margin-left:21.0000pt;text-indent:-21.0000pt;">
-            <span style="font-family:Wingdings;"><span>&#9724;</span></span>
+            <span style=""><span>&#9724;</span></span>
             <span>apt-get install nmap</span><span>
                 <o:p></o:p>
             </span>
         </p>
         <p style="margin-left:21.0000pt;text-indent:-21.0000pt;">
-            <span style="font-family:Wingdings;"><span>&#9724;</span></span>
+            <span style=""><span>&#9724;</span></span>
             <span>nmap --version</span><span>
                 <o:p></o:p>
             </span>
         </p>
         <p style="margin-left:21.0000pt;text-indent:-21.0000pt;">
-            <span style="font-family:Wingdings;"><span>&#9724;</span></span>
+            <span style=""><span>&#9724;</span></span>
             <span>exit</span><span>
                 <o:p></o:p>
             </span>
         </p>
         <p style="margin-left:21.0000pt;text-indent:-21.0000pt;">
-            <span style="font-family:Wingdings;"><span>&#9724;</span></span>
+            <span style=""><span>&#9724;</span></span>
             <span>sudo docker ps -a</span><span>
                 <o:p></o:p>
             </span>
@@ -2065,20 +2065,20 @@ color:rgb(0,0,0);">
                 <o:p></o:p>
             </span></p>
         <p style="margin-left:21.0000pt;text-indent:-21.0000pt;">
-            <span style="font-family:Wingdings;"><span>&#9724;</span></span>
+            <span style=""><span>&#9724;</span></span>
             <span>sudo docker commit [CONTAINER_ID] [new_image_name]</span><span>
                 <o:p></o:p>
             </span>
         </p>
         <p style="margin-left:21.0000pt;text-indent:-21.0000pt;">
-            <span style="font-family:Wingdings;"><span>&#9724;</span></span>
+            <span style=""><span>&#9724;</span></span>
             <span>sudo docker commit deddd39fa163 ubuntu-nmap</span><span>
                 <o:p></o:p>
             </span>
         </p>
         <p style="margin-left:21.0000pt;text-indent:-21.0000pt;">
-            <span style="font-family:Wingdings;"><span>&#9724;</span></span>
-            <span>sudo docker images</span><span style="font-family:monospace;color:rgb(64,64,64);
+            <span style=""><span>&#9724;</span></span>
+            <span>sudo docker images</span><span style="color:rgb(64,64,64);
 letter-spacing:0.0000pt;text-transform:none;background:rgb(247,247,247);">
                 <o:p></o:p>
             </span>

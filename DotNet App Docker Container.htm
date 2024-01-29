@@ -162,7 +162,7 @@
                 src="DotNet App Docker Container.files/DotNet App Docker Container995.png"><span>
                 <o:p>&nbsp;</o:p>
             </span></p>
-        <p style="">
+        <p>
             <span><span>1)</span></span>
             <span>Get the base image </span><span>
                 <p><span></span>
@@ -211,12 +211,12 @@ text-align:left;">
             </span></p>
         <p><span>
                 <font face="Cascadia Mono">ENTRYPOINT [</font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(163,21,21);">
                 <font face="Cascadia Mono">"dotnet"</font>
             </span><span>
                 <font face="Cascadia Mono">, </font>
-            </span><span style="font-family:'Cascadia Mono';
+            </span><span style="
 color:rgb(163,21,21);">
                 <font face="Cascadia Mono">"DockerConsoleAppDemo.dll"</font>
             </span><span>
@@ -278,17 +278,16 @@ color:rgb(163,21,21);">
         <p><span>
                 <o:p>&nbsp;</o:p>
             </span></p>
-        <p><i><span style="font-family:Calibri;font-style:italic;">Note: In this case, because we haven't specified very
+        <p><i><span style="font-style:italic;">Note: In this case, because we haven't specified very
                     explicitly what
                     files we wanted to be into this docker image so all of the files under our project directory will
                     have got copied and that will include things like the launch Settings JSON file. by default, asp.net
-                    core 2-0 will now look at that</span></i><i><span style="font-family:Calibri;font-style:italic;background:rgb(255,255,0);
-">&nbsp;launch settings file</span></i><i><span style="font-family:Calibri;font-style:italic;">&nbsp;and use the port
+                    core 2-0 will now look at that</span></i><i><span style="font-style:italic;background:rgb(255,255,0);
+">&nbsp;launch settings file</span></i><i><span style="font-style:italic;">&nbsp;and use the port
                     and environment from that file. If it finds it in
                     this case, we don't want to do that. Once, this image is running. I want it to be running on the
                     default asp.net core port or 80. So by adding the no launch profile flag, I can avoid that launch
-                    settings file and its values being used.</span></i><i><span
-                    style="font-family:Calibri;font-style:italic;">
+                    settings file and its values being used.</span></i><i><span style="font-style:italic;">
                     <o:p></o:p>
                 </span></i></p>
         <p><span>
@@ -333,8 +332,8 @@ color:rgb(163,21,21);">
         <p><span>
                 <o:p>&nbsp;</o:p>
             </span></p>
-        <p><i><span style="font-family:Calibri;font-style:italic;">Note: docker image must be lower
-                    case.</span></i><i><span style="font-family:Calibri;font-style:italic;">
+        <p><i><span style="font-style:italic;">Note: docker image must be lower
+                    case.</span></i><i><span style="font-style:italic;">
                     <o:p></o:p>
                 </span></i></p>
         <p><span>
@@ -393,11 +392,11 @@ color:rgb(163,21,21);">
                 <o:p></o:p>
             </span>
         </p>
-        <p><span style="font-family:Calibri;background:rgb(255,255,0);">&gt; dotnet dev-certs https
-                --trust</span><span style="font-family:Calibri;background:rgb(255,255,0);">
+        <p><span style="background:rgb(255,255,0);">&gt; dotnet dev-certs https
+                --trust</span><span style="background:rgb(255,255,0);">
                 <o:p></o:p>
             </span></p>
-        <p><span style="font-family:Calibri;background:rgb(255,255,0);">
+        <p><span style="background:rgb(255,255,0);">
                 <o:p>&nbsp;</o:p>
             </span></p>
         <p style="margin-left:0.0000pt;text-indent:0.0000pt;">
@@ -406,12 +405,12 @@ color:rgb(163,21,21);">
                 <o:p></o:p>
             </span>
         </p>
-        <p><span style="font-family:Calibri;background:rgb(255,255,0);">&gt; dotnet dev-certs https -ep
+        <p><span style="background:rgb(255,255,0);">&gt; dotnet dev-certs https -ep
                 $env:USERPROFILE\.aspnet\https\dockerdotnethttp.pfx -p pa55w0rd!</span><span
-                style="font-family:Calibri;background:rgb(255,255,0);">
+                style="background:rgb(255,255,0);">
                 <o:p></o:p>
             </span></p>
-        <p><span style="font-family:Calibri;background:rgb(255,255,0);">
+        <p><span style="background:rgb(255,255,0);">
                 <o:p>&nbsp;</o:p>
             </span></p>
         <p style="margin-left:0.0000pt;text-indent:0.0000pt;">
@@ -420,11 +419,11 @@ color:rgb(163,21,21);">
                 <o:p></o:p>
             </span>
         </p>
-        <p><span style="font-family:Calibri;background:rgb(255,255,0);">
+        <p><span style="background:rgb(255,255,0);">
                 <o:p>&nbsp;</o:p>
             </span></p>
         <p style="margin-left:21.0000pt;text-indent:-21.0000pt;">
-            <span style="font-family:Wingdings;"><span>&#9724;</span></span>
+            <span><span>&#9724;</span></span>
             <span>Get any GUID from “Insert GUID” extension</span><span>
                 <o:p></o:p>
             </span>
@@ -473,14 +472,14 @@ color:rgb(163,21,21);">
             </span></p>
         <p style="margin-left:21.0000pt;text-indent:-21.0000pt;
 ">
-            <span style="font-family:Wingdings;"><span>&#9724;</span></span>
+            <span><span>&#9724;</span></span>
             <span>Rebuild the docker image</span><span>
                 <o:p></o:p>
             </span>
         </p>
         <p style="margin-left:21.0000pt;text-indent:-21.0000pt;
 ">
-            <span style="font-family:Wingdings;"><span>&#9724;</span></span>
+            <span><span>&#9724;</span></span>
             <span>Docker run</span><span>
                 <o:p></o:p>
             </span>
@@ -535,7 +534,7 @@ color:rgb(163,21,21);">
                     <o:p>&nbsp;</o:p>
                 </span></p>
             <p style="margin-left:21.0000pt;text-indent:-21.0000pt;">
-                <span style="font-family:Wingdings;"><span>&#9724;</span></span>
+                <span><span>&#9724;</span></span>
                 <span>Create Docker-compose file</span><span>
                     <o:p></o:p>
                 </span>
@@ -552,7 +551,7 @@ color:rgb(163,21,21);">
                     </span></p>
                 <p style="text-align:left;"><span>
                         <font face="Cascadia Mono">version:</font>
-                    </span><span style="font-family:'Cascadia Mono';
+                    </span><span style="
 color:rgb(163,21,21);">
                         <font face="Cascadia Mono">'3.4'</font>
                     </span><span>
@@ -576,7 +575,7 @@ color:rgb(163,21,21);">
                 <p style="text-align:left;">
                     <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span>
                         <font face="Cascadia Mono">image:</font>
-                    </span><span style="font-family:'Cascadia Mono';
+                    </span><span style="
 color:rgb(163,21,21);">
                         <font face="Cascadia Mono">${DOCKER_REGISTRY-}backend</font>
                     </span><span>
@@ -602,7 +601,7 @@ color:rgb(163,21,21);">
                 <p style="text-align:left;">
                     <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>
                         <font face="Cascadia Mono">dockerfile:</font>
-                    </span><span style="font-family:'Cascadia Mono';
+                    </span><span style="
 color:rgb(163,21,21);">
                         <font face="Cascadia Mono">backend/Dockerfile</font>
                     </span><span>
@@ -618,7 +617,7 @@ color:rgb(163,21,21);">
                 </p>
                 <p style="text-align:left;">
                     <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font face="Cascadia Mono">- </font>
-                    </span><span style="font-family:'Cascadia Mono';
+                    </span><span style="
 color:rgb(163,21,21);">
                         <font face="Cascadia Mono">ASPNETCORE_ENVIRONMENT=Development</font>
                     </span><span>
@@ -627,7 +626,7 @@ color:rgb(163,21,21);">
                 </p>
                 <p style="text-align:left;">
                     <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font face="Cascadia Mono">- </font>
-                    </span><span style="font-family:'Cascadia Mono';
+                    </span><span style="
 color:rgb(163,21,21);">
                         <font face="Cascadia Mono">ASPNETCORE_URLS=https://+;http://+</font>
                     </span><span>
@@ -636,7 +635,7 @@ color:rgb(163,21,21);">
                 </p>
                 <p style="text-align:left;">
                     <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font face="Cascadia Mono">- </font>
-                    </span><span style="font-family:'Cascadia Mono';
+                    </span><span style="
 color:rgb(163,21,21);">
                         <font face="Cascadia Mono">ASPNETCORE_HTTPS_PORT=5803</font>
                     </span><span>
@@ -644,28 +643,28 @@ color:rgb(163,21,21);">
                     </span>
                 </p>
                 <p style="text-align:left;">
-                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Cascadia Mono';
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="
 color:rgb(0,128,0);">
                         <font face="Cascadia Mono">#ASPNETCORE_URLS: "https://+;http://+"</font>
-                    </span><span style="font-family:'Cascadia Mono';
+                    </span><span style="
 color:rgb(0,128,0);">
                         <o:p></o:p>
                     </span>
                 </p>
                 <p style="text-align:left;">
-                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Cascadia Mono';
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="
 color:rgb(0,128,0);">
                         <font face="Cascadia Mono">#ASPNETCORE_HTTPS_PORT: "5803"</font>
-                    </span><span style="font-family:'Cascadia Mono';
+                    </span><span style="
 color:rgb(0,128,0);">
                         <o:p></o:p>
                     </span>
                 </p>
                 <p style="text-align:left;">
-                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Cascadia Mono';
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="
 color:rgb(0,128,0);">
                         <font face="Cascadia Mono">#ASPNETCORE_ENVIRONMENT: "Development"</font>
-                    </span><span style="font-family:'Cascadia Mono';
+                    </span><span style="
 color:rgb(0,128,0);">
                         <o:p></o:p>
                     </span>
@@ -679,7 +678,7 @@ color:rgb(0,128,0);">
                 </p>
                 <p style="text-align:left;">
                     <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font face="Cascadia Mono">- </font>
-                    </span><span style="font-family:'Cascadia Mono';
+                    </span><span style="
 color:rgb(163,21,21);">
                         <font face="Cascadia Mono">"5800:80"</font>
                     </span><span>
@@ -688,7 +687,7 @@ color:rgb(163,21,21);">
                 </p>
                 <p style="text-align:left;">
                     <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font face="Cascadia Mono">- </font>
-                    </span><span style="font-family:'Cascadia Mono';
+                    </span><span style="
 color:rgb(163,21,21);">
                         <font face="Cascadia Mono">"5803:443"</font>
                     </span><span>
@@ -704,7 +703,7 @@ color:rgb(163,21,21);">
                 </p>
                 <p style="text-align:left;">
                     <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font face="Cascadia Mono">- </font>
-                    </span><span style="font-family:'Cascadia Mono';
+                    </span><span style="
 color:rgb(163,21,21);">
                         <font face="Cascadia Mono">${APPDATA}\Microsoft\UserSecrets\:/root/.microsoft/usersecrets</font>
                     </span><span>
@@ -713,7 +712,7 @@ color:rgb(163,21,21);">
                 </p>
                 <p><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font face="Cascadia Mono">-
                         </font>
-                    </span><span style="font-family:'Cascadia Mono';
+                    </span><span style="
 color:rgb(163,21,21);">
                         <font face="Cascadia Mono">${USERPROFILE}\.aspnet\https\:/root/.aspnet/https/</font>
                     </span><span>
@@ -724,7 +723,7 @@ color:rgb(163,21,21);">
                     </span></p>
                 <p style="margin-left:21.0000pt;text-indent:-21.0000pt;
 ">
-                    <span style="font-family:Wingdings;"><span>&#9724;</span></span>
+                    <span><span>&#9724;</span></span>
                     <span>Run docker compose</span><span>
                         <o:p></o:p>
                     </span>
