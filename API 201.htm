@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>My Portfolio</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords"> <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon"> <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet"> <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <script src="assets/js/layout.js"></script>
+</head>
+
+<body> <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+        <div class="d-flex align-items-center justify-content-between"> <i class="bi bi-list toggle-sidebar-btn"></i>
+        </div><!-- End Logo -->
+        <nav class="header-nav ms-auto">
+            <ul class="d-flex align-items-center">
+                <div w3-include-html="header.htm"></div>
+            </ul>
+        </nav><!-- End Icons Navigation -->
+    </header><!-- End Header --> <!-- ======= Sidebar ======= -->
+    <div w3-include-html="sidebar.htm"></div>
+    <main id="main" class="main">
+        <p align=center
+            style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;text-align:center;">
+            <w:Sdt SdtDocPart="t" ID="147451540" DocPartType="Custom Table of Contents"><span
+                    style="font-size:10.5000pt;">Catalog</span><span>
+                    <o:p></o:p>
+                </span>
+        </p>
+        <p><span><span><a href="#_Toc9196 "><span>Web API (In Memory)</span><span>&#9;</span></a></span><span>
+                    <o:p></o:p>
+                </span></p>
+        <p><span><a href="#_Toc3885 "><span>Create Website (Razor)</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span><a href="#_Toc27867 "><span>Web API with EF</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span><a href="#_Toc28402 "><span>Using Database First Approach In Entity Framework Core 6 and ASP.NET Core
+                        MVC</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span><a href="#_Toc27386 "><span>MVC And EF Core 6 CRUD Operations Using Code First
+                        Approach</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p></span></w:Sdt><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1 style="page-break-after:avoid;page-break-before:always;"><a name="_Toc9196"></a><b><span
+                    style="font-weight:bold;font-size:22.0000pt;">Web API (In Memory)</span></b><b><span
+                    style="font-weight:bold;font-size:22.0000pt;">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p> <span><span>1)<span>&nbsp;</span></span></span> <span>Create Models</span><span>
+                <o:p></o:p>
+            </span> </p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p
+            style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:left;">
+            <span style="color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+                style="color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">public</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span
+                style="color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">class</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span
+                style="color:rgb(43,145,175);font-size:9.5000pt;">
+                <font face="Cascadia Mono">Stock</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p
+            style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:left;">
+            <span style="color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;&nbsp;&nbsp;&nbsp;<font face="Cascadia Mono">{
+                </font></span><span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p
+            style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:left;">
+            <span style="color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font
+                    face="Cascadia Mono">[Key] </font></span><span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p
+            style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:left;">
+            <span
+                style="color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+                style="color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">public</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span
+                style="color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">int</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;<font face="Cascadia Mono">Symbol { </font>
+                </span><span style="color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">get</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Cascadia Mono">; </font>
+            </span><span style="color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">set</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Cascadia Mono">; }</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p
+            style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:left;">
+            <span
+                style="color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+                style="color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">public</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span
+                style="color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">string</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Cascadia Mono">? Name { </font>
+            </span><span style="color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">get</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Cascadia Mono">; </font>
+            </span><span style="color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">set</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Cascadia Mono">; }</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p
+            style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:left;">
+            <span
+                style="color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+                style="color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">public</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span
+                style="color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">decimal</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;<font face="Cascadia Mono">LastPrice {
+                </font></span><span style="color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">get</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Cascadia Mono">; </font>
+            </span><span style="color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">set</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Cascadia Mono">; }</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p
+            style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:left;">
+            <span
+                style="color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+                style="color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">public</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span
+                style="color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">decimal</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;<font face="Cascadia Mono">OpenPrice {
+                </font></span><span style="color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">get</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Cascadia Mono">; </font>
+            </span><span style="color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">set</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Cascadia Mono">; }</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p
+            style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:left;">
+            <span
+                style="color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+                style="color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">public</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span
+                style="color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">decimal</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;<font face="Cascadia Mono">HighPrice {
+                </font></span><span style="color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">get</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Cascadia Mono">; </font>
+            </span><span style="color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">set</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Cascadia Mono">; }</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p
+            style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:left;">
+            <span
+                style="color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+                style="color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">public</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span
+                style="color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">decimal</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;<font face="Cascadia Mono">LowPrice {
+                </font></span><span style="color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">get</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Cascadia Mono">; </font>
+            </span><span style="color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">set</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Cascadia Mono">; }</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p
+            style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:left;">
+            <span
+                style="color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+                style="color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">public</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span
+                style="color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">decimal</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;<font face="Cascadia Mono">Volume { </font>
+                </span><span style="color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">get</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Cascadia Mono">; </font>
+            </span><span style="color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">set</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Cascadia Mono">; }</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p
+            style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:left;">
+            <span style="color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;&nbsp;&nbsp;&nbsp;<font face="Cascadia Mono">}
+                </font></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p> <span><span>2)<span>&nbsp;</span></span></span> <span>Install package</span><span>
+                <o:p></o:p>
+            </span> </p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="513" height="71" src="API 201.files/API 201917.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="516" height="49" src="API 201.files/API 201920.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="518" height="53" src="API 201.files/API 201923.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>Since we are not using SQL server, we use inMemory database instead.</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="517" height="64" src="API 201.files/API 201996.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p style="margin-left:0.0000pt;text-indent:0.0000pt;"> <span><span>3)<span>&nbsp;</span></span></span>
+            <span>Create DB Content</span><span>
+                <o:p></o:p>
+            </span> </p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p
+            style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:left;">
+            <span style="color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+                style="color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">public</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span
+                style="color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">class</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span
+                style="color:rgb(43,145,175);font-size:9.5000pt;">
+                <font face="Cascadia Mono">SQLContext</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;<font face="Cascadia Mono">: DbContext
+                </font></span><span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p
+            style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:left;">
+            <span style="color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;&nbsp;&nbsp;&nbsp;<font face="Cascadia Mono">{
+                </font></span><span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p
+            style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:left;">
+            <span
+                style="color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+                style="color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">public</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span
+                style="color:rgb(43,145,175);font-size:9.5000pt;">
+                <font face="Cascadia Mono">SQLContext</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Cascadia Mono">(DbContextOptions&lt;SQLContext&gt; options) </font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p
+            style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:left;">
+            <span
+                style="color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <font face="Cascadia Mono">: </font></span><span style="color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">base</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Cascadia Mono">(options)</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p
+            style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:left;">
+            <span style="color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font
+                    face="Cascadia Mono">{ </font></span><span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p
+            style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:left;">
+            <span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p
+            style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:left;">
+            <span style="color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font
+                    face="Cascadia Mono">} </font></span><span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p
+            style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:left;">
+            <span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p
+            style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:left;">
+            <span
+                style="color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+                style="color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">public</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;<font face="Cascadia Mono">
+                    DbSet&lt;Stock&gt; Stocks { </font></span><span style="color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">get</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Cascadia Mono">; </font>
+            </span><span style="color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">set</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Cascadia Mono">; } = </font>
+            </span><span style="color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">null</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Cascadia Mono">!;</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p
+            style="text-indent:22.2500pt;border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:left;">
+            <span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Cascadia Mono">}</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="text-indent:22.2500pt;"><span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p style="margin-left:0.0000pt;text-indent:0.0000pt;"> <span
+                style="color:rgb(0,0,0);font-size:9.5000pt;"><span>4)<span>&nbsp;</span></span></span> <span
+                style="color:rgb(0,0,0);font-size:9.5000pt;">add the dbcontext service to program.cs</span><span
+                style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span> </p>
+        <p><span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p
+            style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:left;">
+            <span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Cascadia Mono">builder.Services.AddDbContext&lt;SQLContext&gt;(opt =&gt; </font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p
+            style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:left;">
+            <span style="color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;&nbsp;&nbsp;&nbsp;<font face="Cascadia Mono">
+                    opt.UseInMemoryDatabase( </font></span><span style="color:rgb(163,21,21);font-size:9.5000pt;">
+                <font face="Cascadia Mono">"StockList"</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Cascadia Mono">));</font>
+            </span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p style="margin-left:0.0000pt;text-indent:0.0000pt;"> <span><span>5)<span>&nbsp;</span></span></span>
+            <span>Create a controller using New scaffolded Item</span><span>
+                <o:p></o:p>
+            </span> </p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="353" height="32" src="API 201.files/API 2011422.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p style="margin-left:0.0000pt;text-indent:0.0000pt;"> <span><span>6)<span>&nbsp;</span></span></span>
+            <span>Test it in Swagger/postman</span><span>
+                <o:p></o:p>
+            </span> </p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>POST the new record and Get the new added record</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc3885"></a><b><span style="font-weight:bold;font-size:22.0000pt;">Create Website
+                    (Razor)</span></b><b><span style="font-weight:bold;font-size:22.0000pt;">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p> <span><span>1)<span>&nbsp;</span></span></span> <span>Create Models</span><span>
+                <o:p></o:p>
+            </span> </p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="501" height="102" src="API 201.files/API 2011542.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p> <span><span>2)<span>&nbsp;</span></span></span> <span>Add Entity framework Package</span><span>
+                <o:p></o:p>
+            </span> </p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="56" src="API 201.files/API 2011575.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p style="margin-left:0.0000pt;text-indent:0.0000pt;"> <span><span>3)<span>&nbsp;</span></span></span> <span>Add
+                New razor page using new scaffolded item and adding the &nbsp;new dbcontext </span><span>
+                <o:p></o:p>
+            </span> </p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p style="margin-left:0.0000pt;text-indent:0.0000pt;"> <span><span>4)<span>&nbsp;</span></span></span>
+            <span>Migrate the new created page with Database</span><span>
+                <o:p></o:p>
+            </span> </p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p style="margin-left:0.0000pt;text-indent:0.0000pt;"> <span><span>5)<span>&nbsp;</span></span></span>
+            <span>Open package manager console and add migration</span><span>
+                <o:p></o:p>
+            </span> </p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="416" height="197" src="API 201.files/API 2011747.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p style="margin-left:0.0000pt;text-indent:0.0000pt;"> <span><span>6)<span>&nbsp;</span></span></span>
+            <span>Update database</span><span>
+                <o:p></o:p>
+            </span> </p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="336" height="72" src="API 201.files/API 2011767.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>It automatically create the database in your local SQL server and added the connection string in
+                appsettings.json</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="40" src="API 201.files/API 2011885.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p style="margin-left:0.0000pt;text-indent:0.0000pt;"> <span><span>7)<span>&nbsp;</span></span></span>
+            <span>(Optional) Create the init seed data and add the seed data to create the scope </span><span>
+                <o:p></o:p>
+            </span> </p>
+        <p><img width="434" height="140" src="API 201.files/API 2011968.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p style="margin-left:0.0000pt;text-indent:0.0000pt;"> <span><span>8)<span>&nbsp;</span></span></span>
+            <span>(Optional) Add the new link to _Layout.cshtml</span><span>
+                <o:p></o:p>
+            </span> </p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="49" src="API 201.files/API 2012018.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc27867"></a><b><span style="font-weight:bold;font-size:22.0000pt;">Web API with
+                    EF</span></b><b><span style="font-weight:bold;font-size:22.0000pt;">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p> <span><span>1)<span>&nbsp;</span></span></span> <span>Create Models</span><span>
+                <o:p></o:p>
+            </span> </p>
+        <p> <span><span>2)<span>&nbsp;</span></span></span> <span>Add EF package</span><span>
+                <o:p></o:p>
+            </span> </p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="516" height="49" src="API 201.files/API 2012069.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p> <span><span>3)<span>&nbsp;</span></span></span> <span>Create controller by using New scaffolded
+                Item</span><span>
+                <o:p></o:p>
+            </span> </p>
+        <p> <span><span>4)<span>&nbsp;</span></span></span> <span>Migrate the API to local SQL server using package
+                manger console</span><span>
+                <o:p></o:p>
+            </span> </p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="512" height="80" src="API 201.files/API 2012185.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="376" height="76" src="API 201.files/API 2012188.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc28402"></a><b><span style="font-weight:bold;font-size:22.0000pt;">Using Database First Approach
+                    In Entity Framework Core 6 and ASP.NET Core MVC</span></b><b><span
+                    style="font-weight:bold;font-size:22.0000pt;">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p> <span><span>1)<span>&nbsp;</span></span></span> <span>Add Package</span><span>
+                <o:p></o:p>
+            </span> </p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="49" src="API 201.files/API 2012283.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="63" src="API 201.files/API 2012286.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="65" src="API 201.files/API 2012289.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p style="margin-left:0.0000pt;text-indent:0.0000pt;"> <span><span>2)<span>&nbsp;</span></span></span>
+            <span>Create Models and DBContext using scaffolded (using package manager console)</span><span>
+                <o:p></o:p>
+            </span> </p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Cascadia Mono">PM&gt; Scaffold-dbcontext "server=.;Database=stock;User
+                    ID=archiefan;Password=password;Trusted_Connection=true;"
+                    &nbsp;Microsoft.entityframeworkcore.sqlServer -outputDir Models</font>
+            </span><span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p><span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p style="margin-left:0.0000pt;text-indent:0.0000pt;"> <span
+                style="color:rgb(0,0,0);font-size:9.5000pt;"><span>3)<span>&nbsp;</span></span></span> <span
+                style="color:rgb(0,0,0);font-size:9.5000pt;">Create a connection string in appsettings.json</span><span
+                style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span> </p>
+        <p style="margin-left:0.0000pt;text-indent:0.0000pt;"> <span
+                style="color:rgb(0,0,0);font-size:9.5000pt;"><span>4)<span>&nbsp;</span></span></span> <span
+                style="color:rgb(0,0,0);font-size:9.5000pt;">Comment/remove the connection string built by
+                scaffold</span><span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span> </p>
+        <p><span style="color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="114" src="API 201.files/API 2012643.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p style="margin-left:0.0000pt;text-indent:0.0000pt;"> <span><span>5)<span>&nbsp;</span></span></span>
+            <span>register the service in Program.cs</span><span>
+                <o:p></o:p>
+            </span> </p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="132" src="API 201.files/API 2012682.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p style="margin-left:0.0000pt;text-indent:0.0000pt;"> <span><span>6)<span>&nbsp;</span></span></span> <span>Add
+                the new controller using scaffold</span><span>
+                <o:p></o:p>
+            </span> </p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="445" height="59" src="API 201.files/API 2012724.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p style="margin-left:0.0000pt;text-indent:0.0000pt;"> <span><span>7)<span>&nbsp;</span></span></span>
+            <span>(Optional) Add the new link in _layout.cshtml </span><span>
+                <o:p></o:p>
+            </span> </p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc27386"></a><b><span style="font-weight:bold;font-size:22.0000pt;">MVC And EF Core 6 CRUD
+                    Operations Using Code First Approach</span></b><b><span
+                    style="font-weight:bold;font-size:22.0000pt;">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p> <span><span>1)<span>&nbsp;</span></span></span> <span>Create Models</span><span>
+                <o:p></o:p>
+            </span> </p>
+        <p> <span><span>2)<span>&nbsp;</span></span></span> <span>Add Package</span><span>
+                <o:p></o:p>
+            </span> </p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="553" height="49" src="API 201.files/API 2012864.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p style="margin-left:0.0000pt;text-indent:0.0000pt;"> <span><span>3)<span>&nbsp;</span></span></span> <span>Add
+                controller</span><span>
+                <o:p></o:p>
+            </span> </p>
+        <p style="margin-left:0.0000pt;text-indent:0.0000pt;"> <span><span>4)<span>&nbsp;</span></span></span>
+            <span>Migrated using package manager console</span><span>
+                <o:p></o:p>
+            </span> </p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="207" height="40" src="API 201.files/API 2012922.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p style="margin-left:0.0000pt;text-indent:0.0000pt;"> <span><span>5)<span>&nbsp;</span></span></span>
+            <span>Update database</span><span>
+                <o:p></o:p>
+            </span> </p>
+        <p><img width="160" height="23" src="API 201.files/API 2012941.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p style="margin-left:0.0000pt;text-indent:0.0000pt;"> <span><span>6)<span>&nbsp;</span></span></span>
+            <span>(optional) Add the link to _layout.cshtml</span><span>
+                <o:p></o:p>
+            </span> </p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+    </main><!-- End #main --> <!-- ======= Footer ======= -->
+    <div w3-include-html="footer.htm"></div>
+    <script>includeHTML();</script> <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a> <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
