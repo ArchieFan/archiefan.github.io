@@ -1,0 +1,2649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>My Portfolio</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords"> <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon"> <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet"> <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <script src="assets/js/layout.js"></script>
+</head>
+
+<body> <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+        <div class="d-flex align-items-center justify-content-between"> <i class="bi bi-list toggle-sidebar-btn"></i>
+        </div><!-- End Logo -->
+        <nav class="header-nav ms-auto">
+            <ul class="d-flex align-items-center">
+                <div w3-include-html="header.htm"></div>
+            </ul>
+        </nav><!-- End Icons Navigation -->
+    </header><!-- End Header --> <!-- ======= Sidebar ======= -->
+    <div w3-include-html="sidebar.htm"></div>
+    <main id="main" class="main">
+        <p class=MsoNormal align=center><span style="font-size:10.5000pt;">Catalog</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><span><a href="#_Toc9156 "><span>Delegates in C#</span><span>&#9;</span></a></span><span>
+                    <o:p></o:p>
+                </span></p>
+        <p class=MsoToc1><span><a href="#_Toc22137 "><span>Multicast Delegates</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc32112 "><span>Anonymous Methods</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc6389 "><span>Lambda
+                        Expressions&nbsp;</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc27675 "><span>Func, Action and
+                        Predicate</span><span>Delegates</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc2><span><a href="#_Toc15545 "><span>Func (return output)</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc2><span><a href="#_Toc31516 "><span>Action (No return
+                        void)</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc2><span><a href="#_Toc17387 "><span
+                        style="font-family:'Segoe UI';letter-spacing:0.0000pt;text-transform:none;font-style:normal;background:rgb(255,255,255);">Advantages
+                        of Action and Func Delegates</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc2><span><a href="#_Toc24454 "><span>Predicate (return
+                        bool)</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc25804 "><span>Extension
+                        Methods&nbsp;</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc24105 "><span>Reflection</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc25142 "><span>Multithreading&nbsp;</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc2><span><a href="#_Toc8854 "><span>
+                        <font face="Calibri">ThreadStart</font>
+                    </span><span>&nbsp;must be void.</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc2><span><a href="#_Toc25869 "><span>
+                        <font face="Calibri">ParameterizedThreadStart </font>
+                    </span><span>must be Object</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc2><span><a href="#_Toc5973 "><span>Thread Locking</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc2><span><a href="#_Toc17957 "><span>Thread Join</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc2><span><a href="#_Toc4266 "><span>Thread IsAlive</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc2><span><a href="#_Toc29806 "><span>Thread Priority</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc2><span><a href="#_Toc26265 "><span>Thread Abort
+                        (deprecated)</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc16739 "><span>Retrieving data from Thread function using callback
+                        method</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc16403 "><span>Protecting shared resources from concurrent
+                        access</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc28175 "><span>Difference between Monitor and
+                        lock</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc8295 "><span>Deadlock</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc25896 "><span>How to resolve a
+                        deadlock</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc4469 "><span>background thread and foreground
+                        thread</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc13071 "><span>How to Debug C# Threads
+                        ?</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc22577 "><span>Task vs Thread</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc4784 "><span>Async and await&nbsp;</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc20080 "><span>W</span><span>ait for thread to finish
+                        without blocking</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc24226 "><span>LINQ</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc5162 "><span>The advantage of LINQ</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal></span></w:Sdt><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1 style="page-break-after:avoid;page-break-before:always;"><a name="_Toc9156"></a><b><span
+                    style="font-weight:bold;font-size:22.0000pt;">Delegates in C#</span></b><b><span
+                    style="font-weight:bold;font-size:22.0000pt;">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>Delegate us a type safe function pointer. &nbsp;A delegate holds the reference
+                of a method and then calls the method for execution.</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>To Call a method by using a delegate, we have 3 steps</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal>
+            <span><span>1)</span></span>
+            <span>Define a delegate</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal><span>[&lt;modifiers&gt;] delegate void/type &lt;Name&gt;([&lt;parameter
+                list&gt;])</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><img width="421" height="71" src="Csharp201.files/Csharp2012745.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal>
+            <span><span>2)</span></span>
+            <span>I</span><span>
+                <font face="Calibri">nstantiating delegate</font>
+            </span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="421" height="44" src="Csharp201.files/Csharp2012772.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="439" height="48" src="Csharp201.files/Csharp2012775.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal>
+            <span><span>3)</span></span>
+            <span>Now call the delegate by passing request parameter value, so that internally the
+                method which is bound with the delegate gets executed.</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="553" height="52" src="Csharp201.files/Csharp2012915.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="436" height="41" src="Csharp201.files/Csharp2012918.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc22137"></a><b><span style="font-weight:bold;font-size:22.0000pt;">Multicast
+                    Delegates</span></b><b><span style="font-weight:bold;font-size:22.0000pt;">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="276" height="60" src="Csharp201.files/Csharp2012942.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>Must be void. &nbsp;Otherwise, only return the last value because the last
+                value will override the previous value.</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="553" height="149" src="Csharp201.files/Csharp2013056.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="532" height="319" src="Csharp201.files/Csharp2013059.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc32112"></a><b><span style="font-weight:bold;font-size:22.0000pt;">Anonymous
+                    Methods</span></b><b><span style="font-weight:bold;font-size:22.0000pt;">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <font face="Calibri">Methods without the name</font>
+            </span><span>&nbsp;(unnamed method). &nbsp;Only declared &nbsp;by delegate keyword. &nbsp;The
+                advantage is lesser typing work.</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="441" height="100" src="Csharp201.files/Csharp2013200.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="412" height="98" src="Csharp201.files/Csharp2013203.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc6389"></a><b><span style="font-weight:bold;font-size:22.0000pt;">Lambda
+                    Expressions&nbsp;</span></b><b><span style="font-weight:bold;font-size:22.0000pt;">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>Lambda expression is just a shorthand for an anonymous methods.
+                &nbsp;</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="295" height="84" src="Csharp201.files/Csharp2013294.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="453" height="112" src="Csharp201.files/Csharp2013297.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1 style="margin-left:11.0500pt;text-indent:-11.0500pt;"><a name="_Toc27675"></a><b><span
+                    style="font-weight:bold;font-size:22.0000pt;">Func, Action and
+                    Predicate</span></b><b><span style="font-weight:bold;font-size:22.0000pt;">&nbsp;</span></b><b><span
+                    style="font-weight:bold;font-size:22.0000pt;">Delegates</span></b><b><span
+                    style="font-weight:bold;font-size:22.0000pt;">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>C# includes built-in generic delegate
+                types</span><span>Func</span><span>&nbsp;and&nbsp;Action, so that you don't
+                need to define custom delegates manually in most cases.</span><span>&nbsp;(we don’t need to
+                define delegate explicitly)</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span
+                style="font-family:Verdana;color:rgb(24,23,23);letter-spacing:0.1000pt;text-transform:none;font-style:normal;font-size:8.5000pt;background:rgb(255,255,255);">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>There are 3 pre-defined Generic delegates:</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal>
+            <span><span>1)</span></span>
+            <span>Func (return output) &lt;-- up to 16 input</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal>
+            <span><span>2)</span></span>
+            <span>Action (No return void) &lt;-- up to 16 input</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal>
+            <span><span>3)</span></span>
+            <span>Predicate (return bool)</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h2><a name="_Toc15545"></a><b><span style="font-weight:bold;font-size:16.0000pt;">Func (return
+                    output)</span></b><b><span style="font-weight:bold;font-size:16.0000pt;">
+                    <o:p></o:p>
+                </span></b></h2>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>Func&nbsp;</span><span>is a generic delegate included in
+                the&nbsp;System&nbsp;namespace. It has zero or more&nbsp;input&nbsp;parameters and
+                one&nbsp;out&nbsp;parameter. The last parameter is considered as an out parameter.</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><img width="556" height="124" src="Csharp201.files/Csharp2013869.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal
+            style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;">
+            <span style="font-family:'Cascadia Mono';color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Cascadia Mono">Func&lt;</font>
+            </span><span style="font-family:'Cascadia Mono';color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">int</font>
+            </span><span style="font-family:'Cascadia Mono';color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Cascadia Mono">,</font>
+            </span><span style="font-family:'Cascadia Mono';color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">float</font>
+            </span><span style="font-family:'Cascadia Mono';color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Cascadia Mono">,</font>
+            </span><span style="font-family:'Cascadia Mono';color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">double</font>
+            </span><span style="font-family:'Cascadia Mono';color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Cascadia Mono">, </font>
+            </span><span style="font-family:'Cascadia Mono';color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">double</font>
+            </span><span style="font-family:'Cascadia Mono';color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Cascadia Mono">&gt; &nbsp;d1 = AddNums1;</font>
+            </span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <h2><b><span style="font-weight:bold;font-size:16.0000pt;">
+                    <o:p>&nbsp;</o:p>
+                </span></b></h2>
+        <h2><a name="_Toc31516"></a><b><span style="font-weight:bold;font-size:16.0000pt;">Action (No return
+                    void)</span></b><b><span style="font-weight:bold;font-size:16.0000pt;">
+                    <o:p></o:p>
+                </span></b></h2>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.1000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(217,229,243);">Action</span><span
+                style="font-family:Verdana;color:rgb(24,23,23);letter-spacing:0.1000pt;text-transform:none;font-style:normal;font-size:8.5000pt;background:rgb(255,255,255);">&nbsp;</span><span
+                style="font-family:Verdana;color:rgb(24,23,23);letter-spacing:0.1000pt;text-transform:none;font-style:normal;font-size:8.5000pt;background:rgb(255,255,255);">is
+                a delegate type defined in the&nbsp;</span><span class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.1000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(217,229,243);">System</span><span
+                style="font-family:Verdana;color:rgb(24,23,23);letter-spacing:0.1000pt;text-transform:none;font-style:normal;font-size:8.5000pt;background:rgb(255,255,255);">&nbsp;namespace.
+                An Action type delegate is the same as&nbsp;</span><span><a
+                    href="https://www.tutorialsteacher.com/csharp/csharp-func-delegate"><u><span class="27"
+                            style="font-family:Verdana;color:rgb(0,123,255);letter-spacing:0.1000pt;text-transform:none;text-decoration:underline;font-style:normal;font-size:7.5000pt;background:rgb(255,255,255);">Func
+                            delegate</span></u></a></span><span
+                style="font-family:Verdana;color:rgb(24,23,23);letter-spacing:0.1000pt;text-transform:none;font-style:normal;font-size:8.5000pt;background:rgb(255,255,255);">&nbsp;except
+                that the Action delegate doesn't return a value. In other words, an Action delegate can be used with a
+                method that has a void return type.</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=pre align=justify
+            style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:justify;text-justify:inter-ideograph;background:rgb(255,255,255);">
+            <span
+                style="font-family:Consolas;color:rgb(43,145,175);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">Action</span><span
+                class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">&lt;</span><span
+                style="font-family:Consolas;color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">int</span><span
+                class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">&gt;
+                printActionDel = ConsolePrint;</span><span
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.5000pt;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="554" height="193" src="Csharp201.files/Csharp2014326.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h2 align=justify
+            style="margin-left:0.0000pt;text-indent:0.0000pt;text-align:justify;text-justify:inter-ideograph;background:rgb(255,255,255);">
+            <a name="_Toc17387"></a><b><span
+                    style="font-family:'Segoe UI';color:rgb(24,23,23);letter-spacing:0.0000pt;font-weight:bold;text-transform:none;font-style:normal;font-size:14.0000pt;background:rgb(255,255,255);">Advantages
+                    of Action and Func Delegates</span></b><b><span
+                    style="font-family:'Segoe UI';color:rgb(24,23,23);letter-spacing:0.0000pt;font-weight:bold;text-transform:none;font-style:normal;font-size:14.0000pt;">
+                    <o:p></o:p>
+                </span></b>
+        </h2>
+        <p class=MsoNormal align=justify
+            style="margin-top:5.0000pt;margin-bottom:5.0000pt;margin-left:36.0000pt;text-indent:-18.0000pt;text-align:justify;text-justify:inter-ideograph;">
+            <span
+                style="font-family:Verdana;color:rgb(24,23,23);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:12.0000pt;background:rgb(255,255,255);"><span>1.</span></span>
+            <span
+                style="font-family:Verdana;color:rgb(24,23,23);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.5000pt;background:rgb(255,255,255);">Easy
+                and quick to define delegates.</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal align=justify
+            style="margin-top:5.0000pt;margin-bottom:5.0000pt;margin-left:36.0000pt;text-indent:-18.0000pt;text-align:justify;text-justify:inter-ideograph;">
+            <span
+                style="font-family:Verdana;color:rgb(24,23,23);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:12.0000pt;background:rgb(255,255,255);"><span>2.</span></span>
+            <span
+                style="font-family:Verdana;color:rgb(24,23,23);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.5000pt;background:rgb(255,255,255);">Makes
+                code short.</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal align=justify
+            style="margin-top:5.0000pt;margin-bottom:5.0000pt;margin-left:36.0000pt;text-indent:-18.0000pt;text-align:justify;text-justify:inter-ideograph;">
+            <span
+                style="font-family:Verdana;color:rgb(24,23,23);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:12.0000pt;background:rgb(255,255,255);"><span>3.</span></span>
+            <span
+                style="font-family:Verdana;color:rgb(24,23,23);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.5000pt;background:rgb(255,255,255);">Compatible
+                type throughout the application.</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <h2><a name="_Toc24454"></a><b><span style="font-weight:bold;font-size:16.0000pt;">Predicate (return
+                    bool)</span></b><b><span style="font-weight:bold;font-size:16.0000pt;">
+                    <o:p></o:p>
+                </span></b></h2>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.1000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(217,229,243);">Predicate</span><span
+                style="font-family:Verdana;color:rgb(24,23,23);letter-spacing:0.1000pt;text-transform:none;font-style:normal;font-size:8.5000pt;background:rgb(255,255,255);">&nbsp;</span><span
+                style="font-family:Verdana;color:rgb(24,23,23);letter-spacing:0.1000pt;text-transform:none;font-style:normal;font-size:8.5000pt;background:rgb(255,255,255);">is
+                the delegate like&nbsp;</span><span><a
+                    href="https://www.tutorialsteacher.com/csharp/csharp-func-delegate"><u><span class="27"
+                            style="font-family:Verdana;color:rgb(0,123,255);letter-spacing:0.1000pt;text-transform:none;text-decoration:underline;font-style:normal;font-size:7.5000pt;background:rgb(255,255,255);">Func</span></u></a></span><span
+                style="font-family:Verdana;color:rgb(24,23,23);letter-spacing:0.1000pt;text-transform:none;font-style:normal;font-size:8.5000pt;background:rgb(255,255,255);">&nbsp;and&nbsp;</span><span><a
+                    href="https://www.tutorialsteacher.com/csharp/csharp-action-delegate"><u><span class="27"
+                            style="font-family:Verdana;color:rgb(0,123,255);letter-spacing:0.1000pt;text-transform:none;text-decoration:underline;font-style:normal;font-size:7.5000pt;background:rgb(255,255,255);">Action</span></u></a></span><span
+                style="font-family:Verdana;color:rgb(24,23,23);letter-spacing:0.1000pt;text-transform:none;font-style:normal;font-size:8.5000pt;background:rgb(255,255,255);">&nbsp;delegates.
+                It represents a method containing a set of criteria and checks whether the passed parameter meets those
+                criteria. A predicate delegate methods must take one input parameter and return a boolean - true or
+                false.</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal
+            style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;">
+            <span style="font-family:'Cascadia Mono';color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Cascadia Mono">Predicate&lt;</font>
+            </span><span style="font-family:'Cascadia Mono';color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">string</font>
+            </span><span style="font-family:'Cascadia Mono';color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Cascadia Mono">&gt; d3 = IsLengthGreaterthan5;</font>
+            </span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc25804"></a><b><span style="font-weight:bold;font-size:22.0000pt;">Extension
+                    Methods&nbsp;</span></b><b><span style="font-weight:bold;font-size:22.0000pt;">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>Extension methods, as the name suggests, are additional methods. Extension
+                methods allow you to inject additional methods without modifying, deriving or recompiling the original
+                class, </span><span style="background:rgb(255,255,0);">struct </span><span>or interface.</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>inheritance is a mechanism using which we can extend the functionalities of a
+                class. </span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="184" height="198" src="Csharp201.files/Csharp2015280.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>But we cannot apply inheritance on sealed class. &nbsp;inheritance cannot be
+                applied in struct class. &nbsp;I may not have permission to change the class or I may not have the
+                source code.</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="528" height="200" src="Csharp201.files/Csharp2015463.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal align=justify
+            style="margin-bottom:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;text-align:justify;text-justify:inter-ideograph;background:rgb(75,144,189);">
+            <span
+                style="font-family:Verdana;color:rgb(255,255,255);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(75,144,189);">Note:</span><span
+                style="font-family:Verdana;color:rgb(255,255,255);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal align=justify
+            style="margin-left:0.0000pt;text-indent:0.0000pt;text-align:justify;text-justify:inter-ideograph;"><span
+                style="font-family:Verdana;color:rgb(16,16,16);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;">The
+                only difference between a regular static method and an extension method is that the first parameter of
+                the extension method specifies the type that it is going to operator on, preceded by
+                the&nbsp;</span><b><i><span
+                        style="font-family:Verdana;color:rgb(16,16,16);letter-spacing:0.0000pt;font-weight:bold;text-transform:none;font-style:italic;font-size:8.0000pt;">this</span></i></b><span
+                style="font-family:Verdana;color:rgb(16,16,16);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;">&nbsp;keyword.</span><span
+                style="font-family:Verdana;color:rgb(16,16,16);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal align=justify
+            style="margin-left:0.0000pt;text-indent:0.0000pt;text-align:justify;text-justify:inter-ideograph;"><span
+                style="font-family:Verdana;color:rgb(16,16,16);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal align=justify
+            style="margin-left:0.0000pt;text-indent:0.0000pt;text-align:justify;text-justify:inter-ideograph;"><span
+                style="font-family:Verdana;color:rgb(16,16,16);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;">Extension
+                methods are defined as static but once they are bound with any class or struct, they turn into
+                non-static.</span><span
+                style="font-family:Verdana;color:rgb(16,16,16);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal align=justify
+            style="margin-left:0.0000pt;text-indent:0.0000pt;text-align:justify;text-justify:inter-ideograph;"><span
+                style="font-family:Verdana;color:rgb(16,16,16);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal align=justify
+            style="margin-left:0.0000pt;text-indent:0.0000pt;text-align:justify;text-justify:inter-ideograph;"><span
+                style="font-family:Verdana;color:rgb(16,16,16);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;">If
+                the name of the extension method has the same name, extension method will not be called.</span><span
+                style="font-family:Verdana;color:rgb(16,16,16);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=pre align=justify
+            style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:justify;text-justify:inter-ideograph;background:rgb(255,255,255);">
+            <span
+                style="font-family:Consolas;color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">namespace</span><span
+                class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">&nbsp;ExtensionMethods</span><span
+                class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=pre align=justify
+            style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:justify;text-justify:inter-ideograph;background:rgb(255,255,255);">
+            <span class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">{</span><span
+                class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=pre align=justify
+            style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:justify;text-justify:inter-ideograph;background:rgb(255,255,255);">
+            <span class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+                style="font-family:Consolas;color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">public</span><span
+                class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">&nbsp;</span><span
+                style="font-family:Consolas;color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">static</span><span
+                class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">&nbsp;</span><span
+                style="font-family:Consolas;color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">class</span><span
+                class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">&nbsp;</span><span
+                style="font-family:Consolas;color:rgb(43,145,175);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">IntExtensions</span><span
+                class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=pre align=justify
+            style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:justify;text-justify:inter-ideograph;background:rgb(255,255,255);">
+            <span class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</span><span
+                class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=pre align=justify
+            style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:justify;text-justify:inter-ideograph;background:rgb(255,255,255);">
+            <span class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+                style="font-family:Consolas;color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">public</span><span
+                class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">&nbsp;</span><span
+                style="font-family:Consolas;color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">static</span><span
+                class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">&nbsp;</span><span
+                style="font-family:Consolas;color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">bool</span><span
+                class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">&nbsp;IsGreaterThan(</span><span
+                style="font-family:Consolas;color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,0);background:rgb(255,255,255);">this</span><span
+                class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,0);background:rgb(255,255,255);">&nbsp;</span><span
+                style="font-family:Consolas;color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">int</span><span
+                class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">&nbsp;i,
+            </span><span
+                style="font-family:Consolas;color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">int</span><span
+                class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">&nbsp;</span><span
+                style="font-family:Consolas;color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">value</span><span
+                class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">)</span><span
+                class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=pre align=justify
+            style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:justify;text-justify:inter-ideograph;background:rgb(255,255,255);">
+            <span class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</span><span
+                class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=pre align=justify
+            style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:justify;text-justify:inter-ideograph;background:rgb(255,255,255);">
+            <span class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+                style="font-family:Consolas;color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">return</span><span
+                class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">&nbsp;i
+                &gt; </span><span
+                style="font-family:Consolas;color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">value</span><span
+                class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">;</span><span
+                class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=pre align=justify
+            style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:justify;text-justify:inter-ideograph;background:rgb(255,255,255);">
+            <span class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><span
+                class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=pre align=justify
+            style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:justify;text-justify:inter-ideograph;background:rgb(255,255,255);">
+            <span class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">&nbsp;&nbsp;&nbsp;&nbsp;}</span><span
+                class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=pre align=justify
+            style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:justify;text-justify:inter-ideograph;background:rgb(255,255,255);">
+            <span class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">}</span><span
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.5000pt;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal
+            style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;">
+            <span>
+                <o:p>&nbsp;</o:p>
+            </span>
+        </p>
+        <p class=pre align=justify
+            style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:justify;text-justify:inter-ideograph;background:rgb(255,255,255);">
+            <span
+                style="font-family:Consolas;color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">using</span><span
+                class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">&nbsp;ExtensionMethods;</span><span
+                class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=pre align=justify
+            style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:justify;text-justify:inter-ideograph;background:rgb(255,255,255);">
+            <span
+                style="font-family:Consolas;color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">class</span><span
+                class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">&nbsp;</span><span
+                style="font-family:Consolas;color:rgb(43,145,175);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">Program</span><span
+                class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=pre align=justify
+            style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:justify;text-justify:inter-ideograph;background:rgb(255,255,255);">
+            <span class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">{</span><span
+                class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=pre align=justify
+            style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:justify;text-justify:inter-ideograph;background:rgb(255,255,255);">
+            <span class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+                style="font-family:Consolas;color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">static</span><span
+                class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">&nbsp;</span><span
+                style="font-family:Consolas;color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">void</span><span
+                class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">&nbsp;Main(</span><span
+                style="font-family:Consolas;color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">string</span><span
+                class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">[]
+                args)</span><span class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=pre align=justify
+            style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:justify;text-justify:inter-ideograph;background:rgb(255,255,255);">
+            <span class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">&nbsp;&nbsp;&nbsp;&nbsp;{</span><span
+                class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=pre align=justify
+            style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:justify;text-justify:inter-ideograph;background:rgb(255,255,255);">
+            <span class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+                style="font-family:Consolas;color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">int</span><span
+                class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">&nbsp;i
+                = 10;</span><span class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=pre align=justify
+            style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:justify;text-justify:inter-ideograph;background:rgb(255,255,255);">
+            <span class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+                style="font-family:Consolas;color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">bool</span><span
+                class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">&nbsp;result
+                = i.IsGreaterThan(100); </span><span class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=pre align=justify
+            style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:justify;text-justify:inter-ideograph;background:rgb(255,255,255);">
+            <span class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+                style="font-family:Consolas;color:rgb(43,145,175);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">Console</span><span
+                class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">.WriteLine(result);</span><span
+                class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=pre align=justify
+            style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:justify;text-justify:inter-ideograph;background:rgb(255,255,255);">
+            <span class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">&nbsp;&nbsp;&nbsp;&nbsp;}</span><span
+                class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=pre align=justify
+            style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:justify;text-justify:inter-ideograph;background:rgb(255,255,255);">
+            <span class="31"
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">}</span><span
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.5000pt;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="416" height="172" src="Csharp201.files/Csharp2016283.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="553" height="315" src="Csharp201.files/Csharp2016286.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc24105"></a><b><span style="font-weight:bold;font-size:22.0000pt;">Reflection</span></b><b><span
+                    style="font-weight:bold;font-size:22.0000pt;">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>Reflection</span><span>&nbsp;is </span><span style="background:rgb(255,255,0);">the
+                ability of inspecting an assemblie's
+                metadata at runtime</span><span>. &nbsp;It is used to find all types in an assembly and/or
+                dynamically invoke methods in an assembly. This includes information about the type, properties,
+                methods, and events of an object. With Reflection, we can dynamically create an instance of a type, bind
+                the type to an existing object, or get the type from an existing object and invoke its methods or access
+                its fields and properties.There are several uses of reflection.</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>1.</span><span>&nbsp;When you drag and drop a button on a win forms
+                or an asp.net application. The properties window uses reflection to show all the properties of the
+                Button class. So,reflection is extensivley used by IDE or a UI
+                designers.</span><span><br></span><span><br></span><span>2.&nbsp;</span><span
+                style="background:rgb(255,255,0);">Late binding</span><span>&nbsp;can be achieved by using reflection.
+                You can use reflection to dynamically create an
+                instance of a type, about which we don't have any information at compile time. So, reflection enables
+                you to use code that is not available at compile
+                time.</span><span><br></span><span><br></span><span>3.&nbsp;Consider an example where we have two
+                alternate
+                implementations of an interface. You want to allow the user to pick one or the other using a config
+                file. With reflection, you can simply read the name of the class whose implementation you want to use
+                from the config file, and instantiate an instance of that class. This is another example for late
+                binding using reflection.</span><span><br></span><span><br></span><span
+                style="background:rgb(255,255,0);">So, in short reflection can be used for
+                type discovery (i.e finding methods, properties, events, fields, constructors etc) and late
+                binding.</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal
+            style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;">
+            <span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">&nbsp;</span><span
+                style="font-family:Arial;color:rgb(56,118,29);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">//
+                Get the Type Using GetType() static method</span><span
+                style="font-family:Arial;color:rgb(56,118,29);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal
+            style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;">
+            <span
+                style="font-family:Arial;color:rgb(61,133,198);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">Type&nbsp;</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">T
+                =&nbsp;</span><span
+                style="font-family:Arial;color:rgb(61,133,198);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">Type</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">.GetType(</span><span
+                style="font-family:Arial;color:rgb(153,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">"Customer"</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">);</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);"><br></span><span
+                style="font-family:Arial;color:rgb(56,118,29);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">//
+                Print the Type details</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);"><br></span><span
+                style="font-family:Arial;color:rgb(61,133,198);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">Console</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">.WriteLine(</span><span
+                style="font-family:Arial;color:rgb(153,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">"Full
+                Name = {0}"</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">,T.FullName);</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);"><br></span><span
+                style="font-family:Arial;color:rgb(61,133,198);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">Console</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">.WriteLine(</span><span
+                style="font-family:Arial;color:rgb(153,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">"Just
+                the Class Name = {0}"</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">,T.Name);</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);"><br></span><span
+                style="font-family:Arial;color:rgb(61,133,198);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">Console</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">.WriteLine(</span><span
+                style="font-family:Arial;color:rgb(153,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">"Just
+                the Namespace = {0}"</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">,
+                T.Namespace);</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal
+            style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;">
+            <span>
+                <o:p>&nbsp;</o:p>
+            </span>
+        </p>
+        <p class=MsoNormal
+            style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;">
+            <span
+                style="font-family:Arial;color:rgb(56,118,29);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">//
+                Print the list of Methods</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);"><br></span><span
+                style="font-family:Arial;color:rgb(61,133,198);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">MethodInfo</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">[]
+                methods = T.GetMethods();</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);"><br></span><span
+                style="font-family:Arial;color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">foreach&nbsp;</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">(</span><span
+                style="font-family:Arial;color:rgb(61,133,198);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">MethodInfo&nbsp;</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">method&nbsp;</span><span
+                style="font-family:Arial;color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">in&nbsp;</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">methods)</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);"><br></span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">&nbsp;{</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal
+            style="text-indent:14.0000pt;border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;">
+            <span
+                style="font-family:Arial;color:rgb(56,118,29);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">//
+                Print the Return type and the name of the method</span><span
+                style="font-family:Arial;color:rgb(56,118,29);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal
+            style="text-indent:14.0000pt;border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;">
+            <span
+                style="font-family:Arial;color:rgb(61,133,198);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">Console</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">.WriteLine(method.ReturnType.Name
+                +&nbsp;</span><span
+                style="font-family:Arial;color:rgb(153,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">"
+                "</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">&nbsp;+
+                method.Name);</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);"><br></span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">}</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal
+            style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;">
+            <span>
+                <o:p>&nbsp;</o:p>
+            </span>
+        </p>
+        <p class=MsoNormal
+            style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;">
+            <span
+                style="font-family:Arial;color:rgb(56,118,29);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">//
+                &nbsp;Print the Properties</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);"><br></span><span
+                style="font-family:Arial;color:rgb(61,133,198);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">Console</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">.WriteLine(</span><span
+                style="font-family:Arial;color:rgb(153,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">"Properties
+                in Customer Class"</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">);</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);"><br></span><span
+                style="font-family:Arial;color:rgb(61,133,198);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">PropertyInfo</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">[]
+                properties = T.GetProperties();</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);"><br></span><span
+                style="font-family:Arial;color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">foreach&nbsp;</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">(</span><span
+                style="font-family:Arial;color:rgb(61,133,198);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">PropertyInfo</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">&nbsp;property&nbsp;</span><span
+                style="font-family:Arial;color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">in&nbsp;</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">properties)</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);"><br></span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">{</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);"><br></span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">&nbsp;&nbsp;&nbsp;</span><span
+                style="font-family:Arial;color:rgb(56,118,29);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">//
+                Print the property type and the name of the property</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);"><br></span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">&nbsp;&nbsp;&nbsp;</span><span
+                style="font-family:Arial;color:rgb(61,133,198);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">Console</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">.WriteLine(property.PropertyType.Name
+                +&nbsp;</span><span
+                style="font-family:Arial;color:rgb(153,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">"
+                "</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">&nbsp;+
+                property.Name);</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);"><br></span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">}</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal
+            style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;">
+            <span>
+                <o:p>&nbsp;</o:p>
+            </span>
+        </p>
+        <p class=MsoNormal
+            style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;">
+            <span
+                style="font-family:Arial;color:rgb(56,118,29);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">//
+                &nbsp;Print the Constructors</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);"><br></span><span
+                style="font-family:Arial;color:rgb(61,133,198);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">Console</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">.WriteLine(</span><span
+                style="font-family:Arial;color:rgb(153,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">"Constructors
+                in Customer Class"</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">);</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);"><br></span><span
+                style="font-family:Arial;color:rgb(61,133,198);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">ConstructorInfo</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">[]
+                constructors = T.GetConstructors();</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);"><br></span><span
+                style="font-family:Arial;color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">foreach&nbsp;</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">(</span><span
+                style="font-family:Arial;color:rgb(61,133,198);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">ConstructorInfo&nbsp;</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">constructor&nbsp;</span><span
+                style="font-family:Arial;color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">in&nbsp;</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">constructors)</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);"><br></span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">{</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);"><br></span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">&nbsp;&nbsp;&nbsp;</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">&nbsp;</span><span
+                style="font-family:Arial;color:rgb(61,133,198);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">Console</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">.WriteLine(constructor.ToString());</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);"><br></span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">}</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc25142"></a><b><span
+                    style="font-weight:bold;font-size:22.0000pt;">Multithreading&nbsp;</span></b><b><span
+                    style="font-weight:bold;font-size:22.0000pt;">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h2><a name="_Toc8854"></a><b><span style="font-weight:bold;font-size:16.0000pt;">
+                    <font face="Calibri">ThreadStart</font>
+                </span></b><b><span style="font-weight:bold;font-size:16.0000pt;">&nbsp;must be void.</span></b><b><span
+                    style="font-weight:bold;font-size:16.0000pt;">
+                    <o:p></o:p>
+                </span></b></h2>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal
+            style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;">
+            <span style="font-family:'Cascadia Mono';color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">static</font>
+            </span><span style="font-family:'Cascadia Mono';color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span
+                style="font-family:'Cascadia Mono';color:rgb(0,0,255);font-size:9.5000pt;background:rgb(255,255,0);">
+                <font face="Cascadia Mono">void</font>
+            </span><span
+                style="font-family:'Cascadia Mono';color:rgb(0,0,0);font-size:9.5000pt;background:rgb(255,255,0);">&nbsp;</span><span
+                style="font-family:'Cascadia Mono';color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Cascadia Mono">Test1()</font>
+            </span><span style="font-family:'Cascadia Mono';color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal
+            style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;">
+            <span style="font-family:'Cascadia Mono';color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Cascadia Mono">…</font>
+            </span><span style="font-family:'Cascadia Mono';color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal
+            style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;">
+            <span style="font-family:'Cascadia Mono';color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Cascadia Mono">ThreadStart obj = </font>
+            </span><span style="font-family:'Cascadia Mono';color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">new</font>
+            </span><span style="font-family:'Cascadia Mono';color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;<font
+                    face="Cascadia Mono">ThreadStart(Test1);</font></span><span
+                style="font-family:'Cascadia Mono';color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h2><a name="_Toc25869"></a><b><span style="font-weight:bold;font-size:16.0000pt;">
+                    <font face="Calibri">ParameterizedThreadStart </font>
+                </span></b><b><span style="font-weight:bold;font-size:16.0000pt;">must be Object</span></b><b><span
+                    style="font-weight:bold;font-size:16.0000pt;">
+                    <o:p></o:p>
+                </span></b></h2>
+        <p class=MsoNormal><span style="font-family:'Cascadia Mono';color:rgb(0,0,255);font-size:9.5000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal
+            style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;">
+            <span style="font-family:'Cascadia Mono';color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">static</font>
+            </span><span style="font-family:'Cascadia Mono';color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span
+                style="font-family:'Cascadia Mono';color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">void</font>
+            </span><span style="font-family:'Cascadia Mono';color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;<font
+                    face="Cascadia Mono">Test(</font></span><span
+                style="font-family:'Cascadia Mono';color:rgb(0,0,255);font-size:9.5000pt;background:rgb(255,255,0);">
+                <font face="Cascadia Mono">object</font>
+            </span><span
+                style="font-family:'Cascadia Mono';color:rgb(0,0,0);font-size:9.5000pt;background:rgb(255,255,0);">&nbsp;</span><span
+                style="font-family:'Cascadia Mono';color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Cascadia Mono">max)</font>
+            </span><span style="font-family:'Cascadia Mono';color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal
+            style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;">
+            <span style="font-family:'Cascadia Mono';color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Cascadia Mono">…</font>
+            </span><span style="font-family:'Cascadia Mono';color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal
+            style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:left;">
+            <span style="font-family:'Cascadia Mono';color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Cascadia Mono">ParameterizedThreadStart obj = </font>
+            </span><span style="font-family:'Cascadia Mono';color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">new</font>
+            </span><span style="font-family:'Cascadia Mono';color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;<font
+                    face="Cascadia Mono">ParameterizedThreadStart(Test);</font> </span><span
+                style="font-family:'Cascadia Mono';color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal
+            style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:left;">
+            <span style="font-family:'Cascadia Mono';color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Cascadia Mono">Thread t1 = </font>
+            </span><span style="font-family:'Cascadia Mono';color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Cascadia Mono">new</font>
+            </span><span style="font-family:'Cascadia Mono';color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;<font
+                    face="Cascadia Mono">Thread(obj);</font></span><span
+                style="font-family:'Cascadia Mono';color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal
+            style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;">
+            <span style="font-family:'Cascadia Mono';color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Cascadia Mono">t1.Start(50);</font>
+            </span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h2><a name="_Toc5973"></a><b><span style="font-weight:bold;font-size:16.0000pt;">Thread
+                    Locking</span></b><b><span style="font-weight:bold;font-size:16.0000pt;">
+                    <o:p></o:p>
+                </span></b></h2>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="480" height="165" src="Csharp201.files/Csharp2019161.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h2><a name="_Toc17957"></a><b><span style="font-weight:bold;font-size:16.0000pt;">Thread
+                    Join</span></b><b><span style="font-weight:bold;font-size:16.0000pt;">
+                    <o:p></o:p>
+                </span></b></h2>
+        <p class=MsoNormal><img width="201" height="57" src="Csharp201.files/Csharp2019176.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="background:rgb(255,255,0);">Join</span><span
+                style="background:rgb(255,255,0);">&nbsp;blocks the current thread and
+                makes it wait until the thread on which Join method is invoked completes. </span><span>Join
+                method also has a overload where we can specify the timeout. If we don't specify the timeout the calling
+                thread waits indefinitely, until the thread on which Join() is invoked completes. This
+                overloaded&nbsp;Join(int&nbsp;millisecondsTimeout) method returns boolean. True if the thread has
+                terminated otherwise false. </span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="background:rgb(255,255,0);">Join is particularly
+                useful when we need to wait and collect result from a thread execution or if we need to do some cleanup
+                after the thread has completed.</span><span><br></span><span>
+                <o:p></o:p>
+            </span></p>
+        <h2><a name="_Toc4266"></a><b><span style="font-weight:bold;font-size:16.0000pt;">Thread
+                    IsAlive</span></b><b><span style="font-weight:bold;font-size:16.0000pt;">
+                    <o:p></o:p>
+                </span></b></h2>
+        <p class=MsoNormal><span><br></span><span style="background:rgb(255,255,0);">IsAlive returns
+                boolean.</span><span>&nbsp;True if the thread is still executing otherwise false.</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="548" height="96" src="Csharp201.files/Csharp2019858.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h2><a name="_Toc29806"></a><b><span style="font-weight:bold;font-size:16.0000pt;">Thread
+                    Priority</span></b><b><span style="font-weight:bold;font-size:16.0000pt;">
+                    <o:p></o:p>
+                </span></b></h2>
+        <p class=MsoNormal><img width="324" height="58" src="Csharp201.files/Csharp2019877.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h2><a name="_Toc26265"></a><b><span style="font-weight:bold;font-size:16.0000pt;">Thread Abort
+                    (deprecated)</span></b><b><span style="font-weight:bold;font-size:16.0000pt;">
+                    <o:p></o:p>
+                </span></b></h2>
+        <p class=MsoNormal><img width="431" height="79" src="Csharp201.files/Csharp2019906.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc16739"></a><b><span style="font-weight:bold;font-size:22.0000pt;">Retrieving data from Thread
+                    function using callback method</span></b><b><span style="font-weight:bold;font-size:22.0000pt;">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="525" height="352" src="Csharp201.files/Csharp2019969.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>Step 1: Create a callback delegate. The actual callback method signature
+                should match with the signature of this delegate</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <font face="Calibri">Step 2: Create Number class to compute the sum of numbers and</font>
+            </span><span>
+                <font face="Calibri">to call the callback method</font>
+            </span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <font face="Calibri">Step 3: This class consumes the Number class created in Step 2</font>
+            </span><span>
+                <font face="Calibri">Callback method that will receive the sum of numbers</font>
+            </span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc16403"></a><b><span style="font-weight:bold;font-size:22.0000pt;">Protecting shared resources
+                    from concurrent access</span></b><b><span style="font-weight:bold;font-size:22.0000pt;">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><b><span
+                    style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;font-weight:bold;text-transform:none;font-style:normal;font-size:10.0000pt;background:rgb(255,255,255);">What
+                    happens if shared resources are not protected from concurrent access in multithreaded
+                    program</span></b><b><span
+                    style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;font-weight:bold;text-transform:none;font-style:normal;font-size:10.0000pt;background:rgb(255,255,255);">?</span></b><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:10.0000pt;background:rgb(255,255,255);"><br></span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:10.0000pt;background:rgb(255,255,255);">The
+                output or behaviour of the program can become inconsistent.&nbsp;</span><span
+                style="font-size:10.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="505" height="347" src="Csharp201.files/Csharp20110521.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="510" height="352" src="Csharp201.files/Csharp20110524.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="528" height="360" src="Csharp201.files/Csharp20110526.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc28175"></a><b><span style="font-weight:bold;font-size:22.0000pt;">Difference between Monitor
+                    and lock</span></b><b><span style="font-weight:bold;font-size:22.0000pt;">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="553" height="319" src="Csharp201.files/Csharp20110566.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="531" height="360" src="Csharp201.files/Csharp20110569.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc8295"></a><b><span style="font-weight:bold;font-size:22.0000pt;">Deadlock</span></b><b><span
+                    style="font-weight:bold;font-size:22.0000pt;">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="553" height="362" src="Csharp201.files/Csharp20110582.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc25896"></a><b><span style="font-weight:bold;font-size:22.0000pt;">How to resolve a
+                    deadlock</span></b><b><span style="font-weight:bold;font-size:22.0000pt;">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>There are several techniques to avoid and resolve
+                deadlocks</span><span><br></span><span>1.&nbsp;Acquiring locks in a specific defined
+                order</span><span><br></span><span>2.&nbsp;Mutex
+                class</span><span><br></span><span>3.&nbsp;Monitor.TryEnter() method</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc4469"></a><b><span style="font-weight:bold;font-size:22.0000pt;">background thread and
+                    foreground thread</span></b><b><span style="font-weight:bold;font-size:22.0000pt;">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>Basically, there are two types of threads which fall into:</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;">
+            <span style="font-family:Wingdings;"><span>&#9899;</span></span>
+            <span>Foreground Thread</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;">
+            <span style="font-family:Wingdings;"><span>&#9899;</span></span>
+            <span>Background Thread</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><b><span style="font-weight:bold;">Foreground
+                    Thread</span></b><span><br></span><span><br></span><span>Foreground threads are threads which will
+                continue to run until the last foreground thread is terminated. In another way, the application is
+                closed when all the foreground threads are stopped.</span><span><br></span><span><br></span><span>So the
+                application won't wait until the background threads are
+                completed, but it will wait until all the foreground threads are
+                terminated.</span><span><br></span><span><br></span><span>By default, the threads are foreground
+                threads. So when we create a thread the default value of IsBackground property would be
+                false.</span><span><br></span><span><br></span><b><span style="font-weight:bold;">Background
+                    Thread</span></b><span><br></span><span><br></span><span>Background threads are threads which will
+                get terminated when all
+                foreground threads are closed. The application won't wait for them to be
+                completed.</span><span><br></span><span><br></span><span>We can create a background thread like
+                following:</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="text-align:left;"><span
+                style="font-family:Verdana;color:rgb(33,33,33);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:10.0000pt;background:rgb(255,255,255);">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal
+            style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;margin-left:18.0000pt;text-indent:-18.0000pt;border-left:1.5000pt solid rgb(108,226,108);padding:0pt 0pt 0pt 5pt ;background:rgb(255,255,255);">
+            <span
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:12.0000pt;background:rgb(255,255,255);"><span>1.</span></span>
+            <span
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">Thread&nbsp;backgroundThread&nbsp;=&nbsp;</span><b><span
+                    style="font-family:Consolas;color:rgb(0,102,153);letter-spacing:0.0000pt;font-weight:bold;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">new</span></b><span
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">&nbsp;Thread(threadStart);&nbsp;&nbsp;</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal
+            style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;margin-left:18.0000pt;text-indent:-18.0000pt;border-left:1.5000pt solid rgb(108,226,108);padding:0pt 0pt 0pt 5pt ;">
+            <span
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:12.0000pt;background:rgb(248,248,248);"><span>2.</span></span>
+            <span
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(248,248,248);">backgroundThread.IsBackground&nbsp;=&nbsp;</span><b><span
+                    style="font-family:Consolas;color:rgb(0,102,153);letter-spacing:0.0000pt;font-weight:bold;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(248,248,248);">true</span></b><span
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(248,248,248);">;&nbsp;&nbsp;</span><span
+                style="color:rgb(92,92,92);">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal
+            style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;margin-left:18.0000pt;text-indent:-18.0000pt;border-left:1.5000pt solid rgb(108,226,108);padding:0pt 0pt 0pt 5pt ;background:rgb(255,255,255);">
+            <span
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:12.0000pt;background:rgb(255,255,255);"><span>3.</span></span>
+            <span
+                style="font-family:Consolas;color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:8.0000pt;background:rgb(255,255,255);">backgroundThread.Start()</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc13071"></a><b><span style="font-weight:bold;font-size:22.0000pt;">How to Debug C# Threads
+                    ?</span></b><b><span style="font-weight:bold;font-size:22.0000pt;">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="326" height="102" src="Csharp201.files/Csharp20111759.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="553" height="152" src="Csharp201.files/Csharp20111763.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="261" height="179" src="Csharp201.files/Csharp20111766.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="553" height="94" src="Csharp201.files/Csharp20111769.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc22577"></a><b><span style="font-weight:bold;font-size:22.0000pt;">Task vs
+                    Thread</span></b><b><span style="font-weight:bold;font-size:22.0000pt;">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="554" height="266" src="Csharp201.files/Csharp20111789.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><b><span style="font-weight:bold;font-size:22.0000pt;">Concurrency vs Parallelism</span></b><b><span
+                    style="font-weight:bold;font-size:22.0000pt;">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="327" height="305" src="Csharp201.files/Csharp20111821.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="228" height="107" src="Csharp201.files/Csharp20111824.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>The goal of Concurrency is to have a non-blocking application a usable
+                application. The application should not hang</span><span>. &nbsp;</span><span>If we
+                have something running at the background that should not really affect how the end user using
+                application. it is not about performance.We do not intend to make application faster, just want to make
+                application usable</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>Parallelism is Performance. we just want to complete the task as fast as
+                possible. We want to utilize the hardware or to go rocket fast.</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="188" height="201" src="Csharp201.files/Csharp20112307.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>No </span><span>Concurrency</span><span>, user need to wait
+                download file 1 to finish, the download file 2 to finish, then user can enter data. But with
+            </span><span>Concurrency</span><span>, user can enter data while download file 1 &
+                2.</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="274" height="137" src="Csharp201.files/Csharp20112498.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>Async and waits</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="466" height="112" src="Csharp201.files/Csharp20112518.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="356" height="229" src="Csharp201.files/Csharp20112521.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="360" height="119" src="Csharp201.files/Csharp20112524.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="556" height="324" src="Csharp201.files/Csharp20112528.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="553" height="275" src="Csharp201.files/Csharp20112531.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><b><span style="font-weight:bold;font-size:22.0000pt;">TPL (Task Parallel Library) </span></b><b><span
+                    style="font-weight:bold;font-size:22.0000pt;">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>TPL automatically uses code in multiple cores. &nbsp;TPL encapsulates
+                multi-core execution. &nbsp;you just concentrate on your function and method to execute. &nbsp;all the
+                other things parallelism across core is taken care by TPL. &nbsp;The second benefit of TPL is thread
+                pooling.</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal>
+            <span><span>1.</span></span>
+            <span>Parallel and time slicing(context switch)</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal>
+            <span><span>2.</span></span>
+            <span>TPL it implements automatic parallel</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal>
+            <span><span>3.</span></span>
+            <span>Threading CPU affinity (threading is no mechanism of automatic parallel, it sticks
+                with one CPU and or just runs on that core)</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal>
+            <span><span>4.</span></span>
+            <span>Parallel and async is differnet. &nbsp;Parallel is mostly for performance while
+                async is that you want to make the maximum usage of your resources. parallel is multi-processer and
+                async is one processor. Parallel must be independent and async is task correlated and have information
+                exchange</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal>
+            <span><span>5.</span></span>
+            <span>synchronization context is a thread which connected the call back and the main
+                thread. it means when the async callback comes back and your main thread is running the synchronization
+                context is a small thread which connects the callback</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc4784"></a><b><span style="font-weight:bold;font-size:22.0000pt;">Async and
+                    await&nbsp;</span></b><b><span style="font-weight:bold;font-size:22.0000pt;">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>Async is not parallel. &nbsp;It concurrency and full utilize the CPU. Async
+                only have one thread. &nbsp;In that one thread, it will run these 2 tasks concurrency but not parallel.
+            </span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal
+            style="margin-bottom:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:left;background:rgb(255,255,255);">
+            <span
+                style="font-family:Arial;color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">private</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">&nbsp;</span><span
+                style="font-family:Arial;color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">void</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">&nbsp;btnProcessFIle_Click(</span><span
+                style="font-family:Arial;color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">object</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">&nbsp;sender,&nbsp;</span><span
+                style="font-family:Arial;color:rgb(43,145,175);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">EventArgs</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">&nbsp;e)</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal
+            style="margin-bottom:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:left;background:rgb(255,255,255);">
+            <span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                {</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal
+            style="margin-bottom:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:left;background:rgb(255,255,255);">
+            <span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                lblCount.Text =&nbsp;</span><span
+                style="font-family:Arial;color:rgb(163,21,21);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">"Processing
+                file. Please wait..."</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">;</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal
+            style="margin-bottom:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:left;background:rgb(255,255,255);">
+            <span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+                style="font-family:Arial;color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">int</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">&nbsp;count
+                = CountCharacters();</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal
+            style="margin-bottom:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:left;background:rgb(255,255,255);">
+            <span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                lblCount.Text = count.ToString() +&nbsp;</span><span
+                style="font-family:Arial;color:rgb(163,21,21);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">"
+                characters in file"</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">;</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal
+            style="margin-bottom:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:left;background:rgb(255,255,255);">
+            <span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                }</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal
+            style="margin-bottom:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:left;background:rgb(255,255,255);">
+            <span
+                style="font-family:Arial;color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">private</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">&nbsp;</span><span
+                style="font-family:Arial;color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,0);background:rgb(255,255,255);">async</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,0);background:rgb(255,255,255);">&nbsp;</span><span
+                style="font-family:Arial;color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">void</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">&nbsp;btnProcessFIle_Click(</span><span
+                style="font-family:Arial;color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">object</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">&nbsp;sender,&nbsp;</span><span
+                style="font-family:Arial;color:rgb(43,145,175);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">EventArgs</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">&nbsp;e)</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal
+            style="margin-bottom:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:left;background:rgb(255,255,255);">
+            <span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">{</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal
+            style="margin-bottom:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:left;background:rgb(255,255,255);">
+            <span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+                style="font-family:Arial;color:rgb(0,128,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">//
+                Create a task to execute CountCharacters() function</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal
+            style="margin-bottom:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:left;background:rgb(255,255,255);">
+            <span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+                style="font-family:Arial;color:rgb(0,128,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">//
+                CountCharacters() function returns int, so we created Task&lt;int&gt;</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal
+            style="margin-bottom:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:left;background:rgb(255,255,255);">
+            <span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">&nbsp;&nbsp;&nbsp;</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,0);background:rgb(255,255,255);">&nbsp;</span><span
+                style="font-family:Arial;color:rgb(43,145,175);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,0);background:rgb(255,255,255);">Task</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,0);background:rgb(255,255,255);">&lt;</span><span
+                style="font-family:Arial;color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,0);background:rgb(255,255,255);">int</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,0);background:rgb(255,255,255);">&gt;
+                task =&nbsp;</span><span
+                style="font-family:Arial;color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,0);background:rgb(255,255,255);">new</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,0);background:rgb(255,255,255);">&nbsp;</span><span
+                style="font-family:Arial;color:rgb(43,145,175);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,0);background:rgb(255,255,255);">Task</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,0);background:rgb(255,255,255);">&lt;</span><span
+                style="font-family:Arial;color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,0);background:rgb(255,255,255);">int</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,0);background:rgb(255,255,255);">&gt;(CountCharacters);</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,0);">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal
+            style="margin-bottom:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:left;background:rgb(255,255,255);">
+            <span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">&nbsp;&nbsp;&nbsp;</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,0);background:rgb(255,255,255);">&nbsp;task.Start();</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,0);">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal
+            style="margin-bottom:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:left;background:rgb(255,255,255);">
+            <span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span>
+        </p>
+        <p class=MsoNormal
+            style="margin-bottom:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:left;background:rgb(255,255,255);">
+            <span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">&nbsp;&nbsp;&nbsp;
+                lblCount.Text =&nbsp;</span><span
+                style="font-family:Arial;color:rgb(163,21,21);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">"Processing
+                file. Please wait..."</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">;</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal
+            style="margin-bottom:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:left;background:rgb(255,255,255);">
+            <span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+                style="font-family:Arial;color:rgb(0,128,0);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">//
+                Wait until the long running task completes</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal
+            style="margin-bottom:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:left;background:rgb(255,255,255);">
+            <span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+                style="font-family:Arial;color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">int</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">&nbsp;count
+                =&nbsp;</span><span
+                style="font-family:Arial;color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,0);background:rgb(255,255,255);">await</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,0);background:rgb(255,255,255);">&nbsp;task;</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,0);">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal
+            style="margin-bottom:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:left;background:rgb(255,255,255);">
+            <span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">&nbsp;&nbsp;&nbsp;
+                lblCount.Text = count.ToString() +&nbsp;</span><span
+                style="font-family:Arial;color:rgb(163,21,21);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">"
+                characters in file"</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">;</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal
+            style="margin-bottom:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;text-align:left;background:rgb(255,255,255);">
+            <span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">}</span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><b><span style="font-weight:bold;">So what is the use of async and await keywords in
+                    C#</span></b><span><br></span><span>async and await keywords are used to create
+                asynchronous methods. The async keyword specifies that a method is an asynchronous method and the await
+                keyword specifies a suspension point. The await operator signals that the async method can't continue
+                past that point until the awaited asynchronous process is complete. In the meantime, control returns to
+                the caller of the async method.</span><span><br></span><span><br></span><span>An async method typically
+                contains one or more occurrences of an await operator, but the
+                absence of await expressions doesn’t cause a compiler error.</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="553" height="310" src="Csharp201.files/Csharp20115072.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>When an Exception has occurred inside an async method, that exception is
+                encapsulated inside the Task.</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><img width="556" height="280" src="Csharp201.files/Csharp20115178.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>If you want to unwrap the exception then you need to use await as shown in the
+                below image. If you are not using await, then you will never get the exception.</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="528" height="100" src="Csharp201.files/Csharp20115341.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>Note:</span><span>&nbsp;We can catch exceptions by using a simple
+                try-catch block. But if we never await the task, then even if we have an exception, the exception is not
+                going to be thrown. So, if you want to be notified about the exceptions that you may have, you need to
+                await the task.</span><span><br></span><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;background:rgb(255,255,255);">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span
+                style="font-family:Arial;color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:7.0000pt;background:rgb(255,255,255);">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc20080"></a><b><span style="font-weight:bold;font-size:22.0000pt;">W</span></b><b><span
+                    style="font-weight:bold;font-size:22.0000pt;">ait for thread to finish without
+                    blocking</span></b><b><span style="font-weight:bold;font-size:22.0000pt;">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>T</span><span>he thread that has created the control must modify the
+                control. </span><span>T</span><span>he Main thread is the thread that has created the
+                label control so only the Main thread should set it's Text property and not the worker thread. If you
+                run the application it may or may not work as expected. If it is working, it is only working by blind
+                luck.&nbsp;</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>The right way to achieve this is by using </span><span
+                style="background:rgb(255,255,0);">BeginInvoke</span><span>()
+                method as shown below. BeginInvoke() method asks the UI thread to set the Text property of the label
+                control in a type safe manner.</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="553" height="203" src="Csharp201.files/Csharp20116181.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>The Action delegate is then passed to the BeginInvoke() method which asks the
+                UI thread to execute that piece of code asynchronously in a type safe manner.&nbsp;</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc24226"></a><b><span style="font-weight:bold;font-size:22.0000pt;">LINQ</span></b><b><span
+                    style="font-weight:bold;font-size:22.0000pt;">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>Language-integrated Query</span><span style="font-family:PMingLiU;">&nbsp;
+                <font face="Calibri">- we can write queries on a wide variety of data sources like arrays, collections,
+                    database tables, dataset, and XML data.</font>
+            </span><span style="font-family:PMingLiU;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:PMingLiU;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal
+            style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;">
+            <span>SQL =&gt; </span><span style="font-family:PMingLiU;">
+                <font face="Calibri">select </font>
+            </span><span>&lt;collist&gt; from &lt;table&gt; [as &lt;alias&gt;]
+                [&lt;clauses&gt;]</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>clauses </span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal>
+            <span><span>1)</span></span>
+            <span>where</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal>
+            <span><span>2)</span></span>
+            <span>group by</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal>
+            <span><span>3)</span></span>
+            <span>having</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal>
+            <span><span>4)</span></span>
+            <span>Order by</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal
+            style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;">
+            <span>LINQ =&gt; from &lt;alias&gt; in &lt;coll | arr&gt;
+                &nbsp;[&lt;clauses&gt;] select &lt;alias&gt;</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><b><span style="font-weight:bold;">Linq to Objects</span></b><b><span
+                    style="font-weight:bold;">: &nbsp;Arrays, Collections, etc.</span></b><b><span
+                    style="font-weight:bold;">
+                    <o:p></o:p>
+                </span></b></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><b><span style="font-weight:bold;">Linq to </span></b><b><span
+                    style="font-weight:bold;">Database: DataTables, Relational Database Table</span></b><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="text-indent:36.0000pt;"><b><span style="font-weight:bold;">- </span></b><b><span
+                    style="font-weight:bold;">Linq to
+                </span></b><b><span style="font-weight:bold;">ADO.net</span></b><b><span style="font-weight:bold;">
+                    <o:p></o:p>
+                </span></b></p>
+        <p class=MsoNormal style="margin-left:36.0000pt;"><b><span style="font-weight:bold;">- </span></b><b><span
+                    style="font-weight:bold;">Linq-to-DataSets&nbsp;</span></b><span>is LINQ, but using is
+                against the "old-style" ADO.NET 2.0 DataSets - in the times before ORM's from Microsoft, all you could
+                do with ADO.NET was returning DataSets, DataTables etc., and Linq-to-DataSets queries those data stores
+                for data. So in this case, you'd return a DataTable or DataSets (System.Data namespace) from a database
+                backend, and then query those using the LINQ syntax</span><b><span style="font-weight:bold;">
+                    <o:p></o:p>
+                </span></b></p>
+        <p class=MsoNormal style="margin-left:36.0000pt;"><b><span style="font-weight:bold;">- LINQ-to-SQL
+                </span></b><span>is Microsoft's first attempt at an
+                ORM - Object-Relational Mapper. It supports SQL Server only. It's a mapping technology to map SQL Server
+                database tables to .NET objects.</span><b><span style="font-weight:bold;">
+                    <o:p></o:p>
+                </span></b></p>
+        <p class=MsoNormal style="margin-left:36.0000pt;"><b><span style="font-weight:bold;">- </span></b><b><span
+                    style="font-weight:bold;">Linq-to-Entities</span></b><span>&nbsp;is the same idea, but
+                using Entity Framework in the background, as the ORM - again from Microsoft, but supporting multiple
+                database backends</span><b><span style="font-weight:bold;">
+                    <o:p></o:p>
+                </span></b></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><b><span style="font-weight:bold;">Linq to XML</span></b><b><span style="font-weight:bold;">:
+                    XML Files</span></b><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc5162"></a><b><span style="font-weight:bold;font-size:22.0000pt;">The advantage of
+                    LINQ</span></b><b><span style="font-weight:bold;font-size:22.0000pt;">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>SQL =&gt; SQL server</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal>
+            <span><span>1)</span></span>
+            <span>Runtime Syntax Checking of sql stmts</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal>
+            <span><span>2)</span></span>
+            <span>Not type Safe</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal>
+            <span><span>3)</span></span>
+            <span>No intellisense support</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal>
+            <span><span>4)</span></span>
+            <span>Debugging sql stmt is not possible</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal>
+            <span><span>5)</span></span>
+            <span>Code is a combination of OO and relational</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>LINQ =&gt; SQL server</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal>
+            <span><span>1)</span></span>
+            <span>Compile-Time syntax checking</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal>
+            <span><span>2)</span></span>
+            <span>Type safe</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal>
+            <span><span>3)</span></span>
+            <span>Intellisense support</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal>
+            <span><span>4)</span></span>
+            <span>Debugging of LINQ sql is possible</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal>
+            <span><span>5)</span></span>
+            <span>Pure OO code</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <table class=MsoTableGrid border=1 cellspacing=0 style="border-collapse:collapse;border:none;">
+            <tr>
+                <td width=355 valign=top
+                    style="width:213.0500pt;padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ;border-left:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-top:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;">
+                    <p class=MsoNormal align=justify style="text-align:justify;text-justify:inter-ideograph;">
+                        <span>Table</span><span>
+                            <o:p></o:p>
+                        </span>
+                    </p>
+                </td>
+                <td width=355 valign=top
+                    style="width:213.0500pt;padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ;border-left:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-top:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;">
+                    <p class=MsoNormal align=justify style="text-align:justify;text-justify:inter-ideograph;">
+                        <span>Class</span><span>
+                            <o:p></o:p>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width=355 valign=top
+                    style="width:213.0500pt;padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ;border-left:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-top:none;border-bottom:1.0000pt solid windowtext;">
+                    <p class=MsoNormal align=justify style="text-align:justify;text-justify:inter-ideograph;">
+                        <span>Columns</span><span>
+                            <o:p></o:p>
+                        </span>
+                    </p>
+                </td>
+                <td width=355 valign=top
+                    style="width:213.0500pt;padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ;border-left:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-top:none;border-bottom:1.0000pt solid windowtext;">
+                    <p class=MsoNormal align=justify style="text-align:justify;text-justify:inter-ideograph;">
+                        <span>Property</span><span>
+                            <o:p></o:p>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width=355 valign=top
+                    style="width:213.0500pt;padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ;border-left:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-top:none;border-bottom:1.0000pt solid windowtext;">
+                    <p class=MsoNormal align=justify style="text-align:justify;text-justify:inter-ideograph;"><span>Rows
+                            / Records</span><span>
+                            <o:p></o:p>
+                        </span></p>
+                </td>
+                <td width=355 valign=top
+                    style="width:213.0500pt;padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ;border-left:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-top:none;border-bottom:1.0000pt solid windowtext;">
+                    <p class=MsoNormal align=justify style="text-align:justify;text-justify:inter-ideograph;">
+                        <span>Instance</span><span>
+                            <o:p></o:p>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width=355 valign=top
+                    style="width:213.0500pt;padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ;border-left:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-top:none;border-bottom:1.0000pt solid windowtext;">
+                    <p class=MsoNormal align=justify style="text-align:justify;text-justify:inter-ideograph;">
+                        <span>Stored procedures</span><span>
+                            <o:p></o:p>
+                        </span>
+                    </p>
+                </td>
+                <td width=355 valign=top
+                    style="width:213.0500pt;padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ;border-left:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-top:none;border-bottom:1.0000pt solid windowtext;">
+                    <p class=MsoNormal align=justify style="text-align:justify;text-justify:inter-ideograph;">
+                        <span>Method</span><span>
+                            <o:p></o:p>
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width=355 valign=top
+                    style="width:213.0500pt;padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ;border-left:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-top:none;border-bottom:1.0000pt solid windowtext;">
+                    <p class=MsoNormal align=justify style="text-align:justify;text-justify:inter-ideograph;"><span>
+                            <o:p>&nbsp;</o:p>
+                        </span></p>
+                </td>
+                <td width=355 valign=top
+                    style="width:213.0500pt;padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ;border-left:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-top:none;border-bottom:1.0000pt solid windowtext;">
+                    <p class=MsoNormal align=justify style="text-align:justify;text-justify:inter-ideograph;"><span>
+                            <o:p>&nbsp;</o:p>
+                        </span></p>
+                </td>
+            </tr>
+            <tr>
+                <td width=355 valign=top
+                    style="width:213.0500pt;padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ;border-left:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-top:none;border-bottom:1.0000pt solid windowtext;">
+                    <p class=MsoNormal align=justify style="text-align:justify;text-justify:inter-ideograph;"><span>
+                            <o:p>&nbsp;</o:p>
+                        </span></p>
+                </td>
+                <td width=355 valign=top
+                    style="width:213.0500pt;padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ;border-left:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;border-top:none;border-bottom:1.0000pt solid windowtext;">
+                    <p class=MsoNormal align=justify style="text-align:justify;text-justify:inter-ideograph;"><span>
+                            <o:p>&nbsp;</o:p>
+                        </span></p>
+                </td>
+            </tr>
+        </table>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>To work with LINQ to SQL. &nbsp;First, we need to convert all the relational
+                object of database into OO types and this process is known as ORM (Object Relational
+                Mapping)</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>OR (Object-Relational) Designer</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal>
+            <span><span>1)</span></span>
+            <span>Perform ORM by adding OR designer</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal>
+            <span><span>2)</span></span>
+            <span>Adding a reference for an assembly i.e. System.Data.LINQ</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal>
+            <span><span>3)</span></span>
+            <span>We need to write the connection string into config file</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="background:rgb(255,255,0);">By default, a
+                DataGridView populated using its DataSource property does not support sorting, to enable sorting the
+                DataSource of the DataGridView needs to coerce the DataSource into a list that supports sorting
+                (</span><b><span style="font-weight:bold;background:rgb(255,255,0);">IBindingList
+                </span></b><span style="background:rgb(255,255,0);">and </span><b><span
+                    style="font-weight:bold;background:rgb(255,255,0);">IBindingListView</span></b><span
+                style="background:rgb(255,255,0);">), and then it will work out of the box.
+                An exploration will cover how to enable sorting using Entity Framework 6 code first with an existing
+                database and will work without Entity Framework using LINQ to SQL.</span><span
+                style="background:rgb(255,255,0);">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span
+                style="color:rgb(17,17,17);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:10.0000pt;background:rgb(255,255,255);">you
+                can't use&nbsp;</span><span class="31"
+                style="color:rgb(153,0,0);letter-spacing:0.0000pt;text-transform:none;font-size:10.0000pt;background:rgb(255,255,255);">BindingSource.Sort</span><span
+                style="color:rgb(17,17,17);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:10.0000pt;background:rgb(255,255,255);">&nbsp;property
+                because your&nbsp;</span><span class="31"
+                style="color:rgb(153,0,0);letter-spacing:0.0000pt;text-transform:none;font-size:10.0000pt;background:rgb(255,255,255);">List&lt;...&gt;&nbsp;</span><span
+                style="color:rgb(17,17,17);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:10.0000pt;background:rgb(255,255,255);">will
+                be automatically transformed to the&nbsp;</span><span class="31"
+                style="color:rgb(153,0,0);letter-spacing:0.0000pt;text-transform:none;font-size:10.0000pt;background:rgb(255,255,255);">BindingList&lt;...&gt;</span><span
+                style="color:rgb(17,17,17);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:10.0000pt;background:rgb(255,255,255);">.
+                To allow sorting by one or multiple columns&nbsp;</span><span class="31"
+                style="color:rgb(153,0,0);letter-spacing:0.0000pt;text-transform:none;font-size:10.0000pt;background:rgb(255,255,255);">DataSource&nbsp;</span><span
+                style="color:rgb(17,17,17);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:10.0000pt;background:rgb(255,255,255);">should
+                implement&nbsp;</span><span class="31"
+                style="color:rgb(153,0,0);letter-spacing:0.0000pt;text-transform:none;font-size:10.0000pt;background:rgb(255,255,255);">IBindingListView&nbsp;</span><span
+                style="color:rgb(17,17,17);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:10.0000pt;background:rgb(255,255,255);">interface,
+                but the created&nbsp;</span><span class="31"
+                style="color:rgb(153,0,0);letter-spacing:0.0000pt;text-transform:none;font-size:10.0000pt;background:rgb(255,255,255);">BindingList&lt;...&gt;&nbsp;</span><span
+                style="color:rgb(17,17,17);letter-spacing:0.0000pt;text-transform:none;font-style:normal;font-size:10.0000pt;background:rgb(255,255,255);">does
+                not implement it</span><span style="font-size:10.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>So, you have several options:</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-left:0.0000pt;text-indent:0.0000pt;">
+            <span><span>1)</span></span>
+            <span>create a&nbsp;DataTable&nbsp;to hold the data, and bind it to
+                the&nbsp;DataGridView&nbsp;(it will actually bind to the&nbsp;</span><span
+                style="background:rgb(255,255,0);">DefaultView&nbsp;</span><span>of the&nbsp;DataTable)</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal style="margin-left:0.0000pt;text-indent:0.0000pt;">
+            <span><span>2)</span></span>
+            <span>create your own collection class that implements&nbsp;</span><span
+                style="background:rgb(255,255,0);">IBindingListView</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>Select * | &lt;collist&gt; from &lt;table&gt; as &lt;alias&gt;
+                [&lt;clauses&gt;]</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>Clauses:</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-left:0.0000pt;text-indent:0.0000pt;">
+            <span><span>1)</span></span>
+            <span>Where</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal style="margin-left:0.0000pt;text-indent:0.0000pt;">
+            <span><span>2)</span></span>
+            <span>Group by</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal style="margin-left:0.0000pt;text-indent:0.0000pt;">
+            <span><span>3)</span></span>
+            <span>Having</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal style="margin-left:0.0000pt;text-indent:0.0000pt;">
+            <span><span>4)</span></span>
+            <span>Order by</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>from &lt;alias&gt; in &lt;table&gt; [&lt;clauses&gt;] select &lt;alias&gt;|
+                new { collist }</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-left:0.0000pt;text-indent:0.0000pt;">
+            <span><span>1)</span></span>
+            <span>Where</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal style="margin-left:0.0000pt;text-indent:0.0000pt;">
+            <span><span>2)</span></span>
+            <span>Group by</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal style="margin-left:0.0000pt;text-indent:0.0000pt;">
+            <span><span>3)</span></span>
+            <span>Order by</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>Select Deptno, EmpCount = Count(*) From Emp </span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span>Group by deptno Having Count(*) &gt; 5</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>Note: Both “where” and “having” clauses are filter. &nbsp;“Where” happen
+            </span><b><span style="font-weight:bold;background:rgb(255,255,0);">before
+                </span></b><span>grouping and “Having” happens </span><b><span
+                    style="font-weight:bold;background:rgb(255,255,0);">after
+                </span></b><span>grouping. </span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>Select Deptno, Count(*) from Emp</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span>where job = ‘Clerk’ group by deptno</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="background:rgb(255,255,0);">Note: Very important
+                !!! The clauses have to follow below sequence.</span><span style="background:rgb(255,255,0);">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-left:0.0000pt;text-indent:0.0000pt;">
+            <span><span>1)</span></span>
+            <span>Where</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal style="margin-left:0.0000pt;text-indent:0.0000pt;">
+            <span><span>2)</span></span>
+            <span>Group by</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal style="margin-left:0.0000pt;text-indent:0.0000pt;">
+            <span><span>3)</span></span>
+            <span>Having</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal style="margin-left:0.0000pt;text-indent:0.0000pt;">
+            <span><span>4)</span></span>
+            <span>Order by</span><span>
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+    </main><!-- End #main --> <!-- ======= Footer ======= -->
+    <div w3-include-html="footer.htm"></div>
+    <script>includeHTML();</script> <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a> <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
