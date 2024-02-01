@@ -1,0 +1,3521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>My Portfolio</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <script src="assets/js/layout.js"></script>
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+
+        <div class="d-flex align-items-center justify-content-between">
+            <i class="bi bi-list toggle-sidebar-btn"></i>
+        </div><!-- End Logo -->
+
+        <nav class="header-nav ms-auto">
+
+            <ul class="d-flex align-items-center">
+                <div w3-include-html="header.htm"></div>
+            </ul>
+        </nav><!-- End Icons Navigation -->
+    </header><!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <div w3-include-html="sidebar.htm"></div>
+
+    <main id="main" class="main">
+
+        <p class=MsoNormal align=center>
+            <span style="
+font-size:10.5000pt;">Catalog</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoToc1><span><span><a href="#_Toc26904 "><span style="font-family:Calibri;
+">Q1 - What is the different between DBMS and RDBMS?</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                    <o:p></o:p>
+                </span></p>
+        <p class=MsoToc1><span><a href="#_Toc13855 "><span style="font-family:Calibri;
+">Q2 - What is a constraint in SQL? What are its types?</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc15764 "><span style="font-family:Calibri;
+">Q2.1 - Explain Normalization?</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc29000 "><span style="font-family:Calibri;
+">Q2.2 - How to implement normalization?</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc30436 "><span style="font-family:Calibri;
+">Q2.3 - What is de-normalization?</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc18203 "><span style="font-family:Calibri;
+">Q2.4 - Explain OLTP (Online Transaction Processing) vs OLAP (Online analytical
+                        processing)</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc10691 "><span style="font-family:Calibri;
+">Q2.5 - </span><span style="font-family:Calibri;
+">Explain </span><span style="font-family:Calibri;
+background:rgb(0,255,0);">1st</span><span style="font-family:Calibri;
+">,</span><span style="font-family:Calibri;
+background:rgb(0,255,0);">2nd</span><span style="font-family:Calibri;
+">&nbsp;and </span><span style="font-family:Calibri;
+background:rgb(0,255,0);">3rd</span><span style="font-family:Calibri;
+">&nbsp;Normal form ?</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc25741 "><span style="font-family:Calibri;
+">Q3 - What is the difference between </span><span style="font-family:Calibri;
+background:rgb(0,255,0);">primary key</span><span style="font-family:Calibri;
+">&nbsp;and </span><span style="font-family:Calibri;
+background:rgb(0,255,0);">Unique Key</span><span style="font-family:Calibri;
+">? foreign key</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc13786 "><span style="font-family:Calibri;
+">Q3.1 </span><span style="font-family:Calibri;
+">What is a </span><span style="font-family:Calibri;
+background:rgb(0,255,0);">primary key</span><span style="font-family:Calibri;
+">&nbsp;in a database and why is it important?</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc32547 "><span style="font-family:Calibri;
+">Q4 - What is a View?</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc25898 "><span style="font-family:Calibri;
+">Q4.1 - What is scheme?</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc16674 "><span style="font-family:Calibri;
+">Q4.2 - What is </span><span style="font-family:Calibri;
+">synonyms?</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc18436 "><span style="font-family:Calibri;
+">Q5 - What is Subquery or Nested query or inner query in SQL?</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc21551 "><span style="font-family:Calibri;
+">Q6 - What are the types of </span><span style="font-family:Calibri;
+background:rgb(0,255,0);">JOINS </span><span style="font-family:Calibri;
+">in SQL server?</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc14765 "><span style="font-family:Calibri;
+">Q6.1 - </span><span style="font-family:Calibri;
+">What are inner joins ?</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc26084 "><span style="font-family:Calibri;
+">Q6.2 - </span><span style="font-family:Calibri;
+">Explain Left join ?</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc6934 "><span style="font-family:Calibri;
+">Q6.3 - </span><span style="font-family:Calibri;
+">Explain Right join ?</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc7727 "><span style="font-family:Calibri;
+">Q6.4 - </span><span style="font-family:Calibri;
+">Explain Full outer joins ?</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc31819 "><span style="font-family:Calibri;
+">Q.6.5 - </span><span style="font-family:Calibri;
+">Explain Cross joins ?</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc32109 "><span style="font-family:Calibri;
+">Q7 - What is self JOIN?</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc29334 "><span style="font-family:Calibri;
+">Q8 - What is the difference between </span><span style="font-family:Calibri;
+background:rgb(0,255,0);">Stored procedure</span><span style="font-family:Calibri;
+">&nbsp;and </span><span style="font-family:Calibri;
+background:rgb(0,255,0);">function</span><span style="font-family:Calibri;
+">?</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc2210 "><span style="font-family:Calibri;
+">Q9 - What is indexes in SQL server?</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc2140 "><span style="font-family:Calibri;
+">Q9.1 - </span><span style="font-family:Calibri;
+">What is the use of Index ?</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc7235 "><span style="font-family:Calibri;
+">Q10 - What is Clustered index?</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc23871 "><span style="font-family:Calibri;
+">Q11 - What is non-clustered index?</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc16996 "><span style="font-family:Calibri;
+">Q12 - What is the difference between clustered and non-clustered indexes?</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc22 "><span style="font-family:Calibri;
+">Q13 - &nbsp;How to create clustered and non-clustered index in a table?</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc3918 "><span style="font-family:Calibri;
+">Q14 - In which column you will apply the indexing to optimize this query.</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc6568 "><span style="font-family:Calibri;
+">
+                        <font face="Calibri">“Select id, class from student where name=’happy’ ”</font>
+                    </span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc24519 "><span style="font-family:Calibri;
+">Q15 - What is the difference between Having clause and Where clause?</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc30294 "><span style="font-family:Calibri;
+">Q16 - </span><span style="font-family:Calibri;
+">What are triggers and why do you need it ?</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc28304 "><span style="font-family:Calibri;
+">Q17 - </span><span style="font-family:Calibri;
+">What are types of triggers ?</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc11809 "><span style="font-family:Calibri;
+">Q18 - </span><span style="font-family:Calibri;
+">Differentiate between After trigger vs Instead Of ?</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc8934 "><span style="font-family:Calibri;
+">Q19 - </span><span style="font-family:Calibri;
+">Differentiate between Char vs Varchar ?</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc26014 "><span style="font-family:Calibri;
+">Q20 - </span><span style="font-family:Calibri;
+">Differentiate between Char vs NChar </span><span style="font-family:Calibri;
+">and </span><span style="font-family:Calibri;
+">the size of Char vs NChar?</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc18448 "><span style="font-family:Calibri;
+">Q21 -</span><span style="font-family:Calibri;
+">What is need of Identity ?</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc14301 "><span style="font-family:Calibri;
+">Q22 - </span><span style="font-family:Calibri;
+">Explain transactions and how to implement it ?</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc7734 "><span style="font-family:Calibri;
+">Q23 - </span><span style="font-family:Calibri;
+">What are DDL and DML languages? Give example.</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc6233 "><span style="font-family:Calibri;
+">Q24 - &nbsp;</span><span style="font-family:Calibri;
+">What is the difference between DELETE and TRUNCATE statement?</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc30487 "><span style="font-family:Calibri;
+">Q23 - </span><span style="font-family:Calibri;
+">Why do we use CASE Statement in SQL?</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc13655 "><span style="font-family:Calibri;
+">Q24 - </span><span style="font-family:Calibri;
+">What is the difference between </span><span style="font-family:Calibri;
+background:rgb(0,255,0);">DISTINCT </span><span style="font-family:Calibri;
+">and </span><span style="font-family:Calibri;
+background:rgb(0,255,0);">GROUP BY</span><span style="font-family:Calibri;
+">?</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc25950 "><span style="font-family:Calibri;
+">Q25 - </span><span style="font-family:Calibri;
+">What are the rules to follow when using </span><span style="font-family:Calibri;
+background:rgb(0,255,0);">UNION </span><span style="font-family:Calibri;
+">operator?</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc26215 "><span style="font-family:Calibri;
+">Q26 - What are aggregate functions? Name and explain different types of aggregate
+                        functions in SQL?</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc31647 "><span style="font-family:Calibri;
+">Q27 - What is the difference between RANK, DENSE_RANK and ROW_NUMBER window
+                        function?</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc20462 "><span style="font-family:Calibri;
+">Q28 - </span><span style="font-family:Calibri;
+">How can you convert a text into date format? Consider the given text as
+                        “31-01-2021“.</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc16457 "><span style="font-family:Calibri;
+">Q29 - Imagine there is a FULL_NAME column in a table which has values like “Elon Musk“,
+                        “Bill Gates“, “Jeff Bezos“ etc. So each full name has a first name, a space and a last name.
+                        Which functions would you use to fetch only the first name from this FULL_NAME
+                        column?</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc27605 "><span style="font-family:Calibri;
+">Q30 - Is it good to have the same subquery multiple times in your query? If no then how
+                        can you solve this?</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc26121 "><span style="font-family:Calibri;
+">Q31 - </span><span style="font-family:Calibri;
+">What are steps you would take to tune a SQL query?</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc26834 "><span style="font-family:Calibri;
+">Q32 - </span><span style="font-family:Calibri;
+">When can a function NOT be called from SELECT query?</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc5241 "><span style="font-family:Calibri;
+">Q33 - </span><span style="font-family:Calibri;
+">Which function can be used to fetch yesterdays date?</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc7404 "><span style="font-family:Calibri;
+">Q34 - </span><span style="font-family:Calibri;
+">How to remove Duplicate Data in SQL</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal></span><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1 style="page-break-after:avoid;page-break-before:always;
+"><a name="_Toc26904"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q1 - What is the different between DBMS and RDBMS?</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="468" height="284" src="SQL QnA.files/SQL QnA5731.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc13855"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q2 - What is a constraint in SQL? What are its types?&nbsp;</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="555" height="315" src="SQL QnA.files/SQL QnA5790.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc15764"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q2.1 - Explain Normalization?</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">Normalization is a database design technique to remove redundant data or to avoid
+                redundant data.</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+background:rgb(0,255,0);">Always substantiate theory with
+                practical examples.</span><span style="font-family:Calibri;
+background:rgb(0,255,0);">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">Let us say you have a transaction table and in the transaction table you have country
+                data.&nbsp;&nbsp; In the country data you can have&nbsp; data like India, IND or Nepal, NPL.&nbsp;IND
+                and India is one and the same thing&nbsp; this called as redundant data. For&nbsp;redundant data we use
+                Normalization design technique. </span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc29000"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q2.2 - How to implement normalization?</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">normalization is implemented by splitting tables into two. One with reference data (master
+                table) and other transaction data.</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="556" height="196" src="SQL QnA.files/SQL QnA6438.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc30436"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q2.3 - What is de-normalization?</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">Denormalization is a&nbsp; database design technique which focuses&nbsp;to improve search
+                performance. In normalization </span><span style="font-family:Calibri;
+background:rgb(0,255,0);">our focus was to remove&nbsp;redundant
+                data </span><span style="font-family:Calibri;
+">while in denormalization </span><span style="font-family:Calibri;
+background:rgb(0,255,0);">our focus&nbsp; is to improve search
+                performance.</span><span style="font-family:Calibri;
+background:rgb(0,255,0);">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="454" height="168" src="SQL QnA.files/SQL QnA6695.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">Example for normalization and de-normalization</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">BOCI-PRU, EOD, pension administration system DE-normalized data to web enquiry system and
+                MI (</span><span style="font-family:Calibri;
+">Management Information</span><span style="font-family:Calibri;
+">) report daily to increase the performance. Also for both annual and half-term annual
+                benefit statement (ABS).</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc18203"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q2.4 - Explain OLTP (Online Transaction Processing) vs OLAP (Online analytical
+                    processing)</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">Both OLTP and OLAP are the approaches to processing data.</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="556" height="144" src="SQL QnA.files/SQL QnA7127.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="556" height="217" src="SQL QnA.files/SQL QnA7130.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="555" height="324" src="SQL QnA.files/SQL QnA7133.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">When you talk about systems which have&nbsp; high load means millions of
+                inserts,&nbsp;updates and deletes also it has lot of&nbsp; users who are doing a read and a
+                select.&nbsp;&nbsp;</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">You want all of these things should be faster and&nbsp; should have high performance as
+                well as you do not&nbsp;&nbsp;want redundant data. In such kind of high volume&nbsp; system the database
+                people create two different&nbsp;&nbsp;databases one is they term it as OLTP system and&nbsp; another
+                database that term it as OLAP system.</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">When it comes to insert, update and delete it&nbsp; all sends to OLTP system and when it
+                comes to&nbsp;fetching records or doing analysis, reads, selects&nbsp; is all done through this OLAP
+                system. In case of&nbsp;high intense systems you cannot do with&nbsp; one database, you create two
+                databases.&nbsp;&nbsp;</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">In case of OLTP system you try to follow&nbsp; normalization because here you do not
+                want&nbsp;redundant data, you want to avoid redundant data.&nbsp;&nbsp; In OLAP system you want the
+                select to be faster&nbsp; and here we try to denormalize the database. </span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">Here you want the select performance&nbsp; should be good. Normally people&nbsp;as soon as
+                the data is inserted into this OLTP&nbsp; system there is an ETL process -
+                Extraction,&nbsp;Transformation and Loading or a process which&nbsp; fetches this data and puts into
+                this OLAP system.&nbsp;&nbsp;</span><span style="font-family:Arial;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="350" height="268" src="SQL QnA.files/SQL QnA8370.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="553" height="136" src="SQL QnA.files/SQL QnA8373.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc10691"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q2.5 - </span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Explain </span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);">1st</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">,</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);">2nd</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">&nbsp;and </span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);">3rd</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">&nbsp;Normal form ?</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:PMingLiU;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="208" height="168" src="SQL QnA.files/SQL QnA8422.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">1</span><sup><span style="font-family:Calibri;
+vertical-align:super;">st</span></sup><span style="font-family:Calibri;
+">&nbsp;normal form</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><img width="556" height="56" src="SQL QnA.files/SQL QnA8441.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="553" height="182" src="SQL QnA.files/SQL QnA8444.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <table class=MsoTableGrid border=1 cellspacing=0 style="border-collapse:collapse;border:none;
+
+">
+            <tr>
+                <td width=355 valign=top style="width:213.0500pt;padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ;border-left:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-top:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;
+">
+                    <p class=MsoNormal align=justify style="text-align:justify;text-justify:inter-ideograph;">
+                        <span>repeating
+                            groups </span><span>
+                            <o:p></o:p>
+                        </span></p>
+                </td>
+                <td width=355 valign=top style="width:213.0500pt;padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ;border-left:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-top:1.0000pt solid windowtext;border-bottom:1.0000pt solid windowtext;
+">
+                    <p class=MsoNormal align=justify style="text-align:justify;text-justify:inter-ideograph;">
+                        <span>atomic
+                            value</span><span>
+                            <o:p></o:p>
+                        </span></p>
+                </td>
+            </tr>
+            <tr>
+                <td width=355 valign=top style="width:213.0500pt;padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ;border-left:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-top:none;border-bottom:1.0000pt solid windowtext;
+">
+                    <p class=MsoNormal align=justify style="text-align:justify;text-justify:inter-ideograph;"><span><img
+                                width="164" height="64" src="SQL QnA.files/SQL QnA8479.png"></span><span>
+                            <o:p>&nbsp;</o:p>
+                        </span></p>
+                </td>
+                <td width=355 valign=top style="width:213.0500pt;padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ;border-left:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-top:none;border-bottom:1.0000pt solid windowtext;
+">
+                    <p class=MsoNormal align=justify style="text-align:justify;text-justify:inter-ideograph;"><span><img
+                                width="271" height="32" src="SQL QnA.files/SQL QnA8481.png"></span><span>
+                            <o:p>&nbsp;</o:p>
+                        </span></p>
+                </td>
+            </tr>
+        </table>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">First normal form says if your&nbsp; database design is not following first normal
+                form&nbsp;you can have insert, update and delete anomalies.&nbsp; Anomaly means when you want to do
+                insert, update,&nbsp;delete you have write weird code. If I want to&nbsp; update second record Raju with
+                surname what kind&nbsp;&nbsp; of query I have to write. If I want to delete&nbsp; the surname what kind
+                of query I have to write?&nbsp;&nbsp;It leads to very weird Insert,&nbsp; Update and Delete
+                queries.</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">Below is anomal query. </span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="484" height="71" src="SQL QnA.files/SQL QnA8950.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">2</span><sup><span style="font-family:Calibri;
+vertical-align:super;">nd</span></sup><span style="font-family:Calibri;
+">&nbsp;normal form</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><img width="556" height="56" src="SQL QnA.files/SQL QnA8969.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="553" height="238" src="SQL QnA.files/SQL QnA8972.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">Not fully dependent on the PK.</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><img width="496" height="120" src="SQL QnA.files/SQL QnA9006.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="353" height="212" src="SQL QnA.files/SQL QnA9009.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="553" height="256" src="SQL QnA.files/SQL QnA9012.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">3</span><sup><span style="font-family:Calibri;
+vertical-align:super;">rd</span></sup><span style="font-family:Calibri;
+">&nbsp;Normal form</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><img width="556" height="53" src="SQL QnA.files/SQL QnA9031.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="496" height="108" src="SQL QnA.files/SQL QnA9034.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="395" height="216" src="SQL QnA.files/SQL QnA9037.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="553" height="313" src="SQL QnA.files/SQL QnA9040.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="554" height="305" src="SQL QnA.files/SQL QnA9043.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">4NF</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="553" height="305" src="SQL QnA.files/SQL QnA9051.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="540" height="254" src="SQL QnA.files/SQL QnA9054.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">5NF</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><img width="553" height="305" src="SQL QnA.files/SQL QnA9061.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc25741"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q3 - What is the difference between </span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);">primary key</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">&nbsp;and </span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);">Unique Key</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">? foreign key</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="451" height="136" src="SQL QnA.files/SQL QnA9141.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="195" height="84" src="SQL QnA.files/SQL QnA9144.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">One PK but can have many unique key</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">Foreign key is used to create a master child kind of relationship between two tables. When
+                we make a column in a table as foreign key, this column will then have to be referenced from another
+                column from some other table.</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">Imagine we have two tables A and B. Both have just 1 column let’s call it COLUMN_1. If we
+                create foreign key in COLUMN_1 of table A which references the COLUMN_1 from table B then the only
+                values COLUMN_1 in table A can have is the values which are already present in COLUMN_1 of table B.
+            </span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">This means table B becomes the master table and table A is the child table. COLUMN_1 of
+                Table A can only have values which are already present in COLUMN_1 of table B. </span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc13786"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q3.1 </span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">What is a </span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);">primary key</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">&nbsp;in a database and why is it important?</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">A primary key is a special identifier in a database that uniquely identifies each row of
+                data in a table. It's important because it helps keep data organized, prevents duplicates, and allows
+                for efficient searching and linking of data across different tables.</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc32547"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q4 - What is a View?</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="553" height="274" src="SQL QnA.files/SQL QnA10216.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc25898"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q4.1 - What is scheme?</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">a scheme is distinct namespace (container) to facilitate the separation, management, and
+                ownership of database object. </span><span style="font-family:Calibri;
+">In SQL Server, the default schema is dbo (database owner).</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc16674"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q4.2 - What is </span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">synonyms?</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">synonyms basically are alias(shortcut).&nbsp;it doesn't have to be just table any
+                user-defined table any user-defined views any user define function any user-defined store procedure you
+                can create a synonym.</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="420" height="43" src="SQL QnA.files/SQL QnA10654.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Arial;font-size:12.0000pt;
+">let's say that this table location has changed now this table is not in this particular
+                database so or not in particular this schema now what you have to go back to your application can config
+                file and change your connection all over again and provide all the connection in order to avoid these
+                two issues the concept of synonyms came in in SQL server which is really great a lot of organization
+                organizations application especially the developers that are building application locally and they don't
+                want to go ahead and change their connection string every time they do some test on their development
+                and bring it to QA or and all that they like to use synonyms and use those tables and get the tables or
+                store procedural views from there from the application side.</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc18436"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q5 - What is Subquery or Nested query or inner query in SQL?</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">sub query== Nested query == inner query</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="400" height="274" src="SQL QnA.files/SQL QnA11529.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc21551"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q6 - What are the types of </span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);">JOINS </span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">in SQL server?</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">Left, right, full, inner, self, cross</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="553" height="356" src="SQL QnA.files/SQL QnA11620.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc14765"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q6.1 - </span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">What are inner joins ?</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="556" height="27" src="SQL QnA.files/SQL QnA11654.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc26084"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q6.2 - </span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Explain Left join ?</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="555" height="44" src="SQL QnA.files/SQL QnA11686.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc6934"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q6.3 - </span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Explain Right join ?</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="556" height="22" src="SQL QnA.files/SQL QnA11718.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc7727"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q6.4 - </span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Explain Full outer joins ?</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="555" height="20" src="SQL QnA.files/SQL QnA11757.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Arial;color:rgb(15,15,15);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc31819"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q.6.5 - </span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Explain Cross joins ?</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="555" height="20" src="SQL QnA.files/SQL QnA11792.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">which is every possible combination of rows from both tables.</span><span style="font-family:Calibri;
+">&nbsp;Cross join will create more record than full outer join.</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc32109"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q7 - What is self JOIN?</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="527" height="310" src="SQL QnA.files/SQL QnA11943.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc29334"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q8 - What is the difference between </span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);">Stored procedure</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">&nbsp;and </span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);">function</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">?</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="556" height="117" src="SQL QnA.files/SQL QnA12014.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="556" height="184" src="SQL QnA.files/SQL QnA12017.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="555" height="291" src="SQL QnA.files/SQL QnA12020.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc2210"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q9 - What is indexes in SQL server?</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">to improve the performance of the query.</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="514" height="314" src="SQL QnA.files/SQL QnA12104.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc2140"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q9.1 - </span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">What is the use of Index ?</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="544" height="44" src="SQL QnA.files/SQL QnA12142.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">I</span><span style="font-family:Calibri;
+">n SQL Server, indexes are implemented using balanced tree data structures, such as B-trees
+                or B+-trees. These data structures provide efficient search, insertion, and deletion operations for
+                large datasets, making it possible to perform fast and efficient queries on the data.</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="379" height="104" src="SQL QnA.files/SQL QnA12423.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc7235"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q10 - What is Clustered index?</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="556" height="239" src="SQL QnA.files/SQL QnA12459.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc23871"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q11 - What is non-clustered index?</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="556" height="315" src="SQL QnA.files/SQL QnA12498.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc16996"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q12 - What is the difference between clustered and non-clustered
+                    indexes?</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="284" height="149" src="SQL QnA.files/SQL QnA12576.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="556" height="284" src="SQL QnA.files/SQL QnA12579.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc22"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q13 - &nbsp;How to create clustered and non-clustered index in a table?</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="312" height="258" src="SQL QnA.files/SQL QnA12650.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc3918"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q14 - In which column you will apply the indexing to optimize this
+                    query.</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <h1><a name="_Toc6568"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <font face="Calibri">“Select id, class from student where name=’happy’ ”</font>
+                </span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="392" height="80" src="SQL QnA.files/SQL QnA12780.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc24519"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q15 - What is the difference between Having clause and Where clause?</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="548" height="237" src="SQL QnA.files/SQL QnA12853.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc30294"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q16 - </span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">What are triggers and why do you need it ?</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="556" height="48" src="SQL QnA.files/SQL QnA12907.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">Trigger is a database object which is similar to a stored procedure which will
+                automatically get invoked or executed when the specified event occurs in the database.</span><span
+                style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">The most common type of triggers are</span><span style="font-family:Calibri;
+background:rgb(0,255,0);">&nbsp;DML triggers</span><span style="font-family:Calibri;
+">, </span><span style="font-family:Calibri;
+background:rgb(0,255,0);">DDL triggers</span><span style="font-family:Calibri;
+">&nbsp;and </span><span style="font-family:Calibri;
+background:rgb(0,255,0);">Database triggers </span><span style="font-family:Calibri;
+">(also referred as Logon triggers).</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">DML triggers are invoked when a DML operation (INSERT, UPDATE, DELETE) occurs on the
+                respective table (table on which the trigger was created). Trigger can be configured to invoke either
+                before the DM operation or after the DML operation.</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">DDL triggers are invoked when a DDL operation (CREATE, ALTER, DROP) occurs on the
+                respective table (table on which the trigger was created). </span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">Database trigger is invoked when the database session is established or shut
+                down.</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc28304"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q17 - </span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">What are types of triggers ?</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="556" height="29" src="SQL QnA.files/SQL QnA13703.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc11809"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q18 - </span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Differentiate between After trigger vs Instead Of ?</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="270" height="166" src="SQL QnA.files/SQL QnA13766.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="553" height="77" src="SQL QnA.files/SQL QnA13769.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="553" height="160" src="SQL QnA.files/SQL QnA13772.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc8934"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q19 - </span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Differentiate between Char vs Varchar ?</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">char is fixed length while varchar is variable&nbsp;length.&nbsp;</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="419" height="143" src="SQL QnA.files/SQL QnA13879.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc26014"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q20 - </span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Differentiate between Char vs NChar </span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">and </span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">the size of Char vs NChar?</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="556" height="56" src="SQL QnA.files/SQL QnA13956.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">n stands for unicode. It takes 2 bytes.</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="382" height="63" src="SQL QnA.files/SQL QnA14000.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc18448"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q21 -</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">What is need of Identity ?</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="556" height="255" src="SQL QnA.files/SQL QnA14037.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc14301"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q22 - </span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Explain transactions and how to implement it ?</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="556" height="46" src="SQL QnA.files/SQL QnA14094.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="527" height="200" src="SQL QnA.files/SQL QnA14097.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc7734"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q23 - </span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">What are DDL and DML languages? Give example.</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;padding:0pt 0pt 0pt 0pt ;
+text-align:left;"><span style="font-family:Arial;font-size:12.0000pt;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=p align=justify style="margin-left:0.0000pt;text-indent:0.0000pt;
+text-align:justify;text-justify:inter-ideograph;background:rgb(255,255,255);"><img width="555" height="275"
+                src="SQL QnA.files/SQL QnA14154.png"><span style="font-family:'Times New Roman';
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;word-break:break-all;
+text-align:left;vertical-align:baseline;
+background:rgb(255,255,255);"><span style="font-family:'Courier New';
+color:rgb(0,111,224);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Courier New';
+color:rgb(0,128,128);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(0,255,0);background:rgb(255,255,255);
+">MERGE</span><span style="font-family:'Courier New';
+color:rgb(0,111,224);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(0,255,0);background:rgb(255,255,255);
+">&nbsp;</span><span style="font-family:'Courier New';
+color:rgb(0,128,128);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">TargetProducts</span><span style="font-family:'Courier New';
+color:rgb(0,111,224);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">&nbsp;</span><span style="font-family:'Courier New';
+color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">AS</span><span style="font-family:'Courier New';
+color:rgb(0,111,224);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">&nbsp;</span><span style="font-family:'Courier New';
+color:rgb(0,128,128);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">Target</span><span style="font-family:'Courier New';
+color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;word-break:break-all;
+text-align:left;vertical-align:baseline;
+background:rgb(255,255,255);"><span style="font-family:'Courier New';
+color:rgb(0,111,224);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Courier New';
+color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">USING</span><span style="font-family:'Courier New';
+color:rgb(0,111,224);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">&nbsp;</span><span style="font-family:'Courier New';
+color:rgb(0,128,128);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">SourceProducts</span><span style="font-family:'Courier New';
+color:rgb(0,111,224);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">&nbsp;</span><span style="font-family:'Courier New';
+color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">AS</span><span style="font-family:'Courier New';
+color:rgb(0,111,224);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">&nbsp;</span><span style="font-family:'Courier New';
+color:rgb(0,128,128);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">Source</span><span style="font-family:'Courier New';
+color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;word-break:break-all;
+text-align:left;vertical-align:baseline;
+background:rgb(255,255,255);"><span style="font-family:'Courier New';
+color:rgb(0,111,224);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Courier New';
+color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">ON</span><span style="font-family:'Courier New';
+color:rgb(0,111,224);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">&nbsp;</span><span style="font-family:'Courier New';
+color:rgb(0,128,128);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">Source</span><span style="font-family:'Courier New';
+color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">.</span><span style="font-family:'Courier New';
+color:rgb(0,128,128);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">ProductID</span><span style="font-family:'Courier New';
+color:rgb(0,111,224);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">&nbsp;</span><span style="font-family:'Courier New';
+color:rgb(128,128,128);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">=</span><span style="font-family:'Courier New';
+color:rgb(0,111,224);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">&nbsp;</span><span style="font-family:'Courier New';
+color:rgb(0,128,128);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">Target</span><span style="font-family:'Courier New';
+color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">.</span><span style="font-family:'Courier New';
+color:rgb(0,128,128);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">ProductID</span><span style="font-family:'Courier New';
+color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;word-break:break-all;
+text-align:left;vertical-align:baseline;
+background:rgb(255,255,255);"><span style="font-family:'Courier New';
+color:rgb(0,111,224);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Courier New';
+color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;word-break:break-all;
+text-align:left;vertical-align:baseline;
+background:rgb(255,255,255);"><span style="font-family:'Courier New';
+color:rgb(0,111,224);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Courier New';
+color:rgb(0,128,0);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">-- For Inserts</span><span style="font-family:'Courier New';
+color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;word-break:break-all;
+text-align:left;vertical-align:baseline;
+background:rgb(255,255,255);"><span style="font-family:'Courier New';
+color:rgb(0,111,224);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Courier New';
+color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">WHEN</span><span style="font-family:'Courier New';
+color:rgb(0,111,224);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">&nbsp;</span><span style="font-family:'Courier New';
+color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">NOT</span><span style="font-family:'Courier New';
+color:rgb(0,111,224);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">&nbsp;</span><span style="font-family:'Courier New';
+color:rgb(0,128,128);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">MATCHED</span><span style="font-family:'Courier New';
+color:rgb(0,111,224);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">&nbsp;</span><span style="font-family:'Courier New';
+color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">BY</span><span style="font-family:'Courier New';
+color:rgb(0,111,224);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">&nbsp;</span><span style="font-family:'Courier New';
+color:rgb(0,128,128);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">Target</span><span style="font-family:'Courier New';
+color:rgb(0,111,224);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">&nbsp;</span><span style="font-family:'Courier New';
+color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">THEN</span><span style="font-family:'Courier New';
+color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;word-break:break-all;
+text-align:left;vertical-align:baseline;
+background:rgb(255,255,255);"><span style="font-family:'Courier New';
+color:rgb(0,111,224);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Courier New';
+color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">INSERT</span><span style="font-family:'Courier New';
+color:rgb(0,111,224);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">&nbsp;</span><span style="font-family:'Courier New';
+color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">(</span><span style="font-family:'Courier New';
+color:rgb(0,128,128);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">ProductID</span><span style="font-family:'Courier New';
+color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">,</span><span style="font-family:'Courier New';
+color:rgb(0,128,128);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">ProductName</span><span style="font-family:'Courier New';
+color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">,</span><span style="font-family:'Courier New';
+color:rgb(0,111,224);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">&nbsp;</span><span style="font-family:'Courier New';
+color:rgb(0,128,128);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">Price</span><span style="font-family:'Courier New';
+color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">)</span><span style="font-family:'Courier New';
+color:rgb(0,111,224);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">&nbsp;</span><span style="font-family:'Courier New';
+color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;word-break:break-all;
+text-align:left;vertical-align:baseline;
+background:rgb(255,255,255);"><span style="font-family:'Courier New';
+color:rgb(0,111,224);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Courier New';
+color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">VALUES</span><span style="font-family:'Courier New';
+color:rgb(0,111,224);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">&nbsp;</span><span style="font-family:'Courier New';
+color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">(</span><span style="font-family:'Courier New';
+color:rgb(0,128,128);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">Source</span><span style="font-family:'Courier New';
+color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">.</span><span style="font-family:'Courier New';
+color:rgb(0,128,128);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">ProductID</span><span style="font-family:'Courier New';
+color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">,</span><span style="font-family:'Courier New';
+color:rgb(0,128,128);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">Source</span><span style="font-family:'Courier New';
+color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">.</span><span style="font-family:'Courier New';
+color:rgb(0,128,128);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">ProductName</span><span style="font-family:'Courier New';
+color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">,</span><span style="font-family:'Courier New';
+color:rgb(0,111,224);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">&nbsp;</span><span style="font-family:'Courier New';
+color:rgb(0,128,128);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">Source</span><span style="font-family:'Courier New';
+color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">.</span><span style="font-family:'Courier New';
+color:rgb(0,128,128);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">Price</span><span style="font-family:'Courier New';
+color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">)</span><span style="font-family:'Courier New';
+color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;word-break:break-all;
+text-align:left;vertical-align:baseline;
+background:rgb(255,255,255);"><span style="font-family:'Courier New';
+color:rgb(0,111,224);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Courier New';
+color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;word-break:break-all;
+text-align:left;vertical-align:baseline;
+background:rgb(255,255,255);"><span style="font-family:'Courier New';
+color:rgb(0,111,224);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Courier New';
+color:rgb(0,128,0);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">-- For Updates</span><span style="font-family:'Courier New';
+color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;word-break:break-all;
+text-align:left;vertical-align:baseline;
+background:rgb(255,255,255);"><span style="font-family:'Courier New';
+color:rgb(0,111,224);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Courier New';
+color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">WHEN</span><span style="font-family:'Courier New';
+color:rgb(0,111,224);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">&nbsp;</span><span style="font-family:'Courier New';
+color:rgb(0,128,128);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">MATCHED</span><span style="font-family:'Courier New';
+color:rgb(0,111,224);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">&nbsp;</span><span style="font-family:'Courier New';
+color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">THEN</span><span style="font-family:'Courier New';
+color:rgb(0,111,224);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">&nbsp;</span><span style="font-family:'Courier New';
+color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">UPDATE</span><span style="font-family:'Courier New';
+color:rgb(0,111,224);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">&nbsp;</span><span style="font-family:'Courier New';
+color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">SET</span><span style="font-family:'Courier New';
+color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;word-break:break-all;
+text-align:left;vertical-align:baseline;
+background:rgb(255,255,255);"><span style="font-family:'Courier New';
+color:rgb(0,111,224);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Courier New';
+color:rgb(0,128,128);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">Target</span><span style="font-family:'Courier New';
+color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">.</span><span style="font-family:'Courier New';
+color:rgb(0,128,128);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">ProductName</span><span style="font-family:'Courier New';
+color:rgb(0,111,224);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">&nbsp;</span><span style="font-family:'Courier New';
+color:rgb(128,128,128);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">=</span><span style="font-family:'Courier New';
+color:rgb(0,111,224);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">&nbsp;</span><span style="font-family:'Courier New';
+color:rgb(0,128,128);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">Source</span><span style="font-family:'Courier New';
+color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">.</span><span style="font-family:'Courier New';
+color:rgb(0,128,128);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">ProductName</span><span style="font-family:'Courier New';
+color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">,</span><span style="font-family:'Courier New';
+color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;word-break:break-all;
+text-align:left;vertical-align:baseline;
+background:rgb(255,255,255);"><span style="font-family:'Courier New';
+color:rgb(0,111,224);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Courier New';
+color:rgb(0,128,128);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">Target</span><span style="font-family:'Courier New';
+color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">.</span><span style="font-family:'Courier New';
+color:rgb(0,128,128);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">Price</span><span style="font-family:'Courier New';
+color:rgb(0,111,224);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">&nbsp;</span><span style="font-family:'Courier New';
+color:rgb(128,128,128);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">=</span><span style="font-family:'Courier New';
+color:rgb(0,111,224);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">&nbsp;</span><span style="font-family:'Courier New';
+color:rgb(0,128,128);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">Source</span><span style="font-family:'Courier New';
+color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">.</span><span style="font-family:'Courier New';
+color:rgb(0,128,128);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">Price</span><span style="font-family:'Courier New';
+color:rgb(51,51,51);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;
+background:rgb(255,255,255);">;</span><span style="font-family:'Courier New';
+color:rgb(0,0,0);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:6.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=pre style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid rgb(136,136,136);
+border-right:1.0000pt solid rgb(136,136,136);
+border-bottom:1.0000pt solid rgb(136,136,136);border-left:1.0000pt solid rgb(136,136,136);
+padding:1pt 1pt 1pt 1pt ;"><span style="font-family:SimSun;color:rgb(0,0,255);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">
+                <font face="SimSun">BEGIN</font>
+            </span><span style="font-family:SimSun;color:rgb(0,0,0);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">&nbsp;</span><span style="font-family:SimSun;color:rgb(0,0,255);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">
+                <font face="SimSun">TRANSACTION</font>
+            </span><span style="font-family:SimSun;color:rgb(0,0,0);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">&nbsp;</span><span style="font-family:SimSun;color:rgb(0,0,0);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=pre style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid rgb(136,136,136);
+border-right:1.0000pt solid rgb(136,136,136);
+border-bottom:1.0000pt solid rgb(136,136,136);border-left:1.0000pt solid rgb(136,136,136);
+padding:1pt 1pt 1pt 1pt ;"><span style="font-family:SimSun;color:rgb(0,0,0);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">
+                <font face="SimSun">&nbsp;</font>
+            </span><span style="font-family:SimSun;color:rgb(0,0,0);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=pre style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid rgb(136,136,136);
+border-right:1.0000pt solid rgb(136,136,136);
+border-bottom:1.0000pt solid rgb(136,136,136);border-left:1.0000pt solid rgb(136,136,136);
+padding:1pt 1pt 1pt 1pt ;"><span style="font-family:SimSun;color:rgb(0,0,0);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">&nbsp;&nbsp;&nbsp;</span><span style="font-family:SimSun;color:rgb(0,0,255);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">
+                <font face="SimSun">INSERT</font>
+            </span><span style="font-family:SimSun;color:rgb(0,0,0);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">&nbsp;</span><span style="font-family:SimSun;color:rgb(0,0,255);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">
+                <font face="SimSun">INTO</font>
+            </span><span style="font-family:SimSun;color:rgb(0,0,0);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">&nbsp;<font face="SimSun">TestTable</font></span><span style="font-family:SimSun;color:rgb(128,128,128);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">
+                <font face="SimSun">(</font>
+            </span><span style="font-family:SimSun;color:rgb(0,0,0);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">&nbsp;<font face="SimSun">ID</font></span><span style="font-family:SimSun;color:rgb(128,128,128);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">
+                <font face="SimSun">,</font>
+            </span><span style="font-family:SimSun;color:rgb(0,0,0);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">&nbsp;<font face="SimSun">Value </font></span><span style="font-family:SimSun;color:rgb(128,128,128);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">
+                <font face="SimSun">)</font>
+            </span><span style="font-family:SimSun;color:rgb(0,0,0);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=pre style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid rgb(136,136,136);
+border-right:1.0000pt solid rgb(136,136,136);
+border-bottom:1.0000pt solid rgb(136,136,136);border-left:1.0000pt solid rgb(136,136,136);
+padding:1pt 1pt 1pt 1pt ;"><span style="font-family:SimSun;color:rgb(0,0,0);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">&nbsp;&nbsp;&nbsp;</span><span style="font-family:SimSun;color:rgb(0,0,255);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">
+                <font face="SimSun">VALUES</font>
+            </span><span style="font-family:SimSun;color:rgb(0,0,0);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">&nbsp;&nbsp;</span><span style="font-family:SimSun;color:rgb(128,128,128);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">
+                <font face="SimSun">(</font>
+            </span><span style="font-family:SimSun;color:rgb(0,0,0);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">&nbsp;<font face="SimSun">1</font></span><span style="font-family:SimSun;color:rgb(128,128,128);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">
+                <font face="SimSun">,</font>
+            </span><span style="font-family:SimSun;color:rgb(0,0,0);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">&nbsp;<font face="SimSun">N</font></span><span style="font-family:SimSun;color:rgb(255,0,0);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">
+                <font face="SimSun">'10'</font>
+            </span><span style="font-family:SimSun;color:rgb(128,128,128);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">
+                <font face="SimSun">)</font>
+            </span><span style="font-family:SimSun;color:rgb(0,0,0);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=pre style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid rgb(136,136,136);
+border-right:1.0000pt solid rgb(136,136,136);
+border-bottom:1.0000pt solid rgb(136,136,136);border-left:1.0000pt solid rgb(136,136,136);
+padding:1pt 1pt 1pt 1pt ;"><span style="font-family:SimSun;color:rgb(0,0,0);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">&nbsp;&nbsp;&nbsp;</span><span style="font-family:SimSun;color:rgb(0,128,0);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">
+                <font face="SimSun">-- this will create a savepoint after the first INSERT</font>
+            </span><span style="font-family:SimSun;color:rgb(0,0,0);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=pre style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid rgb(136,136,136);
+border-right:1.0000pt solid rgb(136,136,136);
+border-bottom:1.0000pt solid rgb(136,136,136);border-left:1.0000pt solid rgb(136,136,136);
+padding:1pt 1pt 1pt 1pt ;"><span style="font-family:SimSun;color:rgb(0,0,0);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;background:rgb(0,255,0);
+">&nbsp;&nbsp;&nbsp;</span><span style="font-family:SimSun;color:rgb(0,0,255);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;background:rgb(0,255,0);
+">
+                <font face="SimSun">SAVE</font>
+            </span><span style="font-family:SimSun;color:rgb(0,0,0);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;background:rgb(0,255,0);
+">&nbsp;</span><span style="font-family:SimSun;color:rgb(0,0,255);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;background:rgb(0,255,0);
+">
+                <font face="SimSun">TRANSACTION</font>
+            </span><span style="font-family:SimSun;color:rgb(0,0,0);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;background:rgb(0,255,0);
+">&nbsp;<font face="SimSun">FirstInsert</font></span><span style="font-family:SimSun;color:rgb(0,0,0);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;background:rgb(0,255,0);
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=pre style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid rgb(136,136,136);
+border-right:1.0000pt solid rgb(136,136,136);
+border-bottom:1.0000pt solid rgb(136,136,136);border-left:1.0000pt solid rgb(136,136,136);
+padding:1pt 1pt 1pt 1pt ;"><span style="font-family:SimSun;color:rgb(0,0,0);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=pre style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid rgb(136,136,136);
+border-right:1.0000pt solid rgb(136,136,136);
+border-bottom:1.0000pt solid rgb(136,136,136);border-left:1.0000pt solid rgb(136,136,136);
+padding:1pt 1pt 1pt 1pt ;"><span style="font-family:SimSun;color:rgb(0,0,0);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">&nbsp;&nbsp;&nbsp;</span><span style="font-family:SimSun;color:rgb(0,0,255);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">
+                <font face="SimSun">INSERT</font>
+            </span><span style="font-family:SimSun;color:rgb(0,0,0);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">&nbsp;</span><span style="font-family:SimSun;color:rgb(0,0,255);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">
+                <font face="SimSun">INTO</font>
+            </span><span style="font-family:SimSun;color:rgb(0,0,0);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">&nbsp;<font face="SimSun">TestTable</font></span><span style="font-family:SimSun;color:rgb(128,128,128);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">
+                <font face="SimSun">(</font>
+            </span><span style="font-family:SimSun;color:rgb(0,0,0);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">&nbsp;<font face="SimSun">ID</font></span><span style="font-family:SimSun;color:rgb(128,128,128);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">
+                <font face="SimSun">,</font>
+            </span><span style="font-family:SimSun;color:rgb(0,0,0);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">&nbsp;<font face="SimSun">Value </font></span><span style="font-family:SimSun;color:rgb(128,128,128);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">
+                <font face="SimSun">)</font>
+            </span><span style="font-family:SimSun;color:rgb(0,0,0);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=pre style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid rgb(136,136,136);
+border-right:1.0000pt solid rgb(136,136,136);
+border-bottom:1.0000pt solid rgb(136,136,136);border-left:1.0000pt solid rgb(136,136,136);
+padding:1pt 1pt 1pt 1pt ;"><span style="font-family:SimSun;color:rgb(0,0,0);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">&nbsp;&nbsp;&nbsp;</span><span style="font-family:SimSun;color:rgb(0,0,255);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">
+                <font face="SimSun">VALUES</font>
+            </span><span style="font-family:SimSun;color:rgb(0,0,0);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">&nbsp;&nbsp;</span><span style="font-family:SimSun;color:rgb(128,128,128);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">
+                <font face="SimSun">(</font>
+            </span><span style="font-family:SimSun;color:rgb(0,0,0);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">&nbsp;<font face="SimSun">2</font></span><span style="font-family:SimSun;color:rgb(128,128,128);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">
+                <font face="SimSun">,</font>
+            </span><span style="font-family:SimSun;color:rgb(0,0,0);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">&nbsp;<font face="SimSun">N</font></span><span style="font-family:SimSun;color:rgb(255,0,0);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">
+                <font face="SimSun">'20'</font>
+            </span><span style="font-family:SimSun;color:rgb(128,128,128);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">
+                <font face="SimSun">)</font>
+            </span><span style="font-family:SimSun;color:rgb(0,0,0);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=pre style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid rgb(136,136,136);
+border-right:1.0000pt solid rgb(136,136,136);
+border-bottom:1.0000pt solid rgb(136,136,136);border-left:1.0000pt solid rgb(136,136,136);
+padding:1pt 1pt 1pt 1pt ;"><span style="font-family:SimSun;color:rgb(0,0,0);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">
+                <font face="SimSun">&nbsp;</font>
+            </span><span style="font-family:SimSun;color:rgb(0,0,0);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=pre style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid rgb(136,136,136);
+border-right:1.0000pt solid rgb(136,136,136);
+border-bottom:1.0000pt solid rgb(136,136,136);border-left:1.0000pt solid rgb(136,136,136);
+padding:1pt 1pt 1pt 1pt ;"><span style="font-family:SimSun;color:rgb(0,0,0);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">&nbsp;&nbsp;&nbsp;</span><span style="font-family:SimSun;color:rgb(0,128,0);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">
+                <font face="SimSun">-- this will rollback to the savepoint right after the first INSERT was done</font>
+            </span><span style="font-family:SimSun;color:rgb(0,0,0);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=pre style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid rgb(136,136,136);
+border-right:1.0000pt solid rgb(136,136,136);
+border-bottom:1.0000pt solid rgb(136,136,136);border-left:1.0000pt solid rgb(136,136,136);
+padding:1pt 1pt 1pt 1pt ;"><span style="font-family:SimSun;color:rgb(0,0,0);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">&nbsp;&nbsp;&nbsp;</span><span style="font-family:SimSun;color:rgb(0,0,255);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">
+                <font face="SimSun">ROLLBACK</font>
+            </span><span style="font-family:SimSun;color:rgb(0,0,0);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">&nbsp;</span><span style="font-family:SimSun;color:rgb(0,0,255);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">
+                <font face="SimSun">TRANSACTION</font>
+            </span><span style="font-family:SimSun;color:rgb(0,0,0);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">&nbsp;<font face="SimSun">FirstInsert</font></span><span style="font-family:SimSun;color:rgb(0,0,0);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=pre style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-indent:0.0000pt;border-top:1.0000pt solid rgb(136,136,136);
+border-right:1.0000pt solid rgb(136,136,136);
+border-bottom:1.0000pt solid rgb(136,136,136);border-left:1.0000pt solid rgb(136,136,136);
+padding:1pt 1pt 1pt 1pt ;"><span style="font-family:SimSun;color:rgb(0,128,0);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">
+                <font face="SimSun">-- this will commit the transaction leaving just the first INSERT&nbsp;</font>
+            </span><span style="font-family:SimSun;color:rgb(0,0,255);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">
+                <font face="SimSun">COMMIT</font>
+            </span><span style="font-family:SimSun;color:rgb(34,34,34);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:6.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc6233"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q24 - &nbsp;</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">What is the difference between DELETE and TRUNCATE statement?</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">Delete</span><span style="font-family:Calibri;
+">&nbsp;can be used to remove either few or all the records from a table. Whereas truncate
+                will always remove all the records from the table. Truncate cannot have WHERE condition.</span><span
+                style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc30487"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q23 - </span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Why do we use CASE Statement in SQL?</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">CASE</span><span style="font-family:Calibri;
+">&nbsp;statement is similar to IF ELSE statement from any other programming languages. We
+                can use it to fetch or show a particular value based on certain condition.</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="556" height="155" src="SQL QnA.files/SQL QnA15476.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p>&nbsp;</o:p>
+                </span></b></h1>
+        <h1><a name="_Toc13655"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q24 - </span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">What is the difference between </span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);">DISTINCT </span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">and </span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);">GROUP BY</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">?</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">DISTINCT is used to eliminate duplicates, while GROUP BY is used to aggregate data into
+                summary rows.</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">The main purpose of group by clause is to perform some aggregation (using the aggregate
+                functions like MIN, MAX, COUNT, SUM, AVG) based on the grouped by column values.</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc25950"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q25 - </span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">What are the rules to follow when using </span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);">UNION </span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">operator?</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">UNION operator can be used to combine two different SQL Queries. The output would be the
+                result combined from both these queries. Duplicate records would not be returned.</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">You can combine two queries using UNION operator if they follow the below
+                rules:</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;
+">
+            <span><span>&#108;<span>&nbsp;</span></span></span>
+            <span style="font-family:Calibri;
+">Both queries must return same same no of columns.</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;
+">
+            <span><span>&#108;<span>&nbsp;</span></span></span>
+            <span style="font-family:Calibri;
+">The columns in both the queries must be in same order.</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;
+">
+            <span><span>&#108;<span>&nbsp;</span></span></span>
+            <span style="font-family:Calibri;
+">Data type of all the columns in both the queries must be same.</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc26215"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q26 - What are aggregate functions? Name and explain different types of aggregate
+                    functions in SQL?</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">Aggregate function can be used to perform calculation on a set of values, which will then
+                return a single value.</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;
+">
+            <span><span>&#108;<span>&nbsp;</span></span></span>
+            <span style="font-family:Calibri;
+">SUM</span><span style="font-family:Calibri;
+">: Calculates the sum of given values.</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;
+">
+            <span><span>&#108;<span>&nbsp;</span></span></span>
+            <span style="font-family:Calibri;
+">AVG</span><span style="font-family:Calibri;
+">: Calculate the average from the given set of values.</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;
+">
+            <span><span>&#108;<span>&nbsp;</span></span></span>
+            <span style="font-family:Calibri;
+">MIN</span><span style="font-family:Calibri;
+">: Find the minimum value in the given set of values.</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;
+">
+            <span><span>&#108;<span>&nbsp;</span></span></span>
+            <span style="font-family:Calibri;
+">MAX</span><span style="font-family:Calibri;
+">: Find the maximum value in the given set of values.</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;
+">
+            <span><span>&#108;<span>&nbsp;</span></span></span>
+            <span style="font-family:Calibri;
+">COUNT</span><span style="font-family:Calibri;
+">: Returns the number of records or rows.</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc31647"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q27 - What is the difference between RANK, DENSE_RANK and ROW_NUMBER window
+                    function?</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">RANK() function will assign a rank to each row within each partitioned result set. If
+                multiple rows have the same value then each of these rows will share the same rank. However the rank of
+                the following (next) rows will get skipped. Meaning for each duplicate row, one rank value gets
+                skipped.</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">DENSE_RANK() function will assign a rank to each row within each partitioned result set.
+                If multiple rows have the same value then each of these rows will share the same rank. However the
+                dense_rank of the following (next) rows will NOT get skipped. This is the only difference between rank
+                and dense_rank. RANK() function skips a rank if there are duplicate rows whereas DENSE_RANK() function
+                will never skip a rank.</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">ROW_NUMBER() function will assign a unique row number to every row within each partitioned
+                result set. It does not matter if the rows are duplicate or not.</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="556" height="284" src="SQL QnA.files/SQL QnA17731.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc20462"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q28 - </span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">How can you convert a text into date format? Consider the given text as
+                    “31-01-2021“.</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">SELECT CAST('31-01-2021' as DATE) as date_value;</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc16457"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q29 - Imagine there is a FULL_NAME column in a table which has values like “Elon Musk“,
+                    “Bill Gates“, “Jeff Bezos“ etc. So each full name has a first name, a space and a last name. Which
+                    functions would you use to fetch only the first name from this FULL_NAME
+                    column?&nbsp;</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">SELECT SUBSTRING(full_name, 1, CHARINDEX(' ', full_name) - 1) as first_name;</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc27605"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q30 - Is it good to have the same subquery multiple times in your query? If no then how
+                    can you solve this?</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">No. &nbsp;We can avoid this by using the WITH clause. We can place the subquery just once
+                inside the WITH clause and then use this multiple times in our query. This way SQL will execute the
+                subquery just once (which is at the start of the query execution). </span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="372" height="344" src="SQL QnA.files/SQL QnA18589.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc26121"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q31 - </span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">What are steps you would take to tune a SQL query?</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-left:21.2500pt;text-indent:-21.2500pt;
+">
+            <span><span>1.<span>&nbsp;</span></span></span>
+            <span style="font-family:Calibri;
+">Check the SQL Query. </span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">First thing is to write the SQL Query in the best way possible. </span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;
+">
+            <span><span>&#108;<span>&nbsp;</span></span></span>
+            <span style="font-family:Calibri;
+">Make sure all the table joins are correct and all the filter conditions are applied as
+                intended. </span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;
+">
+            <span><span>&#108;<span>&nbsp;</span></span></span>
+            <span style="font-family:Calibri;
+">Also check for any cartesian joins that may happen unintentionally. </span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;
+">
+            <span><span>&#108;<span>&nbsp;</span></span></span>
+            <span style="font-family:Calibri;
+">Avoid any repeated subqueries by using a WITH clause. </span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;
+">
+            <span><span>&#108;<span>&nbsp;</span></span></span>
+            <span style="font-family:Calibri;
+">If using tables with huge list of columns then make sure to only fetch columns which are
+                required for the current query.</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;
+">
+            <span><span>&#108;<span>&nbsp;</span></span></span>
+            <span style="font-family:Calibri;
+">If required check the columns used in join conditions are similar to how index are
+                created. Just to make sure you give the best possible chance for the optimiser to use
+                indexes.</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-left:21.2500pt;text-indent:-21.2500pt;
+">
+            <span><span>2.<span>&nbsp;</span></span></span>
+            <span style="font-family:Calibri;
+">Check if index is created for the desired columns.</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;
+">
+            <span><span>&#108;<span>&nbsp;</span></span></span>
+            <span style="font-family:Calibri;
+">Make sure correct indexes are created on the desired columns. Following the correct type
+                of indexes.</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;
+">
+            <span><span>&#108;<span>&nbsp;</span></span></span>
+            <span style="font-family:Calibri;
+">Avoid creating unnecessary indexes.</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-left:21.2500pt;text-indent:-21.2500pt;
+">
+            <span><span>3.<span>&nbsp;</span></span></span>
+            <span style="font-family:Calibri;
+">Check if table statistics are upto date.</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">Statistics will help the optimizer to have the upto date information about the table which
+                in turn helps the optimiser to create the best possible explain plan.</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;
+">
+            <span><span>&#108;<span>&nbsp;</span></span></span>
+            <span style="font-family:Calibri;
+">Check if statistics are generated for all the used tables..</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;
+">
+            <span><span>&#108;<span>&nbsp;</span></span></span>
+            <span style="font-family:Calibri;
+">If there were some updates to table structure or data then its better to create statistics
+                again.</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-left:21.2500pt;text-indent:-21.2500pt;
+">
+            <span><span>4.<span>&nbsp;</span></span></span>
+            <span style="font-family:Calibri;
+">Check the explain plan.</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span>
+        </p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">When we execute a SQL Query, the first thing database does it to parse the query i.e. it
+                will validate the query by looking for any syntax errors and also by checking the validity of the tables
+                and its columns.</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">The next thing that happens is that the database optimizer will generate an explain plan
+                for the query. </span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">Explain plan is something like a step by step guide on how the query execution will
+                happen. Explain plan will mention which index to use and what sort of joins to follow. So if the explain
+                plan is not using a particular index from a huge table then this is a good indication why the query
+                performance may be slow.</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">You may then need to again follow the steps from the top to improve the written
+                query.</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc26834"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q32 - </span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">When can a function NOT be called from SELECT query?</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">If the function includes DML operations like INSERT, UPDATE, DELETE etc then it cannot be
+                called from a SELECT query. Because SELECT statement cannot change the state of the
+                database.</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-left:18.0000pt;"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc5241"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q33 - </span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Which function can be used to fetch yesterdays date?</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">SELECT DATEADD(DAY, -1, GETDATE());</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">SELECT DATEADD(DAY, -1, CAST(GETDATE() AS DATE));</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc7404"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Q34 - </span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">How to remove Duplicate Data in SQL</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">Solution 1: delete using unique Identifier</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><img width="332" height="98" src="SQL QnA.files/SQL QnA21037.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">Solution 2: using self join</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="451" height="102" src="SQL QnA.files/SQL QnA21069.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">Solution 3: using window function</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="448" height="114" src="SQL QnA.files/SQL QnA21107.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">solution 4: using min function. &nbsp;This delete even multiple duplicate
+                records.</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><img width="427" height="137" src="SQL QnA.files/SQL QnA21188.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <div w3-include-html="footer.htm"></div>
+    <script>includeHTML();</script>
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
