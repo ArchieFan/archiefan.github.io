@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>My Portfolio</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <script src="assets/js/layout.js"></script>
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+
+        <div class="d-flex align-items-center justify-content-between">
+            <i class="bi bi-list toggle-sidebar-btn"></i>
+        </div><!-- End Logo -->
+
+        <nav class="header-nav ms-auto">
+
+            <ul class="d-flex align-items-center">
+                <div w3-include-html="header.htm"></div>
+            </ul>
+        </nav><!-- End Icons Navigation -->
+    </header><!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <div w3-include-html="sidebar.htm"></div>
+
+    <main id="main" class="main">
+
+        <p class=MsoNormal align=center><span style="font-family:SimSun;
+font-size:10.5000pt;">Catalog</span><span style="font-family:Verdana;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><span><a href="#_Toc5880 "><span style="font-family:Verdana;
+">1) What is need of </span><span style="font-family:Verdana;
+">Dependency Injection</span><span style="font-family:Verdana;
+">?</span><span style="font-family:Verdana;
+">&#9;</span></a></span><span style="font-family:Verdana;
+">
+                    <o:p></o:p>
+                </span></p>
+        <p class=MsoToc1><span><a href="#_Toc10484 "><span style="font-family:Verdana;
+">2) Explain IOC (Inversion of control)?</span><span style="font-family:Verdana;
+">&#9;</span></a></span><span style="font-family:Verdana;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc15011 "><span style="font-family:Verdana;
+">3) What is the benefit of DI?</span><span style="font-family:Verdana;
+">&#9;</span></a></span><span style="font-family:Verdana;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc22689 "><span style="font-family:Verdana;
+">4) </span><span style="font-family:Verdana;
+background:rgb(0,255,0);">Scoped </span><span style="font-family:Verdana;
+">vs </span><span style="font-family:Verdana;
+background:rgb(0,255,0);">Transient </span><span style="font-family:Verdana;
+">vs </span><span style="font-family:Verdana;
+background:rgb(0,255,0);">Singleton</span><span style="font-family:Verdana;
+">?</span><span style="font-family:Verdana;
+">&#9;</span></a></span><span style="font-family:Verdana;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc18358 "><span style="font-family:Verdana;
+">5) When should we use what?</span><span style="font-family:Verdana;
+">&#9;</span></a></span><span style="font-family:Verdana;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal></span><span style="font-family:Verdana;
+font-weight:normal;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Verdana;
+font-weight:normal;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Verdana;
+font-weight:normal;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1 style="page-break-after:avoid;page-break-before:always;
+"><a name="_Toc5880"></a><span style="font-family:Verdana;
+font-weight:bold;font-size:18.0000pt;"><span>1)<span>&nbsp;</span></span></span><b><span style="font-family:Verdana;
+font-weight:bold;font-size:18.0000pt;
+">What is need of </span></b><b><span style="font-family:Verdana;
+font-weight:bold;font-size:18.0000pt;
+">Dependency Injection</span></b><b><span style="font-family:Verdana;
+font-weight:bold;font-size:18.0000pt;
+">?</span></b><b><span style="font-family:Verdana;
+font-weight:bold;font-size:18.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Verdana;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Verdana;
+">DI is a design methodology where in rather than caller creating the instance its injected by some framework or some
+                other mechanism.</span><span style="font-family:Verdana;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Verdana;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="553" height="287"
+                src="Dependency Injection (MVC).files/Dependency Injection (MVC)651.png"><span style="font-family:Verdana;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Verdana;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc10484"></a><span style="font-family:Verdana;
+font-weight:bold;font-size:18.0000pt;"><span>2)<span>&nbsp;</span></span></span><b><span style="font-family:Verdana;
+font-weight:bold;font-size:18.0000pt;
+">Explain IOC (Inversion of control)?</span></b><b><span style="font-family:Verdana;
+font-weight:bold;font-size:18.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Verdana;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Verdana;
+">Inversion of control (IOC) is a principle where we say </span><span style="font-family:Verdana;
+background:rgb(255,255,0);">focus on your work and other tasks delegate to someone else. DI is implementing the
+                IOC.</span><span style="font-family:Verdana;
+background:rgb(255,255,0);">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Verdana;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Verdana;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc15011"></a><span style="font-family:Verdana;
+font-weight:bold;font-size:18.0000pt;"><span>3)<span>&nbsp;</span></span></span><b><span style="font-family:Verdana;
+font-weight:bold;font-size:18.0000pt;
+">What is the benefit of DI?</span></b><b><span style="font-family:Verdana;
+font-weight:bold;font-size:18.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Verdana;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Verdana;
+">DI helps to implement decoupled architecture where you change at one place and changes are reflected at many
+                places.</span><span style="font-family:Verdana;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Verdana;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc22689"></a><span style="font-family:Verdana;
+font-weight:bold;font-size:18.0000pt;
+background:rgb(0,255,0);"><span>4)<span>&nbsp;</span></span></span><b><span style="font-family:Verdana;
+font-weight:bold;font-size:18.0000pt;
+background:rgb(0,255,0);">Scoped </span></b><b><span style="font-family:Verdana;
+font-weight:bold;font-size:18.0000pt;
+">vs </span></b><b><span style="font-family:Verdana;
+font-weight:bold;font-size:18.0000pt;
+background:rgb(0,255,0);">Transient </span></b><b><span style="font-family:Verdana;
+font-weight:bold;font-size:18.0000pt;
+">vs </span></b><b><span style="font-family:Verdana;
+font-weight:bold;font-size:18.0000pt;
+background:rgb(0,255,0);">Singleton</span></b><b><span style="font-family:Verdana;
+font-weight:bold;font-size:18.0000pt;
+">?</span></b><b><span style="font-family:Verdana;
+font-weight:bold;font-size:18.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Verdana;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Verdana;
+">Scoped, Transient, and Singleton define the life time of the DI object.</span><span style="font-family:Verdana;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Verdana;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><b><span style="font-family:Verdana;
+font-weight:bold;">Singleton </span></b><span style="font-family:Verdana;
+">:- only one instance of object is created for the whole web application.(like cache object)</span><span style="font-family:Verdana;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Verdana;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Verdana;
+">the GUID is always the same in the whole web application.</span><span style="font-family:Verdana;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><img width="553" height="156"
+                src="Dependency Injection (MVC).files/Dependency Injection (MVC)1252.png"><span style="font-family:Verdana;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Verdana;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><b><span style="font-family:Verdana;
+font-weight:bold;">Scoped</span></b><span style="font-family:Verdana;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Verdana;"><span>1.<span>&nbsp;</span></span></span><span style="font-family:Verdana;
+">For every request, new instance will be injected.</span><span style="font-family:Verdana;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Verdana;"><span>2.<span>&nbsp;</span></span></span><span style="font-family:Verdana;
+">In same request, if we DI multiple times same instance is injected.</span><span style="font-family:Verdana;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Verdana;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Verdana;
+">For every request, new instance will be injected. but within a single request, no matter how many time you ask for
+                object. &nbsp;The same instance will be injected.</span><span style="font-family:Verdana;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Verdana;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="553" height="160"
+                src="Dependency Injection (MVC).files/Dependency Injection (MVC)1542.png"><span style="font-family:Verdana;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Verdana;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><b><span style="font-family:Verdana;
+font-weight:bold;">Transient</span></b><span style="font-family:Verdana;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Verdana;"><span>1.<span>&nbsp;</span></span></span><span style="font-family:Verdana;
+">For every request, new instance will be injected.</span><span style="font-family:Verdana;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Verdana;"><span>2.<span>&nbsp;</span></span></span><span style="font-family:Verdana;
+">In the same request if we DI multiple times different instance is injected.</span><span style="font-family:Verdana;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Verdana;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Verdana;
+">For every request, new instance will be injected. but within a single request, if you ask for object many times.
+                &nbsp;The different instance will be injected.</span><span style="font-family:Verdana;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Verdana;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="553" height="128"
+                src="Dependency Injection (MVC).files/Dependency Injection (MVC)1838.png"><span style="font-family:Verdana;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Verdana;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc18358"></a><span style="font-family:Verdana;
+font-weight:bold;font-size:18.0000pt;"><span>5)<span>&nbsp;</span></span></span><b><span style="font-family:Verdana;
+font-weight:bold;font-size:18.0000pt;
+">When should we use what?</span></b><b><span style="font-family:Verdana;
+font-weight:bold;font-size:18.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Verdana;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Verdana;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><b><span style="font-family:Verdana;
+font-weight:bold;">Singleton </span></b><span style="font-family:Verdana;
+">will be used for caching, Shared Service, Hit counter</span><span style="font-family:Verdana;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Verdana;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><b><span style="font-family:Verdana;
+font-weight:bold;">Scoped </span></b><span style="font-family:Verdana;
+">:- Repository for same transaction, business object, used most of the time. &nbsp;if change one instance of object,
+                all instance will be changed.</span><span style="font-family:Verdana;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Verdana;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="488" height="206"
+                src="Dependency Injection (MVC).files/Dependency Injection (MVC)2082.png"><span style="font-family:Verdana;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Verdana;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><b><span style="font-family:Verdana;
+font-weight:bold;">Transient </span></b><span style="font-family:Verdana;
+">:- instance should not affect each other like different transaction, thread safety a object are different instances,
+                same object asked multiple times in the constructor. (separate instance)</span><span style="font-family:Verdana;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Verdana;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="446" height="244"
+                src="Dependency Injection (MVC).files/Dependency Injection (MVC)2286.png"><span style="font-family:Verdana;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <div w3-include-html="footer.htm"></div>
+    <script>includeHTML();</script>
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
