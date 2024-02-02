@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>My Portfolio</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <script src="assets/js/layout.js"></script>
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+
+        <div class="d-flex align-items-center justify-content-between">
+            <i class="bi bi-list toggle-sidebar-btn"></i>
+        </div><!-- End Logo -->
+
+        <nav class="header-nav ms-auto">
+
+            <ul class="d-flex align-items-center">
+                <div w3-include-html="header.htm"></div>
+            </ul>
+        </nav><!-- End Icons Navigation -->
+    </header><!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <div w3-include-html="sidebar.htm"></div>
+
+    <main id="main" class="main">
+
+        <p class=MsoNormal align=center><span style="font-family:SimSun;
+font-size:10.5000pt;">Catalog</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><span><a href="#_Toc4126 "><span style="font-family:Calibri;
+">REST API</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                    <o:p></o:p>
+                </span></p>
+        <p class=MsoToc1><span><a href="#_Toc6222 "><span style="font-family:Calibri;
+">RPC API</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc1107 "><span style="font-family:Calibri;
+">GraphQL API</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc15353 "><span style="font-family:Calibri;
+">Why are web API useful?</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc17816 "><span style="font-family:Calibri;
+">API Performance</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc27640 "><span style="font-family:Calibri;
+">Rate Limiting / API Throttling</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc28750 "><span style="font-family:Calibri;
+">Creating the Model</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc31069 "><span style="font-family:Calibri;
+">Creating the endpoint</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal></span><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1 style="page-break-before:always;"><a name="_Toc4126"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:24.0000pt;
+">REST API</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:24.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="555" height="156"
+                src="REST vs RPC vs GraphQL API.files/REST vs RPC vs GraphQL API613.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="555" height="226"
+                src="REST vs RPC vs GraphQL API.files/REST vs RPC vs GraphQL API616.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="491" height="320"
+                src="REST vs RPC vs GraphQL API.files/REST vs RPC vs GraphQL API619.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="340" height="249"
+                src="REST vs RPC vs GraphQL API.files/REST vs RPC vs GraphQL API622.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="553" height="239"
+                src="REST vs RPC vs GraphQL API.files/REST vs RPC vs GraphQL API625.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="553" height="260"
+                src="REST vs RPC vs GraphQL API.files/REST vs RPC vs GraphQL API628.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="380" height="257"
+                src="REST vs RPC vs GraphQL API.files/REST vs RPC vs GraphQL API631.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="380" height="260"
+                src="REST vs RPC vs GraphQL API.files/REST vs RPC vs GraphQL API634.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc6222"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:24.0000pt;
+">RPC API</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:24.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="555" height="226"
+                src="REST vs RPC vs GraphQL API.files/REST vs RPC vs GraphQL API646.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="520" height="318"
+                src="REST vs RPC vs GraphQL API.files/REST vs RPC vs GraphQL API649.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="553" height="265"
+                src="REST vs RPC vs GraphQL API.files/REST vs RPC vs GraphQL API652.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc1107"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:24.0000pt;
+">GraphQL API</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:24.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="556" height="239"
+                src="REST vs RPC vs GraphQL API.files/REST vs RPC vs GraphQL API668.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="553" height="288"
+                src="REST vs RPC vs GraphQL API.files/REST vs RPC vs GraphQL API671.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="553" height="258"
+                src="REST vs RPC vs GraphQL API.files/REST vs RPC vs GraphQL API674.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc15353"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:24.0000pt;
+">Why are web API useful?</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:24.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="556" height="185"
+                src="REST vs RPC vs GraphQL API.files/REST vs RPC vs GraphQL API703.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="555" height="182"
+                src="REST vs RPC vs GraphQL API.files/REST vs RPC vs GraphQL API706.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="556" height="263"
+                src="REST vs RPC vs GraphQL API.files/REST vs RPC vs GraphQL API709.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc17816"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:24.0000pt;
+">API Performance</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:24.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">There are different ways in general by which one can improve the API performance including for large API sizes. Each
+                of these topics can be explored in depth.</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;
+"><span style="font-family:Wingdings;"><span>&#108;<span>&nbsp;</span></span></span><span style="font-family:Calibri;
+">Reduce Size Pagination</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;
+"><span style="font-family:Wingdings;"><span>&#108;<span>&nbsp;</span></span></span><span style="font-family:Calibri;
+">Organizing Using Hypermedia</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;
+"><span style="font-family:Wingdings;"><span>&#108;<span>&nbsp;</span></span></span><span style="font-family:Calibri;
+">Exactly What a User Need With Schema Filtering</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;
+"><span style="font-family:Wingdings;"><span>&#108;<span>&nbsp;</span></span></span><span style="font-family:Calibri;
+">Defining Specific Responses Using The Prefer Header</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;
+"><span style="font-family:Wingdings;"><span>&#108;<span>&nbsp;</span></span></span><span style="font-family:Calibri;
+">Using Caching To Make Response</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;
+"><span style="font-family:Wingdings;"><span>&#108;<span>&nbsp;</span></span></span><span style="font-family:Calibri;
+">More Efficient More Efficiency Through Compression</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;
+"><span style="font-family:Wingdings;"><span>&#108;<span>&nbsp;</span></span></span><span style="font-family:Calibri;
+">Breaking Things Down With Chunked Responses</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;
+"><span style="font-family:Wingdings;"><span>&#108;<span>&nbsp;</span></span></span><span style="font-family:Calibri;
+">Switch To Providing More Streaming Responses</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;
+"><span style="font-family:Wingdings;"><span>&#108;<span>&nbsp;</span></span></span><span style="font-family:Calibri;
+">Moving Forward With HTTP/2</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=p style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-indent:0.0000pt;padding:0pt 0pt 0pt 0pt ;
+text-align:left;vertical-align:baseline;
+background:rgb(255,255,255);"><span style="font-family:'Segoe UI';color:rgb(35,38,41);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.5000pt;background:rgb(255,255,255);
+">Source:&nbsp;</span><span><a
+                    href="https://apievangelist.com/2018/04/20/delivering-large-api-responses-as-efficiently-as-possible/"><u><span
+                            class="29"
+                            style="font-family:'Segoe UI';color:rgb(0,0,255);
+letter-spacing:0.0000pt;text-transform:none;text-decoration:underline;
+font-style:normal;font-size:7.5000pt;
+background:rgb(255,255,255);">https://apievangelist.com/2018/04/20/delivering-large-api-responses-as-efficiently-as-possible/</span></u></a></span><span
+                style="font-family:'Segoe UI';color:rgb(35,38,41);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">if you are using .net core you have to try this magic package</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;
+border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;"><span style="font-family:Calibri;
+">Microsoft.AspNetCore.ResponseCompression</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">then use this line in&nbsp;configureservices&nbsp;in startup file</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;
+border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;"><span style="font-family:Calibri;
+">services.AddResponseCompression();</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">then in&nbsp;configure&nbsp;function</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;
+border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;"><span style="font-family:Calibri;
+">app.UseResponseCompression();</span><span style="font-family:Calibri;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc27640"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:24.0000pt;
+">Rate Limiting / API Throttling</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:24.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="456" height="340"
+                src="REST vs RPC vs GraphQL API.files/REST vs RPC vs GraphQL API1746.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="553" height="272"
+                src="REST vs RPC vs GraphQL API.files/REST vs RPC vs GraphQL API1749.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="553" height="390"
+                src="REST vs RPC vs GraphQL API.files/REST vs RPC vs GraphQL API1752.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="248" height="344"
+                src="REST vs RPC vs GraphQL API.files/REST vs RPC vs GraphQL API1755.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="554" height="328"
+                src="REST vs RPC vs GraphQL API.files/REST vs RPC vs GraphQL API1758.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc28750"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:24.0000pt;
+">Creating the Model</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:24.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="555" height="259"
+                src="REST vs RPC vs GraphQL API.files/REST vs RPC vs GraphQL API1783.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="556" height="260"
+                src="REST vs RPC vs GraphQL API.files/REST vs RPC vs GraphQL API1786.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="554" height="273"
+                src="REST vs RPC vs GraphQL API.files/REST vs RPC vs GraphQL API1789.png"><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc31069"></a><b><span style="font-family:Calibri;
+font-weight:bold;font-size:24.0000pt;
+">Creating the endpoint</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:24.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><b><span style="font-family:Calibri;
+font-weight:bold;font-size:24.0000pt;
+">Call a web API From a .Net Client</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:24.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+
+
+
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <div w3-include-html="footer.htm"></div>
+    <script>includeHTML();</script>
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
