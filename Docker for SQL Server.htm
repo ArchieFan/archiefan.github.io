@@ -107,7 +107,19 @@
                 <o:p>&nbsp;</o:p>
             </span></p>
         <p><span>
-                <o:p>&nbsp;</o:p>
+                <b>With Volumne</b>
+            </span></p>
+        <p><span>
+            docker run --name sql_2019_1436 
+            -e "ACCEPT_EULA=Y" 
+            -e "MSSQL_SA_PASSWORD=1Secure*Password1" 
+            -e "MSSQL_PID=Enterprise"
+            -e "MSSQL_AGENT_ENABLED=True" 
+            -p 1436:1433 
+            -v C:\sql_data\data:/var/opt/mssql/data 
+            -v C:\sql_data\log:/var/opt/mssql/log 
+            -v C:\sql_data\secrets:/var/opt/mssql/secrets 
+            -d mcr.microsoft.com/mssql/server:2019-latest            
             </span></p>
         <p><span>
                 <o:p>&nbsp;</o:p>
