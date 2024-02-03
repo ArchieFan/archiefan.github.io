@@ -50,176 +50,359 @@
 
     <main id="main" class="main">
 
-        <h1><b><span>Download SQL Server Linux images</span></b><b><span>
+        <h1><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Download SQL Server Linux images</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
                     <o:p></o:p>
                 </span></b></h1>
-        <p><span>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">
                 <o:p>&nbsp;</o:p>
             </span></p>
-        <p><span>docker pull
-                mcr.microsoft.com/mssql/server:2019-latest</span><span>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">docker pull mcr.microsoft.com/mssql/server:2019-latest</span><span style="font-family:Calibri;
+font-size:12.0000pt;">
                 <o:p></o:p>
             </span></p>
-        <p><span>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">
                 <o:p>&nbsp;</o:p>
             </span></p>
-        <p><span>docker pull
-                mcr.microsoft.com/mssql/server:2017-latest</span><span>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">docker pull mcr.microsoft.com/mssql/server:2017-latest</span><span style="font-family:Calibri;
+font-size:12.0000pt;">
                 <o:p></o:p>
             </span></p>
-        <p><span>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">
                 <o:p>&nbsp;</o:p>
             </span></p>
-        <p><span>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">
                 <o:p>&nbsp;</o:p>
             </span></p>
-        <h1><b><span>Run the docker images</span></b><b><span>
+        <h1><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Run the docker images</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
                     <o:p></o:p>
                 </span></b></h1>
-        <p><span>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">
                 <o:p>&nbsp;</o:p>
             </span></p>
-        <p><span>docker run --name sql_2017 -e
-                "ACCEPT_EULA=Y" -e "SA_PASSWORD=</span><span
-                style="font-size:12.0000pt;background:rgb(255,255,0);">1Secure*Password1</span><span>"
-                -e "MSSQL_PID=Enterprise" -e </span><span>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">docker run --name sql_2017 -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=</span><span style="font-family:Calibri;
+font-size:12.0000pt;
+background:rgb(255,255,0);">1Secure*Password1</span><span style="font-family:Calibri;
+font-size:12.0000pt;">" -e "MSSQL_PID=Enterprise" -e </span><span style="font-family:Calibri;
+font-size:12.0000pt;">
                 <font face="Calibri">“</font>
-            </span><span>MSSQL_AGENT_ENABLED=True</span><span>
+            </span><span style="font-family:Calibri;
+font-size:12.0000pt;">MSSQL_AGENT_ENABLED=True</span><span style="font-family:Calibri;
+font-size:12.0000pt;">
                 <font face="Calibri">” </font>
-            </span><span>-p 1433:1433 -d
-                mcr.microsoft.com/mssql/server:2017-latest</span><span>
+            </span><span style="font-family:Calibri;
+font-size:12.0000pt;">-p 1433:1433 -d mcr.microsoft.com/mssql/server:2017-latest</span><span style="font-family:Calibri;
+font-size:12.0000pt;">
                 <o:p></o:p>
             </span></p>
-        <p><span>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">
                 <o:p>&nbsp;</o:p>
             </span></p>
-        <p><span>docker run</span><span>&nbsp;</span><span>--name sql_2019_1436 -e "ACCEPT_EULA=Y"
-                -e</span><span>&nbsp;</span><span>"SA_PASSWORD=1Secure*Password1" -e
-                "MSSQL_PID=Enterprise"</span><span>&nbsp;</span><span>-e </span><span>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">docker run</span><span style="font-family:Calibri;
+font-size:12.0000pt;">&nbsp;</span><span style="font-family:Calibri;
+font-size:12.0000pt;">--name sql_2019_1436 -e "ACCEPT_EULA=Y" -e</span><span style="font-family:Calibri;
+font-size:12.0000pt;">&nbsp;</span><span style="font-family:Calibri;
+font-size:12.0000pt;">"SA_PASSWORD=1Secure*Password1" -e "MSSQL_PID=Enterprise"</span><span style="font-family:Calibri;
+font-size:12.0000pt;">&nbsp;</span><span style="font-family:Calibri;
+font-size:12.0000pt;">-e </span><span style="font-family:Calibri;
+font-size:12.0000pt;">
                 <font face="Calibri">“</font>
-            </span><span>MSSQL_AGENT_ENABLED=True</span><span>
+            </span><span style="font-family:Calibri;
+font-size:12.0000pt;">MSSQL_AGENT_ENABLED=True</span><span style="font-family:Calibri;
+font-size:12.0000pt;">
                 <font face="Calibri">” </font>
-            </span><span>-p 1436:1433 -d
-                mcr.microsoft.com/mssql/server:2019-latest</span><span>
+            </span><span style="font-family:Calibri;
+font-size:12.0000pt;">-p 1436:1433 -d mcr.microsoft.com/mssql/server:2019-latest</span><span style="font-family:Calibri;
+font-size:12.0000pt;">
                 <o:p></o:p>
             </span></p>
-        <p><span>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">
                 <o:p>&nbsp;</o:p>
             </span></p>
-        <p><span>
-                <b>With Volumne</b>
-            </span></p>
-        <p><span>
-            docker run --name sql_2019_1436 
-            -e "ACCEPT_EULA=Y" 
-            -e "MSSQL_SA_PASSWORD=1Secure*Password1" 
-            -e "MSSQL_PID=Enterprise"
-            -e "MSSQL_AGENT_ENABLED=True" 
-            -p 1436:1433 
-            -v C:\sql_data\data:/var/opt/mssql/data 
-            -v C:\sql_data\log:/var/opt/mssql/log 
-            -v C:\sql_data\secrets:/var/opt/mssql/secrets 
-            -d mcr.microsoft.com/mssql/server:2019-latest            
-            </span></p>
-        <p><span>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">
                 <o:p>&nbsp;</o:p>
             </span></p>
-        <h1><b><span>To test connection</span></b><b><span>
+        <h4><b><span style="font-family:Calibri;
+font-weight:bold;font-size:14.0000pt;
+">With Volumne</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:14.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h4>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">docker run --name sql_2019_1436 -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=1Secure*Password1" -e
+                "MSSQL_PID=Enterprise" -e "MSSQL_AGENT_ENABLED=True" -p 1436:1433 -v
+                C:\sql_data\data:/var/opt/mssql/data -v C:\sql_data\log:/var/opt/mssql/log -v
+                C:\sql_data\secrets:/var/opt/mssql/secrets -d mcr.microsoft.com/mssql/server:2019-latest</span><span
+                style="font-family:Calibri;
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">To test connection</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
                     <o:p></o:p>
                 </span></b></h1>
-        <p><span>docker exec -it sql_2017
-                /opt/mssql-tools/bin/sqlcmd -S localhost -U sa</span><span>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">docker exec -it sql_2017 /opt/mssql-tools/bin/sqlcmd -S localhost -U sa</span><span style="font-family:Calibri;
+font-size:12.0000pt;">
                 <o:p></o:p>
             </span></p>
-        <p><span>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">
                 <o:p>&nbsp;</o:p>
             </span></p>
-        <p><span>docker exec -it </span><span
-                style="font-size:12.0000pt;background:rgb(255,255,0);">sql_2019_1436</span><span>&nbsp;/opt/mssql-tools/bin/sqlcmd
-                -S
-                localhost -U sa</span><span>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">docker exec -it </span><span style="font-family:Calibri;
+font-size:12.0000pt;
+background:rgb(255,255,0);">sql_2019_1436</span><span style="font-family:Calibri;
+font-size:12.0000pt;">&nbsp;/opt/mssql-tools/bin/sqlcmd -S localhost -U sa</span><span style="font-family:Calibri;
+font-size:12.0000pt;">
                 <o:p></o:p>
             </span></p>
-        <p><span>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">
                 <o:p>&nbsp;</o:p>
             </span></p>
-        <p><span>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">
                 <o:p>&nbsp;</o:p>
             </span></p>
-        <h1><b><span>Connect to SQL Server instance using SSMS</span></b><b><span>
+        <h1><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Connect to SQL Server instance using SSMS</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
                     <o:p></o:p>
                 </span></b></h1>
-        <p><span>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">
                 <o:p>&nbsp;</o:p>
             </span></p>
-        <p><span>Connect to the SQL Server 2017 instance
-                using the default port, 1433, on the localhost.</span><span>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">Connect to the SQL Server 2017 instance using the default port, 1433, on the
+                localhost.</span><span style="font-family:Calibri;
+font-size:12.0000pt;">
                 <o:p></o:p>
             </span></p>
-        <p><span>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">
                 <o:p>&nbsp;</o:p>
             </span></p>
-        <p><img width="477" height="315" src="Docker for SQL Server.files/Docker for SQL Server874.png"><span>
+        <p class=MsoNormal><img width="477" height="315"
+                src="Docker for SQL Server.files/Docker for SQL Server1220.png"><span style="font-family:Calibri;
+font-size:12.0000pt;">
                 <o:p>&nbsp;</o:p>
             </span></p>
-        <p><span>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">
                 <o:p>&nbsp;</o:p>
             </span></p>
-        <p><span>Let’s check SQL Server version, it
-                shows:</span><span>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">Let’s check SQL Server version, it shows:</span><span style="font-family:Calibri;
+font-size:12.0000pt;">
                 <o:p></o:p>
             </span></p>
-        <p><span>Microsoft SQL Server 2017 (RTM-CU25)
-                (KB5003830) - 14.0.3401.7 (X64) Jun 25 2021 14:02:48 Copyright (C) 2017 Microsoft Corporation Enterprise
-                Edition (64-bit) on Linux (Ubuntu 16.04.7 LTS)</span><span>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">Microsoft SQL Server 2017 (RTM-CU25) (KB5003830) - 14.0.3401.7 (X64) Jun 25 2021 14:02:48
+                Copyright (C) 2017 Microsoft Corporation Enterprise Edition (64-bit) on Linux (Ubuntu 16.04.7
+                LTS)</span><span style="font-family:Calibri;
+font-size:12.0000pt;">
                 <o:p></o:p>
             </span></p>
-        <p><span>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">
                 <o:p>&nbsp;</o:p>
             </span></p>
-        <p style="text-align:left;"><img width="625" height="262"
-                src="Docker for SQL Server.files/Docker for SQL Server1109.png"><span>
+        <p class=MsoNormal style="text-align:left;"><img width="625" height="262"
+                src="Docker for SQL Server.files/Docker for SQL Server1455.png"><span style="font-family:Calibri;
+font-size:12.0000pt;">
                 <o:p>&nbsp;</o:p>
             </span></p>
-        <p><span>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">
                 <o:p>&nbsp;</o:p>
             </span></p>
-        <p><span>Connect to the SQL Server 2019 instance
-                using port 1436 on the localhost.</span><span>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">Connect to the SQL Server 2019 instance using port 1436 on the localhost.</span><span style="font-family:Calibri;
+font-size:12.0000pt;">
                 <o:p></o:p>
             </span></p>
-        <p><img width="477" height="315" src="Docker for SQL Server.files/Docker for SQL Server1186.png"><span>
+        <p class=MsoNormal><img width="477" height="315"
+                src="Docker for SQL Server.files/Docker for SQL Server1532.png"><span style="font-family:Calibri;
+font-size:12.0000pt;">
                 <o:p>&nbsp;</o:p>
             </span></p>
-        <p><span>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">
                 <o:p>&nbsp;</o:p>
             </span></p>
-        <p><span>Let’s check SQL Server version, it
-                shows:</span><span>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">Let’s check SQL Server version, it shows:</span><span style="font-family:Calibri;
+font-size:12.0000pt;">
                 <o:p></o:p>
             </span></p>
-        <p><span>Microsoft SQL Server 2019 (RTM-CU11)
-                (KB5003249) - 15.0.4138.2 (X64) May 27 2021 17:34:14 Copyright (C) 2019 Microsoft Corporation Enterprise
-                Edition (64-bit) on Linux (Ubuntu 20.04.2 LTS) &lt;X64&gt;</span><span>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">Microsoft SQL Server 2019 (RTM-CU11) (KB5003249) - 15.0.4138.2 (X64) May 27 2021 17:34:14
+                Copyright (C) 2019 Microsoft Corporation Enterprise Edition (64-bit) on Linux (Ubuntu 20.04.2 LTS)
+                &lt;X64&gt;</span><span style="font-family:Calibri;
+font-size:12.0000pt;">
                 <o:p></o:p>
             </span></p>
-        <p><span>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">
                 <o:p>&nbsp;</o:p>
             </span></p>
-        <p><span>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">
                 <o:p>&nbsp;</o:p>
             </span></p>
-        <p style="text-align:left;"><img width="594" height="248"
-                src="Docker for SQL Server.files/Docker for SQL Server1428.png"><span>
+        <p class=MsoNormal style="text-align:left;"><img width="594" height="248"
+                src="Docker for SQL Server.files/Docker for SQL Server1774.png"><span style="font-family:Calibri;
+font-size:12.0000pt;">
                 <o:p>&nbsp;</o:p>
             </span></p>
-        <p><span>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">
                 <o:p>&nbsp;</o:p>
             </span></p>
-        <p><span>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">
                 <o:p>&nbsp;</o:p>
             </span></p>
-        <p><span>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Start containers automatically</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">The following command starts a </span><span style="font-family:Calibri;
+font-size:12.0000pt;">SQL </span><span style="font-family:Calibri;
+font-size:12.0000pt;">container and configures it to always restart, unless the container is explicitly stopped, or the
+                daemon restarts.</span><span style="font-family:Calibri;
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">$ docker run -d --restart unless-stopped </span><span style="font-family:Calibri;
+font-size:12.0000pt;">sql_2019_1436</span><span style="font-family:Calibri;
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">The following command changes the restart policy for an already running container
+                named&nbsp;</span><span style="font-family:Calibri;
+font-size:12.0000pt;">sql_2019_1436</span><span style="font-family:Calibri;
+font-size:12.0000pt;">.</span><span style="font-family:Calibri;
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">$ docker update --restart unless-stopped </span><span style="font-family:Calibri;
+font-size:12.0000pt;">sql_2019_1436</span><span style="font-family:Calibri;
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="554" height="212"
+                src="Docker for SQL Server.files/Docker for SQL Server2181.png"><span style="font-family:Calibri;
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">The following command ensures all running containers restart.</span><span style="font-family:Calibri;
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">$ docker update --restart unless-stopped $(docker ps -q)</span><span style="font-family:Calibri;
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Calibri;
+font-size:12.0000pt;">
                 <o:p>&nbsp;</o:p>
             </span></p>
 
