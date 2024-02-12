@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>My Portfolio</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords"> <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon"> <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet"> <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <script src="assets/js/layout.js"></script>
+</head>
+
+<body> <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+        <div class="d-flex align-items-center justify-content-between"> <i class="bi bi-list toggle-sidebar-btn"></i>
+        </div><!-- End Logo -->
+        <nav class="header-nav ms-auto">
+            <ul class="d-flex align-items-center">
+                <div w3-include-html="header.htm"></div>
+            </ul>
+        </nav><!-- End Icons Navigation -->
+    </header><!-- End Header --> <!-- ======= Sidebar ======= -->
+    <div w3-include-html="sidebar.htm"></div>
+    <main id="main" class="main">
+        <p align=center><span style="font-family:SimSun;font-size:10.5000pt;">Catalog</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><span><a href="#_Toc1309 "><span>What are
+                            micro-services?</span><span>&#9;</span></a></span><span>
+                    <o:p></o:p>
+                </span></p>
+        <p class=MsoToc1><span><a href="#_Toc1694 "><span>Is Monolithic bad?</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc30491 "><span>Microservices
+                        Architecture</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc14740 "><span>Managing resiliency in
+                        microservices</span><span>&#9;</span></a></span><span>
+                <o:p></o:p>
+            </span></p>
+        <p></span><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc1309"></a><b><span>What are micro-services?</span></b><b><span>
+                    <o:p></o:p>
+                </span></b></h1>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>Generally speaking micro service is not about taking a service and
+                breaking down into small pieces right or and then our simple web api project or something like that. No,
+                that's not microservices.</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span style="background:rgb(255,255,0);">microservices is an architectural
+                pattern</span><span>. Where the most important thing is the application is
+                architecture as </span><span style="background:rgb(255,255,0);">a collection of
+                smaller services that are focusing on a specific business functionality defined by bounded
+                context.</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span
+                style="color:rgb(32,33,36);letter-spacing:0.0000pt;text-transform:none;font-style:normal;background:rgb(255,255,0);background:rgb(255,255,255);">Bounded
+                Context </span><span
+                style="color:rgb(32,33,36);letter-spacing:0.0000pt;text-transform:none;font-style:normal;background:rgb(255,255,255);">represents
+                a boundary around a set of functional features (user stories / use cases). For example,</span><span
+                style="color:rgb(32,33,36);letter-spacing:0.0000pt;text-transform:none;font-style:normal;background:rgb(255,255,255);">&nbsp;</span><b><span
+                    style="color:rgb(32,33,36);letter-spacing:0.0000pt;text-transform:none;font-style:normal;background:rgb(255,255,255);">everything
+                    that is related to customer management in an insurance scenario: create customer, update customer,
+                    update customer address, etc.</span></b><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>The the advantage that you get with that is they are </span><span>
+                <o:p></o:p>
+            </span></p>
+        <p> <span style="background:rgb(255,255,0);"><span>1)<span>&nbsp;</span></span></span> <span
+                style="background:rgb(255,255,0);">loosely coupled</span><span>&nbsp;so that means they can be
+                independently deployed. &nbsp;</span><span>
+                <o:p></o:p>
+            </span> </p>
+        <p> <span><span>2)<span>&nbsp;</span></span></span> <span>They </span><span
+                style="background:rgb(255,255,0);">can be scaled when it is needed</span><span>&nbsp;and </span><span>
+                <o:p></o:p>
+            </span> </p>
+        <p> <span><span>3)<span>&nbsp;</span></span></span> <span>The most important aspect of microservices it's not
+                about just making
+                applications small but it's also about working on a specific business functionality and a smaller teams
+                can actually focus on that functionality and </span><span style="background:rgb(255,255,0);">ship things
+                to production much much
+                faster&nbsp;</span><span>
+                <o:p></o:p>
+            </span> </p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="508" height="260"
+                src="Managing Resiliency in Microservice.files/Managing Resiliency in Microservice1493.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc1694"></a><b><span>Is Monolithic bad?</span></b><b><span>
+                    <o:p></o:p>
+                </span></b></h1>
+        <p><img width="540" height="227"
+                src="Managing Resiliency in Microservice.files/Managing Resiliency in Microservice1516.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>monolithic applications basically will have layers. &nbsp;So you'll have a
+                database layer, a service layer, and a web layer. &nbsp;Technically they are all baked into a single
+                deployable unit and then they are deployed into probably the vms and scalability means scaling up vms.
+            </span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>The disadvantage with this approach is that sometimes you just want to
+                scale only part of your services which has more traffic at that time you don't have that option you have
+                to scale multiple vms itself and thereby cutting down on the low utilization of resources and that kind
+                of thing so you basically will be spending more cost doing this. </span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>The other disadvantage is like you can't ship in production very often
+                because they are all packaged into a single deployment there will be many teams working on the same
+                product so you will have to create a release cadence and you have to keep your bug fixes to the defined
+                cadence and things. You can't really ship to production like for example 100 times a day.</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>we're looking at really large complex applications then these micro
+                services all will make sense. but when it comes to really small teams small applications where you can
+                easily manage these kind of deployments, then monolithics is totally fine. It is not about old versus
+                new. It's just about architectural design choice you make whether you want to build a monolithic or
+                micro services.</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc30491"></a><b><span>Microservices Architecture</span></b><b><span>
+                    <o:p></o:p>
+                </span></b></h1>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="555" height="264"
+                src="Managing Resiliency in Microservice.files/Managing Resiliency in Microservice2921.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="555" height="321"
+                src="Managing Resiliency in Microservice.files/Managing Resiliency in Microservice2924.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>They </span><span style="background:rgb(255,255,0);">have to be completely
+                independent.</span><span>&nbsp;That means the database when you split it, you're completely
+                independent from other other services. So now you can decide you want to have multiple services running.
+                you can even run multiple versions of these apis in production, and </span><span
+                style="background:rgb(255,255,0);">let the api gateway decide what load needs to go
+                to</span><span>&nbsp;the newer services versus the older service. And then
+                you get a lot of flexibility but obviously these flexibility comes with this kind of
+                complexity.&nbsp;</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>-</span><span style="background:rgb(255,255,0);">&nbsp;API Gateway / BFF (backend for frontend)
+            </span><span>&nbsp;</span><span>instead of
+                exposing every single service outside to the world, we expose only the gateways. So that way, the
+                connection when it is made to the services these gateways are smart enough to identify what kind of
+                request that's coming in and it can make multiple service calls to these and aggregate the response and
+                send it back so you.</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc14740"></a><b><span>Managing resiliency in microservices</span></b><b><span>
+                    <o:p></o:p>
+                </span></b></h1>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span style="background:rgb(0,255,0);">Y</span><span style="background:rgb(0,255,0);">ou have to be ready for
+                failures</span><span style="background:rgb(0,255,0);">. I</span><span
+                style="background:rgb(0,255,0);">t's not about avoiding failures it's about being
+                prepared for a failure.</span><span style="background:rgb(0,255,0);">
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="536" height="284"
+                src="Managing Resiliency in Microservice.files/Managing Resiliency in Microservice3934.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>T</span><span>wo patterns </span><span>
+                <o:p></o:p>
+            </span></p>
+        <p> <span><span>1)<span>&nbsp;</span></span></span> <span>the retry and the circuit
+                breaker</span><span>&nbsp;(Code) and </span><span>
+                <o:p></o:p>
+            </span> </p>
+        <p> <span><span>2)<span>&nbsp;</span></span></span> <span>For </span><span>infrastructure using service
+                mesh like link</span><span>er</span><span>d</span><span>
+                <o:p></o:p>
+            </span> </p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="532" height="288"
+                src="Managing Resiliency in Microservice.files/Managing Resiliency in Microservice4049.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="480" height="284"
+                src="Managing Resiliency in Microservice.files/Managing Resiliency in Microservice4053.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>you don't want to retry immediately so you will implement something called
+                as an exponential backoff which is like provide some logic to do don't retry immediately but provide
+                some kind of logic to go okay. I'm returning at two seconds now. the next time, I'll go exponentially,
+                go four, six, eight depends on whatever logic you want to add.</span><span>
+                <o:p></o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="511" height="292"
+                src="Managing Resiliency in Microservice.files/Managing Resiliency in Microservice4399.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width="298" height="89"
+                src="Managing Resiliency in Microservice.files/Managing Resiliency in Microservice4402.png"><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span>
+                <o:p>&nbsp;</o:p>
+            </span></p>
+
+    </main><!-- End #main --> <!-- ======= Footer ======= -->
+    <div w3-include-html="footer.htm"></div>
+    <script>includeHTML();</script> <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a> <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
