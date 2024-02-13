@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>My Portfolio</title>
+	<meta content="" name="description">
+	<meta content="" name="keywords"> <!-- Favicons -->
+	<link href="assets/img/favicon.png" rel="icon"> <!-- Google Fonts -->
+	<link href="https://fonts.gstatic.com" rel="preconnect">
+	<link
+		href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+		rel="stylesheet"> <!-- Vendor CSS Files -->
+	<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> <!-- Template Main CSS File -->
+	<link href="assets/css/style.css" rel="stylesheet">
+	<script src="assets/js/layout.js"></script>
+</head>
+
+<body> <!-- ======= Header ======= -->
+	<header id="header" class="header fixed-top d-flex align-items-center">
+		<div class="d-flex align-items-center justify-content-between"> <i class="bi bi-list toggle-sidebar-btn"></i>
+		</div><!-- End Logo -->
+		<nav class="header-nav ms-auto">
+			<ul class="d-flex align-items-center">
+				<div w3-include-html="header.htm"></div>
+			</ul>
+		</nav><!-- End Icons Navigation -->
+	</header><!-- End Header --> <!-- ======= Sidebar ======= -->
+	<div w3-include-html="sidebar.htm"></div>
+	<main id="main" class="main">
+		<h1><b><span style="font-weight:bold;font-size:22.0000pt;">Crafting effective, secure RESTful
+					APIs</span></b><b><span style="font-weight:bold;font-size:22.0000pt;">
+					<o:p></o:p>
+				</span></b></h1>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>Best practicdes for designing&nbsp;robust APIs that developers love using&nbsp; and companies
+				can rely on long-term.</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<h2><b><span style="font-weight:bold;font-size:16.0000pt;">Tip #1: Use clear naming.</span></b><b><span
+					style="font-weight:bold;font-size:16.0000pt;">
+					<o:p></o:p>
+				</span></b></h2>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>When building an API, choose&nbsp; straightforward, logical names. Instead of GET /cart/123
+				for a&nbsp;shopping app, go with /carts/123. &nbsp;The plural tells API users they're&nbsp; dealing with
+				a group of resources.</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="189" height="40" src="Good APIs Vs Bad APIs.files/Good APIs Vs Bad APIs376.png"><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="168" height="42" src="Good APIs Vs Bad APIs.files/Good APIs Vs Bad APIs379.png"><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>Be consistent. &nbsp;Stick with intuitive URLs that denote collections. &nbsp;It makes
+				interactions more understandable for developers tapping into your API.</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="256" height="80" src="Good APIs Vs Bad APIs.files/Good APIs Vs Bad APIs531.png"><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<h2><b><span style="font-weight:bold;font-size:16.0000pt;">Tip #2: Ensure reliability&nbsp;through idempotent
+					APIs.</span></b><b><span style="font-weight:bold;font-size:16.0000pt;">
+					<o:p></o:p>
+				</span></b></h2>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>Idempotency means making the same API call&nbsp;multiple times has the same&nbsp;effect as
+				calling it once. This concept is key for reliable APIs. &nbsp;It prevents bugs if requests get retried,
+				which is common. </span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="171" height="44" src="Good APIs Vs Bad APIs.files/Good APIs Vs Bad APIs786.png"><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="336" height="216" src="Good APIs Vs Bad APIs.files/Good APIs Vs Bad APIs789.png"><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>Typically, POST requests that create resources are not naturally idempotent. &nbsp;Sending the
+				same POST twice&nbsp;could duplicate that resource. &nbsp;But we can add logic to de-duplicate by
+				requiring a client-generated unique ID on every unique request. &nbsp;</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="324" height="213" src="Good APIs Vs Bad APIs.files/Good APIs Vs Bad APIs1037.png"><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>GET requests that read data&nbsp;are idempotent by default. &nbsp;Repeated GETs return the
+				same unchanging info. &nbsp;</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="330" height="203" src="Good APIs Vs Bad APIs.files/Good APIs Vs Bad APIs1146.png"><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>PUT requests that update full&nbsp;resources also tend to be idempotent. &nbsp;</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="238" height="81" src="Good APIs Vs Bad APIs.files/Good APIs Vs Bad APIs1220.png"><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>But PATCH is typically used to change&nbsp;select fields within a resource. &nbsp;For
+				instance, PATCHing to append to an array could add duplicate array elements if called multiple times.
+				&nbsp;This means PATCH may not be idempotent. </span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="375" height="74" src="Good APIs Vs Bad APIs.files/Good APIs Vs Bad APIs1444.png"><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>Finally, DELETE is idempotent. &nbsp;Deleting just once even if called repeatedly.&nbsp; Later
+				calls return errors if already deleted.</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="259" height="118" src="Good APIs Vs Bad APIs.files/Good APIs Vs Bad APIs1573.png"><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="375" height="235" src="Good APIs Vs Bad APIs.files/Good APIs Vs Bad APIs1576.png"><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<h2><b><span style="font-weight:bold;font-size:16.0000pt;">Tip #3 is to add versioning.</span></b><b><span
+					style="font-weight:bold;font-size:16.0000pt;">
+					<o:p></o:p>
+				</span></b></h2>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>Use versioning to introduce new API versions without impacting current consumers</span><span>.
+				&nbsp;</span><span>As your API grows and requires updates over time, you'll need to
+				make changes without&nbsp;breaking applications already using it. &nbsp;A URL like /v1/carts/123 lets
+				you&nbsp;introduce new versions such as /v2 without impacting your current API consumers.</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="185" height="38" src="Good APIs Vs Bad APIs.files/Good APIs Vs Bad APIs1936.png"><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>Versioning allows updating APIs while&nbsp;supporting backward compatibility. &nbsp;This lets
+				developers using the old versions upgrade on their own timeline. &nbsp;Coordinate changes
+				through&nbsp;well-documented release notes too.</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<h2><b><span style="font-weight:bold;font-size:16.0000pt;">Tip #4 is to add pagination.</span></b><b><span
+					style="font-weight:bold;font-size:16.0000pt;">
+					<o:p></o:p>
+				</span></b></h2>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>This controls the amount of data returned by APIs. &nbsp;</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="163" height="55" src="Good APIs Vs Bad APIs.files/Good APIs Vs Bad APIs2237.png"><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="296" height="33" src="Good APIs Vs Bad APIs.files/Good APIs Vs Bad APIs2240.png"><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>The common pagination approaches&nbsp; are page + offset or cursor-based: &nbsp;</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="229" height="80" src="Good APIs Vs Bad APIs.files/Good APIs Vs Bad APIs2315.png"><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>Page/offset pagination uses&nbsp; numbered pages and page size limits.</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="336" height="169" src="Good APIs Vs Bad APIs.files/Good APIs Vs Bad APIs2385.png"><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>For example, Page 2 would be records 11-20 for a size of 10. This is simple but can be slow
+				for huge datasets because the database has to count all rows from the beginning until it reaches the
+				requested page.</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>Cursor-based pagination uses a&nbsp; pointer to fetch the next set of records. It tracks pages
+				accurately&nbsp;even with a high rate of data changes. &nbsp;Either approach prevents overwhelming&nbsp;
+				API consumers with all data at once. &nbsp;It enhances performance and improves user
+				experience.</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="244" height="176" src="Good APIs Vs Bad APIs.files/Good APIs Vs Bad APIs2871.png"><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<h2><b><span style="font-weight:bold;font-size:16.0000pt;">Tip #5 is to use clear query strings for sorting and
+					filtering API data.</span></b><b><span style="font-weight:bold;font-size:16.0000pt;">
+					<o:p></o:p>
+				</span></b></h2>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="233" height="104" src="Good APIs Vs Bad APIs.files/Good APIs Vs Bad APIs2949.png"><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>Want users sorted by sign-up date? &nbsp;Add a simple sort_by=registered
+				parameter.</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>Only need blue products? Try filter=color:blue.</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><b><span style="font-weight:bold;">What are the benefits? </span></b><b><span style="font-weight:bold;">
+					<o:p></o:p>
+				</span></b></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p style="margin-left:21.2500pt;text-indent:-21.2500pt;">
+			<![if !supportLists]><span><span>1.<span>&nbsp;</span></span></span>
+			<![endif]><span>First, query strings make response data easy to grasp. Developers instantly see
+				the&nbsp;active filters or sort orders applied.</span><span>
+				<o:p></o:p>
+			</span>
+		</p>
+		<p><img width="375" height="83" src="Good APIs Vs Bad APIs.files/Good APIs Vs Bad APIs3228.png"><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p style="margin-left:21.2500pt;text-indent:-21.2500pt;">
+			<![if !supportLists]><span><span>2.<span>&nbsp;</span></span></span>
+			<![endif]><span>Second, additional sorting and filtering criteria are easy to add over time
+				without&nbsp; breaking existing integration.</span><span>
+				<o:p></o:p>
+			</span>
+		</p>
+		<p><img width="372" height="72" src="Good APIs Vs Bad APIs.files/Good APIs Vs Bad APIs3347.png"><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p style="margin-left:21.2500pt;text-indent:-21.2500pt;">
+			<![if !supportLists]><span><span>3.<span>&nbsp;</span></span></span>
+			<![endif]><span>Third, filtered and sorted resultsets&nbsp; can be cached separately for
+				speed.</span><span>
+				<o:p></o:p>
+			</span>
+		</p>
+		<p><img width="378" height="117" src="Good APIs Vs Bad APIs.files/Good APIs Vs Bad APIs3425.png"><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<h2><b><span style="font-weight:bold;font-size:16.0000pt;">Tip #6 - don’t make security an afterthought when
+					designing APIs.</span></b><b><span style="font-weight:bold;font-size:16.0000pt;">
+					<o:p></o:p>
+				</span></b></h2>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>For sensitive credentials like API keys, leverage HTTP headers over URLs. &nbsp;URLs get
+				logged in server access logs, exposing secrets in plain text. Headers like Authorization reduce that
+				risk. &nbsp;</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="321" height="102" src="Good APIs Vs Bad APIs.files/Good APIs Vs Bad APIs3690.png"><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>But headers can still leak upstream. &nbsp;So enforce full TLS encryption for all&nbsp;traffic
+				to shield transmissions end-to-end. &nbsp;Implement robust access controls - verify keys&nbsp;or tokens
+				on every request before processing. &nbsp;</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="500" height="298" src="Good APIs Vs Bad APIs.files/Good APIs Vs Bad APIs3911.png"><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<h2><b><span style="font-weight:bold;font-size:16.0000pt;">Tip #7 - Keep cross-resource references
+					simple.</span></b><b><span style="font-weight:bold;font-size:16.0000pt;">
+					<o:p></o:p>
+				</span></b></h2>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>Use clear linking between connected resources. &nbsp;</span><span>Clear linking and
+				direct paths improve API usability</span><span>. </span><span>Don't clutter things
+				with long query strings.</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="476" height="50" src="Good APIs Vs Bad APIs.files/Good APIs Vs Bad APIs4112.png"><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>For instance, reference item 321 within&nbsp;cart 123 through the clean path like this.
+				&nbsp;</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>This avoids messy query params like below. &nbsp;</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="33" src="Good APIs Vs Bad APIs.files/Good APIs Vs Bad APIs4247.png"><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>Direct paths make associations&nbsp;clear for developers using your API. &nbsp;</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<h2><b><span style="font-weight:bold;font-size:16.0000pt;">Last tip - plan for rate limiting.</span></b><b><span
+					style="font-weight:bold;font-size:16.0000pt;">
+					<o:p></o:p>
+				</span></b></h2>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>Good APIs protect infrastructure and encourage fair use</span><span>.
+				&nbsp;</span><span>This protects APIs from overload or abuse. &nbsp;Set sane request quotas
+				based on&nbsp;dimensions like source IP addresses, user accounts, or endpoint categories.</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="229" height="185" src="Good APIs Vs Bad APIs.files/Good APIs Vs Bad APIs4569.png"><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="516" height="122" src="Good APIs Vs Bad APIs.files/Good APIs Vs Bad APIs4572.png"><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>For example, free-tier customers may get 1000 requests per day. And any single IP is capped at
+				20 calls per minute. These quotas not only protect the infrastructure,&nbsp;but encourage fair usage as
+				part of the&nbsp; service contract across all clients. &nbsp;It also reduces the attack&nbsp; surface
+				from DDoS attacks.</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="396" height="184" src="Good APIs Vs Bad APIs.files/Good APIs Vs Bad APIs4876.png"><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="350" height="228" src="Good APIs Vs Bad APIs.files/Good APIs Vs Bad APIs4879.png"><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>Designing an API is not just about making it work—it’s about making it work well and securely.
+				&nbsp;By considering RESTful conventions and the&nbsp;best practices, you should create APIs that are
+				not only robust and reliable but&nbsp;also a pleasure for developers to work with.</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+	</main><!-- End #main --> <!-- ======= Footer ======= -->
+	<div w3-include-html="footer.htm"></div>
+	<script>includeHTML();</script> <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+			class="bi bi-arrow-up-short"></i></a> <!-- Vendor JS Files -->
+	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> <!-- Template Main JS File -->
+	<script src="assets/js/main.js"></script>
+</body>
+
+</html>
