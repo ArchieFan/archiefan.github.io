@@ -4,789 +4,1866 @@
 <head>
 	<meta charset="utf-8">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+
 	<title>My Portfolio</title>
 	<meta content="" name="description">
-	<meta content="" name="keywords"> <!-- Favicons -->
-	<link href="assets/img/favicon.png" rel="icon"> <!-- Google Fonts -->
+	<meta content="" name="keywords">
+
+	<!-- Favicons -->
+	<link href="assets/img/favicon.png" rel="icon">
+
+	<!-- Google Fonts -->
 	<link href="https://fonts.gstatic.com" rel="preconnect">
 	<link
 		href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-		rel="stylesheet"> <!-- Vendor CSS Files -->
+		rel="stylesheet">
+
+	<!-- Vendor CSS Files -->
 	<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> <!-- Template Main CSS File -->
+	<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+	<!-- Template Main CSS File -->
 	<link href="assets/css/style.css" rel="stylesheet">
+
 	<script src="assets/js/layout.js"></script>
 </head>
 
-<body> <!-- ======= Header ======= -->
+<body>
+
+	<!-- ======= Header ======= -->
 	<header id="header" class="header fixed-top d-flex align-items-center">
-		<div class="d-flex align-items-center justify-content-between"> <i class="bi bi-list toggle-sidebar-btn"></i>
+
+		<div class="d-flex align-items-center justify-content-between">
+			<i class="bi bi-list toggle-sidebar-btn"></i>
 		</div><!-- End Logo -->
+
 		<nav class="header-nav ms-auto">
+
 			<ul class="d-flex align-items-center">
 				<div w3-include-html="header.htm"></div>
 			</ul>
 		</nav><!-- End Icons Navigation -->
-	</header><!-- End Header --> <!-- ======= Sidebar ======= -->
+	</header><!-- End Header -->
+
+	<!-- ======= Sidebar ======= -->
 	<div w3-include-html="sidebar.htm"></div>
+
 	<main id="main" class="main">
-		<h1>
-			<span
-				style="font-family:Calibri;font-weight:bold;font-size:22.0000pt;"><span>1)<span>&nbsp;</span></span></span>
-			<b><span style="font-family:Calibri;font-weight:bold;font-size:22.0000pt;">Registering
-					your Website Domain on AWS with Route53</span></b><b><span
-					style="font-family:Calibri;font-weight:bold;font-size:22.0000pt;">
+
+		<p align=center style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+text-align:center;">
+			<w:Sdt SdtDocPart="t" ID="147473969" DocPartType="Custom Table of Contents"><span style="font-family:SimSun;
+font-size:10.5000pt;">Catalog</span><span style="font-family:Calibri;
+">
 					<o:p></o:p>
-				</span></b>
-		</h1>
-		<p><span style="font-family:Calibri;">
+				</span>
+		</p>
+		<p class=MsoToc1><span><span><a href="#_Toc6094 "><span style="font-family:Calibri;
+">1) Registering your Website Domain on AWS with Route53&#9;</span></a></span><span style="font-family:Calibri;
+">
+					<o:p></o:p>
+				</span></p>
+		<p class=MsoToc1><span><a href="#_Toc25322 "><span style="font-family:Calibri;
+">2) </span><span style="font-family:Calibri;
+">Creating your AWS Lightsail Wordpress </span><span style="font-family:Calibri;
+">Instance</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoToc1><span><a href="#_Toc11455 "><span style="font-family:Calibri;
+">3) </span><span style="font-family:Calibri;
+">Getting</span><span style="font-family:Calibri;
+">&nbsp;our Lightsail Wordpress Dashboard Password</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoToc1><span><a href="#_Toc8755 "><span style="font-family:Calibri;
+">4) </span><span style="font-family:Calibri;
+">Setting up a Lightsail Static IP Address</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoToc1><span><a href="#_Toc2996 "><span style="font-family:Calibri;
+">5) </span><span style="font-family:Calibri;
+">Setting up your DNS to point your Lightsail Static IP to your Custom Domain</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoToc1><span><a href="#_Toc27016 "><span style="font-family:Calibri;
+">6) </span><span style="font-family:Calibri;
+">S</span><span style="font-family:Calibri;
+">tart adding </span><span style="font-family:Calibri;
+">CDN </span><span style="font-family:Calibri;
+">distribution in front of </span><span style="font-family:Calibri;
+">the W</span><span style="font-family:Calibri;
+">ordpress</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoToc1><span><a href="#_Toc22834 "><span style="font-family:Calibri;
+">7) Changing Wordpress instance to serve HTTPS</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoToc1><span><a href="#_Toc9776 "><span style="font-family:Calibri;
+">8) Creating an SSL certificate</span><span style="font-family:Calibri;
+">&#9;</span></a></span><span style="font-family:Calibri;
+">
+				<o:p></o:p>
+			</span></p>
+		<p></span></w:Sdt><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="288"
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail884.png"><span
+				style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<h1><a name="_Toc6094"></a><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;"><span>1)<span>&nbsp;</span></span></span><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Registering your Website Domain on AWS with Route53</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+					<o:p></o:p>
+				</span></b></h1>
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="292" height="149"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail53.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail940.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="553" height="314"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail57.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail944.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="193" height="54"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail61.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail948.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="553" height="165"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail65.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail952.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="553" height="316"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail68.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail955.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="312" height="286"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail71.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail958.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="553" height="306"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail74.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail961.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="553" height="280"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail77.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail964.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="554" height="220"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail80.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail967.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="553" height="99"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail83.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail970.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="553" height="135"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail86.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail973.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<h1>
-			<span
-				style="font-family:Calibri;font-weight:bold;font-size:22.0000pt;"><span>2)<span>&nbsp;</span></span></span>
-			<b><span style="font-family:Calibri;font-weight:bold;font-size:22.0000pt;">Creating
-					your AWS Lightsail Wordpress </span></b><b><span
-					style="font-family:Calibri;font-weight:bold;font-size:22.0000pt;">Instance</span></b><b><span
-					style="font-family:Calibri;font-weight:bold;font-size:22.0000pt;">
+		<h1><a name="_Toc25322"></a><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;"><span>2)<span>&nbsp;</span></span></span><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Creating your AWS Lightsail Wordpress </span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Instance</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
 					<o:p></o:p>
-				</span></b>
-		</h1>
-		<p><span style="font-family:Calibri;">
+				</span></b></h1>
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="553" height="324"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail137.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail1024.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="553" height="324"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail140.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail1027.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="554" height="394"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail143.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail1030.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="553" height="296"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail148.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail1035.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">If you enable automatic snapshots, it may cost
-				$$$.</span><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">If you enable automatic snapshots, it may cost $$$.</span><span style="font-family:Calibri;
+">
 				<o:p></o:p>
 			</span></p>
 		<p><img width="520" height="397"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail203.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail1090.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="553" height="392"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail205.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail1092.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="553" height="282"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail208.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail1095.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="553" height="309"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail212.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail1099.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">Above instance is below to lightsail (contained sandbox),
-				you won’t find it in EC2 section.</span><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">Above instance is below to lightsail (contained sandbox), you won’t find it in EC2 section.</span><span style="font-family:Calibri;
+">
 				<o:p></o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="553" height="309"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail308.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail1195.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">The IP address provided above is the public IP for this
-				instance. However, it's essential to configure it as static; otherwise, it might change after a
-				reboot.</span><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">The IP address provided above is the public IP for this instance. However, it's essential to configure it as static;
+				otherwise, it might change after a reboot.</span><span style="font-family:Calibri;
+">
 				<o:p></o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="553" height="309"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail472.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail1359.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="553" height="309"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail475.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail1362.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<h1>
-			<span
-				style="font-family:Calibri;font-weight:bold;font-size:22.0000pt;"><span>3)<span>&nbsp;</span></span></span>
-			<b><span
-					style="font-family:Calibri;font-weight:bold;font-size:22.0000pt;">Getting</span></b><b><span
-					style="font-family:Calibri;font-weight:bold;font-size:22.0000pt;">&nbsp;our
-					Lightsail Wordpress Dashboard Password</span></b><b><span
-					style="font-family:Calibri;font-weight:bold;font-size:22.0000pt;">
+		<h1><a name="_Toc11455"></a><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;"><span>3)<span>&nbsp;</span></span></span><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Getting</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">&nbsp;our Lightsail Wordpress Dashboard Password</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
 					<o:p></o:p>
-				</span></b>
-		</h1>
-		<p><span style="font-family:Calibri;">
+				</span></b></h1>
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="553" height="217"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail531.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail1418.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="457" height="466"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail534.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail1421.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="554" height="122"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail540.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail1427.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="554" height="311"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail543.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail1430.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="553" height="224"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail547.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail1434.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="553" height="268"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail551.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail1438.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">cat $HOME/bitnami_application_password</span><span
-				style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">cat $HOME/bitnami_application_password</span><span style="font-family:Calibri;
+">
 				<o:p></o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="306" height="352"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail594.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail1481.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="553" height="309"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail597.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail1484.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<h1>
-			<span
-				style="font-family:Calibri;font-weight:bold;font-size:22.0000pt;"><span>4)<span>&nbsp;</span></span></span>
-			<b><span style="font-family:Calibri;font-weight:bold;font-size:22.0000pt;">Setting
-					up a Lightsail Static IP Address</span></b><b><span
-					style="font-family:Calibri;font-weight:bold;font-size:22.0000pt;">
+		<h1><a name="_Toc8755"></a><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;"><span>4)<span>&nbsp;</span></span></span><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Setting up a Lightsail Static IP Address</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
 					<o:p></o:p>
-				</span></b>
-		</h1>
-		<p><span style="font-family:Calibri;">
+				</span></b></h1>
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="466" height="304"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail645.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail1532.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="553" height="294"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail648.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail1535.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="461" height="304"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail652.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail1539.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="554" height="282"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail655.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail1542.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<h1>
-			<span
-				style="font-family:Calibri;font-weight:bold;font-size:22.0000pt;"><span>5)<span>&nbsp;</span></span></span>
-			<b><span style="font-family:Calibri;font-weight:bold;font-size:22.0000pt;">Setting
-					up your DNS to point your Lightsail Static IP to your Custom Domain</span></b><b><span
-					style="font-family:Calibri;font-weight:bold;font-size:22.0000pt;">
+		<h1><a name="_Toc2996"></a><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;"><span>5)<span>&nbsp;</span></span></span><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Setting up your DNS to point your Lightsail Static IP to your Custom Domain</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
 					<o:p></o:p>
-				</span></b>
-		</h1>
-		<p><span style="font-family:Calibri;">
+				</span></b></h1>
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="553" height="218"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail738.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail1625.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="553" height="294"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail741.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail1628.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="553" height="309"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail744.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail1631.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="552" height="110"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail747.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail1634.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">T</span><span style="font-family:Calibri;">he name
-				servers</span><span style="font-family:Calibri;">&nbsp;</span><span style="font-family:Calibri;">that
-				got assigned to the</span><span style="font-family:Calibri;">&nbsp;t</span><span
-				style="font-family:Calibri;">he hosted zone</span><span style="font-family:Calibri;">&nbsp;</span><span
-				style="font-family:Calibri;">when </span><span style="font-family:Calibri;">AWS </span><span
-				style="font-family:Calibri;">created it</span><span style="font-family:Calibri;">.</span><span
-				style="font-family:Calibri;">&nbsp;</span><span style="font-family:Calibri;">N</span><span
-				style="font-family:Calibri;">ow</span><span style="font-family:Calibri;">,</span><span
-				style="font-family:Calibri;">&nbsp;the reason this</span><span
-				style="font-family:Calibri;">&nbsp;</span><span style="font-family:Calibri;">is important</span><span
-				style="font-family:Calibri;">&nbsp;</span><span style="font-family:Calibri;">is because on your
-				registered domain</span><span style="font-family:Calibri;">. &nbsp;T</span><span
-				style="font-family:Calibri;">hese name servers need to be equivalent</span><span
-				style="font-family:Calibri;">&nbsp;</span><span style="font-family:Calibri;">on the ones that you
-				have</span><span style="font-family:Calibri;">&nbsp;</span><span style="font-family:Calibri;">under the
-				domain section of route 53</span><span style="font-family:Calibri;">,</span><span
-				style="font-family:Calibri;">&nbsp;so</span><span style="font-family:Calibri;">, </span><span
-				style="font-family:Calibri;">for instance</span><span style="font-family:Calibri;">,</span><span
-				style="font-family:Calibri;">&nbsp;if you go into registered</span><span
-				style="font-family:Calibri;">&nbsp;</span><span style="font-family:Calibri;">domains and click on the
-				domain</span><span style="font-family:Calibri;">&nbsp;</span><span style="font-family:Calibri;">in the
-				top right</span><span style="font-family:Calibri;">,</span><span
-				style="font-family:Calibri;">&nbsp;it'll show you some</span><span
-				style="font-family:Calibri;">&nbsp;</span><span style="font-family:Calibri;">name servers like ones with
-				the same</span><span style="font-family:Calibri;">&nbsp;</span><span
-				style="font-family:Calibri;">numbers here</span><span style="font-family:Calibri;">. </span><span
-				style="font-family:Calibri;">&nbsp;</span><span style="font-family:Calibri;">S</span><span
-				style="font-family:Calibri;">o these numbers these these strings</span><span
-				style="font-family:Calibri;">&nbsp;</span><span style="font-family:Calibri;">rather need to be
-				identical</span><span style="font-family:Calibri;">&nbsp;</span><span style="font-family:Calibri;">with
-				whatever is on the domain in the</span><span style="font-family:Calibri;">&nbsp;</span><span
-				style="font-family:Calibri;">Domain</span><span style="font-family:Calibri;">&nbsp;</span><span
-				style="font-family:Calibri;">section</span><span style="font-family:Calibri;">. &nbsp;</span><span
-				style="font-family:Calibri;">but if not this is something that you</span><span
-				style="font-family:Calibri;">&nbsp;</span><span style="font-family:Calibri;">need to guarantee
-				basically</span><span style="font-family:Calibri;">.</span><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">T</span><span style="font-family:Calibri;
+">he name servers</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">that got assigned to the</span><span style="font-family:Calibri;
+">&nbsp;t</span><span style="font-family:Calibri;
+">he hosted zone</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">when </span><span style="font-family:Calibri;
+">AWS </span><span style="font-family:Calibri;
+">created it</span><span style="font-family:Calibri;
+">.</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">N</span><span style="font-family:Calibri;
+">ow</span><span style="font-family:Calibri;
+">,</span><span style="font-family:Calibri;
+">&nbsp;the reason this</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">is important</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">is because on your registered domain</span><span style="font-family:Calibri;
+">. &nbsp;T</span><span style="font-family:Calibri;
+">hese name servers need to be equivalent</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">on the ones that you have</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">under the domain section of route 53</span><span style="font-family:Calibri;
+">,</span><span style="font-family:Calibri;
+">&nbsp;so</span><span style="font-family:Calibri;
+">, </span><span style="font-family:Calibri;
+">for instance</span><span style="font-family:Calibri;
+">,</span><span style="font-family:Calibri;
+">&nbsp;if you go into registered</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">domains and click on the domain</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">in the top right</span><span style="font-family:Calibri;
+">,</span><span style="font-family:Calibri;
+">&nbsp;it'll show you some</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">name servers like ones with the same</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">numbers here</span><span style="font-family:Calibri;
+">. </span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">S</span><span style="font-family:Calibri;
+">o these numbers these these strings</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">rather need to be identical</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">with whatever is on the domain in the</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">Domain</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">section</span><span style="font-family:Calibri;
+">. &nbsp;</span><span style="font-family:Calibri;
+">but if not this is something that you</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">need to guarantee basically</span><span style="font-family:Calibri;
+">.</span><span style="font-family:Calibri;
+">
 				<o:p></o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="553" height="167"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail1361.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail2248.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="305" height="248"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail1364.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail2251.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">NS - Name server</span><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">NS - Name server</span><span style="font-family:Calibri;
+">
 				<o:p></o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">SOA - </span><span style="font-family:Calibri;">Start of
-				Authority</span><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">SOA - </span><span style="font-family:Calibri;
+">Start of Authority</span><span style="font-family:Calibri;
+">
 				<o:p></o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">B</span><span
-				style="font-family:Calibri;">asically</span><span style="font-family:Calibri;">, </span><span
-				style="font-family:Calibri;">telling the public internet which</span><span
-				style="font-family:Calibri;">&nbsp;</span><span style="font-family:Calibri;">servers to use when you're
-				trying to</span><span style="font-family:Calibri;">&nbsp;</span><span
-				style="font-family:Calibri;">resolve the</span><span style="font-family:Calibri;">&nbsp;IP</span><span
-				style="font-family:Calibri;">&nbsp;address</span><span style="font-family:Calibri;">&nbsp;</span><span
-				style="font-family:Calibri;">of </span><span style="font-family:Calibri;">AWS.</span><span
-				style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">B</span><span style="font-family:Calibri;
+">asically</span><span style="font-family:Calibri;
+">, </span><span style="font-family:Calibri;
+">telling the public internet which</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">servers to use when you're trying to</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">resolve the</span><span style="font-family:Calibri;
+">&nbsp;IP</span><span style="font-family:Calibri;
+">&nbsp;address</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">of </span><span style="font-family:Calibri;
+">AWS.</span><span style="font-family:Calibri;
+">
 				<o:p></o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="553" height="147"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail1524.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail2411.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="553" height="238"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail1527.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail2414.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="553" height="320"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail1530.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail2417.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="472" height="634"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail1534.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail2421.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="554" height="271"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail1537.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail2424.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">W</span><span style="font-family:Calibri;">hat this is
-				going to do is</span><span style="font-family:Calibri;">&nbsp;</span><span
-				style="font-family:Calibri;">basically make it so that when we type</span><span
-				style="font-family:Calibri;">&nbsp;</span><span style="font-family:Calibri;">in </span><span
-				style="font-family:Calibri;">archiefan.co.uk </span><span style="font-family:Calibri;">in our browser
-				it's going to route us to</span><span style="font-family:Calibri;">&nbsp;</span><span
-				style="font-family:Calibri;">that </span><span style="font-family:Calibri;">IP</span><span
-				style="font-family:Calibri;">&nbsp;address</span><span style="font-family:Calibri;">.</span><span
-				style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">W</span><span style="font-family:Calibri;
+">hat this is going to do is</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">basically make it so that when we type</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">in </span><span style="font-family:Calibri;
+">archiefan.co.uk </span><span style="font-family:Calibri;
+">in our browser it's going to route us to</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">that </span><span style="font-family:Calibri;
+">IP</span><span style="font-family:Calibri;
+">&nbsp;address</span><span style="font-family:Calibri;
+">.</span><span style="font-family:Calibri;
+">
 				<o:p></o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="477" height="633"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail1684.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail2571.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">Create one record for www.archiefan.co.uk</span><span
-				style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">Create one record for www.archiefan.co.uk</span><span style="font-family:Calibri;
+">
 				<o:p></o:p>
 			</span></p>
 		<p><img width="553" height="292"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail1729.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail2616.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">Press to Create Records</span><span
-				style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">Press to Create Records</span><span style="font-family:Calibri;
+">
 				<o:p></o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="306" height="48"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail1757.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail2644.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="553" height="326"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail1760.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail2647.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="553" height="295"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail1763.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail2650.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">T</span><span style="font-family:Calibri;">his may take a
-				little bit to</span><span style="font-family:Calibri;">&nbsp;</span><span
-				style="font-family:Calibri;">propagate because these are different</span><span
-				style="font-family:Calibri;">&nbsp;</span><span style="font-family:Calibri;">records that basically get
-				created and</span><span style="font-family:Calibri;">&nbsp;</span><span
-				style="font-family:Calibri;">need to be propagated to</span><span
-				style="font-family:Calibri;">&nbsp;DNS</span><span
-				style="font-family:Calibri;">&nbsp;servers</span><span style="font-family:Calibri;">&nbsp;</span><span
-				style="font-family:Calibri;">around the world</span><span style="font-family:Calibri;">. S</span><span
-				style="font-family:Calibri;">o you can probably keep an</span><span
-				style="font-family:Calibri;">&nbsp;</span><span style="font-family:Calibri;">eye on this and see if it
-				updates over</span><span style="font-family:Calibri;">&nbsp;</span><span
-				style="font-family:Calibri;">the next few days</span><span style="font-family:Calibri;">.
-				&nbsp;I</span><span style="font-family:Calibri;">t can take up to two days for some of</span><span
-				style="font-family:Calibri;">&nbsp;</span><span style="font-family:Calibri;">these </span><span
-				style="font-family:Calibri;">DNS </span><span style="font-family:Calibri;">records to
-				propagate</span><span style="font-family:Calibri;">.</span><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">T</span><span style="font-family:Calibri;
+">his may take a little bit to</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">propagate because these are different</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">records that basically get created and</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">need to be propagated to</span><span style="font-family:Calibri;
+">&nbsp;DNS</span><span style="font-family:Calibri;
+">&nbsp;servers</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">around the world</span><span style="font-family:Calibri;
+">. S</span><span style="font-family:Calibri;
+">o you can probably keep an</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">eye on this and see if it updates over</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">the next few days</span><span style="font-family:Calibri;
+">. &nbsp;I</span><span style="font-family:Calibri;
+">t can take up to two days for some of</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">these </span><span style="font-family:Calibri;
+">DNS </span><span style="font-family:Calibri;
+">records to propagate</span><span style="font-family:Calibri;
+">.</span><span style="font-family:Calibri;
+">
 				<o:p></o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="554" height="364"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail2089.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail2976.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">H</span><span style="font-family:Calibri;">ow do i
-				associate my email</span><span style="font-family:Calibri;">&nbsp;with my new domain? U</span><span
-				style="font-family:Calibri;">nfortunately</span><span style="font-family:Calibri;">,</span><span
-				style="font-family:Calibri;">&nbsp;</span><span style="font-family:Calibri;">I</span><span
-				style="font-family:Calibri;">&nbsp;don't think </span><span style="font-family:Calibri;">AWS
-			</span><span style="font-family:Calibri;">actually has a product for this</span><span
-				style="font-family:Calibri;">. &nbsp;B</span><span style="font-family:Calibri;">ut what i found out is
-				there is a</span><span style="font-family:Calibri;">&nbsp;</span><span
-				style="font-family:Calibri;">alternative which is a free email</span><span
-				style="font-family:Calibri;">&nbsp;</span><span style="font-family:Calibri;">provider up to a reasonable
-				limit</span><span style="font-family:Calibri;">&nbsp;</span><span style="font-family:Calibri;">called
-			</span><span style="font-family:Calibri;">ZOHO.</span><span style="font-family:Calibri;">&nbsp;</span><span
-				style="font-family:Calibri;">C</span><span style="font-family:Calibri;">reate an account they actually
-				show</span><span style="font-family:Calibri;">&nbsp;</span><span
-				style="font-family:Calibri;">you</span><span style="font-family:Calibri;">&nbsp;</span><span
-				style="font-family:Calibri;">how to link your newly created domain</span><span
-				style="font-family:Calibri;">&nbsp;</span><span style="font-family:Calibri;">with this free email
-				providers so what</span><span style="font-family:Calibri;">&nbsp;</span><span
-				style="font-family:Calibri;">you get at the end of it is like with</span><span
-				style="font-family:Calibri;">&nbsp;</span><span style="font-family:Calibri;">this domain</span><span
-				style="font-family:Calibri;">&nbsp;</span><span style="font-family:Calibri;">that i just
-				registered</span><span style="font-family:Calibri;">. I</span><span
-				style="font-family:Calibri;">&nbsp;can end up creating like </span><span><a
-					href="mailto:admin@archiefan.co.uk"><u><span class="15"
-							style="font-family:Calibri;color:rgb(0,0,255);text-decoration:underline;">admin@archiefan.co.uk</span></u></a></span><span
-				style="font-family:Calibri;">&nbsp;</span><span style="font-family:Calibri;">and host it on </span><span
-				style="font-family:Calibri;">ZOHO. &nbsp;S</span><span style="font-family:Calibri;">o i can
-				come</span><span style="font-family:Calibri;">&nbsp;</span><span style="font-family:Calibri;">to
-			</span><span style="font-family:Calibri;">ZOHO </span><span style="font-family:Calibri;">and just log
-				in</span><span style="font-family:Calibri;">&nbsp;</span><span style="font-family:Calibri;">check my
-				email send it out to other</span><span style="font-family:Calibri;">&nbsp;</span><span
-				style="font-family:Calibri;">people </span><span style="font-family:Calibri;">and </span><span
-				style="font-family:Calibri;">so on</span><span style="font-family:Calibri;">.</span><span
-				style="font-family:Arial;">
+		<p><span style="font-family:Calibri;
+">H</span><span style="font-family:Calibri;
+">ow do i associate my email</span><span style="font-family:Calibri;
+">&nbsp;with my new domain? U</span><span style="font-family:Calibri;
+">nfortunately</span><span style="font-family:Calibri;
+">,</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">I</span><span style="font-family:Calibri;
+">&nbsp;don't think </span><span style="font-family:Calibri;
+">AWS </span><span style="font-family:Calibri;
+">actually has a product for this</span><span style="font-family:Calibri;
+">. &nbsp;B</span><span style="font-family:Calibri;
+">ut what i found out is there is a</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">alternative which is a free email</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">provider up to a reasonable limit</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">called </span><span style="font-family:Calibri;
+">ZOHO.</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">C</span><span style="font-family:Calibri;
+">reate an account they actually show</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">you</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">how to link your newly created domain</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">with this free email providers so what</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">you get at the end of it is like with</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">this domain</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">that i just registered</span><span style="font-family:Calibri;
+">. I</span><span style="font-family:Calibri;
+">&nbsp;can end up creating like </span><span><a href="mailto:admin@archiefan.co.uk"><u><span class="16" style="font-family:Calibri;
+color:rgb(0,0,255);text-decoration:underline;
+">admin@archiefan.co.uk</span></u></a></span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">and host it on </span><span style="font-family:Calibri;
+">ZOHO. &nbsp;S</span><span style="font-family:Calibri;
+">o i can come</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">to </span><span style="font-family:Calibri;
+">ZOHO </span><span style="font-family:Calibri;
+">and just log in</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">check my email send it out to other</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">people </span><span style="font-family:Calibri;
+">and </span><span style="font-family:Calibri;
+">so on</span><span style="font-family:Calibri;
+">.</span><span style="font-family:Arial;">
 				<o:p></o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">Y</span><span style="font-family:Calibri;">ou come in here
-				and follow the tutorials</span><span style="font-family:Calibri;">. &nbsp;</span><span
-				style="font-family:Calibri;">it's actually pretty simple all you</span><span
-				style="font-family:Calibri;">&nbsp;</span><span style="font-family:Calibri;">really need to do
-				is</span><span style="font-family:Calibri;">&nbsp;</span><span style="font-family:Calibri;">go to
-			</span><span style="font-family:Calibri;">Route </span><span style="font-family:Calibri;">53 like we were
-				doing before</span><span style="font-family:Calibri;">. &nbsp;A</span><span
-				style="font-family:Calibri;">nd it's going to create a</span><span
-				style="font-family:Calibri;">&nbsp;</span><span style="font-family:Calibri;">few additional records in
-				your hosted</span><span style="font-family:Calibri;">&nbsp;</span><span
-				style="font-family:Calibri;">zone</span><span style="font-family:Calibri;">. &nbsp;</span><span
-				style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">Y</span><span style="font-family:Calibri;
+">ou come in here and follow the tutorials</span><span style="font-family:Calibri;
+">. &nbsp;</span><span style="font-family:Calibri;
+">it's actually pretty simple all you</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">really need to do is</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">go to </span><span style="font-family:Calibri;
+">Route </span><span style="font-family:Calibri;
+">53 like we were doing before</span><span style="font-family:Calibri;
+">. &nbsp;A</span><span style="font-family:Calibri;
+">nd it's going to create a</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">few additional records in your hosted</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">zone</span><span style="font-family:Calibri;
+">. &nbsp;</span><span style="font-family:Calibri;
+">
 				<o:p></o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="458" height="580"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail2943.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail3830.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">M</span><span style="font-family:Calibri;
+">ore money doesn't always mean that it's</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">a better solution</span><span style="font-family:Calibri;
+">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
 		<p><img width="553" height="440"
-				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail3007.png"><span
-				style="font-family:Calibri;">
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail3894.png"><span
+				style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">M</span><span style="font-family:Calibri;">ore
-				money doesn't always mean that it's</span><span style="font-family:Calibri;">&nbsp;</span><span
-				style="font-family:Calibri;">a better solution</span><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<h1><a name="_Toc27016"></a><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;"><span>6)<span>&nbsp;</span></span></span><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">S</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">tart adding </span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">CDN </span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">distribution in front of </span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">the W</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">ordpress</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+					<o:p></o:p>
+				</span></b></h1>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="386" height="384"
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail3955.png"><span
+				style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="476" height="246"
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail3958.png"><span
+				style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="496" height="438"
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail3961.png"><span
+				style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="261"
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail3965.png"><span
+				style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">Y</span><span style="font-family:Calibri;
+">ou can see the status in progress in</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">the screen and it will be there for a</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">little while</span><span style="font-family:Calibri;
+">. &nbsp;Y</span><span style="font-family:Calibri;
+">ou can also see that the full domain</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">and that's the cloud from the</span><span style="font-family:Calibri;
+">&nbsp;CDN </span><span style="font-family:Calibri;
+">distribution </span><span style="font-family:Calibri;
+">URL </span><span style="font-family:Calibri;
+">for your particular instance</span><span style="font-family:Calibri;
+">. </span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">S</span><span style="font-family:Calibri;
+">o</span><span style="font-family:Calibri;
+">,</span><span style="font-family:Calibri;
+">&nbsp;if you</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">go to that </span><span style="font-family:Calibri;
+">URL, </span><span style="font-family:Calibri;
+">you will basically see the content</span><span style="font-family:Calibri;
+">.</span><span style="font-family:Calibri;
+">
 				<o:p></o:p>
 			</span></p>
-		<p><span style="font-family:Calibri;">
+		<p><span style="font-family:Calibri;
+">
 				<o:p>&nbsp;</o:p>
 			</span></p>
-		</div>
-		</section>
-	</main><!-- End #main --> <!-- ======= Footer ======= -->
+		<p><img width="553" height="135"
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail4243.png"><span
+				style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<h1 style="margin-left:0.0000pt;text-indent:0.0000pt;
+"><a name="_Toc22834"></a><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;"><span>7)<span>&nbsp;</span></span></span><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Changing Wordpress instance to serve HTTPS</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+					<o:p></o:p>
+				</span></b></h1>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;"><span>1.<span>&nbsp;</span></span></span><span style="font-family:Calibri;
+">On the Lightsail home page, choose the browser-based SSH client icon that is displayed next to your WordPress
+				instance.</span><span style="font-family:Calibri;
+">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;"><span>2.<span>&nbsp;</span></span></span><span style="font-family:Calibri;
+">After you're connected to your instance, enter the following command to create a backup of the&nbsp;</span><span
+				style="font-family:Calibri;
+">wp-config.php</span><span style="font-family:Calibri;
+">&nbsp;file. If something goes wrong, you can restore the file using the backup.</span><span style="font-family:Calibri;
+">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="554" height="255"
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail4597.png"><span
+				style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=pre style="margin-top:10.5000pt;margin-right:0.0000pt;margin-bottom:10.5000pt;
+margin-left:0.0000pt;padding:0pt 0pt 0pt 0pt ;
+line-height:15.7500pt;background:rgb(249,249,249);"><span style="font-family:Consolas;color:rgb(152,104,1);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);
+">sudo</span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">&nbsp;cp /opt/bitnami/wordpress/wp-config.php
+				/opt/bitnami/wordpress/wp-config.php.backup</span><span style="font-family:monospace;font-size:10.5000pt;
+">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p style="margin-left:0.0000pt;text-indent:0.0000pt;
+"><span style="font-family:Calibri;"><span>3.<span>&nbsp;</span></span></span><span style="font-family:Calibri;
+">Enter the following command to open the</span><span style="font-family:Calibri;
+">&nbsp;</span><span style="font-family:Calibri;
+">wp-config.php</span><span style="font-family:Calibri;
+">&nbsp;file using Vim.</span><span style="font-family:Calibri;
+font-size:10.5000pt;">
+				<o:p></o:p>
+			</span></p>
+		<p class=pre style="margin-top:10.5000pt;margin-right:0.0000pt;margin-bottom:16.6000pt;
+padding:0pt 0pt 0pt 0pt ;
+line-height:15.7500pt;background:rgb(249,249,249);"><span style="font-family:Consolas;color:rgb(152,104,1);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);
+">sudo</span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">&nbsp;vim /opt/bitnami/wordpress/wp-config.php</span><span style="font-family:monospace;font-size:10.5000pt;
+">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;"><span>4.<span>&nbsp;</span></span></span><span style="font-family:Calibri;
+">Press&nbsp;I&nbsp;to enter insert mode in Vim.</span><span style="font-family:Calibri;
+">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;"><span>5.<span>&nbsp;</span></span></span><span style="font-family:Calibri;
+">Delete the following lines of code in the file.</span><span style="font-family:Calibri;
+">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=pre style="margin-right:0.0000pt;
+padding:0pt 0pt 0pt 0pt ;
+background:rgb(249,249,249);"><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">define(</span><span style="font-family:Consolas;color:rgb(11,97,37);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);
+">'WP_SITEURL'</span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">, </span><span style="font-family:Consolas;color:rgb(11,97,37);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);
+">'http://'</span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">&nbsp;. </span><span style="font-family:Consolas;color:rgb(152,104,1);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);
+">$_SERVER</span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">[</span><span style="font-family:Consolas;color:rgb(11,97,37);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);
+">'HTTP_HOST'</span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">] . </span><span style="font-family:Consolas;color:rgb(11,97,37);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);
+">'/'</span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">);</span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">
+				<o:p></o:p>
+			</span></p>
+		<p class=pre style="margin-right:0.0000pt;
+padding:0pt 0pt 0pt 0pt ;
+background:rgb(249,249,249);"><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">define(</span><span style="font-family:Consolas;color:rgb(11,97,37);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);
+">'WP_HOME'</span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">, </span><span style="font-family:Consolas;color:rgb(11,97,37);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);
+">'http://'</span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">&nbsp;. </span><span style="font-family:Consolas;color:rgb(152,104,1);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);
+">$_SERVER</span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">[</span><span style="font-family:Consolas;color:rgb(11,97,37);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);
+">'HTTP_HOST'</span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">] . </span><span style="font-family:Consolas;color:rgb(11,97,37);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);
+">'/'</span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">);</span><span style="font-family:monospace;font-size:10.5000pt;
+">
+				<o:p></o:p>
+			</span></p>
+		<p><img width="553" height="326"
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail5016.png"><span
+				style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">Add one of the following lines of code to the file depending on the version of WordPress that you're
+				using:</span><span style="font-family:Calibri;
+">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=pre style="margin-right:0.0000pt;
+padding:0pt 0pt 0pt 0pt ;
+background:rgb(249,249,249);"><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">define(</span><span style="font-family:Consolas;color:rgb(11,97,37);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);
+">'WP_SITEURL'</span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">, </span><span style="font-family:Consolas;color:rgb(11,97,37);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);
+">'https://'</span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">&nbsp;. </span><span style="font-family:Consolas;color:rgb(152,104,1);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);
+">$_SERVER</span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">[</span><span style="font-family:Consolas;color:rgb(11,97,37);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);
+">'HTTP_HOST'</span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">] . </span><span style="font-family:Consolas;color:rgb(11,97,37);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);
+">'/'</span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">);</span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">
+				<o:p></o:p>
+			</span></p>
+		<p class=pre style="margin-right:0.0000pt;
+padding:0pt 0pt 0pt 0pt ;
+background:rgb(249,249,249);"><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">define(</span><span style="font-family:Consolas;color:rgb(11,97,37);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);
+">'WP_HOME'</span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">, </span><span style="font-family:Consolas;color:rgb(11,97,37);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);
+">'https://'</span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">&nbsp;. </span><span style="font-family:Consolas;color:rgb(152,104,1);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);
+">$_SERVER</span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">[</span><span style="font-family:Consolas;color:rgb(11,97,37);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);
+">'HTTP_HOST'</span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">] . </span><span style="font-family:Consolas;color:rgb(11,97,37);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);
+">'/'</span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">);</span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">
+				<o:p></o:p>
+			</span></p>
+		<p class=pre style="margin-right:0.0000pt;
+padding:0pt 0pt 0pt 0pt ;
+background:rgb(249,249,249);"><span style="font-family:Consolas;color:rgb(121,73,56);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);
+">if</span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">&nbsp;(</span><span style="font-family:Consolas;color:rgb(121,73,56);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);
+">isset</span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">(</span><span style="font-family:Consolas;color:rgb(152,104,1);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);
+">$_SERVER</span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">[</span><span style="font-family:Consolas;color:rgb(11,97,37);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);
+">'HTTP_CLOUDFRONT_FORWARDED_PROTO'</span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">])</span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">
+				<o:p></o:p>
+			</span></p>
+		<p class=pre style="margin-right:0.0000pt;
+padding:0pt 0pt 0pt 0pt ;
+background:rgb(249,249,249);"><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">&& </span><span style="font-family:Consolas;color:rgb(152,104,1);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);
+">$_SERVER</span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">[</span><span style="font-family:Consolas;color:rgb(11,97,37);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);
+">'HTTP_CLOUDFRONT_FORWARDED_PROTO'</span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">] === </span><span style="font-family:Consolas;color:rgb(11,97,37);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);
+">'https'</span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">) {</span><span style="font-family:Consolas;color:rgb(152,104,1);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);
+">$_SERVER</span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">[</span><span style="font-family:Consolas;color:rgb(11,97,37);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);
+">'HTTPS'</span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">] = </span><span style="font-family:Consolas;color:rgb(11,97,37);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);
+">'on'</span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">;</span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">
+				<o:p></o:p>
+			</span></p>
+		<p class=pre style="margin-right:0.0000pt;
+padding:0pt 0pt 0pt 0pt ;
+background:rgb(249,249,249);"><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">}</span><span style="font-family:monospace;font-size:10.5000pt;
+">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="435"
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail5398.png"><span
+				style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p style="margin-left:0.0000pt;text-indent:0.0000pt;
+"><span style="font-family:Calibri;"><span>6.<span>&nbsp;</span></span></span><span style="font-family:Calibri;
+">Press the&nbsp;Esc&nbsp;key to exit insert mode in Vim, then type&nbsp;:wq!&nbsp;and press&nbsp;Enter&nbsp;to save
+				your edits (write) and quit Vim.</span><span style="font-family:Calibri;
+">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p style="margin-left:0.0000pt;text-indent:0.0000pt;
+"><span style="font-family:Calibri;"><span>7.<span>&nbsp;</span></span></span><span style="font-family:Calibri;
+">Enter the following command to restart the Apache service on your instance.</span><span style="font-family:Calibri;
+font-size:10.5000pt;">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+font-size:10.5000pt;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=pre style="margin-top:10.5000pt;margin-right:0.0000pt;margin-bottom:16.6000pt;
+padding:0pt 0pt 0pt 0pt ;
+line-height:15.7500pt;background:rgb(249,249,249);"><span style="font-family:Consolas;color:rgb(152,104,1);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);
+">sudo</span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">&nbsp;/opt/bitnami/ctlscript.sh restart apache</span><span style="font-family:monospace;font-size:10.5000pt;
+">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="108"
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail5645.png"><span
+				style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p style="margin-left:0.0000pt;text-indent:0.0000pt;
+"><span style="font-family:Calibri;"><span>8.<span>&nbsp;</span></span></span><span style="font-family:Calibri;
+">Wait a few moments for your the Apache service to restart, then test that your distribution is caching your
+				content.</span><span style="font-family:Calibri;
+">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p style="margin-left:0.0000pt;text-indent:0.0000pt;
+"><span style="font-family:Calibri;"><span>9.<span>&nbsp;</span></span></span><span style="font-family:Calibri;
+">If something went wrong, re-connect to your instance using the browser-based SSH client. Run the following command to
+				restore the&nbsp;wp-config.php&nbsp;file using the backup you created earlier in this guide.</span><span
+				style="font-family:Calibri;
+">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=pre style="margin-top:10.5000pt;margin-right:0.0000pt;margin-bottom:16.6000pt;
+padding:0pt 0pt 0pt 0pt ;
+line-height:15.7500pt;background:rgb(249,249,249);"><span style="font-family:Consolas;color:rgb(152,104,1);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);
+">sudo</span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">&nbsp;cp /opt/bitnami/wordpress/wp-config.php.backup
+				/opt/bitnami/wordpress/wp-config.php</span><span style="font-family:monospace;font-size:10.5000pt;
+">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p style="margin-left:0.0000pt;text-indent:0.0000pt;
+"><span style="font-family:Calibri;"><span>10.<span>&nbsp;</span></span></span><span style="font-family:Calibri;
+">After you restore the file, enter the following command to restart the Apache service:</span><span style="font-family:Calibri;
+">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=pre style="margin-top:10.5000pt;margin-right:0.0000pt;margin-bottom:16.6000pt;
+padding:0pt 0pt 0pt 0pt ;
+line-height:15.7500pt;background:rgb(249,249,249);"><span style="font-family:Consolas;color:rgb(152,104,1);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);
+">sudo</span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">&nbsp;/opt/bitnami/ctlscript.sh restart apache</span><span style="font-family:monospace;font-size:10.5000pt;
+">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<h1><a name="_Toc9776"></a><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;"><span>8)<span>&nbsp;</span></span></span><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">Creating an SSL certificate</span></b><b><span style="font-family:Calibri;
+font-weight:bold;font-size:22.0000pt;
+">
+					<o:p></o:p>
+				</span></b></h1>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="252"
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail6224.png"><span
+				style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="298"
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail6227.png"><span
+				style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="461" height="269"
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail6230.png"><span
+				style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="469" height="526"
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail6233.png"><span
+				style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="30"
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail6236.png"><span
+				style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="489" height="320"
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail6239.png"><span
+				style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="488" height="357"
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail6241.png"><span
+				style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="461" height="176"
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail6243.png"><span
+				style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="497" height="541"
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail6246.png"><span
+				style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="153"
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail6249.png"><span
+				style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="93"
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail6252.png"><span
+				style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="554" height="450"
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail6255.png"><span
+				style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="447"
+				src="Wordpress Website on AWS using Amazon Lightsail.files/Wordpress Website on AWS using Amazon Lightsail6259.png"><span
+				style="font-family:Calibri;
+">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+
+
+	</main><!-- End #main -->
+
+	<!-- ======= Footer ======= -->
 	<div w3-include-html="footer.htm"></div>
-	<script>includeHTML();</script> <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-			class="bi bi-arrow-up-short"></i></a> <!-- Vendor JS Files -->
-	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> <!-- Template Main JS File -->
+	<script>includeHTML();</script>
+
+	<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+			class="bi bi-arrow-up-short"></i></a>
+
+	<!-- Vendor JS Files -->
+	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Template Main JS File -->
 	<script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
