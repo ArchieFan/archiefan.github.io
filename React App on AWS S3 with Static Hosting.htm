@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>My Portfolio</title>
+	<meta content="" name="description">
+	<meta content="" name="keywords"> <!-- Favicons -->
+	<link href="assets/img/favicon.png" rel="icon"> <!-- Google Fonts -->
+	<link href="https://fonts.gstatic.com" rel="preconnect">
+	<link
+		href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+		rel="stylesheet"> <!-- Vendor CSS Files -->
+	<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> <!-- Template Main CSS File -->
+	<link href="assets/css/style.css" rel="stylesheet">
+	<script src="assets/js/layout.js"></script>
+</head>
+
+<body> <!-- ======= Header ======= -->
+	<header id="header" class="header fixed-top d-flex align-items-center">
+		<div class="d-flex align-items-center justify-content-between"> <i class="bi bi-list toggle-sidebar-btn"></i>
+		</div><!-- End Logo -->
+		<nav class="header-nav ms-auto">
+			<ul class="d-flex align-items-center">
+				<div w3-include-html="header.htm"></div>
+			</ul>
+		</nav><!-- End Icons Navigation -->
+	</header><!-- End Header --> <!-- ======= Sidebar ======= -->
+	<div w3-include-html="sidebar.htm"></div>
+	<main id="main" class="main">
+		<h1><b><span style="font-family:Calibri;;font-weight:bold;font-size:22.0000pt;">AWS S3 Static
+				</span></b><b><span style="font-family:Calibri;;font-weight:bold;font-size:22.0000pt;">Hosting with
+				</span></b><b><span style="font-family:Calibri;;font-weight:bold;font-size:22.0000pt;">React
+					App</span></b><b><span style="font-family:Calibri;;font-weight:bold;font-size:22.0000pt;">&nbsp;and
+				</span></b><b><span
+					style="font-family:Calibri;;font-weight:bold;font-size:22.0000pt;">Cloudfront</span></b><b><span
+					style="font-family:Calibri;;font-weight:bold;font-size:22.0000pt;">
+					<o:p></o:p>
+				</span></b></h1>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">I</span><span style="font-family:Calibri;;">'m going to show you how to
+				set up a react application that is hosted on s3 via </span><span
+				style="font-family:Calibri;;">C</span><span style="font-family:Calibri;;">loud</span><span
+				style="font-family:Calibri;;">F</span><span style="font-family:Calibri;;">ront as a</span><span
+				style="font-family:Calibri;;">&nbsp;</span><span style="font-family:Calibri;;">distribution it's going
+				to involve creating some </span><b><span style="font-family:Calibri;;font-weight:bold;">certificates
+				</span></b><span style="font-family:Calibri;;">and also some route 53 </span><span
+				style="font-family:Calibri;;">DNS </span><span style="font-family:Calibri;;">modifications</span><span
+				style="font-family:Calibri;;">.</span><span style="font-family:Calibri;;">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">Y</span><span style="font-family:Calibri;;">ou're wondering why behind
+			</span><span style="font-family:Calibri;;">C</span><span style="font-family:Calibri;;">loud</span><span
+				style="font-family:Calibri;;">F</span><span style="font-family:Calibri;;">ront</span><span
+				style="font-family:Calibri;;">. </span><b><span
+					style="font-family:Calibri;;font-weight:bold;background:rgb(255,255,0);">T</span></b><b><span
+					style="font-family:Calibri;;font-weight:bold;background:rgb(255,255,0);">his is because you
+					cannot</span></b><b><span
+					style="font-family:Calibri;;font-weight:bold;background:rgb(255,255,0);">&nbsp;</span></b><b><span
+					style="font-family:Calibri;;font-weight:bold;background:rgb(255,255,0);">install the free
+				</span></b><b><span
+					style="font-family:Calibri;;font-weight:bold;background:rgb(255,255,0);">AWS</span></b><b><span
+					style="font-family:Calibri;;font-weight:bold;background:rgb(255,255,0);">&nbsp;certificate</span></b><b><span
+					style="font-family:Calibri;;font-weight:bold;background:rgb(255,255,0);">&nbsp;</span></b><b><span
+					style="font-family:Calibri;;font-weight:bold;background:rgb(255,255,0);">manager certificates
+					directly onto your</span></b><b><span
+					style="font-family:Calibri;;font-weight:bold;background:rgb(255,255,0);">&nbsp;</span></b><b><span
+					style="font-family:Calibri;;font-weight:bold;background:rgb(255,255,0);">website or
+					application</span></b><b><span
+					style="font-family:Calibri;;font-weight:bold;background:rgb(255,255,0);">.</span></b><span
+				style="font-family:Calibri;;">&nbsp;</span><span style="font-family:Calibri;;">&nbsp;</span><span
+				style="font-family:Calibri;;">I</span><span style="font-family:Calibri;;">nstead you must</span><span
+				style="font-family:Calibri;;">&nbsp;</span><span style="font-family:Calibri;;">install your certificates
+				by using one</span><span style="font-family:Calibri;;">&nbsp;</span><span
+				style="font-family:Calibri;;">of the services integrated with ACM</span><span
+				style="font-family:Calibri;;">. </span><span style="font-family:Calibri;;">&nbsp;</span><span
+				style="font-family:Calibri;;">A</span><span style="font-family:Calibri;;">nd</span><span
+				style="font-family:Calibri;;">&nbsp;</span><span style="font-family:Calibri;;">these services are
+			</span><b><span style="font-family:Calibri;;font-weight:bold;">elastic load</span></b><b><span
+					style="font-family:Calibri;;font-weight:bold;">&nbsp;</span></b><b><span
+					style="font-family:Calibri;;font-weight:bold;">balancing</span></b><span
+				style="font-family:Calibri;;">,</span><span style="font-family:Calibri;;">&nbsp;</span><b><span
+					style="font-family:Calibri;;font-weight:bold;">Amazon CloudFront</span></b><span
+				style="font-family:Calibri;;">,</span><span style="font-family:Calibri;;">&nbsp;</span><b><span
+					style="font-family:Calibri;;font-weight:bold;">AWS elastic</span></b><b><span
+					style="font-family:Calibri;;font-weight:bold;">&nbsp;</span></b><b><span
+					style="font-family:Calibri;;font-weight:bold;">beanstalk</span></b><span
+				style="font-family:Calibri;;">,</span><span style="font-family:Calibri;;">&nbsp;</span><b><span
+					style="font-family:Calibri;;font-weight:bold;">Amazon API gateway</span></b><span
+				style="font-family:Calibri;;">, and</span><span style="font-family:Calibri;;">&nbsp;</span><b><span
+					style="font-family:Calibri;;font-weight:bold;">AWS</span></b><b><span
+					style="font-family:Calibri;;font-weight:bold;">&nbsp;</span></b><b><span
+					style="font-family:Calibri;;font-weight:bold;">CloudFormation</span></b><span
+				style="font-family:Calibri;;">. &nbsp;S</span><span style="font-family:Calibri;;">o</span><span
+				style="font-family:Calibri;;">,</span><span style="font-family:Calibri;;">&nbsp;in our case</span><span
+				style="font-family:Calibri;;">,</span><span style="font-family:Calibri;;">&nbsp;</span><span
+				style="font-family:Calibri;;">I </span><span style="font-family:Calibri;;">put one </span><span
+				style="font-family:Calibri;;">S3</span><span style="font-family:Calibri;;">&nbsp;instance</span><span
+				style="font-family:Calibri;;">&nbsp;</span><span style="font-family:Calibri;;">with a basic web site
+				behind a </span><span style="font-family:Calibri;;">C</span><span
+				style="font-family:Calibri;;">loud</span><span style="font-family:Calibri;;">F</span><span
+				style="font-family:Calibri;;">ront and then applied the free </span><span
+				style="font-family:Calibri;;">ACM certificates</span><span style="font-family:Calibri;;">&nbsp;on the
+			</span><span style="font-family:Calibri;;">C</span><span style="font-family:Calibri;;">loud</span><span
+				style="font-family:Calibri;;">F</span><span style="font-family:Calibri;;">ront</span><span
+				style="font-family:Calibri;;">.</span><span style="font-family:Calibri;;">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="456" height="266"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting794.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="489" height="294"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting797.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">T</span><span style="font-family:Calibri;;">he first thing that we need
+				to do is just set up the scaffolding for our very basic react application</span><span
+				style="font-family:Calibri;;">.</span><span style="font-family:Calibri;;">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p> <span style="font-family:Calibri;;"><span>1)<span>&nbsp;</span></span></span> <span
+				style="font-family:Calibri;;">Create a react app</span><span style="font-family:Calibri;;">
+				<o:p></o:p>
+			</span> </p>
+		<p><img width="553" height="328"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting924.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p style="margin-left:0.0000pt;text-indent:0.0000pt;"> <span
+				style="font-family:Calibri;;"><span>2)<span>&nbsp;</span></span></span> <span
+				style="font-family:Calibri;;">Run the app</span><span style="font-family:Calibri;;">
+				<o:p></o:p>
+			</span> </p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="328"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting940.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p style="margin-left:0.0000pt;text-indent:0.0000pt;"> <span
+				style="font-family:Calibri;;"><span>3)<span>&nbsp;</span></span></span> <span
+				style="font-family:Calibri;;">Verify the app</span><span style="font-family:Calibri;;">
+				<o:p></o:p>
+			</span> </p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="367"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting959.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p style="margin-left:0.0000pt;text-indent:0.0000pt;"> <span
+				style="font-family:Calibri;;"><span>4)<span>&nbsp;</span></span></span> <span
+				style="font-family:Calibri;;">Build the app and bundle all the files together</span><span
+				style="font-family:Calibri;;">
+				<o:p></o:p>
+			</span> </p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="328"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting1011.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<h1 style="margin-left:21.2500pt;text-indent:-21.2500pt;"> <span
+				style="font-family:Calibri;;font-weight:bold;font-size:22.0000pt;"><span>1.<span>&nbsp;</span></span></span>
+			<b><span style="font-family:Calibri;;font-weight:bold;font-size:22.0000pt;">Create the
+					Bucket</span></b><b><span style="font-family:Calibri;;font-weight:bold;font-size:22.0000pt;">
+					<o:p></o:p>
+				</span></b>
+		</h1>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">W</span><span style="font-family:Calibri;;">e're going to actually create
+				two different buckets for this website or this project rather the first</span><span
+				style="font-family:Calibri;;">&nbsp;</span><span style="font-family:Calibri;;">one is our website name
+				without www in front of</span><span style="font-family:Calibri;;">&nbsp;</span><span
+				style="font-family:Calibri;;">it</span><span style="font-family:Calibri;;">. &nbsp;W</span><span
+				style="font-family:Calibri;;">e're going to have a bucket for </span><span
+				style="font-family:Calibri;;">archiefan.co.uk </span><span style="font-family:Calibri;;">and a bucket
+				for</span><span style="font-family:Calibri;;">&nbsp;</span><span
+				style="font-family:Calibri;;">www.</span><span style="font-family:Calibri;;">archiefan.co.uk</span><span
+				style="font-family:Calibri;;">&nbsp;and the reason that we need both is because one of them is going to
+				be basically be the authority so it's going</span><span style="font-family:Calibri;;">&nbsp;</span><span
+				style="font-family:Calibri;;">to have all of our content in it and the other is going to be basically
+				for redirect so when someone goes to that website it's going to redirect us</span><span
+				style="font-family:Calibri;;">&nbsp;</span><span style="font-family:Calibri;;">to the other
+				version</span><span style="font-family:Calibri;;">.</span><span style="font-family:Calibri;;">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="338"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting1566.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="257"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting1569.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<h1 style="margin-left:21.2500pt;text-indent:-21.2500pt;"> <span
+				style="font-family:Calibri;;font-weight:bold;font-size:22.0000pt;"><span>2.<span>&nbsp;</span></span></span>
+			<b><span style="font-family:Calibri;;font-weight:bold;font-size:22.0000pt;">Create the
+					Buckets</span></b><b><span style="font-family:Calibri;;font-weight:bold;font-size:22.0000pt;">
+					<o:p></o:p>
+				</span></b>
+		</h1>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="336"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting1594.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="155"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting1597.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<h1 style="margin-left:21.2500pt;text-indent:-21.2500pt;"> <span
+				style="font-family:Calibri;;font-weight:bold;font-size:22.0000pt;"><span>3.<span>&nbsp;</span></span></span>
+			<b><span style="font-family:Calibri;;font-weight:bold;font-size:22.0000pt;">Upload the
+					files</span></b><b><span style="font-family:Calibri;;font-weight:bold;font-size:22.0000pt;">
+					<o:p></o:p>
+				</span></b>
+		</h1>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="286"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting1618.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="332"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting1621.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="396"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting1624.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="552" height="369"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting1627.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<h1 style="margin-left:21.2500pt;text-indent:-21.2500pt;"> <span
+				style="font-family:Calibri;;font-weight:bold;font-size:22.0000pt;"><span>4.<span>&nbsp;</span></span></span>
+			<b><span style="font-family:Calibri;;font-weight:bold;font-size:22.0000pt;">Disable Block public
+					Access</span></b><b><span style="font-family:Calibri;;font-weight:bold;font-size:22.0000pt;">
+					<o:p></o:p>
+				</span></b>
+		</h1>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="244"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting1660.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p> <span style="font-family:Calibri;;"><span>1)<span>&nbsp;</span></span></span> <span
+				style="font-family:Calibri;;">T</span><span style="font-family:Calibri;;">he first thing is we need to
+				disable this we need to disable block public access</span><span
+				style="font-family:Calibri;;">.</span><span style="font-family:Calibri;;">
+				<o:p></o:p>
+			</span> </p>
+		<p><img width="553" height="393"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting1746.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="552" height="289"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting1750.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p> <span style="font-family:Calibri;;"><span>2)<span>&nbsp;</span></span></span> <span
+				style="font-family:Calibri;;">T</span><span style="font-family:Calibri;;">he next thing we want to do is
+				go to the bucket policy section and here what we need to do is we need to paste a policy
+				itself</span><span style="font-family:Calibri;;">.</span><span style="font-family:Calibri;;">
+				<o:p></o:p>
+			</span> </p>
+		<p><img width="554" height="357"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting1882.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">{</span><span style="font-family:Calibri;;">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">&nbsp;&nbsp;&nbsp;&nbsp;"Version": "2012-10-17",</span><span
+				style="font-family:Calibri;;">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">&nbsp;&nbsp;&nbsp;&nbsp;"Statement": [</span><span
+				style="font-family:Calibri;;">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</span><span
+				style="font-family:Calibri;;">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Sid":
+				"PublicReadGetObject",</span><span style="font-family:Calibri;;">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Effect":
+				"Allow",</span><span style="font-family:Calibri;;">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Principal":
+				"*",</span><span style="font-family:Calibri;;">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Action":
+				[</span><span style="font-family:Calibri;;">
+				<o:p></o:p>
+			</span></p>
+		<p><span
+				style="font-family:Calibri;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"s3:GetObject"</span><span
+				style="font-family:Calibri;;">
+				<o:p></o:p>
+			</span></p>
+		<p><span
+				style="font-family:Calibri;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],</span><span
+				style="font-family:Calibri;;">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Resource":
+				[</span><span style="font-family:Calibri;;">
+				<o:p></o:p>
+			</span></p>
+		<p><span
+				style="font-family:Calibri;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"arn:aws:s3:::www.archiefan.co.uk/*"</span><span
+				style="font-family:Calibri;;">
+				<o:p></o:p>
+			</span></p>
+		<p><span
+				style="font-family:Calibri;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]</span><span
+				style="font-family:Calibri;;">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><span
+				style="font-family:Calibri;;">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">&nbsp;&nbsp;&nbsp;&nbsp;]</span><span style="font-family:Calibri;;">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">}</span><span style="font-family:Calibri;;">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="554" height="232"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting2230.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p> <span style="font-family:Calibri;;"><span>3)<span>&nbsp;</span></span></span> <span
+				style="font-family:Calibri;;">N</span><span style="font-family:Calibri;;">ow</span><span
+				style="font-family:Calibri;;">, </span><span style="font-family:Calibri;;">we are publicly
+				accessible</span><span style="font-family:Calibri;;">.</span><span
+				style="font-family:Calibri;;">&nbsp;</span><span style="font-family:Calibri;;">
+				<o:p></o:p>
+			</span> </p>
+		<p><img width="554" height="426"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting2267.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<h1 style="margin-left:21.2500pt;text-indent:-21.2500pt;"> <span
+				style="font-family:Calibri;;font-weight:bold;font-size:22.0000pt;"><span>5.<span>&nbsp;</span></span></span>
+			<b><span style="font-family:Calibri;;font-weight:bold;font-size:22.0000pt;">Enable static website
+					hosting</span></b><b><span style="font-family:Calibri;;font-weight:bold;font-size:22.0000pt;">
+					<o:p></o:p>
+				</span></b>
+		</h1>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="232"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting2303.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="124"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting2306.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="554" height="435"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting2309.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">T</span><span style="font-family:Calibri;;">his is the bucket where we
+				actually uploaded all the content it's going to be the host for the static</span><span
+				style="font-family:Calibri;;">&nbsp;</span><span style="font-family:Calibri;;">website</span><span
+				style="font-family:Calibri;;">.</span><span style="font-family:Calibri;;">&nbsp;</span><span
+				style="font-family:Calibri;;">W</span><span style="font-family:Calibri;;">e're actually going to go to
+				other bucket that we created earlier and we're going to set it to redirect to this bucket</span><span
+				style="font-family:Calibri;;">.</span><span style="font-family:Calibri;;">&nbsp;</span><span
+				style="font-family:Calibri;;">S</span><span style="font-family:Calibri;;">o that's</span><span
+				style="font-family:Calibri;;">&nbsp;</span><span style="font-family:Calibri;;">when someone goes or
+				tries to navigate to the other bucket</span><span style="font-family:Calibri;;">,</span><span
+				style="font-family:Calibri;;">&nbsp;they're gonna redirect to the www version</span><span
+				style="font-family:Calibri;;">. </span><span style="font-family:Calibri;;">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="217"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting2660.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="199"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting2663.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="228"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting2666.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="554" height="518"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting2669.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="216"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting2672.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<h1 style="margin-left:21.2500pt;text-indent:-21.2500pt;"> <span
+				style="font-family:Calibri;;font-weight:bold;font-size:22.0000pt;"><span>6.<span>&nbsp;</span></span></span>
+			<b><span style="font-family:Calibri;;font-weight:bold;font-size:22.0000pt;">Create Record</span></b><b><span
+					style="font-family:Calibri;;font-weight:bold;font-size:22.0000pt;">
+					<o:p></o:p>
+				</span></b>
+		</h1>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">W</span><span style="font-family:Calibri;;">e are going to go to route 53
+				and this is basically where we set our domain registration or domain settings</span><span
+				style="font-family:Calibri;;">.</span><span style="font-family:Calibri;;">&nbsp;</span><span
+				style="font-family:Calibri;;">S</span><span style="font-family:Calibri;;">o that they point</span><span
+				style="font-family:Calibri;;">&nbsp;</span><span style="font-family:Calibri;;">when someone tries to go
+				to my website</span><span style="font-family:Calibri;;">.</span><span
+				style="font-family:Calibri;;">&nbsp;</span><span style="font-family:Calibri;;">I</span><span
+				style="font-family:Calibri;;">t's going to point to that actual index.html and load up our
+				website</span><span style="font-family:Calibri;;">. &nbsp;W</span><span
+				style="font-family:Calibri;;">hat we need to do is create two different records</span><span
+				style="font-family:Calibri;;">.</span><span style="font-family:Calibri;;">&nbsp;</span><span
+				style="font-family:Calibri;;">S</span><span style="font-family:Calibri;;">o that</span><span
+				style="font-family:Calibri;;">&nbsp;</span><span style="font-family:Calibri;;">when</span><span
+				style="font-family:Calibri;;">&nbsp;</span><span style="font-family:Calibri;;">someone tries to hit our
+				website </span><span><a href="http://www.archiefan.co.uk"><u><span class="15"
+							style="font-family:Calibri;;color:rgb(0,0,255);text-decoration:underline;">www.archiefan.co.uk</span></u></a></span><span
+				style="font-family:Calibri;;">&nbsp;</span><span style="font-family:Calibri;;">or </span><span
+				style="font-family:Calibri;;">archiefan.co.uk. &nbsp;I</span><span style="font-family:Calibri;;">n this
+				case</span><span style="font-family:Calibri;;">,</span><span style="font-family:Calibri;;">&nbsp;they're
+				going to get forwarded to the s3 buckets content</span><span style="font-family:Calibri;;">.</span><span
+				style="font-family:Calibri;;">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="477" height="562"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting3186.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="288"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting3189.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="404"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting3192.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p style="margin-left:21.0000pt;text-indent:-21.0000pt;"> <span
+				style="font-family:Wingdings;;"><span>&#108;<span>&nbsp;</span></span></span> <span
+				style="font-family:Calibri;;">CNAME (Canonical Name)</span><span style="font-family:Calibri;;">: A CNAME
+				record creates an alias for a domain name. It allows you to point one domain name to another domain
+				name. For example, if you have a CNAME record for "</span><span><a href="http://www.example.com/"><span
+						class="15"
+						style="font-family:'Segoe UI';color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;font-style:normal;background:rgb(33,33,33);color:rgb(255,255,255); ">www.example.com</span></a></span><span
+				style="font-family:Calibri;;">" pointing to "example.com," when someone tries to access "</span><span><a
+					href="http://www.example.com/"><span class="15"
+						style="font-family:'Segoe UI';color:rgb(0,0,255);letter-spacing:0.0000pt;text-transform:none;font-style:normal;background:rgb(33,33,33);color:rgb(255,255,255); ">www.example.com</span></a></span><span
+				style="font-family:Calibri;;">," they will be directed to "example.com."</span><span
+				style="font-family:Calibri;;">
+				<o:p></o:p>
+			</span> </p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p style="margin-left:21.0000pt;text-indent:-21.0000pt;"> <span
+				style="font-family:Wingdings;;"><span>&#108;<span>&nbsp;</span></span></span> <span
+				style="font-family:Calibri;;">A (Address): An A record maps a domain name to an IPv4 address. It is used
+				to translate domain names into IP addresses. For instance, if you have an A record for "example.com"
+				pointing to "192.0.2.1," when someone tries to access "example.com," their request will be directed to
+				the server with the IP address "192.0.2.1."</span><span style="font-family:Calibri;;">
+				<o:p></o:p>
+			</span> </p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p style="margin-left:21.0000pt;text-indent:-21.0000pt;"> <span
+				style="font-family:Wingdings;;"><span>&#108;<span>&nbsp;</span></span></span> <span
+				style="font-family:Calibri;;">SOA (Start of Authority): The SOA record indicates the authoritative DNS
+				server for a domain. It contains information about the domain, such as the primary name server, the
+				email address of the domain administrator, the domain serial number, and other timing parameters for
+				zone refreshing and retrying.</span><span style="font-family:Calibri;;">
+				<o:p></o:p>
+			</span> </p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p style="margin-left:21.0000pt;text-indent:-21.0000pt;"> <span
+				style="font-family:Wingdings;;"><span>&#108;<span>&nbsp;</span></span></span> <span
+				style="font-family:Calibri;;">NS (Name Server): NS records specify the authoritative name servers for a
+				domain. They delegate the responsibility of DNS resolution for a subdomain to a specific name server.
+				For example, if you have a subdomain "sub.example.com," you would have NS records that point to the name
+				servers responsible for resolving queries for that subdomain.</span><span style="font-family:Calibri;;">
+				<o:p></o:p>
+			</span> </p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="230"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting4638.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<h1 style="margin-left:21.2500pt;text-indent:-21.2500pt;"> <span
+				style="font-family:Calibri;;font-weight:bold;font-size:22.0000pt;"><span>7.<span>&nbsp;</span></span></span>
+			<b><span style="font-family:Calibri;;font-weight:bold;font-size:22.0000pt;">Obtain SSL certificate from
+					ACM</span></b><b><span style="font-family:Calibri;;font-weight:bold;font-size:22.0000pt;">
+					<o:p></o:p>
+				</span></b>
+		</h1>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">Note: </span><i><span
+					style="font-family:Calibri;;font-style:italic;">N</span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">ow remember the reason we are</span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">&nbsp;</span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">creating </span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">a Clouldfront distribution or </span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">a load balancer is because we</span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">&nbsp;</span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">cannot attach our SSL TLS
+					certificate</span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">&nbsp;</span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">directly onto our </span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">S3 or EC</span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">2 instance</span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">.</span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">&nbsp;</span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">S</span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">o we'll</span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">&nbsp;</span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">attach our certificate on the </span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">Clouldfront distribution or </span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">load</span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">&nbsp;</span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">balancer and then put our </span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">S3 or EC</span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">2 instance</span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">&nbsp;</span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">behind </span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">Clouldfront distribution or </span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">the load balancer</span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">.</span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">
+					<o:p></o:p>
+				</span></i></p>
+		<p><i><span style="font-family:Calibri;;font-style:italic;">
+					<o:p>&nbsp;</o:p>
+				</span></i></p>
+		<p><span style="font-family:Calibri;;">I</span><span style="font-family:Calibri;;">f you're using just s3 for
+				your</span><span style="font-family:Calibri;;">&nbsp;</span><span style="font-family:Calibri;;">website
+				hosting and not </span><span style="font-family:Calibri;;">C</span><span
+				style="font-family:Calibri;;">loudfront</span><span style="font-family:Calibri;;">,</span><span
+				style="font-family:Calibri;;">&nbsp;you can't get around this</span><span
+				style="font-family:Calibri;;">.</span><span style="font-family:Calibri;;">&nbsp;</span><span
+				style="font-family:Calibri;;">Y</span><span style="font-family:Calibri;;">ou have to set up </span><span
+				style="font-family:Calibri;;">C</span><span style="font-family:Calibri;;">loudfront</span><span
+				style="font-family:Calibri;;">&nbsp;</span><span style="font-family:Calibri;;">to get </span><span
+				style="font-family:Calibri;;">HTTPS</span><span style="font-family:Calibri;;">&nbsp;enabled</span><span
+				style="font-family:Calibri;;">.</span><span style="font-family:Calibri;;">
+				<o:p></o:p>
+			</span></p>
+		<p><i><span style="font-family:Calibri;;font-style:italic;">
+					<o:p>&nbsp;</o:p>
+				</span></i></p>
+		<p><img width="553" height="254"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting5177.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="258"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting5180.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="221"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting5183.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="300"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting5186.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="552" height="246"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting5190.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<h1 style="margin-left:21.2500pt;text-indent:-21.2500pt;"> <span
+				style="font-family:Calibri;;font-weight:bold;font-size:22.0000pt;"><span>8.<span>&nbsp;</span></span></span>
+			<b><span style="font-family:Calibri;;font-weight:bold;font-size:22.0000pt;">Validation</span></b><b><span
+					style="font-family:Calibri;;font-weight:bold;font-size:22.0000pt;">
+					<o:p></o:p>
+				</span></b>
+		</h1>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">T</span><span style="font-family:Calibri;;">here's a very quick
+			</span><span style="font-family:Calibri;;">way to </span><span style="font-family:Calibri;;">handle
+			</span><span style="font-family:Calibri;;">pending validation</span><span style="font-family:Calibri;;">.
+			</span><span style="font-family:Calibri;;">T</span><span style="font-family:Calibri;;">o do that</span><span
+				style="font-family:Calibri;;">, </span><span style="font-family:Calibri;;">just to prove to </span><span
+				style="font-family:Calibri;;">AWS </span><span style="font-family:Calibri;;">that you're the owner and
+				complete this</span><span style="font-family:Calibri;;">&nbsp;</span><span
+				style="font-family:Calibri;;">process</span><span style="font-family:Calibri;;">.</span><span
+				style="font-family:Calibri;;">&nbsp;</span><span style="font-family:Calibri;;">S</span><span
+				style="font-family:Calibri;;">o you're going to want to click on</span><span
+				style="font-family:Calibri;;">&nbsp;<font face="Calibri">“Create record in Route 53”</font></span><span
+				style="font-family:Calibri;;">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="269"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting5408.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="396"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting5411.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="34"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting5414.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="305"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting5417.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="168"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting5420.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<h1 style="margin-left:21.2500pt;text-indent:-21.2500pt;"> <span
+				style="font-family:Calibri;;font-weight:bold;font-size:22.0000pt;"><span>9.<span>&nbsp;</span></span></span>
+			<b><span style="font-family:Calibri;;font-weight:bold;font-size:22.0000pt;">Clouldfront
+					Distribution</span></b><b><span style="font-family:Calibri;;font-weight:bold;font-size:22.0000pt;">
+					<o:p></o:p>
+				</span></b>
+		</h1>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="313"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting5450.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="544" height="378"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting5454.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">Note: U</span><span style="font-family:Calibri;;">nfortunately when you
+				click on origin domain name</span><span style="font-family:Calibri;;">, </span><span
+				style="font-family:Calibri;;">it actually gives you the wrong</span><span
+				style="font-family:Calibri;;">&nbsp;</span><span style="font-family:Calibri;;">auto-complete values or
+				things that aren't appropriate for our use case</span><span style="font-family:Calibri;;">.
+				S</span><span style="font-family:Calibri;;">o what you need to do instead </span><span
+				style="font-family:Calibri;;">is </span><span style="font-family:Calibri;;">to go back to s3</span><span
+				style="font-family:Calibri;;">&nbsp;to get it.</span><span style="font-family:Calibri;;">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="301"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting5684.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="500" height="260"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting5687.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<h1 style="margin-left:21.2500pt;text-indent:-21.2500pt;"> <span
+				style="font-family:Calibri;;font-weight:bold;font-size:22.0000pt;"><span>10.<span>&nbsp;</span></span></span>
+			<b><span style="font-family:Calibri;;font-weight:bold;font-size:22.0000pt;">Viewer Protocol
+					Policy</span></b><b><span style="font-family:Calibri;;font-weight:bold;font-size:22.0000pt;">
+					<o:p></o:p>
+				</span></b>
+		</h1>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="286"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting5715.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="291"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting5719.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="326"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting5722.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="153"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting5726.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<h1 style="margin-left:21.2500pt;text-indent:-21.2500pt;"> <span
+				style="font-family:Calibri;;font-weight:bold;font-size:22.0000pt;"><span>11.<span>&nbsp;</span></span></span>
+			<b><span style="font-family:Calibri;;font-weight:bold;font-size:22.0000pt;">Create
+					Distribution</span></b><b><span style="font-family:Calibri;;font-weight:bold;font-size:22.0000pt;">
+					<o:p></o:p>
+				</span></b>
+		</h1>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="472"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting5750.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="112"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting5753.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">S</span><span style="font-family:Calibri;;">o we're going to do the same
+				thing now for the other version which is the non-www</span><span
+				style="font-family:Calibri;;">.</span><span style="font-family:Calibri;;">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="529" height="400"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting5841.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="304" height="104"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting5844.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="153"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting5847.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="488" height="113"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting5850.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="312"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting5853.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="552" height="129"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting5856.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<h1 style="margin-left:21.2500pt;text-indent:-21.2500pt;"> <span
+				style="font-family:Calibri;;font-weight:bold;font-size:22.0000pt;"><span>12.<span>&nbsp;</span></span></span>
+			<b><span style="font-family:Calibri;;font-weight:bold;font-size:22.0000pt;">Change our DNS
+					settings</span></b><b><span style="font-family:Calibri;;font-weight:bold;font-size:22.0000pt;">
+					<o:p></o:p>
+				</span></b>
+		</h1>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">T</span><span style="font-family:Calibri;;">here's one more small step
+				which is to enable </span><span style="font-family:Calibri;;">HTTPS to </span><span
+				style="font-family:Calibri;;">redirect for our non-www version of the website</span><span
+				style="font-family:Calibri;;">.</span><span style="font-family:Calibri;;">&nbsp;</span><span
+				style="font-family:Calibri;;">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="570"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting5992.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">N</span><span style="font-family:Calibri;;">ext thing that we</span><span
+				style="font-family:Calibri;;">&nbsp;</span><span style="font-family:Calibri;;">need to do now is go and
+				change our </span><span style="font-family:Calibri;;">DNS </span><span
+				style="font-family:Calibri;;">settings</span><span style="font-family:Calibri;;">.</span><span
+				style="font-family:Calibri;;">&nbsp;</span><span style="font-family:Calibri;;">W</span><span
+				style="font-family:Calibri;;">e need to change some a records to actually</span><span
+				style="font-family:Calibri;;">&nbsp;</span><span style="font-family:Calibri;;">point to this
+				distribution</span><span style="font-family:Calibri;;">.</span><span style="font-family:Calibri;;">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">N</span><span style="font-family:Calibri;;">ow we are going to modify our
+				a records instead of pointing</span><span style="font-family:Calibri;;">&nbsp;</span><span
+				style="font-family:Calibri;;">directly to s3</span><span style="font-family:Calibri;;">.</span><span
+				style="font-family:Calibri;;">&nbsp;</span><span style="font-family:Calibri;;">T</span><span
+				style="font-family:Calibri;;">hey're going to point to our </span><span
+				style="font-family:Calibri;;">C</span><span style="font-family:Calibri;;">loudfront distribution and our
+			</span><span style="font-family:Calibri;;">C</span><span style="font-family:Calibri;;">loudfront
+				distribution is going to</span><span style="font-family:Calibri;;">&nbsp;</span><span
+				style="font-family:Calibri;;">point to </span><span style="font-family:Calibri;;">S</span><span
+				style="font-family:Calibri;;">3&nbsp;</span><span style="font-family:Calibri;;">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span><a href="http://www.archiefan.co.uk"><u><span class="15"
+							style="font-family:Calibri;;color:rgb(0,0,255);text-decoration:underline;">www.archiefan.co.uk</span></u></a></span><span
+				style="font-family:Calibri;;">&nbsp;--&gt; Cloudfront --&gt; S3</span><span
+				style="font-family:Calibri;;">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">archiefan.co.uk --&gt; Cloudfront --&gt; S3</span><span
+				style="font-family:Calibri;;">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="361" height="504"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting6453.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="554" height="265"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting6457.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="362" height="513"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting6459.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">T</span><span style="font-family:Calibri;;">ip</span><span
+				style="font-family:Calibri;;">: </span><span style="font-family:Calibri;;">&nbsp;</span><i><span
+					style="font-family:Calibri;;font-style:italic;">now if you're using this to change your website
+					content regularly</span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">,</span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">&nbsp;keep in mind</span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">,</span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">that there's caches enabled with </span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">C</span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">loudfront</span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">.</span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">&nbsp;</span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">S</span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">o if you change your website or like redeploy or
+					something like that</span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">&nbsp;</span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">it may not show up right away</span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">.</span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">&nbsp;</span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">N</span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">ow if you want it to show up right
+					away</span></i><i><span style="font-family:Calibri;;font-style:italic;">,</span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">&nbsp;you basically need to nuke your
+				</span></i><i><span style="font-family:Calibri;;font-style:italic;">C</span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">loudfront distribution and get it
+					to</span></i><i><span style="font-family:Calibri;;font-style:italic;">&nbsp;</span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">re-pull all the resources from s3</span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">.</span></i><i><span
+					style="font-family:Calibri;;font-style:italic;">&nbsp;</span></i><span
+				style="font-family:Calibri;;">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="131"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting6845.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="554" height="190"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting6848.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;;">C</span><span style="font-family:Calibri;;">reate an invalidation and
+				this is basically going to clear</span><span style="font-family:Calibri;;">&nbsp;C</span><span
+				style="font-family:Calibri;;">loudfront of everything that it has cached on your s3 bucket and re-pull
+				it &nbsp;from s3</span><span style="font-family:Calibri;;">&nbsp;</span><span
+				style="font-family:Calibri;;">and start caching it again</span><span
+				style="font-family:Calibri;;">.</span><span style="font-family:Calibri;;">&nbsp;</span><span
+				style="font-family:Calibri;;">
+				<o:p></o:p>
+			</span></p>
+		<p
+			style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;margin-left:0.0000pt;padding:0pt 0pt 0pt 0pt ;text-align:left;">
+			<span style="font-family:Arial;">
+				<o:p>&nbsp;</o:p>
+			</span>
+		</p>
+		<p
+			style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;margin-left:0.0000pt;padding:0pt 0pt 0pt 0pt ;text-align:left;">
+			<img width="553" height="282"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting7028.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span>
+		</p>
+		<p
+			style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;margin-left:0.0000pt;padding:0pt 0pt 0pt 0pt ;text-align:left;">
+			<span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span>
+		</p>
+		<p
+			style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;margin-left:0.0000pt;padding:0pt 0pt 0pt 0pt ;text-align:left;">
+			<img width="552" height="112"
+				src="React App on AWS S3 with Static Hosting.files/React App on AWS S3 with Static Hosting7031.png"><span
+				style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span>
+		</p>
+		<p
+			style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;margin-left:0.0000pt;padding:0pt 0pt 0pt 0pt ;text-align:left;">
+			<span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span>
+		</p>
+		<p
+			style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;margin-left:0.0000pt;padding:0pt 0pt 0pt 0pt ;text-align:left;">
+			<span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span>
+		</p>
+		<p><span style="font-family:Calibri;;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+	</main><!-- End #main --> <!-- ======= Footer ======= -->
+	<div w3-include-html="footer.htm"></div>
+	<script>includeHTML();</script> <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+			class="bi bi-arrow-up-short"></i></a> <!-- Vendor JS Files -->
+	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> <!-- Template Main JS File -->
+	<script src="assets/js/main.js"></script>
+</body>
+
+</html>
