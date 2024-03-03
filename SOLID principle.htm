@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>My Portfolio</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <script src="assets/js/layout.js"></script>
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+
+        <div class="d-flex align-items-center justify-content-between">
+            <i class="bi bi-list toggle-sidebar-btn"></i>
+        </div><!-- End Logo -->
+
+        <nav class="header-nav ms-auto">
+
+            <ul class="d-flex align-items-center">
+                <div w3-include-html="header.htm"></div>
+            </ul>
+        </nav><!-- End Icons Navigation -->
+    </header><!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <div w3-include-html="sidebar.htm"></div>
+
+    <main id="main" class="main">
+
+        <p align=center style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;
+;text-indent:0.0000pt;
+text-align:center;"><span style="font-family:SimSun;
+font-size:10.5000pt;">Catalog</span><span ">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><span><a href=" #_Toc13669 "><span
+">SOLID principle</span><span ">&#9;</span></a></span><span
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc7638 "><span ">S</span><span
+">ingle </span><span ">R</span><span
+">esponsibility </span><span ">P</span><span
+">rinciple</span><span ">&nbsp;(SRP)</span><span
+">&#9;</span></a></span><span ">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href=" #_Toc4292 "><span
+">O</span><span ">pen-closed </span><span
+">P</span><span ">rinciple</span><span
+">&nbsp;(OCP)</span><span ">&#9;</span></a></span><span
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc18472 "><span ">Liskov </span><span
+">S</span><span ">ubstitution </span><span
+">P</span><span ">rinciple</span><span
+">&nbsp;(LSP)</span><span ">&#9;</span></a></span><span
+">
+                        <o:p></o:p>
+                    </span></p>
+        <p class=MsoToc1><span><a href="#_Toc29345 "><span ">I</span><span
+">nterface </span><span ">S</span><span
+">egregation </span><span ">P</span><span
+">rinciple </span><span ">&nbsp;(ISP)</span><span
+">&#9;</span></a></span><span ">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href=" #_Toc15801 "><span
+">D</span><span ">ependency </span><span
+">I</span><span ">nversion </span><span
+">P</span><span ">rinciple</span><span
+">&nbsp;(DIP)</span><span ">&#9;</span></a></span><span
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc2><span><a href="#_Toc1945 "><span ">What is higher and low modules?</span><span
+">&#9;</span></a></span><span ">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc2><span><a href=" #_Toc18547 "><span
+">What is </span><span ">abstractions?</span><span
+">&#9;</span></a></span><span ">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc2><span><a href=" #_Toc2725 "><span
+">Dependency inversion vs dependency injection</span><span ">&#9;</span></a></span><span
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc21822 "><span ">The benefit of DIP</span><span
+">&#9;</span></a></span><span ">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href=" #_Toc9116 "><span
+">T</span><span ">he power of </span><span
+">SOLID</span><span ">&#9;</span></a></span><span
+">
+                <o:p></o:p>
+            </span></p>
+        <p></span><span ">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1 style=" page-break-after:avoid;page-break-before:always; "><a name=" _Toc13669"></a><b><span
+                        font-weight:bold;font-size:22.0000pt; ">SOLID principle</span></b><b><span
+font-weight:bold;font-size:22.0000pt;
+">
+                        <o:p></o:p>
+                    </span></b></h1>
+                <p><span ">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name=" _Toc7638"></a><b><span font-weight:bold;font-size:22.0000pt; ">S</span></b><b><span
+font-weight:bold;font-size:22.0000pt;
+">ingle </span></b><b><span font-weight:bold;font-size:22.0000pt; ">R</span></b><b><span
+font-weight:bold;font-size:22.0000pt;
+">esponsibility </span></b><b><span font-weight:bold;font-size:22.0000pt; ">P</span></b><b><span
+font-weight:bold;font-size:22.0000pt;
+">rinciple</span></b><b><span font-weight:bold;font-size:22.0000pt; ">&nbsp;(SRP)</span></b><b><span
+font-weight:bold;font-size:22.0000pt;
+">
+                                <o:p></o:p>
+                            </span></b></h1>
+                        <p><span ">a class should have one, and only one, reason to change.</span><span
+">&nbsp;</span><span ">each class only does one thing and every class</span><span
+">&nbsp;and </span><span ">each class should solve only one problem</span><span
+">.</span><span ">
+                <o:p></o:p>
+            </span></p>
+        <p><span
+">
+                                <o:p>&nbsp;</o:p>
+                            </span></p>
+                        <p><span background:rgb(0,255,0);">Group similar features into a class -- make a class serve
+                                only one purpose</span><span background:rgb(0,255,0);">
+                                <o:p></o:p>
+                            </span></p>
+                        <p><span ">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name=" _Toc4292"></a><b><span font-weight:bold;font-size:22.0000pt; ">O</span></b><b><span
+font-weight:bold;font-size:22.0000pt;
+">pen-closed </span></b><b><span font-weight:bold;font-size:22.0000pt; ">P</span></b><b><span
+font-weight:bold;font-size:22.0000pt;
+">rinciple</span></b><b><span font-weight:bold;font-size:22.0000pt; ">&nbsp;(OCP)</span></b><b><span
+font-weight:bold;font-size:22.0000pt;
+">
+                                        <o:p></o:p>
+                                    </span></b></h1>
+                                <p><span ">You should be able to extend a class’s behavior without modifying it.</span><span
+">&nbsp;</span><span ">Yet, changing classes can lead to problems or bugs. Instead of changing the class, you simply want to extend
+                it.</span><span
+">&nbsp;</span><span ">
+                <o:p></o:p>
+            </span></p>
+        <p><span
+">Open for extension, meaning that the class’s behavior can be extended; and</span><span ">
+                <o:p></o:p>
+            </span></p>
+        <p><span
+">Closed for modification, meaning that the source code is set and cannot be changed.</span><span ">
+                <o:p></o:p>
+            </span></p>
+        <p><span
+">
+                                        <o:p>&nbsp;</o:p>
+                                    </span></p>
+                                <p><span background:rgb(0,255,0);">create/extend extra classes -- you can use inherit
+                                        but not flexible</span><span background:rgb(0,255,0);">
+                                        <o:p></o:p>
+                                    </span></p>
+                                <p><span ">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name=" _Toc18472"></a><b><span font-weight:bold;font-size:22.0000pt; ">Liskov </span></b><b><span
+font-weight:bold;font-size:22.0000pt;
+">S</span></b><b><span font-weight:bold;font-size:22.0000pt; ">ubstitution </span></b><b><span
+font-weight:bold;font-size:22.0000pt;
+">P</span></b><b><span font-weight:bold;font-size:22.0000pt; ">rinciple</span></b><b><span
+font-weight:bold;font-size:22.0000pt;
+">&nbsp;(LSP)</span></b><b><span font-weight:bold;font-size:22.0000pt; ">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p><span
+">Any sub-class replacing parent class instantiation is not always fulfilling.</span><span ">
+                <o:p></o:p>
+            </span></p>
+        <p><span
+">When sub-class behaviour does not matches with parent class then it cannot be called as LSP</span><span ">
+                <o:p></o:p>
+            </span></p>
+        <p><span
+">
+                                                <o:p>&nbsp;</o:p>
+                                            </span></p>
+                                <p><span background:rgb(0,255,0);">Best Practice for inheritance structure. objects of a
+                                        superclass should be replaceable with
+                                        objects of its subclasses without breaking the application -- You can't change
+                                        how this functions
+                                        radically. &nbsp;The child class can go in place with a parent class and not
+                                        break your application
+                                    </span><span background:rgb(0,255,0);">
+                                        <o:p></o:p>
+                                    </span></p>
+                                <p><span ">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name=" _Toc29345"></a><b><span font-weight:bold;font-size:22.0000pt; ">I</span></b><b><span
+font-weight:bold;font-size:22.0000pt;
+">nterface </span></b><b><span font-weight:bold;font-size:22.0000pt; ">S</span></b><b><span
+font-weight:bold;font-size:22.0000pt;
+">egregation </span></b><b><span font-weight:bold;font-size:22.0000pt; ">P</span></b><b><span
+font-weight:bold;font-size:22.0000pt;
+">rinciple </span></b><b><span font-weight:bold;font-size:22.0000pt; ">&nbsp;(ISP)</span></b><b><span
+font-weight:bold;font-size:22.0000pt;
+">
+                                                <o:p></o:p>
+                                            </span></b></h1>
+                                        <p><span ">B</span><span
+">etter to have a lot of smaller interfaces than a few bigger one</span><span ">. E</span><span
+">ngineers should work to have many client-specific interfaces, avoiding the temptation of having one big,
+                                                general-purpose interface.</span><span ">
+                <o:p></o:p>
+            </span></p>
+        <p><span
+">
+                                                <o:p>&nbsp;</o:p>
+                                            </span></p>
+                                        <p><span background:rgb(0,255,0);">it's the idea that we don't have one
+                                                monolithic interface that doesn't reapply to everything
+                                                that implements it</span><span
+                                                background:rgb(0,255,0);">&nbsp;</span><span
+                                                background:rgb(0,255,0);">instead what we do is we break that interface
+                                                into pieces there can then put together again
+                                                in a more modular way</span><span background:rgb(0,255,0);">
+                                                <o:p></o:p>
+                                            </span></p>
+                                        <p><span ">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name=" _Toc15801"></a><b><span font-weight:bold;font-size:22.0000pt; ">D</span></b><b><span
+font-weight:bold;font-size:22.0000pt;
+">ependency </span></b><b><span font-weight:bold;font-size:22.0000pt; ">I</span></b><b><span
+font-weight:bold;font-size:22.0000pt;
+">nversion </span></b><b><span font-weight:bold;font-size:22.0000pt; ">P</span></b><b><span
+font-weight:bold;font-size:22.0000pt;
+">rinciple</span></b><b><span font-weight:bold;font-size:22.0000pt; ">&nbsp;(DIP)</span></b><b><span
+font-weight:bold;font-size:22.0000pt;
+">
+                                                        <o:p></o:p>
+                                                    </span></b></h1>
+                                                <p><span ">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span
+">A</span><span ">bstractions should not depend on details. Details should depend upon abstractions.</span><span
+">
+                                                        <o:p></o:p>
+                                                    </span></p>
+                                                <p><span ">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span
+">high-level modules should not depend on low-level modules but rather both should depend on abstractions and those
+                                                        abstractions should not depend on details. &nbsp;Both the high
+                                                        and low level modules should depend on
+                                                        abstractions and those abstractions should not depend on
+                                                        details.</span><span ">
+                <o:p></o:p>
+            </span></p>
+        <p><span
+">
+                                                        <o:p>&nbsp;</o:p>
+                                                    </span></p>
+                                                <h2><a name="_Toc1945"></a><b><span
+                                                            font-weight:bold;font-size:16.0000pt;">What is higher and
+                                                            low modules?</span></b><b><span
+                                                            font-weight:bold;font-size:16.0000pt;">
+                                                            <o:p></o:p>
+                                                        </span></b></h2>
+                                                <p><span ">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span
+">if a class depends on other class, like below main(). It depends on &nbsp;Person and chore class. &nbsp;It is higher
+                                                        level module.</span><span ">
+                <o:p></o:p>
+            </span></p>
+        <p><span
+">
+                                                        <o:p>&nbsp;</o:p>
+                                                    </span></p>
+                                                <p><img width="288" height="152"
+                                                        src="SOLID principle.files/SOLID principle3186.png"><span ">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span
+">
+                                                        <o:p>&nbsp;</o:p>
+                                                    </span></p>
+                                                <p><span ">Low level module doesn’t depend on any class</span><span
+">
+                                                        <o:p></o:p>
+                                                    </span></p>
+                                                <p><img width="392" height="116"
+                                                        src="SOLID principle.files/SOLID principle3234.png"><span ">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span
+">
+                                                        <o:p>&nbsp;</o:p>
+                                                    </span></p>
+                                                <h2><a name="_Toc18547"></a><b><span
+                                                            font-weight:bold;font-size:16.0000pt;">What is
+                                                        </span></b><b><span
+                                                            font-weight:bold;font-size:16.0000pt;">abstractions?</span></b><b><span
+                                                            font-weight:bold;font-size:16.0000pt;">
+                                                            <o:p></o:p>
+                                                        </span></b></h2>
+                                                <p><span ">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p style=" margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt; margin-left:0.0000pt;padding:0pt
+                                                        0pt 0pt 0pt ; text-align:left;"><span style="font-family:Arial;font-size:12.0000pt;
+">Those abstractions </span><span style="font-family:Arial;font-size:12.0000pt;
+background:rgb(0,255,0);">shouldn't have to know about how things get done</span><span style="font-family:Arial;font-size:12.0000pt;
+">. They should </span><span style="font-family:Arial;font-size:12.0000pt;
+background:rgb(0,255,0);">just say these are the things that will get done</span><span style="font-family:Arial;font-size:12.0000pt;
+">. That's a really clear interface.</span><span style="font-family:Arial;">
+                                                            <o:p></o:p>
+                                                        </span></p>
+                                                <p><span ">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h2><a name=" _Toc2725"></a><b><span font-weight:bold;font-size:16.0000pt;">Dependency inversion vs dependency
+                                                                injection</span></b><b><span
+                                                                font-weight:bold;font-size:16.0000pt;">
+                                                                <o:p></o:p>
+                                                            </span></b></h2>
+                                                        <p><span ">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p style=" margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt; margin-left:0.0000pt;padding:0pt
+                                                                0pt 0pt 0pt ; text-align:left;"><span style="font-family:Arial;font-size:12.0000pt;
+">Dependency inversion is the principle dependency injection is one of the ways you make the principle
+                                                                    work.</span><span style="font-family:Arial;font-size:12.0000pt;
+">
+                                                                    <o:p></o:p>
+                                                                </span></p>
+                                                        <p style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;padding:0pt 0pt 0pt 0pt ;
+text-align:left;"><span style="font-family:Arial;font-size:12.0000pt;
+">
+                                                                <o:p>&nbsp;</o:p>
+                                                            </span></p>
+                                                        <p style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;padding:0pt 0pt 0pt 0pt ;
+text-align:left;"><span style="font-family:Arial;font-size:12.0000pt;
+">dependency inversion expects is that you will centralize that into one place that you can easily swap
+                                                                things.</span><span style="font-family:Arial;font-size:12.0000pt;
+">
+                                                                <o:p></o:p>
+                                                            </span></p>
+                                                        <p style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;padding:0pt 0pt 0pt 0pt ;
+text-align:left;"><span style="font-family:Arial;font-size:12.0000pt;
+">
+                                                                <o:p>&nbsp;</o:p>
+                                                            </span></p>
+                                                        <p style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;padding:0pt 0pt 0pt 0pt ;
+text-align:left;"><span style="font-family:Arial;font-size:12.0000pt;
+">
+                                                                <o:p>&nbsp;</o:p>
+                                                            </span></p>
+                                                        <p style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;padding:0pt 0pt 0pt 0pt ;
+text-align:left;"><span style="font-family:Arial;font-size:12.0000pt;
+">Create a Factory class to centralize all </span><span style="font-family:Arial;font-size:12.0000pt;
+">
+                                                                <o:p></o:p>
+                                                            </span></p>
+                                                        <p style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;padding:0pt 0pt 0pt 0pt ;
+text-align:left;"><img width="301" height="296" src="SOLID principle.files/SOLID principle3733.png"><span style="font-family:Arial;font-size:12.0000pt;
+">
+                                                                <o:p>&nbsp;</o:p>
+                                                            </span></p>
+                                                        <p style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;padding:0pt 0pt 0pt 0pt ;
+text-align:left;"><span style="font-family:Arial;font-size:12.0000pt;
+">The another way is to create constructor injection</span><span style="font-family:Arial;font-size:12.0000pt;
+">
+                                                                <o:p></o:p>
+                                                            </span></p>
+                                                        <p style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;padding:0pt 0pt 0pt 0pt ;
+text-align:left;"><span style="font-family:Arial;font-size:12.0000pt;
+">
+                                                                <o:p>&nbsp;</o:p>
+                                                            </span></p>
+                                                        <p style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;padding:0pt 0pt 0pt 0pt ;
+text-align:left;"><img width="556" height="159" src="SOLID principle.files/SOLID principle3787.png"><span style="font-family:Arial;font-size:12.0000pt;
+">
+                                                                <o:p>&nbsp;</o:p>
+                                                            </span></p>
+                                                        <p><span ">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span
+">
+                                                                <o:p>&nbsp;</o:p>
+                                                            </span></p>
+                                                        <h1><a name="_Toc21822"></a><b><span
+                                                                    font-weight:bold;font-size:22.0000pt; ">The benefit of DIP</span></b><b><span
+font-weight:bold;font-size:22.0000pt;
+">
+                                                                    <o:p></o:p>
+                                                                </span></b></h1>
+                                                        <p><span ">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span
+">
+                                                                <o:p>&nbsp;</o:p>
+                                                            </span></p>
+                                                        <p>
+                                                            <span"><span>1)<span>&nbsp;</span></span>
+                                                    </span><span ">The dependency inversion principle</span><span
+">&nbsp;helps us to couple software modules loosely.</span><span ">&nbsp;&nbsp;</span><span
+">you see how my application changed. It changed immediately with nothing broken </span><span ">because we did not depend directly on that instantiation</span><span
+">.</span><span ">
+                <o:p></o:p>
+            </span></p>
+        <p><span
+background:rgb(0,255,0);"><span>2)<span>&nbsp;</span></span></span><span background:rgb(0,255,0);">My application is
+                                                        not this one big monolithic application. It's a bunch of really
+                                                        little
+                                                        parts and this is where SOLID really takes us as a whole is. It
+                                                        takes us into having lots of really tiny
+                                                        little parts things that do only one thing things that don't
+                                                        have dependencies things. That are just
+                                                        self-contained tiny and against an interface so that I can
+                                                        unplug and plug in something new without
+                                                        problems.</span><span ">
+                <o:p></o:p>
+            </span></p>
+        <p><span"><span>3)<span>&nbsp;</span></span></span><span ">You can use Dependency Injection</span><span style="
+                                                        font-family:Arial;">
+                                                        <o:p></o:p>
+                                                    </span></p>
+                                                <p>
+                                                    <span"><span>4)<span>&nbsp;</span></span>
+                                            </span><span ">The ability to then inject dependencies from other sources in a plug-in type framework&nbsp;</span><span
+">
+                                                <o:p></o:p>
+                                            </span></p>
+                                        <p>
+                                            <span"><span>5)<span>&nbsp;</span></span>
+                                    </span><span ">You can unit test this thing easily using Mocking</span><span
+">
+                                        <o:p></o:p>
+                                    </span></p>
+                                <p><span ">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span
+">
+                                        <o:p>&nbsp;</o:p>
+                                    </span></p>
+                                <p><span ">Now, I don't have to worry about the implications the rest of my application as long as I still fulfill its contract
+                and, of course, as long as they don't change the logic in a way that the application was expecting or
+                rather wasn't expected.</span><span
+">
+                                        <o:p></o:p>
+                                    </span></p>
+                                <p><span ">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span
+">If you are using dependency injection, you don’t need to create Factory.</span><span ">
+                <o:p></o:p>
+            </span></p>
+        <p><span
+">
+                                        <o:p>&nbsp;</o:p>
+                                    </span></p>
+                                <p><span background:rgb(0,255,0);">if you ever see a “new” somewhere you've got tight
+                                        coupling, we don't want tight coupling. We
+                                        want loose coupling. We want talk to just interfaces.</span><span
+                                        background:rgb(0,255,0);">
+                                        <o:p></o:p>
+                                    </span></p>
+                                <p><span ">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span
+">
+                                        <o:p>&nbsp;</o:p>
+                                    </span></p>
+                                <p><span ">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><img width=" 306" height="208" src="SOLID principle.files/SOLID principle5077.png"><span ">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span
+">
+                                            <o:p>&nbsp;</o:p>
+                                        </span></p>
+                                <h1><a name="_Toc9116"></a><b><span font-weight:bold;font-size:22.0000pt; ">T</span></b><b><span
+font-weight:bold;font-size:22.0000pt;
+">he power of </span></b><b><span font-weight:bold;font-size:22.0000pt; ">SOLID</span></b><b><span
+font-weight:bold;font-size:22.0000pt;
+">
+                                            <o:p></o:p>
+                                        </span></b></h1>
+                                <p><span ">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span
+">Everything is connected. Everything's replaceable. Everything is modular. So you don't have one large car to replace,
+                                        you can just replace a spark plug, or you can replace just the hub cap, or the
+                                        wheel. &nbsp;</span><span ">it really makes you code better</span><span
+">.</span><span ">
+                <o:p></o:p>
+            </span></p>
+        <p><span
+">
+                                        <o:p>&nbsp;</o:p>
+                                    </span></p>
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <div w3-include-html="footer.htm"></div>
+    <script>includeHTML();</script>
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
