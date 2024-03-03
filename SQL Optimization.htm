@@ -1,0 +1,3350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>My Portfolio</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <script src="assets/js/layout.js"></script>
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+
+        <div class="d-flex align-items-center justify-content-between">
+            <i class="bi bi-list toggle-sidebar-btn"></i>
+        </div><!-- End Logo -->
+
+        <nav class="header-nav ms-auto">
+
+            <ul class="d-flex align-items-center">
+                <div w3-include-html="header.htm"></div>
+            </ul>
+        </nav><!-- End Icons Navigation -->
+    </header><!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <div w3-include-html="sidebar.htm"></div>
+
+    <main id="main" class="main">
+
+        <p align=center style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+text-align:center;"><a name="_Toc11845"></a><span style="font-family:SimSun;
+font-size:10.5000pt;">Catalog</span><span " ><o:p></o:p></span></p><p class=MsoToc1 ><span><span><a href=" #_Toc17814 " ><span
+">Q1 - Where do you start to tune SQL server</span><span " >&#9;</span></a></span><span
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc12891 "><span " >Q2 - How to write efficient queries?</span><span
+">&#9;</span></a></span><span " ><o:p></o:p></span></p><p class=MsoToc1 ><span><a href=" #_Toc30939 " ><span
+">Q3 - How to identify slow running queries?</span><span " >&#9;</span></a></span><span
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc32 "><span " >Q4- </span><span
+">Is it possible to search inside SQL Server Execution plan?</span><span " >&#9;</span></a></span><span
+">
+                        <o:p></o:p>
+                    </span></p>
+        <p class=MsoToc1><span><a href="#_Toc5748 "><span " >Q5 -</span><span
+">&nbsp;Is it possible to share SQL Server Execution plans with others?</span><span " >&#9;</span></a></span><span
+">
+                        <o:p></o:p>
+                    </span></p>
+        <p class=MsoToc1><span><a href="#_Toc22975 "><span " >Q</span><span
+">6 -</span><span " >&nbsp;Do queries run faster when we add more CPU?</span><span
+">&#9;</span></a></span><span " ><o:p></o:p></span></p><p class=MsoToc1 ><span><a href=" #_Toc7416 " ><span
+">Q</span><span " >7 -</span><span
+">&nbsp;Do queries run faster when we add more Memory?</span><span style="font-family:Arial;">&nbsp;</span><span " >&#9;</span></a></span><span
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal></span><span " ><o:p>&nbsp;</o:p></span></p><p ><span
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc17814"></a><b><span font-weight:bold;font-size:22.0000pt; " >Q1 - Where do you start to tune SQL server</span></b><b><span
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span " ><o:p>&nbsp;</o:p></span></p><p  style="
+                margin-left:21.2500pt;text-indent:-21.2500pt;">
+                <span"><span>1.<span>&nbsp;</span></span>
+            </span><span " >first we check your server properties</span><span
+">
+                <o:p></o:p>
+            </span></p>
+        <p style="margin-left:21.2500pt;text-indent:-21.2500pt;">
+            <span"><span>2.<span>&nbsp;</span></span></span><span " >look at your database properties</span><span
+">
+                    <o:p></o:p>
+                </span>
+        </p>
+        <p style="margin-left:21.2500pt;text-indent:-21.2500pt;">
+            <span"><span>3.<span>&nbsp;</span></span></span><span " >start going down to other areas</span><span
+">
+                    <o:p></o:p>
+                </span>
+        </p>
+        <p style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;padding:0pt 0pt 0pt 0pt ;
+text-align:left;"><span style="font-family:Arial;font-size:12.0000pt;
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span " >wait </span><span
+">statistics</span><span " >&nbsp;script</span><span
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span " ><o:p>&nbsp;</o:p></span></p><p ><span
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">WITH</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;<font face="Consolas">[Waits] </font></span><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">AS</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">(</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">SELECT</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Consolas">wait_type</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Consolas">wait_time_ms </font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">/</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;<font face="Consolas">1000.0 </font></span><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">AS</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;<font face="Consolas">[WaitS]</font></span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Consolas">100.0 </font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">*</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;<font face="Consolas">wait_time_ms </font></span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">/</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(255,0,255);font-size:9.5000pt;">
+                <font face="Consolas">SUM</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">(</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Consolas">wait_time_ms</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">)</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">OVER</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">()</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">AS</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;<font face="Consolas">[Percentage]</font></span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,255);font-size:9.5000pt;">
+                <font face="Consolas">ROW_NUMBER</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">()</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">OVER</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">(</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">ORDER</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">BY</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;<font face="Consolas">wait_time_ms </font></span><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">DESC</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">)</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">AS</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;<font face="Consolas">[RowNum]</font></span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">FROM</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(0,255,0);font-size:9.5000pt;">
+                <font face="Consolas">sys</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">.</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,255,0);font-size:9.5000pt;">
+                <font face="Consolas">dm_os_wait_stats</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">WHERE</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;<font face="Consolas">[wait_type] </font></span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">NOT</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">LIKE</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">'SLEEP%'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">)</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">SELECT</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">*</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">FROM</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;<font face="Consolas">[Waits]</font></span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;
+border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;
+text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">WHERE</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;<font face="Consolas">[RowNum] </font></span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">&lt;=</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;<font face="Consolas">20</font></span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">;</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,128,0);font-size:9.5000pt;">
+                <font face="Consolas">-- how long a task was waiting for particular wait type</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">select</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">*</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">from</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(0,255,0);font-size:9.5000pt;">
+                <font face="Consolas">sys</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">.</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,255,0);font-size:9.5000pt;">
+                <font face="Consolas">dm_os_wait_stats</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">Order</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">by</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;<font face="Consolas">wait_time_ms </font></span><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">desc</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,128,0);font-size:9.5000pt;">
+                <font face="Consolas">-- reset the wait stats</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">DBCC</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;<font face="Consolas">SQLPERF</font></span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">(</font>
+            </span><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">'sys.dm_os_wait_stats'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">CLEAR</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">)</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,128,0);font-size:9.5000pt;">
+                <font face="Consolas">-- Server slowness or when query execution takes abnormal time.</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">SELECT</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">*</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">from</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(0,255,0);font-size:9.5000pt;">
+                <font face="Consolas">sys</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">.</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,255,0);font-size:9.5000pt;">
+                <font face="Consolas">dm_os_waiting_tasks</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">Order</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">by</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;<font face="Consolas">wait_duration_ms </font></span><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">desc</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,128,0);font-size:9.5000pt;">
+                <font face="Consolas">--provide users tasks list which are waiting for more than 10 sec</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">select</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">DES</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">.</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Consolas">login_name</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">DES</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">.</font>
+            </span><span style="font-family:Consolas;
+color:rgb(255,0,255);font-size:9.5000pt;">
+                <font face="Consolas">program_name</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">des</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">.</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Consolas">client_interface_name</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Consolas">owt</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">.</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Consolas">wait_type</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;<font face="Consolas">owt</font></span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">.</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Consolas">wait_duration_ms</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">from</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(0,255,0);font-size:9.5000pt;">
+                <font face="Consolas">sys</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">.</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,255,0);font-size:9.5000pt;">
+                <font face="Consolas">dm_os_waiting_tasks</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">as</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;<font face="Consolas">OWT </font></span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">inner</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">join</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,255,0);font-size:9.5000pt;">
+                <font face="Consolas">sys</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">.</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,255,0);font-size:9.5000pt;">
+                <font face="Consolas">dm_exec_sessions</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">as</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">DES</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">on</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;<font face="Consolas">owt</font></span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">.</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Consolas">session_id </font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">=</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">des</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">.</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Consolas">session_id</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;
+border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;
+text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">where</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">des</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">.</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Consolas">is_user_process </font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">=</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;<font face="Consolas">1 </font></span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">and</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;<font face="Consolas">owt</font></span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">.</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Consolas">wait_duration_ms </font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">&gt;</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;<font face="Consolas">10000</font></span><span " ><o:p></o:p></span></p><p ><span
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span " ><o:p>&nbsp;</o:p></span></p><p ><span
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,128,0);font-size:9.5000pt;">
+                <font face="Consolas">-- ------------------------------------------------------</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,128,0);font-size:9.5000pt;">
+                <font face="Consolas">-- Tip: Wait Statistics</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,128,0);font-size:9.5000pt;">
+                <font face="Consolas">-- ------------------------------------------------------</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,128,0);font-size:9.5000pt;">
+                <font face="Consolas">/*</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,128,0);font-size:9.5000pt;">
+                <font face="Consolas">-- Script to Clear Wait Types</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,128,0);font-size:9.5000pt;">
+                <font face="Consolas">DBCC SQLPERF('sys.dm_os_wait_stats', CLEAR);</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,128,0);font-size:9.5000pt;">
+                <font face="Consolas">GO</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,128,0);font-size:9.5000pt;">
+                <font face="Consolas">*/</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">SELECT</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;<font face="Consolas">wait_type </font></span><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">AS</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;<font face="Consolas">Wait_Type</font></span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Consolas">wait_time_ms </font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">/</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;<font face="Consolas">1000.0 </font></span><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">AS</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;<font face="Consolas">Wait_Time_Seconds</font></span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Consolas">waiting_tasks_count </font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">AS</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;<font face="Consolas">Waiting_Tasks_Count</font></span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,128,0);font-size:9.5000pt;">
+                <font face="Consolas">-- CAST((wait_time_ms / 1000.0)/waiting_tasks_count AS decimal(10,4)) AS
+                    AVG_Waiting_Tasks_Count,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Consolas">wait_time_ms </font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">*</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;<font face="Consolas">100.0 </font></span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">/</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(255,0,255);font-size:9.5000pt;">
+                <font face="Consolas">SUM</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">(</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <font face="Consolas">wait_time_ms</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">)</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">OVER</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">()</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">AS</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;<font face="Consolas">Percentage_WaitTime</font></span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,128,0);font-size:9.5000pt;">
+                <font face="Consolas">--,waiting_tasks_count * 100.0 / SUM(waiting_tasks_count) OVER() AS
+                    Percentage_Count</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">FROM</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(0,255,0);font-size:9.5000pt;">
+                <font face="Consolas">sys</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">.</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,255,0);font-size:9.5000pt;">
+                <font face="Consolas">dm_os_wait_stats</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">WHERE</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;<font face="Consolas">wait_type </font></span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">NOT</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">IN</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">(</font>
+            </span><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'BROKER_EVENTHANDLER'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'BROKER_RECEIVE_WAITFOR'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'BROKER_TASK_STOP'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'BROKER_TO_FLUSH'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'BROKER_TRANSMITTER'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'CHECKPOINT_QUEUE'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'CHKPT'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'CLR_AUTO_EVENT'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'CLR_MANUAL_EVENT'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'CLR_SEMAPHORE'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'CXCONSUMER'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'DBMIRROR_DBM_EVENT'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'DBMIRROR_DBM_MUTEX'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'DBMIRROR_EVENTS_QUEUE'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'DBMIRROR_WORKER_QUEUE'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'DBMIRRORING_CMD'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'DIRTY_PAGE_POLL'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'DISPATCHER_QUEUE_SEMAPHORE'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'EXECSYNC'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'FSAGENT'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'FT_IFTS_SCHEDULER_IDLE_WAIT'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'FT_IFTSHC_MUTEX'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'HADR_CLUSAPI_CALL'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'HADR_FILESTREAM_IOMGR_IOCOMPLETION'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'HADR_LOGCAPTURE_WAIT'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'HADR_NOTIFICATION_DEQUEUE'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'HADR_TIMER_TASK'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'HADR_WORK_QUEUE'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'LAZYWRITER_SLEEP'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'LOGMGR_QUEUE'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'MEMORY_ALLOCATION_EXT'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'ONDEMAND_TASK_QUEUE'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'PARALLEL_REDO_DRAIN_WORKER'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'PARALLEL_REDO_LOG_CACHE'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'PARALLEL_REDO_TRAN_LIST'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'PARALLEL_REDO_WORKER_SYNC'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'PARALLEL_REDO_WORKER_WAIT_WORK'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'PREEMPTIVE_HADR_LEASE_MECHANISM'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'PREEMPTIVE_OS_FLUSHFILEBUFFERS'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'PREEMPTIVE_OS_AUTHENTICATIONOPS'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'PREEMPTIVE_OS_AUTHORIZATIONOPS'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'PREEMPTIVE_OS_COMOPS'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'PREEMPTIVE_OS_CREATEFILE'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'PREEMPTIVE_OS_CRYPTOPS'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'PREEMPTIVE_OS_DEVICEOPS'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'PREEMPTIVE_OS_FILEOPS'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'PREEMPTIVE_OS_GENERICOPS'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'PREEMPTIVE_OS_LIBRARYOPS'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'PREEMPTIVE_OS_PIPEOPS'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'PREEMPTIVE_OS_QUERYREGISTRY'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'PREEMPTIVE_OS_VERIFYTRUST'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'PREEMPTIVE_OS_WAITFORSINGLEOBJECT'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'PREEMPTIVE_OS_WRITEFILEGATHER'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'PREEMPTIVE_SP_SERVER_DIAGNOSTICS'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'PREEMPTIVE_XE_CALLBACKEXECUTE'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'PREEMPTIVE_XE_DISPATCHER'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'PREEMPTIVE_XE_GETTARGETSTATE'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'PREEMPTIVE_XE_SESSIONCOMMIT'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'PREEMPTIVE_XE_TARGETFINALIZE'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'PREEMPTIVE_XE_TARGETINIT'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'PWAIT_ALL_COMPONENTS_INITIALIZED'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'PWAIT_EXTENSIBILITY_CLEANUP_TASK'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'PWAIT_DIRECTLOGCONSUMER_GETNEXT'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'QDS_ASYNC_QUEUE'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'QDS_CLEANUP_STALE_QUERIES_TASK_MAIN_LOOP_SLEEP'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'QDS_PERSIST_TASK_MAIN_LOOP_SLEEP'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'QDS_SHUTDOWN_QUEUE'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'REDO_THREAD_PENDING_WORK'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'REQUEST_FOR_DEADLOCK_SEARCH'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'RESOURCE_QUEUE'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'SERVER_IDLE_CHECK'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'SOS_WORK_DISPATCHER'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'SLEEP_BPOOL_FLUSH'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'SLEEP_DBSTARTUP'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'SLEEP_DCOMSTARTUP'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'SLEEP_MASTERDBREADY'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'SLEEP_MASTERMDREADY'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'SLEEP_MASTERUPGRADED'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'SLEEP_MSDBSTARTUP'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'SLEEP_SYSTEMTASK'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'SLEEP_TASK'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'SLEEP_TEMPDBSTARTUP'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'SNI_HTTP_ACCEPT'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'SP_SERVER_DIAGNOSTICS_SLEEP'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'SQLTRACE_BUFFER_FLUSH'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'SQLTRACE_INCREMENTAL_FLUSH_SLEEP'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'SQLTRACE_WAIT_ENTRIES'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'STARTUP_DEPENDENCY_MANAGER'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'UCS_SESSION_REGISTRATION'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'VDI_CLIENT_OTHER'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'WAIT_FOR_RESULTS'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'WAIT_XTP_CKPT_CLOSE'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'WAIT_XTP_HOST_WAIT'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'WAIT_XTP_OFFLINE_CKPT_NEW_LOG'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'WAIT_XTP_RECOVERY'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'WAITFOR'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'WAITFOR_TASKSHUTDOWN'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'XE_BUFFERMGR_ALLPROCESSED_EVENT'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'XE_DISPATCHER_JOIN'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'XE_TIMER_EVENT'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'XE_DISPATCHER_WAIT'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">N'XE_LIVE_TARGET_TVF'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">)</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">AND</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;<font face="Consolas">wait_time_ms </font></span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">&gt;</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;<font face="Consolas">1</font></span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;
+border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;border-left:1.0000pt solid windowtext;
+padding:0pt 0pt 0pt 0pt ;text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">ORDER</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">BY</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;<font face="Consolas">Wait_Time_Seconds </font></span><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">DESC</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="border-top:1.0000pt solid windowtext;border-right:1.0000pt solid windowtext;
+border-bottom:1.0000pt solid windowtext;
+border-left:1.0000pt solid windowtext;padding:0pt 0pt 0pt 0pt ;
+text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,128,0);font-size:9.5000pt;">
+                <font face="Consolas">-- ORDER BY Waiting_Tasks_Count DESC</font>
+            </span><span " ><o:p></o:p></span></p><p ><span
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span " >The sequence to tune your query</span><span
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal>
+            <span"><span>1)<span>&nbsp;</span></span></span><span " >statistics</span><span
+">&nbsp;</span><span " >I/O and Time</span><span
+">
+                    <o:p></o:p>
+                </span>
+        </p>
+        <p class=MsoNormal>
+            <span"><span>2)<span>&nbsp;</span></span></span><span " >Execution Plan</span><span
+">
+                    <o:p></o:p>
+                </span>
+        </p>
+        <p class=MsoNormal><span " ><o:p>&nbsp;</o:p></span></p><h1><a name=" _Toc17890"></a><b><span
+                        font-weight:bold;font-size:22.0000pt; " ><a name=" _Toc12891">Q2 - How to write efficient
+                        queries?</a></span></b><b><span font-weight:bold;font-size:22.0000pt; " ><o:p></o:p></span></b></h1><p ><span
+">
+                        <o:p>&nbsp;</o:p>
+                    </span></p>
+        <p class=MsoNormal><span style="font-family:Arial;">The
+                query&nbsp;</span><span " >which runs faster or do you call an efficient query for the query which takes least amount of I/O?</span><span style="
+                font-family:Arial;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span " ><o:p>&nbsp;</o:p></span></p><h1><a name=" _Toc30939"></a><b><span
+                        font-weight:bold;font-size:22.0000pt; " ><a name=" _Toc4925">Q3 - How to identify slow running
+                        queries?</a></span></b><b><span font-weight:bold;font-size:22.0000pt; " ><o:p></o:p></span></b></h1><p ><span
+">
+                        <o:p>&nbsp;</o:p>
+                    </span></p>
+        <p style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-indent:0.0000pt;padding:0pt 0pt 0pt 0pt ;
+text-align:left;vertical-align:baseline;
+background:rgb(255,255,255);"><b><span class="27" style="font-family:Consolas;color:rgb(0,102,153);
+letter-spacing:0.0000pt;font-weight:bold;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">SELECT</span></b><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;background:rgb(255,255,255);
+">&nbsp;</span><b><span class="27" style="font-family:Consolas;color:rgb(0,102,153);
+letter-spacing:0.0000pt;font-weight:bold;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">TOP</span></b><span class="27" style="font-family:Consolas;color:rgb(0,0,0);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">(50) qs.execution_count </span><b><span class="27" style="font-family:Consolas;color:rgb(0,102,153);
+letter-spacing:0.0000pt;font-weight:bold;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">AS</span></b><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;background:rgb(255,255,255);
+">&nbsp;</span><span class="27" style="font-family:Consolas;color:rgb(0,0,0);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">[Execution </span><span class="27" style="font-family:Consolas;color:rgb(255,20,147);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">Count</span><span class="27" style="font-family:Consolas;color:rgb(0,0,0);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">],</span><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-indent:0.0000pt;padding:0pt 0pt 0pt 0pt ;
+text-align:left;vertical-align:baseline;
+background:rgb(255,255,255);"><span class="27" style="font-family:Consolas;color:rgb(0,0,0);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">(qs.total_logical_reads)/1000.0 </span><b><span class="27" style="font-family:Consolas;color:rgb(0,102,153);
+letter-spacing:0.0000pt;font-weight:bold;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">AS</span></b><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;background:rgb(255,255,255);
+">&nbsp;</span><span class="27" style="font-family:Consolas;color:rgb(0,0,0);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">[Total Logical Reads </span><span class="27" style="font-family:Consolas;color:rgb(128,128,128);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">in</span><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;background:rgb(255,255,255);
+">&nbsp;</span><span class="27" style="font-family:Consolas;color:rgb(0,0,0);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">ms],</span><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-indent:0.0000pt;padding:0pt 0pt 0pt 0pt ;
+text-align:left;vertical-align:baseline;
+background:rgb(255,255,255);"><span class="27" style="font-family:Consolas;color:rgb(0,0,0);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">(qs.total_logical_reads/qs.execution_count)/1000.0 </span><b><span class="27" style="font-family:Consolas;color:rgb(0,102,153);
+letter-spacing:0.0000pt;font-weight:bold;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">AS</span></b><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;background:rgb(255,255,255);
+">&nbsp;</span><span class="27" style="font-family:Consolas;color:rgb(0,0,0);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">[</span><span class="27" style="font-family:Consolas;color:rgb(255,20,147);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">Avg</span><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;background:rgb(255,255,255);
+">&nbsp;</span><span class="27" style="font-family:Consolas;color:rgb(0,0,0);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">Logical Reads </span><span class="27" style="font-family:Consolas;color:rgb(128,128,128);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">in</span><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;background:rgb(255,255,255);
+">&nbsp;</span><span class="27" style="font-family:Consolas;color:rgb(0,0,0);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">ms],</span><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-indent:0.0000pt;padding:0pt 0pt 0pt 0pt ;
+text-align:left;vertical-align:baseline;
+background:rgb(255,255,255);"><span class="27" style="font-family:Consolas;color:rgb(0,0,0);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">(qs.total_worker_time)/1000.0 </span><b><span class="27" style="font-family:Consolas;color:rgb(0,102,153);
+letter-spacing:0.0000pt;font-weight:bold;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">AS</span></b><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;background:rgb(255,255,255);
+">&nbsp;</span><span class="27" style="font-family:Consolas;color:rgb(0,0,0);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">[Total Worker </span><b><span class="27" style="font-family:Consolas;color:rgb(0,102,153);
+letter-spacing:0.0000pt;font-weight:bold;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">Time</span></b><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;background:rgb(255,255,255);
+">&nbsp;</span><span class="27" style="font-family:Consolas;color:rgb(128,128,128);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">in</span><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;background:rgb(255,255,255);
+">&nbsp;</span><span class="27" style="font-family:Consolas;color:rgb(0,0,0);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">ms],</span><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-indent:0.0000pt;padding:0pt 0pt 0pt 0pt ;
+text-align:left;vertical-align:baseline;
+background:rgb(255,255,255);"><span class="27" style="font-family:Consolas;color:rgb(0,0,0);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">(qs.total_worker_time/qs.execution_count)/1000.0 </span><b><span class="27" style="font-family:Consolas;color:rgb(0,102,153);
+letter-spacing:0.0000pt;font-weight:bold;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">AS</span></b><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;background:rgb(255,255,255);
+">&nbsp;</span><span class="27" style="font-family:Consolas;color:rgb(0,0,0);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">[</span><span class="27" style="font-family:Consolas;color:rgb(255,20,147);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">Avg</span><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;background:rgb(255,255,255);
+">&nbsp;</span><span class="27" style="font-family:Consolas;color:rgb(0,0,0);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">Worker </span><b><span class="27" style="font-family:Consolas;color:rgb(0,102,153);
+letter-spacing:0.0000pt;font-weight:bold;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">Time</span></b><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;background:rgb(255,255,255);
+">&nbsp;</span><span class="27" style="font-family:Consolas;color:rgb(128,128,128);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">in</span><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;background:rgb(255,255,255);
+">&nbsp;</span><span class="27" style="font-family:Consolas;color:rgb(0,0,0);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">ms],</span><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-indent:0.0000pt;padding:0pt 0pt 0pt 0pt ;
+text-align:left;vertical-align:baseline;
+background:rgb(255,255,255);"><span class="27" style="font-family:Consolas;color:rgb(0,0,0);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">(qs.total_elapsed_time)/1000.0 </span><b><span class="27" style="font-family:Consolas;color:rgb(0,102,153);
+letter-spacing:0.0000pt;font-weight:bold;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">AS</span></b><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;background:rgb(255,255,255);
+">&nbsp;</span><span class="27" style="font-family:Consolas;color:rgb(0,0,0);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">[Total Elapsed </span><b><span class="27" style="font-family:Consolas;color:rgb(0,102,153);
+letter-spacing:0.0000pt;font-weight:bold;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">Time</span></b><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;background:rgb(255,255,255);
+">&nbsp;</span><span class="27" style="font-family:Consolas;color:rgb(128,128,128);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">in</span><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;background:rgb(255,255,255);
+">&nbsp;</span><span class="27" style="font-family:Consolas;color:rgb(0,0,0);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">ms],</span><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-indent:0.0000pt;padding:0pt 0pt 0pt 0pt ;
+text-align:left;vertical-align:baseline;
+background:rgb(255,255,255);"><span class="27" style="font-family:Consolas;color:rgb(0,0,0);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">(qs.total_elapsed_time/qs.execution_count)/1000.0 </span><b><span class="27" style="font-family:Consolas;color:rgb(0,102,153);
+letter-spacing:0.0000pt;font-weight:bold;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">AS</span></b><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;background:rgb(255,255,255);
+">&nbsp;</span><span class="27" style="font-family:Consolas;color:rgb(0,0,0);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">[</span><span class="27" style="font-family:Consolas;color:rgb(255,20,147);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">Avg</span><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;background:rgb(255,255,255);
+">&nbsp;</span><span class="27" style="font-family:Consolas;color:rgb(0,0,0);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">Elapsed </span><b><span class="27" style="font-family:Consolas;color:rgb(0,102,153);
+letter-spacing:0.0000pt;font-weight:bold;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">Time</span></b><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;background:rgb(255,255,255);
+">&nbsp;</span><span class="27" style="font-family:Consolas;color:rgb(128,128,128);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">in</span><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;background:rgb(255,255,255);
+">&nbsp;</span><span class="27" style="font-family:Consolas;color:rgb(0,0,0);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">ms],</span><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-indent:0.0000pt;padding:0pt 0pt 0pt 0pt ;
+text-align:left;vertical-align:baseline;
+background:rgb(255,255,255);"><span class="27" style="font-family:Consolas;color:rgb(0,0,0);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">qs.creation_time </span><b><span class="27" style="font-family:Consolas;color:rgb(0,102,153);
+letter-spacing:0.0000pt;font-weight:bold;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">AS</span></b><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;background:rgb(255,255,255);
+">&nbsp;</span><span class="27" style="font-family:Consolas;color:rgb(0,0,0);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">[Creation </span><b><span class="27" style="font-family:Consolas;color:rgb(0,102,153);
+letter-spacing:0.0000pt;font-weight:bold;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">Time</span></b><span class="27" style="font-family:Consolas;color:rgb(0,0,0);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">]</span><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-indent:0.0000pt;padding:0pt 0pt 0pt 0pt ;
+text-align:left;vertical-align:baseline;
+background:rgb(255,255,255);"><span class="27" style="font-family:Consolas;color:rgb(0,0,0);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">,t.text </span><b><span class="27" style="font-family:Consolas;color:rgb(0,102,153);
+letter-spacing:0.0000pt;font-weight:bold;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">AS</span></b><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;background:rgb(255,255,255);
+">&nbsp;</span><span class="27" style="font-family:Consolas;color:rgb(0,0,0);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">[Complete Query Text], qp.query_plan </span><b><span class="27" style="font-family:Consolas;color:rgb(0,102,153);
+letter-spacing:0.0000pt;font-weight:bold;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">AS</span></b><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;background:rgb(255,255,255);
+">&nbsp;</span><span class="27" style="font-family:Consolas;color:rgb(0,0,0);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">[Query Plan]</span><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-indent:0.0000pt;padding:0pt 0pt 0pt 0pt ;
+text-align:left;vertical-align:baseline;
+background:rgb(255,255,255);"><b><span class="27" style="font-family:Consolas;color:rgb(0,102,153);
+letter-spacing:0.0000pt;font-weight:bold;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">FROM</span></b><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;background:rgb(255,255,255);
+">&nbsp;</span><span class="27" style="font-family:Consolas;color:rgb(0,0,0);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">sys.dm_exec_query_stats </span><b><span class="27" style="font-family:Consolas;color:rgb(0,102,153);
+letter-spacing:0.0000pt;font-weight:bold;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">AS</span></b><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;background:rgb(255,255,255);
+">&nbsp;</span><span class="27" style="font-family:Consolas;color:rgb(0,0,0);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">qs </span><b><span class="27" style="font-family:Consolas;color:rgb(0,102,153);
+letter-spacing:0.0000pt;font-weight:bold;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">WITH</span></b><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;background:rgb(255,255,255);
+">&nbsp;</span><span class="27" style="font-family:Consolas;color:rgb(0,0,0);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">(NOLOCK)</span><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-indent:0.0000pt;padding:0pt 0pt 0pt 0pt ;
+text-align:left;vertical-align:baseline;
+background:rgb(255,255,255);"><span class="27" style="font-family:Consolas;color:rgb(128,128,128);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">CROSS</span><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;background:rgb(255,255,255);
+">&nbsp;</span><span class="27" style="font-family:Consolas;color:rgb(0,0,0);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">APPLY sys.dm_exec_sql_text(plan_handle) </span><b><span class="27" style="font-family:Consolas;color:rgb(0,102,153);
+letter-spacing:0.0000pt;font-weight:bold;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">AS</span></b><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;background:rgb(255,255,255);
+">&nbsp;</span><span class="27" style="font-family:Consolas;color:rgb(0,0,0);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">t</span><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-indent:0.0000pt;padding:0pt 0pt 0pt 0pt ;
+text-align:left;vertical-align:baseline;
+background:rgb(255,255,255);"><span class="27" style="font-family:Consolas;color:rgb(128,128,128);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">CROSS</span><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;background:rgb(255,255,255);
+">&nbsp;</span><span class="27" style="font-family:Consolas;color:rgb(0,0,0);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">APPLY sys.dm_exec_query_plan(plan_handle) </span><b><span class="27" style="font-family:Consolas;color:rgb(0,102,153);
+letter-spacing:0.0000pt;font-weight:bold;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">AS</span></b><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;background:rgb(255,255,255);
+">&nbsp;</span><span class="27" style="font-family:Consolas;color:rgb(0,0,0);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">qp</span><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-indent:0.0000pt;padding:0pt 0pt 0pt 0pt ;
+text-align:left;vertical-align:baseline;
+background:rgb(255,255,255);"><b><span class="27" style="font-family:Consolas;color:rgb(0,102,153);
+letter-spacing:0.0000pt;font-weight:bold;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">WHERE</span></b><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;background:rgb(255,255,255);
+">&nbsp;</span><span class="27" style="font-family:Consolas;color:rgb(0,0,0);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">t.dbid = DB_ID()</span><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-indent:0.0000pt;padding:0pt 0pt 0pt 0pt ;
+text-align:left;vertical-align:baseline;
+background:rgb(255,255,255);"><b><span class="27" style="font-family:Consolas;color:rgb(0,102,153);
+letter-spacing:0.0000pt;font-weight:bold;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">ORDER</span></b><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;background:rgb(255,255,255);
+">&nbsp;</span><b><span class="27" style="font-family:Consolas;color:rgb(0,102,153);
+letter-spacing:0.0000pt;font-weight:bold;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">BY</span></b><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;background:rgb(255,255,255);
+">&nbsp;</span><span class="27" style="font-family:Consolas;color:rgb(0,0,0);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">qs.execution_count </span><b><span class="27" style="font-family:Consolas;color:rgb(0,102,153);
+letter-spacing:0.0000pt;font-weight:bold;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">DESC</span></b><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;background:rgb(255,255,255);
+">&nbsp;</span><b><span class="27" style="font-family:Consolas;color:rgb(0,102,153);
+letter-spacing:0.0000pt;font-weight:bold;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">OPTION</span></b><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;background:rgb(255,255,255);
+">&nbsp;</span><span class="27" style="font-family:Consolas;color:rgb(0,0,0);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">(RECOMPILE);</span><span class="27" style="font-family:Consolas;color:rgb(0,130,0);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">-- for frequently ran query</span><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-indent:0.0000pt;padding:0pt 0pt 0pt 0pt ;
+text-align:left;vertical-align:baseline;
+background:rgb(255,255,255);"><span class="27" style="font-family:Consolas;color:rgb(0,130,0);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">-- ORDER BY [Avg Logical Reads in ms] DESC OPTION (RECOMPILE);-- for High Disk Reading
+                query</span><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-indent:0.0000pt;padding:0pt 0pt 0pt 0pt ;
+text-align:left;vertical-align:baseline;
+background:rgb(255,255,255);"><span class="27" style="font-family:Consolas;color:rgb(0,130,0);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">-- ORDER BY [Avg Worker Time in ms] DESC OPTION (RECOMPILE);-- for High CPU
+                query</span><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-indent:0.0000pt;padding:0pt 0pt 0pt 0pt ;
+text-align:left;vertical-align:baseline;
+background:rgb(255,255,255);"><span class="27" style="font-family:Consolas;color:rgb(0,130,0);
+letter-spacing:0.0000pt;font-weight:normal;text-transform:none;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">-- ORDER BY [Avg Elapsed Time in ms] DESC OPTION (RECOMPILE);-- for Long Running
+                query</span><span style="font-family:Consolas;color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span " ><o:p>&nbsp;</o:p></span></p><p ><span
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc32"></a><b><span font-weight:bold;font-size:22.0000pt; " ><a name=" _Toc14603">Q4-
+                    </a></span></b><b><span font-weight:bold;font-size:22.0000pt; " >Is it possible to search inside SQL Server Execution plan?</span></b><b><span
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span " ><o:p>&nbsp;</o:p></span></p><p ><span
+">Yes.</span><span " ><o:p></o:p></span></p><p ><span
+">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Arial;color:rgb(15,15,15);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc32430"></a><b><span font-weight:bold;font-size:22.0000pt; " ><a name=" _Toc5748">Q5
+                    -</a></span></b><b><span font-weight:bold;font-size:22.0000pt; " >&nbsp;Is it possible to share SQL Server Execution plans with others?&nbsp;</span></b><b><span
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span " ><o:p>&nbsp;</o:p></span></p><p ><span
+">Yes, but XML execution plan is more useful.</span><span " ><o:p></o:p></span></p><p ><span style="
+                font-family:Arial;color:rgb(15,15,15); letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+                font-size:7.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc22975"></a><b><span font-weight:bold;font-size:22.0000pt; " ><a name="
+                    _Toc9865">Q</a></span></b><b><span font-weight:bold;font-size:22.0000pt; " >6 -</span></b><b><span
+font-weight:bold;font-size:22.0000pt;
+">&nbsp;Do queries run faster when we add more CPU?</span></b><b><span font-weight:bold;font-size:22.0000pt; " ><o:p></o:p></span></b></h1><p ><span
+">
+                    <o:p>&nbsp;</o:p>
+                </span></p>
+                <p class=MsoNormal><span " >No. </span><span
+">&nbsp;it is very critical that you add right amount of the cpu and if you have lots of cpu make sure that your max
+                        degree of parallelism is set to correct number or you will have performance issues</span><span " ><o:p></o:p></span></p><p ><span
+">
+                        <o:p>&nbsp;</o:p>
+                    </span></p>
+                <p class=MsoNormal><span style="font-family:Arial;color:rgb(15,15,15);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;">
+                        <o:p>&nbsp;</o:p>
+                    </span></p>
+                <h1><a name="_Toc7416"></a><b><span font-weight:bold;font-size:22.0000pt; " ><a name="
+                            _Toc10973">Q</a></span></b><b><span font-weight:bold;font-size:22.0000pt; " >7 -</span></b><b><span
+font-weight:bold;font-size:22.0000pt;
+">&nbsp;Do queries run faster when we add more Memory?</span></b><b><span style="font-family:Arial;font-weight:bold;
+font-size:12.0000pt;">&nbsp;</span></b><b><span style="font-family:Arial;font-weight:bold;
+font-size:12.0000pt;">
+                            <o:p></o:p>
+                        </span></b></h1>
+                <h1><b><span style="font-family:Arial;font-weight:bold;
+font-size:12.0000pt;">
+                            <o:p>&nbsp;</o:p>
+                        </span></b></h1>
+                <p class=MsoNormal><span " >There are three different scripts and each of these scripts tell you that if your memory pressure issue or not.</span><span
+">
+                        <o:p></o:p>
+                    </span></p>
+                <p class=MsoNormal><span " ><o:p>&nbsp;</o:p></span></p><h4 align=justify  style="
+                        margin-left:0.0000pt;text-indent:0.0000pt; text-align:justify;text-justify:inter-ideograph;
+                        background:rgb(255,255,255);"><b><span style="font-family:'Open Sans';letter-spacing:0.0000pt;
+font-weight:bold;text-transform:none;font-style:normal;
+font-size:12.0000pt;background:rgb(255,255,255);">Query 1: dm_os_sys_memory</span></b><b><span style="font-family:'Open Sans';letter-spacing:0.0000pt;
+font-weight:bold;text-transform:none;font-style:normal;
+font-size:12.0000pt;">
+                                <o:p></o:p>
+                            </span></b></h4>
+                        <table class=MsoNormalTable border=0 cellspacing=0 style="border-collapse:collapse;margin-left:5.4000pt;border:none;
+">
+                            <tr>
+                                <td width=0 valign=top style="width:0.3000pt;padding:0.0000pt 0.0000pt 0.0000pt 0.0000pt ;border-left:none;
+border-right:none;
+border-top:none;border-bottom:none;
+">
+                                    <p align=right style="margin-top:0.0000pt;margin-right:10.5000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-align:right;
+vertical-align:baseline;background:rgb(255,255,255);"><span style="font-family:Consolas;color:rgb(175,175,175);font-weight:normal;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">1</span><span style="font-family:Consolas;color:rgb(175,175,175);font-weight:normal;
+font-style:normal;font-size:10.5000pt;">
+                                            <o:p></o:p>
+                                        </span></p>
+                                    <p align=right style="margin-top:0.0000pt;margin-right:10.5000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-align:right;
+vertical-align:baseline;background:rgb(255,255,255);"><span style="font-family:Consolas;color:rgb(175,175,175);font-weight:normal;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">2</span><span style="font-family:Consolas;color:rgb(175,175,175);font-weight:normal;
+font-style:normal;font-size:10.5000pt;">
+                                            <o:p></o:p>
+                                        </span></p>
+                                    <p align=right style="margin-top:0.0000pt;margin-right:10.5000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-align:right;
+vertical-align:baseline;background:rgb(255,255,255);"><span style="font-family:Consolas;color:rgb(175,175,175);font-weight:normal;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">3</span><span style="font-family:Consolas;color:rgb(175,175,175);font-weight:normal;
+font-style:normal;font-size:10.5000pt;">
+                                            <o:p></o:p>
+                                        </span></p>
+                                    <p align=right style="margin-top:0.0000pt;margin-right:10.5000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-align:right;
+vertical-align:baseline;background:rgb(255,255,255);"><span style="font-family:Consolas;color:rgb(175,175,175);font-weight:normal;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">4</span><span style="font-family:Consolas;color:rgb(175,175,175);font-weight:normal;
+font-style:normal;font-size:10.5000pt;">
+                                            <o:p></o:p>
+                                        </span></p>
+                                </td>
+                                <td width=616 valign=top style="width:370.1000pt;padding:0.0000pt 0.0000pt 0.0000pt 0.0000pt ;border-left:none;
+border-right:none;
+border-top:none;border-bottom:none;
+">
+                                    <p style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-align:left;
+vertical-align:baseline;background:rgb(255,255,255);"><b><span class="27" style="font-family:Consolas;color:rgb(0,102,153);font-weight:bold;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">SELECT</span></b><span style="font-family:Consolas;font-weight:normal;font-style:normal;
+font-size:10.5000pt;background:rgb(255,255,255);
+"><span>&nbsp;</span></span><span class="27" style="font-family:Consolas;color:rgb(0,0,0);font-weight:normal;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">total_physical_memory_kb/1024 [Total Physical Memory </span><span class="27" style="font-family:Consolas;color:rgb(128,128,128);font-weight:normal;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">in</span><span style="font-family:Consolas;font-weight:normal;font-style:normal;
+font-size:10.5000pt;background:rgb(255,255,255);
+"><span>&nbsp;</span></span><span class="27" style="font-family:Consolas;color:rgb(0,0,0);font-weight:normal;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">MB],</span><span style="font-family:Consolas;font-weight:normal;font-style:normal;
+font-size:10.5000pt;">
+                                            <o:p></o:p>
+                                        </span></p>
+                                    <p style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-align:left;
+vertical-align:baseline;background:rgb(255,255,255);"><span class="27" style="font-family:Consolas;color:rgb(0,0,0);font-weight:normal;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">available_physical_memory_kb/1024 [Physical Memory Available </span><span class="27"
+                                            style="font-family:Consolas;color:rgb(128,128,128);font-weight:normal;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">in</span><span style="font-family:Consolas;font-weight:normal;font-style:normal;
+font-size:10.5000pt;background:rgb(255,255,255);
+"><span>&nbsp;</span></span><span class="27" style="font-family:Consolas;color:rgb(0,0,0);font-weight:normal;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">MB],</span><span style="font-family:Consolas;font-weight:normal;font-style:normal;
+font-size:10.5000pt;">
+                                            <o:p></o:p>
+                                        </span></p>
+                                    <p style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-align:left;
+vertical-align:baseline;background:rgb(255,255,255);"><span class="27" style="font-family:Consolas;color:rgb(0,0,0);font-weight:normal;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">system_memory_state_desc</span><span style="font-family:Consolas;font-weight:normal;font-style:normal;
+font-size:10.5000pt;">
+                                            <o:p></o:p>
+                                        </span></p>
+                                    <p style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-align:left;
+vertical-align:baseline;background:rgb(255,255,255);"><b><span class="27" style="font-family:Consolas;color:rgb(0,102,153);font-weight:bold;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">FROM</span></b><span style="font-family:Consolas;font-weight:normal;font-style:normal;
+font-size:10.5000pt;background:rgb(255,255,255);
+"><span>&nbsp;</span></span><span class="27" style="font-family:Consolas;color:rgb(0,0,0);font-weight:normal;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">sys.dm_os_sys_memory;</span><span style="font-family:Consolas;font-weight:normal;font-style:normal;
+font-size:10.5000pt;">
+                                            <o:p></o:p>
+                                        </span></p>
+                                </td>
+                            </tr>
+                        </table>
+                        <p class=p align=justify style="margin-left:0.0000pt;text-indent:0.0000pt;
+text-align:justify;text-justify:inter-ideograph;background:rgb(255,255,255);"><span style="font-family:'Open Sans';color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;background:rgb(255,255,255);">Here is the result of the query from my machine.</span><span style="font-family:'Open Sans';color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;">
+                                <o:p></o:p>
+                            </span></p>
+                        <p class=p align=justify style="margin-left:0.0000pt;text-indent:0.0000pt;
+text-align:justify;text-justify:inter-ideograph;background:rgb(255,255,255);"><img width="458" height="44"
+                                src="SQL Optimization.files/SQL Optimization7557.png"><span style="font-family:'Open Sans';color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;">
+                                <o:p>&nbsp;</o:p>
+                            </span></p>
+                        <p class=MsoNormal><span " ><o:p>&nbsp;</o:p></span></p><h4 align=justify  style="
+                                margin-left:0.0000pt;text-indent:0.0000pt;
+                                text-align:justify;text-justify:inter-ideograph; background:rgb(255,255,255);"><b><span
+                                        style="font-family:'Open Sans';letter-spacing:0.0000pt;
+font-weight:bold;text-transform:none;font-style:normal;
+font-size:12.0000pt;background:rgb(255,255,255);">Query 2: dm_os_process_memory</span></b><b><span style="font-family:'Open Sans';letter-spacing:0.0000pt;
+font-weight:bold;text-transform:none;font-style:normal;
+font-size:12.0000pt;">
+                                        <o:p></o:p>
+                                    </span></b></h4>
+                                <table class=MsoNormalTable border=0 cellspacing=0 style="border-collapse:collapse;margin-left:5.4000pt;border:none;
+">
+                                    <tr>
+                                        <td width=0 valign=top style="width:0.3000pt;padding:0.0000pt 0.0000pt 0.0000pt 0.0000pt ;border-left:none;
+border-right:none;
+border-top:none;border-bottom:none;
+">
+                                            <p align=right style="margin-top:0.0000pt;margin-right:10.5000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-align:right;
+vertical-align:baseline;background:rgb(255,255,255);"><span style="font-family:Consolas;color:rgb(175,175,175);font-weight:normal;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">1</span><span style="font-family:Consolas;color:rgb(175,175,175);font-weight:normal;
+font-style:normal;font-size:10.5000pt;">
+                                                    <o:p></o:p>
+                                                </span></p>
+                                            <p align=right style="margin-top:0.0000pt;margin-right:10.5000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-align:right;
+vertical-align:baseline;background:rgb(255,255,255);"><span style="font-family:Consolas;color:rgb(175,175,175);font-weight:normal;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">2</span><span style="font-family:Consolas;color:rgb(175,175,175);font-weight:normal;
+font-style:normal;font-size:10.5000pt;">
+                                                    <o:p></o:p>
+                                                </span></p>
+                                            <p align=right style="margin-top:0.0000pt;margin-right:10.5000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-align:right;
+vertical-align:baseline;background:rgb(255,255,255);"><span style="font-family:Consolas;color:rgb(175,175,175);font-weight:normal;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">3</span><span style="font-family:Consolas;color:rgb(175,175,175);font-weight:normal;
+font-style:normal;font-size:10.5000pt;">
+                                                    <o:p></o:p>
+                                                </span></p>
+                                            <p align=right style="margin-top:0.0000pt;margin-right:10.5000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-align:right;
+vertical-align:baseline;background:rgb(255,255,255);"><span style="font-family:Consolas;color:rgb(175,175,175);font-weight:normal;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">4</span><span style="font-family:Consolas;color:rgb(175,175,175);font-weight:normal;
+font-style:normal;font-size:10.5000pt;">
+                                                    <o:p></o:p>
+                                                </span></p>
+                                        </td>
+                                        <td width=616 valign=top style="width:370.1000pt;padding:0.0000pt 0.0000pt 0.0000pt 0.0000pt ;border-left:none;
+border-right:none;
+border-top:none;border-bottom:none;
+">
+                                            <p style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-align:left;
+vertical-align:baseline;background:rgb(255,255,255);"><b><span class="27" style="font-family:Consolas;color:rgb(0,102,153);font-weight:bold;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">SELECT</span></b><span style="font-family:Consolas;font-weight:normal;font-style:normal;
+font-size:10.5000pt;background:rgb(255,255,255);
+"><span>&nbsp;</span></span><span class="27" style="font-family:Consolas;color:rgb(0,0,0);font-weight:normal;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">physical_memory_in_use_kb/1024 [Physical Memory Used </span><span class="27" style="font-family:Consolas;color:rgb(128,128,128);font-weight:normal;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">in</span><span style="font-family:Consolas;font-weight:normal;font-style:normal;
+font-size:10.5000pt;background:rgb(255,255,255);
+"><span>&nbsp;</span></span><span class="27" style="font-family:Consolas;color:rgb(0,0,0);font-weight:normal;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">MB],</span><span style="font-family:Consolas;font-weight:normal;font-style:normal;
+font-size:10.5000pt;">
+                                                    <o:p></o:p>
+                                                </span></p>
+                                            <p style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-align:left;
+vertical-align:baseline;background:rgb(255,255,255);"><span class="27" style="font-family:Consolas;color:rgb(0,0,0);font-weight:normal;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">process_physical_memory_low [Physical Memory Low],</span><span style="font-family:Consolas;font-weight:normal;font-style:normal;
+font-size:10.5000pt;">
+                                                    <o:p></o:p>
+                                                </span></p>
+                                            <p style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-align:left;
+vertical-align:baseline;background:rgb(255,255,255);"><span class="27" style="font-family:Consolas;color:rgb(0,0,0);font-weight:normal;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">process_virtual_memory_low [Virtual Memory Low]</span><span style="font-family:Consolas;font-weight:normal;font-style:normal;
+font-size:10.5000pt;">
+                                                    <o:p></o:p>
+                                                </span></p>
+                                            <p style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-align:left;
+vertical-align:baseline;background:rgb(255,255,255);"><b><span class="27" style="font-family:Consolas;color:rgb(0,102,153);font-weight:bold;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">FROM</span></b><span style="font-family:Consolas;font-weight:normal;font-style:normal;
+font-size:10.5000pt;background:rgb(255,255,255);
+"><span>&nbsp;</span></span><span class="27" style="font-family:Consolas;color:rgb(0,0,0);font-weight:normal;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">sys.dm_os_process_memory;</span><span style="font-family:Consolas;font-weight:normal;font-style:normal;
+font-size:10.5000pt;">
+                                                    <o:p></o:p>
+                                                </span></p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <p class=p align=justify style="margin-left:0.0000pt;text-indent:0.0000pt;
+text-align:justify;text-justify:inter-ideograph;background:rgb(255,255,255);"><span style="font-family:'Open Sans';color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;background:rgb(255,255,255);">Here is the result of the query from my machine.</span><span style="font-family:'Open Sans';color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;">
+                                        <o:p></o:p>
+                                    </span></p>
+                                <p class=p align=justify style="margin-left:0.0000pt;text-indent:0.0000pt;
+text-align:justify;text-justify:inter-ideograph;background:rgb(255,255,255);"><img width="528" height="50"
+                                        src="SQL Optimization.files/SQL Optimization7846.png"><span style="font-family:'Open Sans';color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;">
+                                        <o:p>&nbsp;</o:p>
+                                    </span></p>
+                                <p class=p align=justify style="margin-left:0.0000pt;text-indent:0.0000pt;
+text-align:justify;text-justify:inter-ideograph;background:rgb(255,255,255);"><span style="font-family:'Open Sans';color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;background:rgb(255,255,255);">This query gives us the result of the SQL Server process running on
+                                        the Operating System and also indicates if there is a memory low issue or not.
+                                        In our case, both the values are zero and that is a good thing. If any of the
+                                        LOW values is 1, it is a matter of concern and one should start investigating
+                                        the memory issue.</span><span style="font-family:'Open Sans';color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;">
+                                        <o:p></o:p>
+                                    </span></p>
+                                <h4 align=justify style="margin-left:0.0000pt;text-indent:0.0000pt;
+text-align:justify;text-justify:inter-ideograph;
+background:rgb(255,255,255);"><b><span style="font-family:'Open Sans';letter-spacing:0.0000pt;
+font-weight:bold;text-transform:none;font-style:normal;
+font-size:12.0000pt;background:rgb(255,255,255);">Query 3: dm_os_sys_info</span></b><b><span style="font-family:'Open Sans';letter-spacing:0.0000pt;
+font-weight:bold;text-transform:none;font-style:normal;
+font-size:12.0000pt;">
+                                            <o:p></o:p>
+                                        </span></b></h4>
+                                <table class=MsoNormalTable border=0 cellspacing=0 style="border-collapse:collapse;margin-left:5.4000pt;border:none;
+">
+                                    <tr>
+                                        <td width=0 valign=top style="width:0.3000pt;padding:0.0000pt 0.0000pt 0.0000pt 0.0000pt ;border-left:none;
+border-right:none;
+border-top:none;border-bottom:none;
+">
+                                            <p align=right style="margin-top:0.0000pt;margin-right:10.5000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-align:right;
+vertical-align:baseline;background:rgb(255,255,255);"><span style="font-family:Consolas;color:rgb(175,175,175);font-weight:normal;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">1</span><span style="font-family:Consolas;color:rgb(175,175,175);font-weight:normal;
+font-style:normal;font-size:10.5000pt;">
+                                                    <o:p></o:p>
+                                                </span></p>
+                                            <p align=right style="margin-top:0.0000pt;margin-right:10.5000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-align:right;
+vertical-align:baseline;background:rgb(255,255,255);"><span style="font-family:Consolas;color:rgb(175,175,175);font-weight:normal;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">2</span><span style="font-family:Consolas;color:rgb(175,175,175);font-weight:normal;
+font-style:normal;font-size:10.5000pt;">
+                                                    <o:p></o:p>
+                                                </span></p>
+                                            <p align=right style="margin-top:0.0000pt;margin-right:10.5000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-align:right;
+vertical-align:baseline;background:rgb(255,255,255);"><span style="font-family:Consolas;color:rgb(175,175,175);font-weight:normal;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">3</span><span style="font-family:Consolas;color:rgb(175,175,175);font-weight:normal;
+font-style:normal;font-size:10.5000pt;">
+                                                    <o:p></o:p>
+                                                </span></p>
+                                        </td>
+                                        <td width=616 valign=top style="width:370.1000pt;padding:0.0000pt 0.0000pt 0.0000pt 0.0000pt ;border-left:none;
+border-right:none;
+border-top:none;border-bottom:none;
+">
+                                            <p style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-align:left;
+vertical-align:baseline;background:rgb(255,255,255);"><b><span class="27" style="font-family:Consolas;color:rgb(0,102,153);font-weight:bold;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">SELECT</span></b><span style="font-family:Consolas;font-weight:normal;font-style:normal;
+font-size:10.5000pt;background:rgb(255,255,255);
+"><span>&nbsp;</span></span><span class="27" style="font-family:Consolas;color:rgb(0,0,0);font-weight:normal;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">committed_kb/1024 [SQL Server </span><b><span class="27" style="font-family:Consolas;color:rgb(0,102,153);font-weight:bold;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">Committed</span></b><span style="font-family:Consolas;font-weight:normal;font-style:normal;
+font-size:10.5000pt;background:rgb(255,255,255);
+"><span>&nbsp;</span></span><span class="27" style="font-family:Consolas;color:rgb(0,0,0);font-weight:normal;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">Memory </span><span class="27" style="font-family:Consolas;color:rgb(128,128,128);font-weight:normal;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">in</span><span style="font-family:Consolas;font-weight:normal;font-style:normal;
+font-size:10.5000pt;background:rgb(255,255,255);
+"><span>&nbsp;</span></span><span class="27" style="font-family:Consolas;color:rgb(0,0,0);font-weight:normal;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">MB],</span><span style="font-family:Consolas;font-weight:normal;font-style:normal;
+font-size:10.5000pt;">
+                                                    <o:p></o:p>
+                                                </span></p>
+                                            <p style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-align:left;
+vertical-align:baseline;background:rgb(255,255,255);"><span class="27" style="font-family:Consolas;color:rgb(0,0,0);font-weight:normal;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">committed_target_kb/1024 [SQL Server Target </span><b><span class="27" style="font-family:Consolas;color:rgb(0,102,153);font-weight:bold;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">Committed</span></b><span style="font-family:Consolas;font-weight:normal;font-style:normal;
+font-size:10.5000pt;background:rgb(255,255,255);
+"><span>&nbsp;</span></span><span class="27" style="font-family:Consolas;color:rgb(0,0,0);font-weight:normal;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">Memory </span><span class="27" style="font-family:Consolas;color:rgb(128,128,128);font-weight:normal;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">in</span><span style="font-family:Consolas;font-weight:normal;font-style:normal;
+font-size:10.5000pt;background:rgb(255,255,255);
+"><span>&nbsp;</span></span><span class="27" style="font-family:Consolas;color:rgb(0,0,0);font-weight:normal;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">MB]</span><span style="font-family:Consolas;font-weight:normal;font-style:normal;
+font-size:10.5000pt;">
+                                                    <o:p></o:p>
+                                                </span></p>
+                                            <p style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;text-align:left;
+vertical-align:baseline;background:rgb(255,255,255);"><b><span class="27" style="font-family:Consolas;color:rgb(0,102,153);font-weight:bold;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">FROM</span></b><span style="font-family:Consolas;font-weight:normal;font-style:normal;
+font-size:10.5000pt;background:rgb(255,255,255);
+"><span>&nbsp;</span></span><span class="27" style="font-family:Consolas;color:rgb(0,0,0);font-weight:normal;
+font-style:normal;font-size:10.5000pt;
+background:rgb(255,255,255);">sys.dm_os_sys_info;</span><span style="font-family:Consolas;font-weight:normal;font-style:normal;
+font-size:10.5000pt;">
+                                                    <o:p></o:p>
+                                                </span></p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <p class=p align=justify style="margin-left:0.0000pt;text-indent:0.0000pt;
+text-align:justify;text-justify:inter-ideograph;background:rgb(255,255,255);"><span style="font-family:'Open Sans';color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;background:rgb(255,255,255);">Here is the result of the query from my machine.</span><span style="font-family:'Open Sans';color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;">
+                                        <o:p></o:p>
+                                    </span></p>
+                                <p class=p align=justify style="margin-left:0.0000pt;text-indent:0.0000pt;
+text-align:justify;text-justify:inter-ideograph;background:rgb(255,255,255);"><img width="342" height="34"
+                                        src="SQL Optimization.files/SQL Optimization8404.png"><span style="font-family:'Open Sans';color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;">
+                                        <o:p>&nbsp;</o:p>
+                                    </span></p>
+                                <p class=MsoNormal><span style="font-family:'Open Sans';color:rgb(54,59,63);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:7.0000pt;background:rgb(255,255,255);">This query gives us how much memory has been committed to SQL Server
+                                        and what is the current projection for the SQL Server target memory commitment.
+                                        As the target committed memory is less than available memory for us, we are good
+                                        in this query as well.</span><span " ><o:p></o:p></span></p><p ><span
+">
+                                        <o:p>&nbsp;</o:p>
+                                    </span></p>
+
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <div w3-include-html="footer.htm"></div>
+    <script>includeHTML();</script>
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

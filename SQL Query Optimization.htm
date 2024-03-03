@@ -1,0 +1,1879 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>My Portfolio</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <script src="assets/js/layout.js"></script>
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+
+        <div class="d-flex align-items-center justify-content-between">
+            <i class="bi bi-list toggle-sidebar-btn"></i>
+        </div><!-- End Logo -->
+
+        <nav class="header-nav ms-auto">
+
+            <ul class="d-flex align-items-center">
+                <div w3-include-html="header.htm"></div>
+            </ul>
+        </nav><!-- End Icons Navigation -->
+    </header><!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <div w3-include-html="sidebar.htm"></div>
+
+    <main id="main" class="main">
+
+        <p class=MsoNormal align=center style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+text-align:center;"><span style="font-family:SimSun;
+font-size:10.5000pt;">Catalog</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><span><a href="#_Toc3766 "><span 
+font-size:12.0000pt;">1. </span><span 
+font-size:12.0000pt;">SQL Server Performance tuning tools</span><span 
+font-size:12.0000pt;">&#9;</span></a></span><span 
+font-size:12.0000pt;">
+                    <o:p></o:p>
+                </span></p>
+        <p class=MsoToc1><span><a href="#_Toc14803 "><span 
+font-size:12.0000pt;">2. </span><span 
+font-size:12.0000pt;">Oracle Performance tuning tools</span><span 
+font-size:12.0000pt;">&#9;</span></a></span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc30700 "><span 
+font-size:12.0000pt;">3. </span><span 
+font-size:12.0000pt;">Procedure of tuning</span><span 
+font-size:12.0000pt;">&#9;</span></a></span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc2176 "><span 
+font-size:12.0000pt;">4. </span><span 
+font-size:12.0000pt;">5 ways to improve your sql queries</span><span 
+font-size:12.0000pt;">&#9;</span></a></span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc6811 "><span 
+font-size:12.0000pt;">5. </span><span 
+font-size:12.0000pt;">Proper Indexing</span><span 
+font-size:12.0000pt;">&#9;</span></a></span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc27514 "><span 
+font-size:12.0000pt;">6. </span><span 
+font-size:12.0000pt;">Use SELECT &lt;columns&gt; instead of SELECT *</span><span 
+font-size:12.0000pt;">&#9;</span></a></span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc11064 "><span 
+font-size:12.0000pt;">7. </span><span 
+font-size:12.0000pt;">Avoid running queries in a loop</span><span 
+font-size:12.0000pt;">&#9;</span></a></span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc15641 "><span 
+font-size:12.0000pt;">8. </span><span 
+font-size:12.0000pt;">Does My record exists?</span><span 
+font-size:12.0000pt;">&#9;</span></a></span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc7060 "><span 
+font-size:12.0000pt;">9. </span><span 
+font-size:12.0000pt;">A big NO for correlated subqueries</span><span 
+font-size:12.0000pt;">&#9;</span></a></span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc28024 "><span 
+font-size:12.0000pt;">10. </span><span 
+font-size:12.0000pt;">Use wildcard characters wisely</span><span 
+font-size:12.0000pt;">&#9;</span></a></span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc29378 "><span 
+font-size:12.0000pt;">11. </span><span 
+font-size:12.0000pt;">A</span><span 
+font-size:12.0000pt;">void using SQL function on the RHS </span><span 
+font-size:12.0000pt;">(Right hand side) </span><span 
+font-size:12.0000pt;">of the operator</span><span 
+font-size:12.0000pt;">&#9;</span></a></span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc26935 "><span 
+font-size:12.0000pt;">12. </span><span 
+font-size:12.0000pt;
+background:rgb(0,255,0);">Always fetch limited data</span><span 
+font-size:12.0000pt;">&nbsp;and </span><span 
+font-size:12.0000pt;
+background:rgb(0,255,0);">target accurate results</span><span 
+font-size:12.0000pt;">&#9;</span></a></span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc19789 "><span 
+font-size:12.0000pt;">13. </span><span 
+font-size:12.0000pt;">Drop index before loading bulk data</span><span 
+font-size:12.0000pt;">&#9;</span></a></span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc31580 "><span 
+font-size:12.0000pt;">14. </span><span 
+font-size:12.0000pt;">Use WHERE instead of HAVING</span><span 
+font-size:12.0000pt;">&#9;</span></a></span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc4135 "><span 
+font-size:12.0000pt;">15. Normalize your database</span><span 
+font-size:12.0000pt;">&#9;</span></a></span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc11022 "><span 
+font-size:12.0000pt;">16. Use stored procedures</span><span 
+font-size:12.0000pt;">&#9;</span></a></span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc27631 "><span 
+font-size:12.0000pt;">17. </span><span 
+font-size:12.0000pt;">query execution first only take more time how to reduce that time</span><span 
+font-size:12.0000pt;">?</span><span 
+font-size:12.0000pt;">&#9;</span></a></span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc23611 "><span 
+font-size:12.0000pt;">18. </span><span 
+font-size:12.0000pt;">update statistics</span><span 
+font-size:12.0000pt;">&#9;</span></a></span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc31615 "><span 
+font-size:12.0000pt;">19. </span><span 
+font-size:12.0000pt;">Set </span><span 
+font-size:12.0000pt;">statistics</span><span 
+font-size:12.0000pt;">&nbsp;IO/Time on</span><span 
+font-size:12.0000pt;">&#9;</span></a></span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc29293 "><span 
+font-size:12.0000pt;">20. </span><span 
+font-size:12.0000pt;">Rebuild Indexes</span><span 
+font-size:12.0000pt;">&#9;</span></a></span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc24551 "><span 
+font-size:12.0000pt;">21. Use </span><span 
+font-size:12.0000pt;
+background:rgb(0,255,0);">EXECUTION PLAN</span><span 
+font-size:12.0000pt;">&nbsp;(</span><span 
+font-size:12.0000pt;">explain plans</span><span 
+font-size:12.0000pt;">)</span><span 
+font-size:12.0000pt;">&#9;</span></a></span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc28509 "><span 
+font-size:12.0000pt;">22. Utilize caching</span><span 
+font-size:12.0000pt;">&#9;</span></a></span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc3388 "><span 
+font-size:12.0000pt;">23. </span><span 
+font-size:12.0000pt;
+background:rgb(0,255,0);">Dynamic Management Views</span><span 
+font-size:12.0000pt;">&nbsp;(DMVs)</span><span 
+font-size:12.0000pt;">&#9;</span></a></span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc4869 "><span 
+font-size:12.0000pt;">24. </span><span 
+font-size:12.0000pt;
+background:rgb(0,255,0);">SQL Server Profiler</span><span 
+font-size:12.0000pt;">&#9;</span></a></span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc22248 "><span 
+font-size:12.0000pt;">25. SQL Server </span><span 
+font-size:12.0000pt;
+background:rgb(0,255,0);">Query Store</span><span 
+font-size:12.0000pt;">&#9;</span></a></span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc28983 "><span 
+font-size:12.0000pt;">26. </span><span 
+font-size:12.0000pt;
+background:rgb(0,255,0);">Database Engine Tuning Advisor</span><span 
+font-size:12.0000pt;">&nbsp;(DTA)</span><span 
+font-size:12.0000pt;">&#9;</span></a></span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc32597 "><span 
+font-size:12.0000pt;">27. Activity Monitor</span><span 
+font-size:12.0000pt;">&#9;</span></a></span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc20744 "><span 
+font-size:12.0000pt;">28. </span><span 
+font-size:12.0000pt;
+background:rgb(0,255,0);">What is columstore</span><span 
+font-size:12.0000pt;">?</span><span 
+font-size:12.0000pt;">&#9;</span></a></span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc28211 "><span 
+font-size:12.0000pt;">29. </span><span 
+font-size:12.0000pt;
+background:rgb(0,255,0);">What is </span><span 
+font-size:12.0000pt;
+background:rgb(0,255,0);">Physical/Logical </span><span 
+font-size:12.0000pt;
+background:rgb(0,255,0);">operation</span><span 
+font-size:12.0000pt;
+background:rgb(0,255,0);">?</span><span 
+font-size:12.0000pt;">&#9;</span></a></span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc3225 "><span 
+font-size:12.0000pt;">30. </span><span 
+font-size:12.0000pt;
+background:rgb(0,255,0);">What is </span><span 
+font-size:12.0000pt;
+background:rgb(0,255,0);">Index scan, Indexes seek</span><span 
+font-size:12.0000pt;
+background:rgb(0,255,0);">?</span><span 
+font-size:12.0000pt;">&#9;</span></a></span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc2469 "><span 
+font-size:12.0000pt;">31. </span><span 
+font-size:12.0000pt;
+background:rgb(0,255,0);">How to use </span><span 
+font-size:12.0000pt;
+background:rgb(0,255,0);">Performance counters</span><span 
+font-size:12.0000pt;
+background:rgb(0,255,0);">?</span><span 
+font-size:12.0000pt;">&#9;</span></a></span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc7159 "><span 
+font-size:12.0000pt;">32. </span><span 
+font-size:12.0000pt;
+background:rgb(0,255,0);">What is </span><span 
+font-size:12.0000pt;
+background:rgb(0,255,0);">RID (Row Identifier) lookup</span><span 
+font-size:12.0000pt;
+background:rgb(0,255,0);">?</span><span 
+font-size:12.0000pt;">&#9;</span></a></span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoToc1><span><a href="#_Toc21014 "><span 
+font-size:12.0000pt;">33. </span><span 
+font-size:12.0000pt;
+background:rgb(0,255,0);">What is fragmentation?</span><span 
+font-size:12.0000pt;">&#9;</span>/a></span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal></span><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1 style="page-break-after:avoid;page-break-before:always;
+"><a name="_Toc3766"></a><span 
+font-weight:bold;font-size:22.0000pt;"><span>1.</span></span><b><span 
+font-weight:bold;font-size:22.0000pt;
+">SQL Server Performance tuning tools</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="343" height="133"
+                src="SQL Query Optimization.files/SQL Query Optimization3004.png"><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1 style="page-break-after:avoid;
+"><a name="_Toc14803"></a><span 
+font-weight:bold;font-size:22.0000pt;"><span>2.</span></span><b><span 
+font-weight:bold;font-size:22.0000pt;
+">Oracle Performance tuning tools</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">SQL Tuning Tools:</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">Automatic:</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;
+"><span style="font-family:Wingdings;
+font-size:12.0000pt;"><span>&#9899;</span></span><span 
+font-size:12.0000pt;">Automatic Database Diagnostic Monitor (ADDM) </span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;
+"><span style="font-family:Wingdings;
+font-size:12.0000pt;background:rgb(0,255,0);
+"><span>&#9899;</span></span><span 
+font-size:12.0000pt;
+background:rgb(0,255,0);">AWR </span><span 
+font-size:12.0000pt;">(</span><span style="font-family:Arial;color:rgb(32,33,36);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.0000pt;background:rgb(255,255,255);
+">Automatic Workload Repository</span><span 
+font-size:12.0000pt;">) </span><span 
+font-size:12.0000pt;">report</span><span 
+font-size:12.0000pt;">&nbsp;***</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;
+"><span style="font-family:Wingdings;
+font-size:12.0000pt;background:rgb(0,255,0);
+"><span>&#9899;</span></span><span 
+font-size:12.0000pt;
+background:rgb(0,255,0);">SQL Tuning Advisor</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;
+"><span style="font-family:Wingdings;
+font-size:12.0000pt;"><span>&#9899;</span></span><span 
+font-size:12.0000pt;">S</span><span 
+font-size:12.0000pt;">QL Access Advisor</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;
+"><span style="font-family:Wingdings;
+font-size:12.0000pt;"><span>&#9899;</span></span><span 
+font-size:12.0000pt;">Active Session History (ASH) report</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;
+"><span style="font-family:Wingdings;
+font-size:12.0000pt;"><span>&#9899;</span></span><span 
+font-size:12.0000pt;">SQL Plan Management</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;
+"><span style="font-family:Wingdings;
+font-size:12.0000pt;"><span>&#9899;</span></span><span 
+font-size:12.0000pt;">SQL Performance Analyzer</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">Manual:</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;
+"><span style="font-family:Wingdings;
+font-size:12.0000pt;"><span>&#9899;</span></span><span 
+font-size:12.0000pt;">Execution plan</span><span 
+font-size:12.0000pt;">&nbsp;***</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;"><span style="font-family:Wingdings;
+font-size:12.0000pt;"><span>&#9899;</span></span><span 
+font-size:12.0000pt;">TKPROF</span><span 
+font-size:12.0000pt;">&nbsp;(</span><span 
+font-size:12.0000pt;">Transient Kernel PROFile</span><span 
+font-size:12.0000pt;">)</span><span 
+font-size:12.0000pt;">&nbsp;Utility</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;
+"><span style="font-family:Wingdings;
+font-size:12.0000pt;"><span>&#9899;</span></span><span 
+font-size:12.0000pt;">Hints</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1 style="page-break-after:avoid;
+"><a name="_Toc30700"></a><span 
+font-weight:bold;font-size:22.0000pt;"><span>3.</span></span><b><span 
+font-weight:bold;font-size:22.0000pt;
+">Procedure of tuning</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;"><span>1)</span></span><span 
+font-size:12.0000pt;">identify the problem query (Hunting) - whether you know which query is slow or not</span><span
+                
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-left:42.0000pt;text-indent:-21.0000pt;
+"><span 
+font-size:12.0000pt;"><span>a)</span></span><span 
+font-size:12.0000pt;">SQL server profiler</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-left:42.0000pt;text-indent:-21.0000pt;
+"><span 
+font-size:12.0000pt;"><span>b)</span></span><span 
+font-size:12.0000pt;">External Event</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-left:42.0000pt;text-indent:-21.0000pt;
+"><span 
+font-size:12.0000pt;"><span>c)</span></span><span 
+font-size:12.0000pt;">Query store</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;"><span>2)</span></span><span 
+font-size:12.0000pt;">Go into the slow query (more in-deep, more detail)</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;"><span>3)</span></span><span 
+font-size:12.0000pt;">Infrastructure issue</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-left:42.0000pt;text-indent:-21.0000pt;
+"><span 
+font-size:12.0000pt;"><span>a)</span></span><span 
+font-size:12.0000pt;">fragmentation</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-left:42.0000pt;text-indent:-21.0000pt;
+"><span 
+font-size:12.0000pt;"><span>b)</span></span><span 
+font-size:12.0000pt;">Index not proper</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-left:42.0000pt;text-indent:-21.0000pt;
+"><span 
+font-size:12.0000pt;"><span>c)</span></span><span 
+font-size:12.0000pt;">Primary Key not set</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1 style="page-break-after:avoid;
+"><a name="_Toc2176"></a><span 
+font-weight:bold;font-size:22.0000pt;"><span>4.</span></span><b><span 
+font-weight:bold;font-size:22.0000pt;
+">5 ways to improve your sql queries</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p><span 
+font-size:12.0000pt;background:rgb(0,255,0);
+"><span>1)</span></span><span 
+font-size:12.0000pt;
+background:rgb(0,255,0);">Start with filtered data set </span><span 
+font-size:12.0000pt;">- &nbsp;start with a filtered set at the&nbsp;very top. you have to understand what is the
+                actual&nbsp; granularity that you're concerned with. if you're&nbsp;writing a query to return something
+                on a customer level, you need to figure out the first thing what&nbsp;are the customers you actually
+                care about. Are you only looking at something in a specific time&nbsp;frame? Are you only looking at
+                certain customers&nbsp; in a region for this query isolate just those customers? </span><span 
+font-size:12.0000pt;">&nbsp;</span><span 
+font-size:12.0000pt;">you're only working with what you&nbsp; really need and what you care about</span><span 
+font-size:12.0000pt;">.</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p><span 
+font-size:12.0000pt;background:rgb(0,255,0);
+"><span>2)</span></span><span 
+font-size:12.0000pt;
+background:rgb(0,255,0);">use temp tables and </span><span 
+font-size:12.0000pt;
+background:rgb(0,255,0);">CTE</span><span 
+font-size:12.0000pt;
+background:rgb(0,255,0);">s</span><span 
+font-size:12.0000pt;
+background:rgb(0,255,0);">&nbsp;(Common table expression) -</span><span 
+font-size:12.0000pt;">&nbsp;</span><span 
+font-size:12.0000pt;">similar to the first point, isolate just the data that you care about. you could put&nbsp; that
+                in a temp table and then you reference that temp table in any future join. Another benefit of
+                isolating&nbsp; things into temp tables is that it gives you the&nbsp;ability to focus on maybe specific
+                logic separate from everything else. another thing to consider here when working&nbsp; with these temp
+                tables is only return the columns&nbsp;that you need you don't need to return everything.</span><span
+                
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p><span 
+font-size:12.0000pt;background:rgb(0,255,0);
+"><span>3)</span></span><span 
+font-size:12.0000pt;
+background:rgb(0,255,0);">don’t repect yourself (DRY) </span><span 
+font-size:12.0000pt;">- </span><span 
+font-size:12.0000pt;">you're doing the same thing&nbsp;more than once that should be a sign that&nbsp; you probably can
+                simplify this some way maybe&nbsp;you're doing the same join multiple times&nbsp; or maybe you're
+                converting a column type&nbsp;multiple times you probably shouldn't need to do&nbsp; that so keep an eye
+                on that if you find yourself&nbsp;doing things more than once definitely hone in on that and figure out
+                how you can simplify it.</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p><span 
+font-size:12.0000pt;background:rgb(0,255,0);
+"><span>4)</span></span><span 
+font-size:12.0000pt;
+background:rgb(0,255,0);">User indexes </span><span 
+font-size:12.0000pt;">- </span><span 
+font-size:12.0000pt;">the primary keys - clustered indexes, non-clustered indexes which are more of like a reference
+                point. foreign key relationships understanding these things will help the&nbsp; execution plan find what
+                it needs to much quicker.&nbsp;</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p><span style="font-family:SimSun;
+font-size:12.0000pt;
+background:rgb(0,255,0);"><span>5)</span></span><span style="font-family:SimSun;
+font-size:12.0000pt;
+background:rgb(0,255,0);">
+                <font face="Calibri">Be consistent</font>
+            </span><span style="font-family:SimSun;
+font-size:12.0000pt;
+">&nbsp;<font face="Calibri">- </font></span><span 
+font-size:12.0000pt;">&nbsp;it's really important to be organized&nbsp; and consistent in what you're creating
+                whether&nbsp;it's indentation spacing naming structure there's&nbsp; obviously a ton of ways to to do
+                the same thing to&nbsp;accomplish the same output but whatever you decide</span><span style="font-family:PMingLiU;
+font-size:12.0000pt;
+">
+                <font face="Calibri">.</font>
+            </span><span 
+font-size:12.0000pt;">&nbsp; </span><span style="font-family:PMingLiU;
+font-size:12.0000pt;
+">
+                <font face="Calibri">D</font>
+            </span><span 
+font-size:12.0000pt;">o it the same way throughout</span><span style="font-family:PMingLiU;
+font-size:12.0000pt;
+">
+                <font face="Calibri">.</font>
+            </span><span 
+font-size:12.0000pt;">&nbsp;</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">CTE</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><img width="328" height="160"
+                src="SQL Query Optimization.files/SQL Query Optimization5688.png"><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">Temp tables</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="315" height="412"
+                src="SQL Query Optimization.files/SQL Query Optimization5704.png"><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1 style="page-break-after:avoid;
+"><a name="_Toc6811"></a><span 
+font-weight:bold;font-size:22.0000pt;"><span>5.</span></span><b><span 
+font-weight:bold;font-size:22.0000pt;
+">Proper Indexing</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+">&nbsp;</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">Ensure</span><span 
+font-size:12.0000pt;">&nbsp;proper indexing for quick access to the database.</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="text-align:left;"><img width="513" height="556"
+                src="SQL Query Optimization.files/SQL Query Optimization5781.png"><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc27514"></a><span 
+font-weight:bold;font-size:22.0000pt;"><span>6.</span></span><b><span 
+font-weight:bold;font-size:22.0000pt;
+">Use SELECT &lt;columns&gt; instead of SELECT *</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">Specify the columns in SELECT query instead of SELECT* to avoid extra fetching load on the
+                database.</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">Inefficient</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><img width="187" height="35"
+                src="SQL Query Optimization.files/SQL Query Optimization5939.png"><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">Efficient</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><img width="471" height="29"
+                src="SQL Query Optimization.files/SQL Query Optimization5952.png"><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc11064"></a><span 
+font-weight:bold;font-size:22.0000pt;"><span>7.</span></span><b><span 
+font-weight:bold;font-size:22.0000pt;
+">Avoid running queries in a loop</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">Loops in query structure slows the sequence. Thus, avoid them.</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="392" height="220"
+                src="SQL Query Optimization.files/SQL Query Optimization6051.png"><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc15641"></a><span 
+font-weight:bold;font-size:22.0000pt;"><span>8.</span></span><b><span 
+font-weight:bold;font-size:22.0000pt;
+">Does My record exists?</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">Use EXITS() for matching if the record exists.</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="439" height="231"
+                src="SQL Query Optimization.files/SQL Query Optimization6126.png"><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc7060"></a><span 
+font-weight:bold;font-size:22.0000pt;"><span>9.</span></span><b><span 
+font-weight:bold;font-size:22.0000pt;
+">A big NO for correlated subqueries</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">Avoid correlated sub queries as it searches row by row, impacting the speed of SQL query
+                processing.</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="556" height="129"
+                src="SQL Query Optimization.files/SQL Query Optimization6267.png"><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="555" height="129"
+                src="SQL Query Optimization.files/SQL Query Optimization6270.png"><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc28024"></a><span 
+font-weight:bold;font-size:22.0000pt;"><span>10.</span></span><b><span 
+font-weight:bold;font-size:22.0000pt;
+">Use wildcard characters wisely</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">Use wildcards (e.g. %xx%) wisely as they search the entire database for matching
+                results.</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="556" height="108"
+                src="SQL Query Optimization.files/SQL Query Optimization6396.png"><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="556" height="108"
+                src="SQL Query Optimization.files/SQL Query Optimization6399.png"><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc29378"></a><span 
+font-weight:bold;font-size:22.0000pt;"><span>11.</span></span><b><span 
+font-weight:bold;font-size:22.0000pt;
+">A</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+">void using SQL function on the RHS </span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+">(Right hand side) </span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+">of the operator</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">Avoid using function at RHS of the operator.</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="556" height="128"
+                src="SQL Query Optimization.files/SQL Query Optimization6518.png"><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="556" height="128"
+                src="SQL Query Optimization.files/SQL Query Optimization6521.png"><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc26935"></a><span 
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);"><span>12.</span></span><b><span 
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);">Always fetch limited data</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+">&nbsp;and </span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);">target accurate results</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">Always fetch limited data.</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc19789"></a><span 
+font-weight:bold;font-size:22.0000pt;"><span>13.</span></span><b><span 
+font-weight:bold;font-size:22.0000pt;
+">Drop index before loading bulk data</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">Use a temporary table to handle bulk data.</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">If you want to insert thousands of rows in an online system, use a temporary table to load data.
+                Ensure that this temporary table does not have any index. Since moving data from one table to another is
+                much faster than loading them from an external source; you can now drop indexes on your primary table,
+                move data from temporary to the final table, and finally recreate the indexes.</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc31580"></a><span 
+font-weight:bold;font-size:22.0000pt;"><span>14.</span></span><b><span 
+font-weight:bold;font-size:22.0000pt;
+">Use WHERE instead of HAVING</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">Use the clause WHERE instead of HAVING for primary filters.</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">HAVING clause filters the rows after all the rows are selected. It is just like a filter. Do not
+                use the HAVING clause for any other purposes. </span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">In the SQL Order of Operations, HAVING statements are calculated after WHERE statements.
+                Therefore, executing the WHERE query is faster.</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc4135"></a><span 
+font-weight:bold;font-size:22.0000pt;"><span>15.</span></span><b><span 
+font-weight:bold;font-size:22.0000pt;
+">Normalize your database</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">Normalization helps to minimize data redundancy and improve data integrity, leading to better
+                query performance.</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc11022"></a><span 
+font-weight:bold;font-size:22.0000pt;"><span>16.</span></span><b><span 
+font-weight:bold;font-size:22.0000pt;
+">Use stored procedures</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">Stored procedures allow for reuse of optimized query logic and can be executed more efficiently
+                than ad-hoc queries.</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc27631"></a><span 
+font-weight:bold;font-size:22.0000pt;"><span>17.</span></span><b><span 
+font-weight:bold;font-size:22.0000pt;
+">query execution first only take more time how to reduce that time</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+">?</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">using stored procedure. &nbsp;query execution first need memory and create a plan and caching.
+                &nbsp;SP ensure that the plan only create one, not every time.</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc23611"></a><span 
+font-weight:bold;font-size:22.0000pt;"><span>18.</span></span><b><span 
+font-weight:bold;font-size:22.0000pt;
+">update statistics</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="391" height="112"
+                src="SQL Query Optimization.files/SQL Query Optimization7960.png"><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc31615"></a><span 
+font-weight:bold;font-size:22.0000pt;"><span>19.</span></span><b><span 
+font-weight:bold;font-size:22.0000pt;
+">Set </span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+">statistics</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+">&nbsp;IO/Time on</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:21.0000pt;
+text-indent:-21.0000pt;padding:0pt 0pt 0pt 0pt ;
+text-align:left;"><span style="font-family:Wingdings;
+font-size:12.0000pt;"><span>&#9899;</span></span><span style="font-family:Arial;font-size:12.0000pt;
+">it makes it really easy to kind of use as a benchmark as a measuring stick to see if the performance tuning changes
+                you're making or actually making a difference or not right.</span><span style="font-family:Arial;font-size:12.0000pt;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:21.0000pt;
+text-indent:-21.0000pt;padding:0pt 0pt 0pt 0pt ;
+text-align:left;"><span style="font-family:Wingdings;
+font-size:12.0000pt;"><span>&#9899;</span></span><span style="font-family:Arial;font-size:12.0000pt;
+">it is really helpful when performance tuning to help isolate other stuff that's going on on your server versus the
+                changes that you specifically are making to your query. &nbsp;It helps kind of give you a clean
+                test.</span><span style="font-family:Arial;font-size:12.0000pt;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:21.0000pt;
+text-indent:-21.0000pt;padding:0pt 0pt 0pt 0pt ;
+text-align:left;"><span style="font-family:Wingdings;
+font-size:12.0000pt;"><span>&#9899;</span></span><span style="font-family:Arial;font-size:12.0000pt;
+">Logical reads - how many of them did sequel server have to read in order to be able to process the data and spit out
+                the results that you requested in your sequel query</span><span style="font-family:Arial;font-size:12.0000pt;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+padding:0pt 0pt 0pt 0pt ;
+text-align:left;"><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal style="text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">Set</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">statistics</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">IO</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">on</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">;</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+padding:0pt 0pt 0pt 0pt ;
+text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">Set</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">statistics</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">Time</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">on</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">;</font>
+            </span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">By look at the Execution plan, 2</span><sup><span 
+font-size:12.0000pt;
+vertical-align:super;">nd</span></sup><span 
+font-size:12.0000pt;">&nbsp;query is more efficient. &nbsp;However, by looking at the statistics IO, 1</span><sup><span
+                    
+font-size:12.0000pt;
+vertical-align:super;">st</span></sup><span 
+font-size:12.0000pt;">&nbsp;query is better. &nbsp;If you want to check which query is more efficient, check statistics
+                IO on.</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><img width="272" height="242"
+                src="SQL Query Optimization.files/SQL Query Optimization8796.png"><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="555" height="79"
+                src="SQL Query Optimization.files/SQL Query Optimization8799.png"><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc29293"></a><span 
+font-weight:bold;font-size:22.0000pt;"><span>20.</span></span><b><span 
+font-weight:bold;font-size:22.0000pt;
+">Rebuild Indexes</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc24551"></a><span 
+font-weight:bold;font-size:22.0000pt;"><span>21.</span></span><b><span 
+font-weight:bold;font-size:22.0000pt;
+">Use </span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);">EXECUTION PLAN</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+">&nbsp;(</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+">explain plans</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+">)</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">Explain plans provide information on how a query is executed </span><span 
+font-size:12.0000pt;">in SQL server </span><span 
+font-size:12.0000pt;">and can help identify bottlenecks in the query plan.</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="553" height="75"
+                src="SQL Query Optimization.files/SQL Query Optimization8984.png"><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="553" height="59"
+                src="SQL Query Optimization.files/SQL Query Optimization8987.png"><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc28509"></a><span 
+font-weight:bold;font-size:22.0000pt;"><span>22.</span></span><b><span 
+font-weight:bold;font-size:22.0000pt;
+">Utilize caching</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">Caching can help to reduce the number of database queries and improve query
+                performance.</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc3388"></a><span 
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);"><span>23.</span></span><b><span 
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);">Dynamic Management Views</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+">&nbsp;(DMVs)</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">Special views in SQL Server that provide insight into the performance of a database and can be
+                used to identify and diagnose performance issues.</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="556" height="262"
+                src="SQL Query Optimization.files/SQL Query Optimization9275.png"><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">The following list identifies and describes some of these categories:</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">sys.dm_db_* Contains information about databases and their objects</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">sys.dm_tran_* Contains information in relation to transactions</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">sys.dm_io_* Contains information about I/O activities</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">sys.dm_exec_* Contains information related to the execution of user code</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal style="text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">SELECT</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">name</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">type</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">,</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">type_desc</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">FROM</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(0,255,0);font-size:9.5000pt;">
+                <font face="Consolas">sys</font>
+            </span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">.</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,255,0);font-size:9.5000pt;">
+                <font face="Consolas">system_objects</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="text-align:left;"><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">WHERE</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">name</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(128,128,128);font-size:9.5000pt;">
+                <font face="Consolas">LIKE</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(255,0,0);font-size:9.5000pt;">
+                <font face="Consolas">'dm_%'</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">ORDER</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">BY</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,0);font-size:9.5000pt;">&nbsp;</span><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <font face="Consolas">name</font>
+            </span><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc4869"></a><span 
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);"><span>24.</span></span><b><span 
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);">SQL Server Profiler</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">A graphical tool for </span><span 
+font-size:12.0000pt;
+background:rgb(0,255,0);">capturing </span><span 
+font-size:12.0000pt;">and analyzing the performance of SQL Server</span><span 
+font-size:12.0000pt;
+background:rgb(0,255,0);">&nbsp;database activity</span><span 
+font-size:12.0000pt;">.</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">SQL Server profiler is a nice tool which helps us to capture what kind of SQL statements are
+                fired on your SQL Server</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">Note: Profiler is outdated and not good for PRD. &nbsp;Should use External Event
+                instead.</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc22248"></a><span 
+font-weight:bold;font-size:22.0000pt;"><span>25.</span></span><b><span 
+font-weight:bold;font-size:22.0000pt;
+">SQL Server </span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);">Query Store</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">A feature of SQL Server that collects and aggregates information about query performance,
+                allowing for easy analysis of query performance over time.</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span style="font-family:Consolas;
+color:rgb(0,0,255);font-size:9.5000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc28983"></a><span 
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);"><span>26.</span></span><b><span 
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);">Database Engine Tuning Advisor</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+">&nbsp;(DTA)</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">A tool that provides recommendations for optimizing query performance by analyzing the
+                performance of a workload and suggesting indexes and other database design changes.</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">SQL Server performance largely depends on how you have created the index i.e your </span><span
+                
+font-size:12.0000pt;
+background:rgb(0,255,0);">cluster index</span><span 
+font-size:12.0000pt;">&nbsp;and </span><span 
+font-size:12.0000pt;
+background:rgb(0,255,0);">non cluster index</span><span 
+font-size:12.0000pt;">&nbsp;etc</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="556" height="92"
+                src="SQL Query Optimization.files/SQL Query Optimization10524.png"><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><img width="553" height="385"
+                src="SQL Query Optimization.files/SQL Query Optimization10527.png"><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;padding:0pt 0pt 0pt 0pt ;
+text-align:left;"><span style="font-family:Arial;font-size:12.0000pt;
+">Three step process: </span><span style="font-family:Arial;font-size:12.0000pt;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;padding:0pt 0pt 0pt 0pt ;
+text-align:left;"><span
+                style="font-family:Arial;font-size:12.0000pt;"><span>1)</span></span><span style="font-family:Arial;font-size:12.0000pt;
+">you collect the work load</span><span style="font-family:Arial;font-size:12.0000pt;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;padding:0pt 0pt 0pt 0pt ;
+text-align:left;"><span
+                style="font-family:Arial;font-size:12.0000pt;"><span>2)</span></span><span style="font-family:Arial;font-size:12.0000pt;
+">you analyze if the indexes are appropriate as per the work load</span><span style="font-family:Arial;font-size:12.0000pt;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;padding:0pt 0pt 0pt 0pt ;
+text-align:left;"><span
+                style="font-family:Arial;font-size:12.0000pt;"><span>3)</span></span><span style="font-family:Arial;font-size:12.0000pt;
+">then you update your indexes</span><span style="font-family:Arial;font-size:12.0000pt;
+">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc32597"></a><span 
+font-weight:bold;font-size:22.0000pt;"><span>27.</span></span><b><span 
+font-weight:bold;font-size:22.0000pt;
+">Activity Monitor</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal style="text-align:left;"><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal style="text-align:left;"><img width="336" height="204"
+                src="SQL Query Optimization.files/SQL Query Optimization10690.png"><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal style="text-align:left;"><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal style="text-align:left;"><img width="553" height="248"
+                src="SQL Query Optimization.files/SQL Query Optimization10693.png"><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal style="text-align:left;"><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc20744"></a><span 
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);"><span>28.</span></span><b><span 
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);">What is columstore</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+">?</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal style="text-align:left;"><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">Columnstore is a feature in Microsoft SQL Server that allows for highly compressed and fast data
+                storage and retrieval for data warehousing and business intelligence workloads. It works by compressing
+                and storing data in a columnar format, rather than row-wise like a traditional relational database. This
+                can significantly reduce the amount of disk space required to store the data, while also increasing
+                query performance by reducing the amount of data that needs to be read from disk.</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal style="text-align:left;"><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc28211"></a><span 
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);"><span>29.</span></span><b><span 
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);">What is </span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);">Physical/Logical </span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);">operation</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);">?</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc3225"></a><span 
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);"><span>30.</span></span><b><span 
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);">What is </span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);">Index scan, Indexes seek</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);">?</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc2469"></a><span 
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);"><span>31.</span></span><b><span 
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);">How to use </span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);">Performance counters</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);">?</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><a name="_Toc7159"></a><span 
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);"><span>32.</span></span><b><span 
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);">What is </span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);">RID (Row Identifier) lookup</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);">?</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);">
+                    <o:p></o:p>
+                </span></b></h1>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">&nbsp;</span><span 
+font-size:12.0000pt;">
+                <o:p></o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <p class=MsoNormal><span 
+font-size:12.0000pt;">
+                <o:p>&nbsp;</o:p>
+            </span></p>
+        <h1><span 
+font-weight:bold;font-size:22.0000pt;"><span>33.</span></span><b><span 
+font-weight:bold;font-size:22.0000pt;
+">&nbsp;<a name="_Toc21014"></a></span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+background:rgb(0,255,0);">What is fragmentation?</span></b><b><span 
+font-weight:bold;font-size:22.0000pt;
+">
+                    <o:p></o:p>
+                </span></b></h1>
+
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <div w3-include-html="footer.htm"></div>
+    <script>includeHTML();</script>
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
