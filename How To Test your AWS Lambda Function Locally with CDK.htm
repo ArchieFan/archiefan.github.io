@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+	<title>My Portfolio</title>
+	<meta content="" name="description">
+	<meta content="" name="keywords">
+
+	<!-- Favicons -->
+	<link href="assets/img/favicon.png" rel="icon">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.gstatic.com" rel="preconnect">
+	<link
+		href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+		rel="stylesheet">
+
+	<!-- Vendor CSS Files -->
+	<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+	<!-- Template Main CSS File -->
+	<link href="assets/css/style.css" rel="stylesheet">
+
+	<script src="assets/js/layout.js"></script>
+</head>
+
+<body>
+
+	<!-- ======= Header ======= -->
+	<header id="header" class="header fixed-top d-flex align-items-center">
+
+		<div class="d-flex align-items-center justify-content-between">
+			<i class="bi bi-list toggle-sidebar-btn"></i>
+		</div><!-- End Logo -->
+
+		<nav class="header-nav ms-auto">
+
+			<ul class="d-flex align-items-center">
+				<div w3-include-html="header.htm"></div>
+			</ul>
+		</nav><!-- End Icons Navigation -->
+	</header><!-- End Header -->
+
+	<!-- ======= Sidebar ======= -->
+	<div w3-include-html="sidebar.htm"></div>
+
+	<main id="main" class="main">
+
+		<p align=center style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;
+margin-left:0.0000pt;
+text-indent:0.0000pt;
+text-align:center;">
+			<span style="font-family:SimSun;
+font-size:10.5000pt;">Catalog</span><span>
+				<o:p></o:p>
+			</span>
+		</p>
+		<p class=MsoToc1><span><span><a href="#_Toc19784 "><span>Ingredient</span><span>&#9;</span></a></span><span>
+					<o:p></o:p>
+				</span></p>
+		<p class=MsoToc1><span><a href="#_Toc10099 "><span>Step 1: Create the
+						app</span><span>&#9;</span></a></span><span>
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoToc1><span><a href="#_Toc5472 "><span>Step 2: Build the app</span><span>&#9;</span></a></span><span>
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoToc1><span><a href="#_Toc5692 "><span>Step 3: List the stacks in the
+						app</span><span>&#9;</span></a></span><span>
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoToc1><span><a href="#_Toc13297 "><span>Step 4: Add an Amazon S3
+						bucket</span><span>&#9;</span></a></span><span>
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoToc1><span><a href="#_Toc14694 "><span>Step </span><span>5</span><span>: Add </span><span>a Lambda
+						function</span><span>&#9;</span></a></span><span>
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoToc1><span><a href="#_Toc3834 "><span>Step </span><span>6</span><span>: Synthesize an AWS
+						CloudFormation template</span><span>&#9;</span></a></span><span>
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoToc1><span><a href="#_Toc5975 "><span>Step 7: Test your Lambda function
+						locally</span><span>&#9;</span></a></span><span>
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoToc1><span><a href="#_Toc29219 "><span>Step </span><span>8</span><span>: Deploy your
+						stack</span><span>&#9;</span></a></span><span>
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoToc1><span><a href="#_Toc6280 "><span>Step </span><span>9</span><span>: Modify your
+						app</span><span>&#9;</span></a></span><span>
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoToc1><span><a href="#_Toc2474 "><span>Step </span><span>10</span><span>: Destroying the app's
+						resources</span><span>&#9;</span></a></span><span>
+				<o:p></o:p>
+			</span></p>
+		<p></span><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<h1><a name="_Toc19784"></a><b><span style="
+font-weight:bold;font-size:22.0000pt;
+">Ingredient</span></b><b><span style="
+font-weight:bold;font-size:22.0000pt;
+">
+					<o:p></o:p>
+				</span></b></h1>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p style="margin-left:21.0000pt;text-indent:-21.0000pt;
+"><span style="font-family:Wingdings;"><span>&#9899;</span></span><span>Sam (</span><span>Serverless Application
+				Model</span><span>) </span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>$ pip install --upgrade aws-sam-cli</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p style="margin-left:21.0000pt;text-indent:-21.0000pt;
+"><span style="font-family:Wingdings;"><span>&#9899;</span></span><span>CDK (cloud development kit)</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>$ pip install --upgrade aws-cdk.core</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p style="margin-left:21.0000pt;text-indent:-21.0000pt;
+"><span style="font-family:Wingdings;"><span>&#9899;</span></span><span>Docker</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<h1><a name="_Toc10099"></a><b><span style="
+font-weight:bold;font-size:22.0000pt;
+">Step 1: Create the app</span></b><b><span style="
+font-weight:bold;font-size:22.0000pt;
+">
+					<o:p></o:p>
+				</span></b></h1>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>A CDK app should be in its own directory, with its own local module dependencies. On your development
+				machine, create
+				a new directory. The following is an example that creates a
+				new&nbsp;</span><span>hello-cdk</span><span>&nbsp;directory:</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=pre style="margin-right:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;
+padding:0pt 0pt 0pt 0pt ;
+background:rgb(249,249,249);"><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">$ mkdir hello-cdk$ cd
+				hello-cdk</span><span style="font-family:monospace;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:9.5000pt;">
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="
+background:rgb(255,0,0);">Important</span><span style="
+background:rgb(255,0,0);">
+				<o:p></o:p>
+			</span></p>
+		<p><span>Be sure to name your project
+				directory</span><span>&nbsp;</span><span>hello-cdk</span><span>,&nbsp;exactly as shown here.&nbsp;The
+				AWS CDK project template uses the directory name to name things in the
+				generated code</span><span style="font-family:Helvetica;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;">.&nbsp;</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=pre style="margin-right:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;
+padding:0pt 0pt 0pt 0pt ;
+background:rgb(249,249,249);"><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">$ </span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">cdk init app --language
+				python</span><span style="font-family:unset;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:9.5000pt;">
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>After the app has been created, also enter the following two commands. These activate the app's Python
+				virtual
+				environment and install the AWS CDK core dependencies.</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=pre style="margin-right:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;
+padding:0pt 0pt 0pt 0pt ;
+background:rgb(249,249,249);"><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">.venv/</span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">scripts</span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">/activate</span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">.ps1</span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">
+				<o:p></o:p>
+			</span></p>
+		<p class=pre style="margin-right:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;
+padding:0pt 0pt 0pt 0pt ;
+background:rgb(249,249,249);"><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">python -m pip install -r
+				requirements.txt</span><span style="font-family:unset;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:9.5000pt;">
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<h1><a name="_Toc5472"></a><b><span style="
+font-weight:bold;font-size:22.0000pt;
+">Step 2: Build the app</span></b><b><span style="
+font-weight:bold;font-size:22.0000pt;
+">
+					<o:p></o:p>
+				</span></b></h1>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>No need to build for python</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<h1><a name="_Toc5692"></a><b><span style="
+font-weight:bold;font-size:22.0000pt;
+">Step 3: List the stacks in the app</span></b><b><span style="
+font-weight:bold;font-size:22.0000pt;
+">
+					<o:p></o:p>
+				</span></b></h1>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>Verify your app has been correctly created by listing the stacks in your app. Run the
+				following:</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=pre style="margin-right:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;
+padding:0pt 0pt 0pt 0pt ;
+background:rgb(249,249,249);"><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">$ </span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">cdk ls</span><span style="font-family:monospace;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:9.5000pt;">
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>The output should display&nbsp;HelloCdkStack. If you don't see this output, verify that you are in the
+				correct
+				working directory of your project and try again.&nbsp;</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<h1><a name="_Toc13297"></a><b><span style="
+font-weight:bold;font-size:22.0000pt;
+">Step 4: Add an Amazon S3 bucket</span></b><b><span style="
+font-weight:bold;font-size:22.0000pt;
+">
+					<o:p></o:p>
+				</span></b></h1>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="399"
+				src="How To Test your AWS Lambda Function Locally with CDK.files/How To Test your AWS Lambda Function Locally with CDK2211.png"><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<h1><a name="_Toc14694"></a><b><span style="
+font-weight:bold;font-size:22.0000pt;
+">Step </span></b><b><span style="
+font-weight:bold;font-size:22.0000pt;
+">5</span></b><b><span style="
+font-weight:bold;font-size:22.0000pt;
+">: Add </span></b><b><span style="
+font-weight:bold;font-size:22.0000pt;
+">a Lambda function</span></b><b><span style="
+font-weight:bold;font-size:22.0000pt;
+">
+					<o:p></o:p>
+				</span></b></h1>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="433"
+				src="How To Test your AWS Lambda Function Locally with CDK.files/How To Test your AWS Lambda Function Locally with CDK2246.png"><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="292"
+				src="How To Test your AWS Lambda Function Locally with CDK.files/How To Test your AWS Lambda Function Locally with CDK2249.png"><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<h1><a name="_Toc3834"></a><b><span style="
+font-weight:bold;font-size:22.0000pt;
+">Step </span></b><b><span style="
+font-weight:bold;font-size:22.0000pt;
+">6</span></b><b><span style="
+font-weight:bold;font-size:22.0000pt;
+">: Synthesize an AWS CloudFormation template</span></b><b><span style="
+font-weight:bold;font-size:22.0000pt;
+">
+					<o:p></o:p>
+				</span></b></h1>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>Synthesize an AWS CloudFormation template for the app, as follows:</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=pre style="margin-right:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;
+padding:0pt 0pt 0pt 0pt ;
+background:rgb(249,249,249);"><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">$ </span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">cdk synth</span><span style="font-family:monospace;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:9.5000pt;">
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>If your app contains more than one stack, you must specify which stacks to synthesize. Since your app
+				contains a
+				single stack, the CDK CLI automatically detects the stack to synthesize.</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>If you don't run&nbsp;cdk synth, the CDK CLI will automatically perform this step when you deploy.
+				However, we
+				recommend that you run this step before each deployment.</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>The</span><span>&nbsp;</span><span>cdk synth</span><span>&nbsp;command runs your app. This </span><span
+				style="
+background:rgb(255,255,0);">creates an AWS CloudFormation template </span><span>for each stack in your app. The CDK CLI
+				will display a </span><span style="
+background:rgb(255,255,0);">YAML formatted version of your template</span><span>&nbsp;at the command line and
+			</span><span style="
+background:rgb(255,255,0);">save a JSON formatted version of your template</span><span>&nbsp;in
+				the&nbsp;cdk.out&nbsp;directory.&nbsp;</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<h1><a name="_Toc5975"></a><b><span style="
+font-weight:bold;font-size:22.0000pt;
+">Step 7: Test your Lambda function locally</span></b><b><span style="
+font-weight:bold;font-size:22.0000pt;
+">
+					<o:p></o:p>
+				</span></b></h1>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><b><span style="
+font-weight:bold;">General testing lambda function locally</span></b><b><span style="
+font-weight:bold;">
+					<o:p></o:p>
+				</span></b></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>$ sam local invoke -t .\cdk.out\HelloCdkStack.template.json</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>-t = template</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="175"
+				src="How To Test your AWS Lambda Function Locally with CDK.files/How To Test your AWS Lambda Function Locally with CDK3172.png"><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><b><span style="
+font-weight:bold;">Test lambda function with events</span></b><b><span style="
+font-weight:bold;">
+					<o:p></o:p>
+				</span></b></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="441" height="248"
+				src="How To Test your AWS Lambda Function Locally with CDK.files/How To Test your AWS Lambda Function Locally with CDK3210.png"><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>$ sam local generate-event sns notification</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="516"
+				src="How To Test your AWS Lambda Function Locally with CDK.files/How To Test your AWS Lambda Function Locally with CDK3258.png"><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>Copy and paste the output into event.json</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><img width="553" height="255"
+				src="How To Test your AWS Lambda Function Locally with CDK.files/How To Test your AWS Lambda Function Locally with CDK3303.png"><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>$ sam local invoke -t .\cdk.out\HelloCdkStack.template.json -e .\events\event.json</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>-t = template</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>-e = event</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="165"
+				src="How To Test your AWS Lambda Function Locally with CDK.files/How To Test your AWS Lambda Function Locally with CDK3417.png"><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<h1><a name="_Toc29219"></a><b><span style="
+font-weight:bold;font-size:22.0000pt;
+">Step </span></b><b><span style="
+font-weight:bold;font-size:22.0000pt;
+">8</span></b><b><span style="
+font-weight:bold;font-size:22.0000pt;
+">: Deploy your stack</span></b><b><span style="
+font-weight:bold;font-size:22.0000pt;
+">
+					<o:p></o:p>
+				</span></b></h1>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>To deploy your CDK stack to AWS CloudFormation using the CDK CLI, run the following:</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=pre style="margin-right:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;
+padding:0pt 0pt 0pt 0pt ;
+background:rgb(249,249,249);"><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">$ </span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">cdk deploy</span><span style="font-family:monospace;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:9.5000pt;">
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="268"
+				src="How To Test your AWS Lambda Function Locally with CDK.files/How To Test your AWS Lambda Function Locally with CDK3552.png"><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="264"
+				src="How To Test your AWS Lambda Function Locally with CDK.files/How To Test your AWS Lambda Function Locally with CDK3555.png"><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="107"
+				src="How To Test your AWS Lambda Function Locally with CDK.files/How To Test your AWS Lambda Function Locally with CDK3558.png"><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>Important</span><span>: </span><span>You must perform a one-time bootstrapping of your AWS environment
+				before deployment</span><span style="font-family:Helvetica;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;">.&nbsp;</span><span style="font-family:Helvetica;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Helvetica;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Helvetica;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="318"
+				src="How To Test your AWS Lambda Function Locally with CDK.files/How To Test your AWS Lambda Function Locally with CDK3660.png"><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>To bootstrap, run the following:</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=pre style="margin-right:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;
+padding:0pt 0pt 0pt 0pt ;
+background:rgb(249,249,249);"><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">$ </span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">cdk bootstrap aws://</span><i><span class="15" style="font-family:Consolas;color:rgb(209,50,18);
+letter-spacing:0.0000pt;text-transform:none;font-style:italic;
+font-size:10.5000pt;background:rgb(249,249,249);">ACCOUNT-NUMBER</span></i><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">/</span><i><span class="15" style="font-family:Consolas;color:rgb(209,50,18);
+letter-spacing:0.0000pt;text-transform:none;font-style:italic;
+font-size:10.5000pt;background:rgb(249,249,249);">REGION</span></i><span style="font-family:monospace;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:9.5000pt;">
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>Tip</span><span>:</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>If you don't have your AWS account number handy, you can get it from the AWS Management Console. Or, if
+				you have the
+				AWS CLI installed, the following command displays your default account information, including the
+				account number.</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=pre style="margin-right:0.0000pt;margin-left:0.0000pt;padding:0pt 0pt 0pt 0pt ;
+background:rgb(249,249,249);"><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">$ </span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">aws sts get-caller-identity</span><span style="font-family:monospace;font-size:10.5000pt;
+">
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>If you created named profiles in your local AWS configuration, you can use
+				the&nbsp;--profile&nbsp;option to display
+				the account information for a specific profile. The following example shows how to display account
+				information for the&nbsp;prod&nbsp;profile.</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=pre style="margin-right:0.0000pt;margin-left:0.0000pt;padding:0pt 0pt 0pt 0pt ;
+background:rgb(249,249,249);"><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">$ </span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">aws sts get-caller-identity --profile
+				prod</span><span style="font-family:monospace;font-size:10.5000pt;
+">
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>To display the default Region, use&nbsp;aws configure get.</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=pre style="margin-right:0.0000pt;margin-left:0.0000pt;padding:0pt 0pt 0pt 0pt ;
+background:rgb(249,249,249);"><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">aws configure get region</span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">
+				<o:p></o:p>
+			</span></p>
+		<p class=pre style="margin-right:0.0000pt;margin-left:0.0000pt;padding:0pt 0pt 0pt 0pt ;
+background:rgb(249,249,249);"><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">$ </span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">aws configure get region --profile
+				prod</span><span style="font-family:monospace;font-size:10.5000pt;
+">
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>Similar to&nbsp;</span><span>cdk synth</span><span>, you don't have to specify the AWS CDK stack since
+				the app contains a single stack.</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>If your code has security implications, the CDK CLI will output a summary. You will need to confirm
+				them to continue
+				with deployment. </span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>After running&nbsp;cdk deploy, the CDK CLI displays progress information as your stack is deployed.
+				When complete,
+				you can go to the&nbsp;</span><span><a href="https://console.aws.amazon.com/cloudformation/home"><span
+						class="17" style="font-family:Helvetica;color:rgb(0,0,255);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+background:rgb(255,255,255);">AWS CloudFormation console</span></a></span><span>&nbsp;to view
+				your&nbsp;HelloCdkStack&nbsp;stack. You can also go to the Amazon S3 console to view
+				your&nbsp;MyFirstBucket&nbsp;resource.</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<h1><a name="_Toc6280"></a><b><span style="
+font-weight:bold;font-size:22.0000pt;
+">Step </span></b><b><span style="
+font-weight:bold;font-size:22.0000pt;
+">9</span></b><b><span style="
+font-weight:bold;font-size:22.0000pt;
+">: Modify your app</span></b><b><span style="
+font-weight:bold;font-size:22.0000pt;
+">
+					<o:p></o:p>
+				</span></b></h1>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>In this step, you will modify your Amazon S3 bucket by configuring it to be automatically deleted when
+				your stack is
+				deleted. This modification involves changing the
+				bucket's&nbsp;</span><span>RemovalPolicy</span><span>&nbsp;property. You will also configure
+				the&nbsp;autoDeleteObjects&nbsp;property to configure the CDK CLI to delete
+				objects from the bucket before destroying it. By default, AWS CloudFormation doesn't delete Amazon S3
+				buckets that contain objects.</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>Use the following example to modify your resource:</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>Update&nbsp;</span><span>hello_cdk/hello_cdk_stack.py</span><span>.</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=pre style="margin-right:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;
+padding:0pt 0pt 0pt 0pt ;
+background:rgb(249,249,249);"><span class="15" style="
+color:rgb(22,25,31);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:10.0000pt;background:rgb(249,249,249);
+">bucket = s3.Bucket(self, </span><span style="
+color:rgb(11,97,37);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:10.0000pt;
+background:rgb(249,249,249);">"MyFirstBucket"</span><span class="15" style="
+color:rgb(22,25,31);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:10.0000pt;background:rgb(249,249,249);
+">,</span><span class="15" style="
+color:rgb(22,25,31);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:10.0000pt;background:rgb(249,249,249);
+">
+				<o:p></o:p>
+			</span></p>
+		<p class=pre style="margin-right:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;
+padding:0pt 0pt 0pt 0pt ;
+background:rgb(249,249,249);"><span class="15" style="
+color:rgb(22,25,31);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:10.0000pt;background:rgb(249,249,249);
+">&nbsp;&nbsp;&nbsp;&nbsp;versioned=</span><span style="
+color:rgb(1,132,187);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:10.0000pt;
+background:rgb(249,249,249);">True</span><span class="15" style="
+color:rgb(22,25,31);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:10.0000pt;background:rgb(249,249,249);
+">,</span><span class="15" style="
+color:rgb(22,25,31);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:10.0000pt;background:rgb(249,249,249);
+">
+				<o:p></o:p>
+			</span></p>
+		<p class=pre style="margin-right:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;
+padding:0pt 0pt 0pt 0pt ;
+background:rgb(249,249,249);"><span class="15" style="
+color:rgb(22,25,31);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:10.0000pt;background:rgb(249,249,249);
+">&nbsp;&nbsp;&nbsp;&nbsp;removal_policy=cdk.RemovalPolicy.DESTROY,</span><span class="15" style="
+color:rgb(22,25,31);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:10.0000pt;background:rgb(249,249,249);
+">
+				<o:p></o:p>
+			</span></p>
+		<p class=pre style="margin-right:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;
+padding:0pt 0pt 0pt 0pt ;
+background:rgb(249,249,249);"><span class="15" style="
+color:rgb(22,25,31);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:10.0000pt;background:rgb(249,249,249);
+">&nbsp;&nbsp;&nbsp;&nbsp;auto_delete_objects=</span><span style="
+color:rgb(1,132,187);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:10.0000pt;
+background:rgb(249,249,249);">True</span><span class="15" style="
+color:rgb(22,25,31);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:10.0000pt;background:rgb(249,249,249);
+">)</span><span style="
+color:rgb(22,25,31);letter-spacing:0.0000pt;text-transform:none;
+font-style:normal;font-size:10.0000pt;">
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="439"
+				src="How To Test your AWS Lambda Function Locally with CDK.files/How To Test your AWS Lambda Function Locally with CDK5728.png"><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>To modify your deployed resource, you will use the CDK CLI to synthesize the desired state into a new
+				AWS
+				CloudFormation template. Then, you will deploy your new AWS CloudFormation template as a change set.
+				Change sets make only the necessary changes to reach your new desired state.</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>To see these changes, use the&nbsp;</span><span>cdk diff</span><span>&nbsp;command. Run the
+				following:</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=pre style="margin-right:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;
+padding:0pt 0pt 0pt 0pt ;
+background:rgb(249,249,249);"><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">$ </span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">cdk diff</span><span style="font-family:monospace;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:9.5000pt;">
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<h1><a name="_Toc2474"></a><b><span style="
+font-weight:bold;font-size:22.0000pt;
+">Step </span></b><b><span style="
+font-weight:bold;font-size:22.0000pt;
+">10</span></b><b><span style="
+font-weight:bold;font-size:22.0000pt;
+">: Destroying the app's resources</span></b><b><span style="
+font-weight:bold;font-size:22.0000pt;
+">
+					<o:p></o:p>
+				</span></b></h1>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>Y</span><span>ou can delete the deployed AWS CloudFormation stack and all resources associated with it.
+				This is a good practice to
+				minimize unnecessary costs and keep your environment clean. Run the following:</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=pre style="margin-right:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;
+padding:0pt 0pt 0pt 0pt ;
+background:rgb(249,249,249);"><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">$ </span><span class="15" style="font-family:Consolas;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:10.5000pt;background:rgb(249,249,249);">cdk destroy</span><span style="font-family:monospace;color:rgb(22,25,31);
+letter-spacing:0.0000pt;text-transform:none;font-style:normal;
+font-size:9.5000pt;">
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>Enter&nbsp;y&nbsp;to approve the changes and delete your stack.</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>Note</span><span>: </span><span>If you didn't change the bucket's&nbsp;RemovalPolicy, the stack
+				deletion would complete successfully, but the bucket
+				would become orphaned (no longer associated with the stack).</span><span>
+				<o:p></o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span>
+				<o:p>&nbsp;</o:p>
+			</span></p>
+
+	</main><!-- End #main -->
+
+	<!-- ======= Footer ======= -->
+	<div w3-include-html="footer.htm"></div>
+	<script>includeHTML();</script>
+
+	<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+			class="bi bi-arrow-up-short"></i></a>
+
+	<!-- Vendor JS Files -->
+	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Template Main JS File -->
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
