@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>My Portfolio</title>
+	<meta content="" name="description">
+	<meta content="" name="keywords"> <!-- Favicons -->
+	<link href="assets/img/favicon.png" rel="icon"> <!-- Google Fonts -->
+	<link href="https://fonts.gstatic.com" rel="preconnect">
+	<link
+		href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+		rel="stylesheet"> <!-- Vendor CSS Files -->
+	<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> <!-- Template Main CSS File -->
+	<link href="assets/css/style.css" rel="stylesheet">
+	<script src="assets/js/layout.js"></script>
+</head>
+
+<body> <!-- ======= Header ======= -->
+	<header id="header" class="header fixed-top d-flex align-items-center">
+		<div class="d-flex align-items-center justify-content-between"> <i class="bi bi-list toggle-sidebar-btn"></i>
+		</div><!-- End Logo -->
+		<nav class="header-nav ms-auto">
+			<ul class="d-flex align-items-center">
+				<div w3-include-html="header.htm"></div>
+			</ul>
+		</nav><!-- End Icons Navigation -->
+	</header><!-- End Header --> <!-- ======= Sidebar ======= -->
+	<div w3-include-html="sidebar.htm"></div>
+	<main id="main" class="main">
+		<p align=center
+			style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;margin-left:0.0000pt;text-indent:0.0000pt;text-align:center;">
+			<span style="font-family:SimSun;;font-size:10.5000pt;">Catalog</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span>
+		</p>
+		<p><span><span><a href="#_Toc6383 "><span style="font-family:Calibri;">AWS Project - VPC with
+							public and
+							private subnet in production</span><span
+							style="font-family:Calibri;">&#9;</span></a></span><span style="font-family:Calibri;">
+					<o:p></o:p>
+				</span></p>
+		<p><span><a href="#_Toc2311 "><span style="font-family:Calibri;">Overview</span><span
+						style="font-family:Calibri;">&#9;</span></a></span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p><span><a href="#_Toc16547 "><span style="font-family:Calibri;">Project step-by-step</span><span
+						style="font-family:Calibri;">&#9;</span></a></span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p><span><a href="#_Toc19350 "><span style="font-family:Calibri;">1)
+						Create VPC</span><span style="font-family:Calibri;">&#9;</span></a></span><span
+				style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p><span><a href="#_Toc31006 "><span style="font-family:Calibri;">2)
+						Create auto scaling group</span><span style="font-family:Calibri;">&#9;</span></a></span><span
+				style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p><span><a href="#_Toc6740 "><span style="font-family:Calibri;">3)
+						Create Bastion host or jump server in public subnets</span><span
+						style="font-family:Calibri;">&#9;</span></a></span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p><span><a href="#_Toc14966 "><span style="font-family:Calibri;">4)
+						Create load balancer</span><span style="font-family:Calibri;">&#9;</span></a></span><span
+				style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p></span><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<h1><a name="_Toc6383"></a><b><span style="font-family:Calibri;font-weight:bold;font-size:22.0000pt;">AWS
+					Project - VPC with public and private subnet in production</span></b><b><span
+					style="font-family:Calibri;font-weight:bold;font-size:22.0000pt;">
+					<o:p></o:p>
+				</span></b></h1>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="554" height="433"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production692.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">This example demonstrates how
+				to create a VPC that you can use for servers in a production environment. To improve resiliency, you
+				deploy the servers in two Availability Zones, by using an Auto Scaling group and an Application Load
+				Balancer. For additional security, you deploy the servers in private subnets. The servers receive
+				requests through the load balancer. The servers can connect to the internet by using a NAT gateway. To
+				improve resiliency, you deploy the NAT gateway in both Availability Zones.</span><span
+				style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<h1><a name="_Toc2311"></a><b><span
+					style="font-family:Calibri;font-weight:bold;font-size:22.0000pt;">Overview</span></b><b><span
+					style="font-family:Calibri;font-weight:bold;font-size:22.0000pt;">
+					<o:p></o:p>
+				</span></b></h1>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">The VPC has public subnets and
+				private subnets in two availability zones</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">Each public subnet contains a
+				NAT gateway and a load balancer node</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">The servers run in the private
+				subnets, are launched and terminated by using an auto scalling group, and receive traffic from the load
+				balancer</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">The servers can connect to the
+				internet by using the NAT gateway</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">I</span><span style="font-family:Calibri;">n production
+				just you need to create two
+				availability zones instead of one so that for some reason if the data</span><span
+				style="font-family:Calibri;">&nbsp;</span><span style="font-family:Calibri;">center of AWS in a specific
+				region or the
+				availability zone of AWS in a specific region goes down you will still</span><span
+				style="font-family:Calibri;">&nbsp;</span><span style="font-family:Calibri;">have the other availability
+				Zone that is
+				serving the traffic for you so that's the only purpose we create a VPC with</span><span
+				style="font-family:Calibri;">&nbsp;</span><span style="font-family:Calibri;">public subnet and private
+				Subnet in two
+				availability zone</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">Before we staet</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p style="margin-left:21.0000pt;text-indent:-21.0000pt;">
+			<span style="font-family:Wingdings;"><span>&#9899;</span></span>
+			<span style="font-family:Calibri;">Auto scaling group</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span>
+		</p>
+		<p style="margin-left:21.0000pt;text-indent:-21.0000pt;">
+			<span style="font-family:Wingdings;"><span>&#9899;</span></span>
+			<span style="font-family:Calibri;">Load balancer</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span>
+		</p>
+		<p style="margin-left:21.0000pt;text-indent:-21.0000pt;">
+			<span style="font-family:Wingdings;"><span>&#9899;</span></span>
+			<span style="font-family:Calibri;">Target group</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span>
+		</p>
+		<p style="margin-left:21.0000pt;text-indent:-21.0000pt;">
+			<span style="font-family:Wingdings;"><span>&#9899;</span></span>
+			<span style="font-family:Calibri;">Bastion host or jump
+				server</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span>
+		</p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">W</span><span style="font-family:Calibri;">hat is
+				Bastion</span><span style="font-family:Calibri;">&nbsp;</span><span style="font-family:Calibri;">or
+			</span><span style="font-family:Calibri;">jump </span><span style="font-family:Calibri;">server</span><span
+				style="font-family:Calibri;">?</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">these ec2 instances that we
+				are</span><span style="font-family:Calibri;">&nbsp;</span><span style="font-family:Calibri;">creating
+				are created in a private subnet so
+				they don't have a public IP address or we cannot SSH into these instances</span><span
+				style="font-family:Calibri;">&nbsp;</span><span style="font-family:Calibri;">directly so what we will do
+				is because we want
+				to keep them secure we will not create any IP addresses public IP</span><span
+				style="font-family:Calibri;">&nbsp;</span><span style="font-family:Calibri;">address for them but we
+				will create a Bastion
+				host or just a jump host in this</span><span style="font-family:Calibri;">&nbsp;</span><span
+				style="font-family:Calibri;">public subnet and through that Bastion or
+			</span><span style="font-family:Calibri;">Jump </span><span style="font-family:Calibri;">host we will
+				connect to this ec2
+				instance</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p
+			style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;margin-left:0.0000pt;padding:0pt 0pt 0pt 0pt ;text-align:left;">
+			<span style="font-family:Arial;font-size:12.0000pt;">
+				<o:p>&nbsp;</o:p>
+			</span>
+		</p>
+		<p
+			style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;margin-left:0.0000pt;padding:0pt 0pt 0pt 0pt ;text-align:left;">
+			<span style="font-family:Arial;font-size:12.0000pt;">
+				<o:p>&nbsp;</o:p>
+			</span>
+		</p>
+		<h1><a name="_Toc16547"></a><b><span style="font-family:Calibri;font-weight:bold;font-size:22.0000pt;">Project
+					step-by-step</span></b><b><span style="font-family:Calibri;font-weight:bold;font-size:22.0000pt;">
+					<o:p></o:p>
+				</span></b></h1>
+		<p
+			style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;margin-left:0.0000pt;padding:0pt 0pt 0pt 0pt ;text-align:left;">
+			<span style="font-family:Arial;font-size:12.0000pt;">
+				<o:p>&nbsp;</o:p>
+			</span>
+		</p>
+		<h2><a name="_Toc19350"></a>
+			<span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;"><span>1)</span></span>
+			<b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;">Create
+					VPC</span></b><b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;">
+					<o:p></o:p>
+				</span></b>
+		</h2>
+		<p
+			style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:0.0000pt;margin-left:0.0000pt;padding:0pt 0pt 0pt 0pt ;text-align:left;">
+			<span style="font-family:Arial;font-size:12.0000pt;">
+				<o:p>&nbsp;</o:p>
+			</span>
+		</p>
+		<p><img width="552" height="211"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production2560.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="416" height="364"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production2563.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="413" height="321"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production2566.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="294"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production2568.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<h2><a name="_Toc31006"></a>
+			<span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;"><span>2)</span></span>
+			<b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;">Create
+					auto scaling group</span></b><b><span
+					style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;">
+					<o:p></o:p>
+				</span></b>
+		</h2>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="291"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production2601.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="315"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production2604.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="203"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production2607.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="554" height="162"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production2610.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="554" height="392"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production2613.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="503"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production2616.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="294"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production2619.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="554" height="420"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production2622.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="294"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production2625.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="294"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production2627.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="294"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production2630.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="294"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production2633.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="294"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production2636.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="294"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production2639.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="294"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production2642.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="294"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production2645.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="294"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production2648.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<h2><a name="_Toc6740"></a>
+			<span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;"><span>3)</span></span>
+			<b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;">Create
+					Bastion host or jump server in public subnets</span></b><b><span
+					style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;">
+					<o:p></o:p>
+				</span></b>
+		</h2>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">Instance 1 and 2 have
+				no public IP. &nbsp;How can you connect to both instances? &nbsp;You need to create a Bastion host or
+				jump server in public subnets in order to access both instances in private subnets.</span><span
+				style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="169"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production2904.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="153"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production2907.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="436"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production2911.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="364"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production2914.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="436"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production2917.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="436"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production2920.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="294"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production2923.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">I'll SSH to Bastion from
+				Bastion I'll SSH to the private subnet</span><span style="font-family:Calibri;">&nbsp;</span><span
+				style="font-family:Calibri;">but to SSH to the private subnet again you want
+				the key value pair which is</span><span style="font-family:Calibri;">&nbsp;</span><span
+				style="font-family:Calibri;">present on my laptop so what I'll do firstly
+				I'll show you okay so I'll copy my key</span><span style="font-family:Calibri;">&nbsp;</span><span
+				style="font-family:Calibri;">value pad to the Bastion host as well why
+				because if the Bastion host does not have the key value pair let's say</span><span
+				style="font-family:Calibri;">&nbsp;</span><span style="font-family:Calibri;">Bastion host is here it
+				does not have the key
+				value pair how can it log into the private host key value pair is in my</span><span
+				style="font-family:Calibri;">&nbsp;</span><span style="font-family:Calibri;">personal instance so I will
+				use a </span><span style="font-family:Calibri;">MobaXterm to upload the files to bastion
+				host.</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="335"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production3464.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">Using the </span><span
+				style="font-family:Calibri;">bastion host to login both private instance.
+				Note. &nbsp;Need to chmod 600 aws_login.perm</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="339"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production3563.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">Create the index.html file and
+				run it on python web server. &nbsp;One instance http server is running. &nbsp;Later, I will show you how
+				load balancer works. &nbsp;It will redirect to instance 1 with html page and instance 2 with error
+				message.</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="260"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production3796.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<h2><a name="_Toc14966"></a>
+			<span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;"><span>4)</span></span>
+			<b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;">Create
+					load balancer</span></b><b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;">
+					<o:p></o:p>
+				</span></b>
+		</h2>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="294"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production3821.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="436"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production3824.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">Create an application load
+				balancer</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p><img width="552" height="401"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production3863.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="552" height="401"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production3866.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="135"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production3869.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">Create a target
+				group</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="152"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production3895.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="304"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production3898.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="536" height="532"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production3901.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="552" height="489"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production3904.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="304"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production3907.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">Click “Include as pending
+				below”</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="213"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production3944.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="304"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production3948.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">Go back to load balancer and
+				add the target group you just created.</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="304"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production4020.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="304"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production4023.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">However, the load balancer is
+				unreachable since the security group only allow port 8000 … not port 80. &nbsp;Now, I have to add the
+				entries in security group so that the load balancer is accessabile.</span><span
+				style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="398"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production4222.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="199"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production4225.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">Unreachable alert is
+				disappeared.</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="294"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production4263.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="554" height="139"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production4266.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="321"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production4269.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">Since one of the instance has
+				no application, the load balancer will go to the healthy one. &nbsp;Unhealthy one will be redirected to
+				health one.</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p><img width="553" height="267"
+				src="Day-7  AWS Project Used In Production.files/Day-7  AWS Project Used In Production4414.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+	</main><!-- End #main --> <!-- ======= Footer ======= -->
+	<div w3-include-html="footer.htm"></div>
+	<script>includeHTML();</script> <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+			class="bi bi-arrow-up-short"></i></a> <!-- Vendor JS Files -->
+	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> <!-- Template Main JS File -->
+	<script src="assets/js/main.js"></script>
+</body>
+
+</html>
