@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>My Portfolio</title>
+	<meta content="" name="description">
+	<meta content="" name="keywords"> <!-- Favicons -->
+	<link href="assets/img/favicon.png" rel="icon"> <!-- Google Fonts -->
+	<link href="https://fonts.gstatic.com" rel="preconnect">
+	<link
+		href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+		rel="stylesheet"> <!-- Vendor CSS Files -->
+	<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> <!-- Template Main CSS File -->
+	<link href="assets/css/style.css" rel="stylesheet">
+	<script src="assets/js/layout.js"></script>
+</head>
+
+<body> <!-- ======= Header ======= -->
+	<header id="header" class="header fixed-top d-flex align-items-center">
+		<div class="d-flex align-items-center justify-content-between"> <i class="bi bi-list toggle-sidebar-btn"></i>
+		</div><!-- End Logo -->
+		<nav class="header-nav ms-auto">
+			<ul class="d-flex align-items-center">
+				<div w3-include-html="header.htm"></div>
+			</ul>
+		</nav><!-- End Icons Navigation -->
+	</header><!-- End Header --> <!-- ======= Sidebar ======= -->
+	<div w3-include-html="sidebar.htm"></div>
+	<main id="main" class="main">
+		<h1><b><span style="font-family:Calibri;font-weight:bold;font-size:22.0000pt;">AWS Continuous
+					Integration</span></b><b><span style="font-family:Calibri;font-weight:bold;font-size:22.0000pt;">
+					<o:p></o:p>
+				</span></b></h1>
+		<p class=MsoNormal><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<h2><b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;">Set Up GitHub
+					Repository</span></b><b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;">
+					<o:p></o:p>
+				</span></b></h2>
+		<p class=MsoNormal><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">The first step in our CI journey is to set up a GitHub
+				repository to store our Python application's source code. If you already have a repository, feel free to
+				skip this step. Otherwise, let's create a new repository on GitHub by following these steps:</span><span
+				style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;"><span
+				style="font-family:Wingdings;"><span>&#9899;</span></span><span
+				style="font-family:Calibri;">Go to github.com and sign in to your account.</span><span
+				style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;"><span
+				style="font-family:Wingdings;"><span>&#9899;</span></span><span
+				style="font-family:Calibri;">Click on the "+" button in the top-right corner and select "New
+				repository."</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;"><span
+				style="font-family:Wingdings;"><span>&#9899;</span></span><span
+				style="font-family:Calibri;">Give your repository a name and an optional description.</span><span
+				style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;"><span
+				style="font-family:Wingdings;"><span>&#9899;</span></span><span
+				style="font-family:Calibri;">Choose the appropriate visibility option based on your needs.</span><span
+				style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;"><span
+				style="font-family:Wingdings;"><span>&#9899;</span></span><span
+				style="font-family:Calibri;">Initialize the repository with a README file.</span><span
+				style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;"><span
+				style="font-family:Wingdings;"><span>&#9899;</span></span><span
+				style="font-family:Calibri;">Click on the "Create repository" button to create your new GitHub
+				repository.</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><img width="552" height="244"
+				src="Day-14  AWS END TO END CI.files/Day-14  AWS END TO END CI675.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><img width="553" height="294"
+				src="Day-14  AWS END TO END CI.files/Day-14  AWS END TO END CI678.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">pip list</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">pip install flask</span><span
+				style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">pip freeze &gt; requirements.txt &nbsp;&nbsp;</span><span
+				style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<h2><b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;">Configure AWS
+					CodeBuild</span></b><b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;">
+					<o:p></o:p>
+				</span></b></h2>
+		<p class=MsoNormal><span style="font-family:Calibri;">In this step, we'll configure AWS CodeBuild to build our
+				Python application based on the specifications we define. CodeBuild will take care of building and
+				packaging our application for deployment. Follow these steps:</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;"><span
+				style="font-family:Wingdings;"><span>&#9899;</span></span><span
+				style="font-family:Calibri;">In the AWS Management Console, navigate to the AWS CodeBuild
+				service.</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;"><span
+				style="font-family:Wingdings;"><span>&#9899;</span></span><span
+				style="font-family:Calibri;">Click on the "Create project" button.</span><span
+				style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal><img width="553" height="368"
+				src="Day-14  AWS END TO END CI.files/Day-14  AWS END TO END CI1097.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;"><span
+				style="font-family:Wingdings;"><span>&#9899;</span></span><span
+				style="font-family:Calibri;">Provide a name for your build project.</span><span
+				style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal><img width="553" height="368"
+				src="Day-14  AWS END TO END CI.files/Day-14  AWS END TO END CI1139.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;"><span
+				style="font-family:Wingdings;"><span>&#9899;</span></span><span
+				style="font-family:Calibri;">For the source stage, select "GitHub" as the source provider.</span><span
+				style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;"><span
+				style="font-family:Wingdings;"><span>&#9899;</span></span><span
+				style="font-family:Calibri;">Connect your GitHub account to AWS Code</span><span
+				style="font-family:Calibri;">Build</span><span style="font-family:Calibri;">&nbsp;and select your
+				repository.</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;"><span
+				style="font-family:Wingdings;"><span>&#9899;</span></span><span
+				style="font-family:Calibri;">Choose the branch you want to use for your pipeline.</span><span
+				style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal><img width="553" height="368"
+				src="Day-14  AWS END TO END CI.files/Day-14  AWS END TO END CI1330.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;"><span
+				style="font-family:Wingdings;"><span>&#9899;</span></span><span
+				style="font-family:Calibri;">Configure the build environment, such as the operating system, runtime, and
+				compute resources required for your Python application.</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><img width="553" height="393"
+				src="Day-14  AWS END TO END CI.files/Day-14  AWS END TO END CI1468.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><img width="553" height="393"
+				src="Day-14  AWS END TO END CI.files/Day-14  AWS END TO END CI1471.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><img width="553" height="294"
+				src="Day-14  AWS END TO END CI.files/Day-14  AWS END TO END CI1474.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;"><span
+				style="font-family:Wingdings;"><span>&#9899;</span></span><span
+				style="font-family:Calibri;">Specify the build commands, such as installing dependencies and running
+				tests. Customize this based on your application's requirements.</span><span
+				style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><img width="553" height="294"
+				src="Day-14  AWS END TO END CI.files/Day-14  AWS END TO END CI1614.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">version: 0.2</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">env:</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">&nbsp;&nbsp;parameter-store:</span><span
+				style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">&nbsp;&nbsp;&nbsp;&nbsp;DOCKER_REGISTRY_USERNAME:
+				/myapp/docker-credentials/username</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">&nbsp;&nbsp;&nbsp;&nbsp;DOCKER_REGISTRY_PASSWORD:
+				/myapp/docker-credentials/password</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">&nbsp;&nbsp;&nbsp;&nbsp;DOCKER_REGISTRY_URL:
+				/myapp/docker-registry/url</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">phases:</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">&nbsp;&nbsp;install:</span><span
+				style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">&nbsp;&nbsp;&nbsp;&nbsp;runtime-versions:</span><span
+				style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;python:
+				3.11</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">&nbsp;&nbsp;pre_build:</span><span
+				style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">&nbsp;&nbsp;&nbsp;&nbsp;commands:</span><span
+				style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- echo "Installing
+				dependencies..."</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- pip install -r
+				requirements.txt</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">&nbsp;&nbsp;build:</span><span
+				style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">&nbsp;&nbsp;&nbsp;&nbsp;commands:</span><span
+				style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- echo "Building
+				Docker Image"</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- echo
+				"$DOCKER_REGISTRY_PASSWORD" | docker login -u "$DOCKER_REGISTRY_USERNAME" --password-stdin
+				"$DOCKER_REGISTRY_URL"</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- docker build -t
+				"$DOCKER_REGISTRY_URL/$DOCKER_REGISTRY_USERNAME/simple-python-flask-app:latest" .</span><span
+				style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- docker push
+				"$DOCKER_REGISTRY_URL/$DOCKER_REGISTRY_USERNAME/simple-python-flask-app:latest"</span><span
+				style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">&nbsp;&nbsp;post_build:</span><span
+				style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">&nbsp;&nbsp;&nbsp;&nbsp;commands:</span><span
+				style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- echo "Build is
+				successful"</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">Note: </span><span
+				style="font-family:Calibri;">$DOCKER_REGISTRY_URL</span><span style="font-family:Calibri;">&nbsp;=
+				docker.io</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;"><span
+				style="font-family:Wingdings;"><span>&#9899;</span></span><span
+				style="font-family:Calibri;">Set up the artifacts configuration to generate the build output required
+				for deployment.</span><span style="font-family:Calibri;">&nbsp;(if you want to)</span><span
+				style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;"><span
+				style="font-family:Wingdings;"><span>&#9899;</span></span><span
+				style="font-family:Calibri;">Review the build project settings and click on the "Create build project"
+				button to create your AWS CodeBuild project.</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><img width="553" height="294"
+				src="Day-14  AWS END TO END CI.files/Day-14  AWS END TO END CI2729.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">Creating secured credentials parameters and stored them in
+				AWS System Manager</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal><img width="553" height="294"
+				src="Day-14  AWS END TO END CI.files/Day-14  AWS END TO END CI2810.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">Granted the AWS system manager permission to the role
+				which executed the codebuild</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal><img width="553" height="294"
+				src="Day-14  AWS END TO END CI.files/Day-14  AWS END TO END CI2896.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">Enable privileged to build docker image in
+				Envirmoment</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal><img width="552" height="208"
+				src="Day-14  AWS END TO END CI.files/Day-14  AWS END TO END CI2954.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">The docker image is push to dockerhub</span><span
+				style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal><img width="553" height="294"
+				src="Day-14  AWS END TO END CI.files/Day-14  AWS END TO END CI2995.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<h2><b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;">Create an AWS
+					CodePipeline</span></b><b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;">
+					<o:p></o:p>
+				</span></b></h2>
+		<p class=MsoNormal><span style="font-family:Calibri;">In this step, we'll create an AWS CodePipeline to automate
+				the continuous integration process for our Python application. AWS CodePipeline will orchestrate the
+				flow of changes from our GitHub repository to the deployment of our application. Let's go ahead and set
+				it up:</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;"><span
+				style="font-family:Wingdings;"><span>&#9899;</span></span><span
+				style="font-family:Calibri;">Go to the AWS Management Console and navigate to the AWS CodePipeline
+				service.</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal><img width="552" height="208"
+				src="Day-14  AWS END TO END CI.files/Day-14  AWS END TO END CI3376.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;"><span
+				style="font-family:Wingdings;"><span>&#9899;</span></span><span
+				style="font-family:Calibri;">Click on the "Create pipeline" button.</span><span
+				style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;"><span
+				style="font-family:Wingdings;"><span>&#9899;</span></span><span
+				style="font-family:Calibri;">Provide a name for your pipeline and click on the "Next"
+				button.</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal><img width="553" height="294"
+				src="Day-14  AWS END TO END CI.files/Day-14  AWS END TO END CI3482.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><img width="553" height="294"
+				src="Day-14  AWS END TO END CI.files/Day-14  AWS END TO END CI3485.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><img width="553" height="294"
+				src="Day-14  AWS END TO END CI.files/Day-14  AWS END TO END CI3488.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;"><span
+				style="font-family:Wingdings;"><span>&#9899;</span></span><span
+				style="font-family:Calibri;">Create a new CodeBuild project by clicking on the "Create project"
+				button.</span><span style="font-family:Calibri;">&nbsp;(if you don’t have build project)</span><span
+				style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;"><span
+				style="font-family:Wingdings;"><span>&#9899;</span></span><span
+				style="font-family:Calibri;">Configure the CodeBuild project with the necessary settings for your Python
+				application, such as the build environment, build commands, and artifacts.</span><span
+				style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;"><span
+				style="font-family:Wingdings;"><span>&#9899;</span></span><span
+				style="font-family:Calibri;">Save the CodeBuild project and go back to CodePipeline</span><span
+				style="font-family:Calibri;">&nbsp;(if you create new build project)</span><span
+				style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><img width="553" height="294"
+				src="Day-14  AWS END TO END CI.files/Day-14  AWS END TO END CI3841.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;"><span
+				style="font-family:Wingdings;"><span>&#9899;</span></span><span
+				style="font-family:Calibri;">Continue configuring the pipeline stages, such as deploying your
+				application using AWS Elastic Beanstalk or any other suitable deployment option.</span><span
+				style="font-family:Calibri;">&nbsp;(skip for now)</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><img width="553" height="228"
+				src="Day-14  AWS END TO END CI.files/Day-14  AWS END TO END CI4007.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><img width="477" height="154"
+				src="Day-14  AWS END TO END CI.files/Day-14  AWS END TO END CI4010.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;"><span
+				style="font-family:Wingdings;"><span>&#9899;</span></span><span
+				style="font-family:Calibri;">Review the pipeline configuration and click on the "Create pipeline" button
+				to create your AWS CodePipeline.</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal><img width="553" height="294"
+				src="Day-14  AWS END TO END CI.files/Day-14  AWS END TO END CI4122.png"><span
+				style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<h2><b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;">Trigger the CI
+					Process</span></b><b><span style="font-family:Calibri;font-weight:bold;font-size:16.0000pt;">
+					<o:p></o:p>
+				</span></b></h2>
+		<p class=MsoNormal><span style="font-family:Calibri;">In this final step, we'll trigger the CI process by making
+				a change to our GitHub repository. Let's see how it works:</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal><span style="font-family:Calibri;">
+				<o:p>&nbsp;</o:p>
+			</span></p>
+		<p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;"><span
+				style="font-family:Wingdings;"><span>&#9899;</span></span><span
+				style="font-family:Calibri;">Go to your GitHub repository and make a change to your Python application's
+				source code. It could be a bug fix, a new feature, or any other change you want to
+				introduce.</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;"><span
+				style="font-family:Wingdings;"><span>&#9899;</span></span><span
+				style="font-family:Calibri;">Commit and push your changes to the branch configured in your AWS
+				CodePipeline.</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;"><span
+				style="font-family:Wingdings;"><span>&#9899;</span></span><span
+				style="font-family:Calibri;">Head over to the AWS CodePipeline console and navigate to your
+				pipeline.</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;"><span
+				style="font-family:Wingdings;"><span>&#9899;</span></span><span
+				style="font-family:Calibri;">You should see the pipeline automatically kick off as soon as it detects
+				the changes in your repository.</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+		<p class=MsoNormal style="margin-left:21.0000pt;text-indent:-21.0000pt;"><span
+				style="font-family:Wingdings;"><span>&#9899;</span></span><span
+				style="font-family:Calibri;">Sit back and relax while AWS CodePipeline takes care of the rest. It will
+				fetch the latest code, trigger the build process with AWS CodeBuild, and deploy the application if you
+				configured the deployment stage.</span><span style="font-family:Calibri;">
+				<o:p></o:p>
+			</span></p>
+	</main><!-- End #main --> <!-- ======= Footer ======= -->
+	<div w3-include-html="footer.htm"></div>
+	<script>includeHTML();</script> <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+			class="bi bi-arrow-up-short"></i></a> <!-- Vendor JS Files -->
+	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> <!-- Template Main JS File -->
+	<script src="assets/js/main.js"></script>
+</body>
+
+</html>
