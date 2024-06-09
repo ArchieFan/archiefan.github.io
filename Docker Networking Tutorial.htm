@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+	<title>My Portfolio</title>
+	<meta content="" name="description">
+	<meta content="" name="keywords">
+
+	<!-- Favicons -->
+	<link href="assets/img/favicon.png" rel="icon">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.gstatic.com" rel="preconnect">
+	<link
+		href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+		rel="stylesheet">
+
+	<!-- Vendor CSS Files -->
+	<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+	<!-- Template Main CSS File -->
+	<link href="assets/css/style.css" rel="stylesheet">
+
+	<script src="assets/js/layout.js"></script>
+</head>
+
+<body>
+
+	<!-- ======= Header ======= -->
+	<header id="header" class="header fixed-top d-flex align-items-center">
+
+		<div class="d-flex align-items-center justify-content-between">
+			<i class="bi bi-list toggle-sidebar-btn"></i>
+		</div><!-- End Logo -->
+
+		<nav class="header-nav ms-auto">
+
+			<ul class="d-flex align-items-center">
+				<div w3-include-html="header.htm"></div>
+			</ul>
+		</nav><!-- End Icons Navigation -->
+	</header><!-- End Header -->
+
+	<!-- ======= Sidebar ======= -->
+	<div w3-include-html="sidebar.htm"></div>
+
+	<main id="main" class="main">
+
+		<p class=MsoTocHeading>Table of Contents</p>
+
+		<p class=MsoToc1><span class=MsoHyperlink><a href="#_Toc168826378">Bridge
+					Network<span style='color:windowtext;display:none;text-decoration:none'>. </span><span
+						style='color:windowtext;display:none;text-decoration:none'>1</span></a></span></p>
+
+		<p class=MsoToc1><span class=MsoHyperlink><a href="#_Toc168826379">Bridge
+					Network Demo<span style='color:windowtext;display:none;text-decoration:none'>. </span><span
+						style='color:windowtext;display:none;text-decoration:none'>4</span></a></span></p>
+
+		<p class=MsoToc1><span class=MsoHyperlink><a href="#_Toc168826380">Host Network<span
+						style='color:windowtext;display:none;text-decoration:none'>. </span><span
+						style='color:windowtext;display:none;text-decoration:none'>5</span></a></span></p>
+
+		<p class=MsoToc1><span class=MsoHyperlink><a href="#_Toc168826381">Host Network
+					Demo<span style='color:windowtext;display:none;text-decoration:none'>. </span><span
+						style='color:windowtext;display:none;text-decoration:none'>6</span></a></span></p>
+
+		<p class=MsoToc1><span class=MsoHyperlink><a href="#_Toc168826382">None Network<span
+						style='color:windowtext;display:none;text-decoration:none'>. </span><span
+						style='color:windowtext;display:none;text-decoration:none'>6</span></a></span></p>
+
+		<p class=MsoToc1><span class=MsoHyperlink><a href="#_Toc168826383">None Network
+					Demo<span style='color:windowtext;display:none;text-decoration:none'>. </span><span
+						style='color:windowtext;display:none;text-decoration:none'>6</span></a></span></p>
+
+		<p class=MsoToc1><span class=MsoHyperlink><a href="#_Toc168826384">IPvlan
+					Network<span style='color:windowtext;display:none;text-decoration:none'>. </span><span
+						style='color:windowtext;display:none;text-decoration:none'>7</span></a></span></p>
+
+		<p class=MsoToc1><span class=MsoHyperlink><a href="#_Toc168826385">IPvlan
+					Network Demo<span style='color:windowtext;display:none;text-decoration:none'>. </span><span
+						style='color:windowtext;display:none;text-decoration:none'>8</span></a></span></p>
+
+		<p class=MsoToc1><span class=MsoHyperlink><a href="#_Toc168826386">Macvlan
+					Network<span style='color:windowtext;display:none;text-decoration:none'>. </span><span
+						style='color:windowtext;display:none;text-decoration:none'>9</span></a></span></p>
+
+		<p class=MsoToc1><span class=MsoHyperlink><a href="#_Toc168826387">Macvlan
+					Network Demo<span style='color:windowtext;display:none;text-decoration:none'>. </span><span
+						style='color:windowtext;display:none;text-decoration:none'>10</span></a></span></p>
+
+		<p class=MsoToc1><span class=MsoHyperlink><a href="#_Toc168826388">Overlay
+					Network<span style='color:windowtext;display:none;text-decoration:none'>. </span><span
+						style='color:windowtext;display:none;text-decoration:none'>10</span></a></span></p>
+
+		<p class=MsoToc1><span class=MsoHyperlink><a href="#_Toc168826389">Overlay
+					Network Demo<span style='color:windowtext;display:none;text-decoration:none'>. </span><span
+						style='color:windowtext;display:none;text-decoration:none'>11</span></a></span></p>
+
+		<p class=MsoNormal> </p>
+
+		<p class=MsoNormal> </p>
+
+		<p class=MsoNormal> </p>
+
+		<p class=MsoNormal> </p>
+
+		<h1><a name="_Toc168826378">Bridge Network</a></h1>
+
+		</span>
+
+		<p class=MsoNormal> </p>
+
+		<p class=MsoNormal>Let's start with the default bridge network, which is used
+			whenever you start a container. But first, let's take a look at what a
+			bridge is in a regular network without Docker. In a nutshell, a bridge is
+			a physical or virtual device that connects multiple local area networks.</p>
+
+		<p class=MsoNormal><img width=602 height=282 id="Picture 1"
+				src="Docker%20Networking%20Tutorial%20.files/image001.png"></p>
+
+		<p class=MsoNormal> </p>
+
+		<p class=MsoNormal>Let's say you have a large number of devices connected
+			to the local network in an office building. when two or more devices on the
+			same network try to transmit data at the exact same time, this will lead
+			to a collision, and some packets will be dropped. So, the more devices you
+			have connected to the same network, the more collisions you would
+			have. This reduces the performance of the network since if the packets are
+			dropped, the sender needs to resend those packets. </p>
+
+		<p class=MsoNormal> </p>
+
+		<p class=MsoNormal>To solve this problem, the bridge was introduced. The bridge
+			can divide the local network into multiple smaller networks. For
+			example, we can split the original network with 30 devices into two
+			networks with 15 devices each. And each network will get its own collision
+			domain. Fewer devices on the network mean fewer chances of a collision to
+			happen.</p>
+
+		<p class=MsoNormal><img width=602 height=346 id="Picture 2"
+				src="Docker%20Networking%20Tutorial%20.files/image002.png"></p>
+
+		<p class=MsoNormal> </p>
+
+		<p class=MsoNormal>Now, when it comes to Docker, the two segments that the
+			bridge connects are your local host (it can be your laptop or a Linux
+			server where you run your containers) and the virtual network created
+			by Docker. For example, when you install Docker for the first time, it
+			will create a default bridge network with a CIDR like 172.17.0.1/16. And
+			all containers that you create on that host will get an IP address
+			from that range. Also, containers that are created in that default bridge
+			network will be able to communicate with each other.</p>
+
+		<p class=MsoNormal><img width=594 height=416 id="Picture 4"
+				src="Docker%20Networking%20Tutorial%20.files/image003.png"></p>
+
+		<p class=MsoNormal> </p>
+
+		<p class=MsoNormal>Now, the default bridge network has some limitations, and
+			even Docker itself does not recommend using it, especially in production. The
+			recommended approach would be to create a new user-defined bridge network.
+			The biggest difference you'll notice immediately is that with a user-defined
+			network, you can use DNS to send requests to your containers. This
+			applies only to communications inside the bridge network between
+			containers. You still won't be able to use the container DNS from the
+			host. The name that you give to the container when you start it will
+			become its DNS name. This is not possible in the default bridge network.</p>
+
+		<p class=MsoNormal><img width=594 height=374 id="Picture 5"
+				src="Docker%20Networking%20Tutorial%20.files/image004.png"></p>
+
+		<h1><a name="_Toc168826379">Bridge Network Demo</a></h1>
+
+		</span>
+
+		<p class=MsoNormal> </p>
+
+		<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+			<p class=MsoNormal style='border:none;padding:0cm'>docker network ls</p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'>docker network inspect
+				bridge</p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'>docker run -d --name myapp
+				-p 8081:8080 archiefan/myapp:latest</p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'>docker ps</p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'>docker inspect myapp</p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'>curl localhost:8081/api/info</p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'> </p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'>docker run -d --name
+				myapp-v2 -p 8082:8080 archiefan/myapp:latest</p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'>docker ps</p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'> </p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'>curl localhost:8081/api/info</p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'>curl localhost:8082/api/info</p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'>docker exec -it myapp sh</p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'> </p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'>curl
+				172.17.0.2:8080/api/info</p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'>curl
+				172.17.0.3:8080/api/info</p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'> </p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'>curl myapp-v2:8080/api/info</p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'> </p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'>docker rm -f myapp myapp-v2</p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'> </p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'>docker network create
+				my-bridge-net --subnet 10.0.0.0/19 --gateway 10.0.0.1</p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'>docker network ls</p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'>docker network inspect
+				my-bridge-net</p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'> </p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'>docker run -d --name myapp
+				-p 8081:8080 --network my-bridge-net archiefan/myapp:latest</p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'>docker run -d --name
+				myapp-v2 -p 8082:8080 --network my-bridge-net archiefan/myapp:latest</p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'>curl localhost:8081/api/info</p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'>curl localhost:8082/api/info</p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'> </p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'>docker exec -it myapp sh</p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'>curl myapp-v2:8080/api/info</p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'> </p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'>docker rm -f myapp myapp-v2</p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'>docker network rm
+				my-bridge-net</p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'> </p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'>docker compose -f
+				1-compose.yaml up -d</p>
+
+		</div>
+
+		<p class=MsoNormal> </p>
+
+		<h1><a name="_Toc168826380">Host Network</a></h1>
+
+		</span>
+
+		<p class=MsoNormal> </p>
+
+		<p class=MsoNormal>If you use this option, your container will not get its
+			own IP address and will share the same networking namespace as the host
+			where you run your container. Essentially, there is no networking
+			isolation from the host, and it would appear as if you were running
+			a regular application on that host. Therefore, any application
+			running on a different server will be able to access your container using the
+			host's IP address. This networking driver only works on Linux instances
+			and is most likely used in production to expose your services to clients,
+			rather than for local development. When you use the host network,
+			obviously you cannot use or bind multiple containers to the same
+			port. For example, you won't be able to run two proxies on port 80. Now, when
+			using the host network, it does not require address translation
+			(NAT), and no 'userland-proxy' is created for each port, which
+			means it increases performance. So, the two main reasons why you would
+			choose this option are to optimize performance and if the container
+			is using a lot of ports that you need to bind to the host.</p>
+
+		<p class=MsoNormal><img width=602 height=311 id="Picture 7"
+				src="Docker%20Networking%20Tutorial%20.files/image005.jpg"></p>
+
+		<p class=MsoNormal> </p>
+
+		<h1><a name="_Toc168826381">Host Network Demo</a></h1>
+
+		</span>
+
+		<p class=MsoNormal> </p>
+
+		<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+			<p class=MsoNormal style='border:none;padding:0cm'>docker run -d --name myapp
+				--network host archiefan/myapp:latest</p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'>docker ps</p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'> </p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'>curl
+				192.168.50.55:8080/api/info</p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'> </p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'>docker rm -f myapp</p>
+
+		</div>
+
+		<p class=MsoNormal> </p>
+
+		<h1><a name="_Toc168826382"><span class=yt-core-attributed-string--link-inherit-color>None
+					Network</span></a><span class=yt-core-attributed-string--link-inherit-color> </span></h1>
+
+		<p class=MsoNormal><span class=yt-core-attributed-string--link-inherit-color><span
+					style='font-size:10.5pt;line-height:107%; '> </span></span></p>
+
+		<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'>This
+				completely isolates the container from the host and other containers running
+				on that server. When you use this option, only the loopback interface will
+				be created for the container. You won't be able to publish or forward
+				any ports. This mode can be used, for example, to run batch jobs or
+				some kind of data processing pipelines.</span></p>
+
+		<p class=MsoNormal><span class=yt-core-attributed-string--link-inherit-color><span
+					style='font-size:12.0pt;line-height:107%'> </span></span></p>
+
+		<h1><a name="_Toc168826383"><span class=yt-core-attributed-string--link-inherit-color>None Network
+					Demo</span></a></h1>
+
+		<p class=MsoNormal><span class=yt-core-attributed-string--link-inherit-color><span
+					style='font-size:10.5pt;line-height:107%; '> </span></span></p>
+
+		<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+			<p class=MsoNormal style='border:none;padding:0cm'><span
+					class=yt-core-attributed-string--link-inherit-color><span style='font-size:
+10.5pt;line-height:107%; '>docker run -d --name myapp
+						--network none archiefan/myapp</span></span>:latest</p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'><span
+					class=yt-core-attributed-string--link-inherit-color><span style='font-size:
+10.5pt;line-height:107%; '>docker exec myapp ip addr</span></span></p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'><span
+					class=yt-core-attributed-string--link-inherit-color><span style='font-size:
+10.5pt;line-height:107%; '> </span></span></p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'><span
+					class=yt-core-attributed-string--link-inherit-color><span style='font-size:
+10.5pt;line-height:107%; '>docker run -d --name myapp -p
+						8081:8080 --network none archiefan/myapp</span></span>:latest</p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'><span
+					class=yt-core-attributed-string--link-inherit-color><span style='font-size:
+10.5pt;line-height:107%; '>docker run -d --name myapp -p
+						8081:8080 archiefan/myapp</span></span>:latest</p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'><span
+					class=yt-core-attributed-string--link-inherit-color><span style='font-size:
+10.5pt;line-height:107%; '>curl localhost:8081/api/info</span></span></p>
+
+		</div>
+
+		<p class=MsoNormal><span class=yt-core-attributed-string--link-inherit-color><span
+					style='font-size:10.5pt;line-height:107%; '> </span></span></p>
+
+		<h1><a name="_Toc168826384"><span class=yt-core-attributed-string--link-inherit-color>IPvlan Network</span></a>
+		</h1>
+
+		<p class=MsoNormal><span class=yt-core-attributed-string--link-inherit-color><span
+					style='font-size:10.5pt;line-height:107%; '> </span></span></p>
+
+		<p class=MsoNormal>Traditionally, to expose a container to the outside
+			world, we used a bridge. It works just fine but adds additional complexity.
+			Besides the performance penalty, since the packet needs to go
+			through an additional hop, we also have to map ports from the
+			container to the host in order to expose it to other applications.</p>
+
+		<p class=MsoNormal><span class=yt-core-attributed-string--link-inherit-color><span
+					style='font-size:10.5pt;line-height:107%; '><img width=601 height=301 id="Picture 8"
+						src="Docker%20Networking%20Tutorial%20.files/image006.jpg"></span></span></p>
+
+		<p class=MsoNormal><span class=yt-core-attributed-string--link-inherit-color><span
+					style='font-size:10.5pt;line-height:107%; '> </span></span></p>
+
+		<p class=MsoNormal>Now, IPvlan is a new network virtualization technique.
+			It's extremely lightweight since it does not use a bridge for isolation
+			and is associated directly with the Linux network interface. As a result,
+			it is easy to provide access for external-facing services, as there
+			is no need for port mappings in these scenarios. When you start a
+			container using this type, the container will receive an IP address from
+			the same CIDR range. For example, if my host has an IP address of
+			192.168.50.55 and it's on a /24 network, this means the range starts from
+			50.0 and the last IP address for this range is 50.255, which gives you 256 IP
+			addresses. Now, the container may receive the 50.2 IP address. Any
+			service on that network will be able to access your application using
+			that IP address, whether it's a VM or another container on a different
+			host. And the traffic will be routed using the network gateway.</p>
+
+		<p class=MsoNormal><span class=yt-core-attributed-string--link-inherit-color><span
+					style='font-size:10.5pt;line-height:107%; '><img width=602 height=306 id="Picture 9"
+						src="Docker%20Networking%20Tutorial%20.files/image007.jpg"></span></span></p>
+
+		<p class=MsoNormal><span class=yt-core-attributed-string--link-inherit-color><span
+					style='font-size:10.5pt;line-height:107%; '> </span></span></p>
+
+		<h1><a name="_Toc168826385"><span class=yt-core-attributed-string--link-inherit-color>IPvlan Network
+					Demo</span></a></h1>
+
+		<p class=MsoNormal><span class=yt-core-attributed-string--link-inherit-color><span
+					style='font-size:10.5pt;line-height:107%; '> </span></span></p>
+
+		<p class=MsoNormal><span class=yt-core-attributed-string--link-inherit-color><span
+					style='font-size:10.5pt;line-height:107%; '>The ipvlan_mode
+					option in Docker specifies the mode in which the IPvlan driver operates. IPvlan
+					is a Linux network driver that provides network connectivity to Docker
+					containers by creating multiple virtual network interfaces on top of a single
+					physical interface. There are two primary modes for IPvlan: Layer 2 (L2) mode
+					and Layer 3 (L3) mode.</span></span></p>
+
+		<p class=MsoNormal><span class=yt-core-attributed-string--link-inherit-color><span
+					style='font-size:10.5pt;line-height:107%; '>IPvlan Modes</span></span></p>
+
+		<p class=MsoNormal><span class=yt-core-attributed-string--link-inherit-color><span
+					style='font-size:10.5pt;line-height:107%; '>L2 (Layer 2) Mode:</span></span></p>
+
+		<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'>
+		<ul>
+			<li>In L2 mode, IPvlan functions similarly to a virtual switch. Containers appear as if they are directly
+				connected to the same network segment as the parent interface.</li>
+			<li>Each container gets an IP address from the same subnet as the parent interface.</li>
+			<li>This mode is useful for environments where you want containers to be on the same broadcast domain as
+				other devices on the network.</li>
+		</ul>
+		</p>
+
+		<p class=MsoNormal><span class=yt-core-attributed-string--link-inherit-color><span
+					style='font-size:10.5pt;line-height:107%; '>L3 (Layer 3) Mode:</span></span></p>
+
+		<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'>
+		<ul>
+			<li>In L3 mode, each
+				container gets an IP address from a different subnet than the parent interface.</li>
+
+			<li>IPvlan routes
+				traffic between subnets at Layer 3, which means containers are isolated from
+				the host's network segment.</li>
+
+			<li>This mode is
+				useful for scenarios where you want to have network isolation between
+				containers and the host or other containers.</li>
+		</ul>
+		</p>
+
+		<p class=MsoNormal><span class=yt-core-attributed-string--link-inherit-color><span
+					style='font-size:10.5pt;line-height:107%; '> </span></span></p>
+
+		<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+			<p class=MsoNormal style='border:none;padding:0cm'><span
+					class=yt-core-attributed-string--link-inherit-color><span style='font-size:
+10.5pt;line-height:107%; '>ipconfig</span></span></p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'><span
+					class=yt-core-attributed-string--link-inherit-color><span style='font-size:
+10.5pt;line-height:107%; '> </span></span></p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'><span
+					class=yt-core-attributed-string--link-inherit-color><span style='font-size:
+10.5pt;line-height:107%; '>docker network create -d ipvlan \</span></span></p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'><span
+					class=yt-core-attributed-string--link-inherit-color><span style='font-size:
+10.5pt;line-height:107%; '>' --subnet=192.168.50.0/24 \</span></span></p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'><span
+					class=yt-core-attributed-string--link-inherit-color><span style='font-size:
+10.5pt;line-height:107%; '>' --gateway=192.168.50.1 \</span></span></p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'><span
+					class=yt-core-attributed-string--link-inherit-color><span style='font-size:
+10.5pt;line-height:107%; '>' -o ipvlan_mode=l2 \</span></span></p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'><span
+					class=yt-core-attributed-string--link-inherit-color><span style='font-size:
+10.5pt;line-height:107%; '>' -o
+						parent=&lt;YOUR_NETWORK_INTERFACE&gt; my-ipvlan-net</span></span></p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'><span
+					class=yt-core-attributed-string--link-inherit-color><span style='font-size:
+10.5pt;line-height:107%; '> </span></span></p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'><span
+					class=yt-core-attributed-string--link-inherit-color><span style='font-size:
+10.5pt;line-height:107%; '>docker network ls</span></span></p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'><span
+					class=yt-core-attributed-string--link-inherit-color><span style='font-size:
+10.5pt;line-height:107%; '>docker run -d --name myapp
+						--network my-ipvlan-net archiefan/myapp</span></span>:latest</p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'><span
+					class=yt-core-attributed-string--link-inherit-color><span style='font-size:
+10.5pt;line-height:107%; '>docker inspect myapp</span></span></p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'><span
+					class=yt-core-attributed-string--link-inherit-color><span style='font-size:
+10.5pt;line-height:107%; '> </span></span></p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'><span
+					class=yt-core-attributed-string--link-inherit-color><span style='font-size:
+10.5pt;line-height:107%; '>curl 192.168.50.2:8080/api/info</span></span></p>
+
+		</div>
+
+		<p class=MsoNormal><span class=yt-core-attributed-string--link-inherit-color><span
+					style='font-size:10.5pt;line-height:107%; '> </span></span></p>
+
+		<h1><a name="_Toc168826386"><span class=yt-core-attributed-string--link-inherit-color>Macvlan Network</span></a>
+		</h1>
+
+		<p class=MsoNormal><span class=yt-core-attributed-string--link-inherit-color><span
+					style='font-size:10.5pt;line-height:107%; '> </span></span></p>
+
+		<p class=MsoNormal>Some applications, especially legacy applications or
+			applications which monitor network traffic, expect to be directly
+			connected to the physical network. In this case, you can use the macvlan network
+			driver to assign a MAC address to each container's virtual network
+			interface. It will appear as a physical network interface directly
+			connected to the physical network. The difference for example between
+			ipvlan and macvlan is that if you use ipvlan, your container will get
+			the same Mac address as your host but in case with macvlan, the Mac
+			address will be different.</p>
+
+		<p class=MsoNormal><span class=yt-core-attributed-string--link-inherit-color><span
+					style='font-size:10.5pt;line-height:107%; '><img width=586 height=402 id="Picture 10"
+						src="Docker%20Networking%20Tutorial%20.files/image008.png"></span></span></p>
+
+		<p class=MsoNormal><span class=yt-core-attributed-string--link-inherit-color><span
+					style='font-size:10.5pt;line-height:107%; '> </span></span></p>
+
+		<h1><a name="_Toc168826387"><span class=yt-core-attributed-string--link-inherit-color>Macvlan Network
+					Demo</span></a></h1>
+
+		<p class=MsoNormal><span class=yt-core-attributed-string--link-inherit-color><span
+					style='font-size:10.5pt;line-height:107%; '> </span></span></p>
+
+		<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+			<p class=MsoNormal style='border:none;padding:0cm'><span
+					class=yt-core-attributed-string--link-inherit-color><span style='font-size:
+10.5pt;line-height:107%; '>docker network create -d macvlan \</span></span></p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'><span
+					class=yt-core-attributed-string--link-inherit-color><span style='font-size:
+10.5pt;line-height:107%; '>' --subnet=192.168.50.0/24 \</span></span></p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'><span
+					class=yt-core-attributed-string--link-inherit-color><span style='font-size:
+10.5pt;line-height:107%; '>' --gateway=192.168.50.1 \</span></span></p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'><span
+					class=yt-core-attributed-string--link-inherit-color><span style='font-size:
+10.5pt;line-height:107%; '>' -o parent=&lt;YOUR_NETWORK_INTERFACE&gt;
+						my-macvlan-net</span></span></p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'><span
+					class=yt-core-attributed-string--link-inherit-color><span style='font-size:
+10.5pt;line-height:107%; '> </span></span></p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'><span
+					class=yt-core-attributed-string--link-inherit-color><span style='font-size:
+10.5pt;line-height:107%; '>docker network ls</span></span></p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'><span
+					class=yt-core-attributed-string--link-inherit-color><span style='font-size:
+10.5pt;line-height:107%; '> </span></span></p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'><span
+					class=yt-core-attributed-string--link-inherit-color><span style='font-size:
+10.5pt;line-height:107%; '>docker run -d --name myapp
+						--network my-macvlan-net archiefan/myapp</span></span>:latest</p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'><span
+					class=yt-core-attributed-string--link-inherit-color><span style='font-size:
+10.5pt;line-height:107%; '>docker inspect myapp</span></span></p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'><span
+					class=yt-core-attributed-string--link-inherit-color><span style='font-size:
+10.5pt;line-height:107%; '>docker exec -it myapp sh</span></span></p>
+
+		</div>
+
+		<p class=MsoNormal><span class=yt-core-attributed-string--link-inherit-color><span
+					style='font-size:10.5pt;line-height:107%; '> </span></span></p>
+
+		<h1><a name="_Toc168826388"><span class=yt-core-attributed-string--link-inherit-color>Overlay Network</span></a>
+		</h1>
+
+		<p class=MsoNormal><span class=yt-core-attributed-string--link-inherit-color><span
+					style='font-size:10.5pt;line-height:107%; '> </span></span></p>
+
+		<p class=MsoNormal>Now, when you deploy your applications to
+			production, of course, you will need more than one physical or
+			virtual server, each with the Docker daemon installed. The overlay network
+			driver creates a distributed network among multiple Docker daemon hosts.
+			This network sits on top of (overlays) the host-specific networks, allowing
+			containers connected to it to communicate securely, especially when encryption
+			is enabled. Most frequently, this type of network is used with Docker
+			Swarm, however, it is also possible to connect individual containers as
+			well. In my opinion, if you really want to manage your containers at
+			scale, especially in production, you should consider using Kubernetes.</p>
+
+		<p class=MsoNormal><span class=yt-core-attributed-string--link-inherit-color><span
+					style='font-size:10.5pt;line-height:107%; '><img width=602 height=363 id="Picture 11"
+						src="Docker%20Networking%20Tutorial%20.files/image009.png"></span></span></p>
+
+		<p class=MsoNormal><span class=yt-core-attributed-string--link-inherit-color><span
+					style='font-size:10.5pt;line-height:107%; '> </span></span></p>
+
+		<h1><a name="_Toc168826389"><span class=yt-core-attributed-string--link-inherit-color>Overlay Network
+					Demo</span></a></h1>
+
+		<p class=MsoNormal> </p>
+
+		<p class=MsoNormal>Most people use overlay with Docker Swarm, but in this
+			demo, I want to show you how to connect individual containers to the
+			overlay network. Well, for this demo, I also have two virtual
+			machines based on Ubuntu. Before we can run the demo, I found that many
+			people faced the same problem with the overlay network, and we need
+			to disable something to make it work. Let's find the network interfaces on
+			both VMs. So, in my case, it's ens33 on both VMs. Now we need to
+			disable this on that network interface on both VMs. This solution is
+			not persistent across restarts, so you would need to maybe create this
+			script and automatically run it on boot. There are many options
+			available for you to solve this. Even if we want to connect individual
+			containers to overlay network, we still need to initialize the Docker
+			Swarm. It's actually very easy. On the first VM, just run 'docker swarm
+			init'. Then it will give you a command that you can execute on
+			other VMs to join the Docker Swarm. Keep in mind that each VM should
+			have Docker installed. So far, we have a manager and worker node. On the
+			manager, let's create an overlay network. Add an attachable flag in order for
+			individual containers to be able to use this network, otherwise only
+			swarm services will be able to use it. Check if the network was created.</p>
+
+		<p class=MsoNormal>Now, on the manager node, let's start the container and use
+			this overlay network. </p>
+
+		<p class=MsoNormal>If you list networks on the second worker node, you'll
+			notice that the overlay network is missing. It's automatically created
+			when you start the container that uses that network. Let's go ahead and
+			run a container on the worker node. Now you can see that the overlay
+			network is created. To verify that we can access containers on that overlay
+			network deployed on different VMs, we can SSH to the second container and use
+			curl to send a request to the first container on the manager node.</p>
+
+		<p class=MsoNormal> </p>
+
+		<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+			<p class=MsoNormal style='border:none;padding:0cm'>(host 1) ip addr</p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'>(host 1) sudo ethtool -K
+				ens33 tx-checksum-ip-generic off</p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'> </p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'>(host 2) ip addr</p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'>(host 2) sudo ethtool -K
+				ens33 tx-checksum-ip-generic off</p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'> </p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'>(host 1) docker swarm init</p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'>(host 2) docker swarm join
+				...</p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'>(host 1) docker network
+				create -d overlay --attachable my-overlay-net</p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'>(host 1) docker network ls</p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'> </p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'>(host 1) docker run -d
+				--name myapp --network my-overlay-net archiefan/myapp:latest</p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'>(host 2) docker network ls</p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'>(host 2) docker run -dit
+				--name myapp-v2 --network my-overlay-net archiefan/myapp:latest</p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'>(host 2) docker network ls</p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'>(host 2) docker exec -it
+				myapp-v2 sh</p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'> </p>
+
+			<p class=MsoNormal style='border:none;padding:0cm'>curl myapp:8080/api/info</p>
+
+		</div>
+
+		<p class=MsoNormal> </p>
+
+	</main><!-- End #main -->
+
+	<!-- ======= Footer ======= -->
+	<div w3-include-html="footer.htm"></div>
+	<script>includeHTML();</script>
+
+	<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+			class="bi bi-arrow-up-short"></i></a>
+
+	<!-- Vendor JS Files -->
+	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Template Main JS File -->
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
