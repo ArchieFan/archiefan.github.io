@@ -1,0 +1,1178 @@
+<html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+	<title>My Portfolio</title>
+	<meta content="" name="description">
+	<meta content="" name="keywords">
+
+	<!-- Favicons -->
+	<link href="assets/img/favicon.png" rel="icon">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.gstatic.com" rel="preconnect">
+	<link
+		href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+		rel="stylesheet">
+
+	<!-- Vendor CSS Files -->
+	<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+	<!-- Template Main CSS File -->
+	<link href="assets/css/style.css" rel="stylesheet">
+
+	<script src="assets/js/layout.js"></script>
+</head>
+
+<body>
+
+	<!-- ======= Header ======= -->
+	<header id="header" class="header fixed-top d-flex align-items-center">
+
+		<div class="d-flex align-items-center justify-content-between">
+			<i class="bi bi-list toggle-sidebar-btn"></i>
+		</div><!-- End Logo -->
+
+		<nav class="header-nav ms-auto">
+
+			<ul class="d-flex align-items-center">
+				<div w3-include-html="header.htm"></div>
+			</ul>
+		</nav><!-- End Icons Navigation -->
+	</header><!-- End Header -->
+
+	<!-- ======= Sidebar ======= -->
+	<div w3-include-html="sidebar.htm"></div>
+
+	<main id="main" class="main">
+
+
+
+		<section class="section dashboard">
+			<div class="row">
+
+				<p class=MsoTocHeading>Table of Contents</p>
+
+				<p class=MsoToc1><span class=MsoHyperlink><a href="#_Toc183679542">Five steps
+							to create database in MongoDB Atlas<span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span style='color:windowtext;display:none;text-decoration:none'>1</span></a></span></p>
+
+				<p class=MsoToc1><span class=MsoHyperlink><a href="#_Toc183679543">How to
+							connect to MongoDB Atlas<span style='color:windowtext;display:none;text-decoration:
+none'>. </span><span style='color:windowtext;display:none;text-decoration:none'>1</span></a></span></p>
+
+				<p class=MsoToc1><span class=MsoHyperlink><a href="#_Toc183679544">Common Mongo
+							Shell Commands<span style='color:windowtext;display:none;text-decoration:none'>.
+							</span><span style='color:windowtext;display:none;text-decoration:none'>1</span></a></span>
+				</p>
+
+				<p class=MsoToc1><span class=MsoHyperlink><a href="#_Toc183679545">Collection
+							find()<span style='color:windowtext;display:none;text-decoration:none'> </span><span
+								style='color:windowtext;display:none;text-decoration:none'>1</span></a></span></p>
+
+				<p class=MsoToc1><span class=MsoHyperlink><a href="#_Toc183679546">Query
+							operators<span style='color:windowtext;display:none;text-decoration:none'>. </span><span
+								style='color:windowtext;display:none;text-decoration:none'>1</span></a></span></p>
+
+				<p class=MsoToc1><span class=MsoHyperlink><a href="#_Toc183679547">Find()
+							projection<span style='color:windowtext;display:none;text-decoration:none'>. </span><span
+								style='color:windowtext;display:none;text-decoration:none'>1</span></a></span></p>
+
+				<p class=MsoToc1><span class=MsoHyperlink><a href="#_Toc183679548">Inclusion
+							and exclusion projection<span style='color:windowtext;display:none;text-decoration:
+none'>. </span><span style='color:windowtext;display:none;text-decoration:none'>1</span></a></span></p>
+
+				<p class=MsoToc1><span class=MsoHyperlink><a href="#_Toc183679549">Find() in
+							nested object<span style='color:windowtext;display:none;text-decoration:none'> </span><span
+								style='color:windowtext;display:none;text-decoration:none'>1</span></a></span></p>
+
+				<p class=MsoToc1><span class=MsoHyperlink><a href="#_Toc183679550">Find()
+							cursor<span style='color:windowtext;display:none;text-decoration:none'> </span><span
+								style='color:windowtext;display:none;text-decoration:none'>1</span></a></span></p>
+
+				<p class=MsoToc1><span class=MsoHyperlink><a href="#_Toc183679551">UpdateOne()
+							and UpdateMany()<span style='color:windowtext;display:none;text-decoration:
+none'> </span><span style='color:windowtext;display:none;text-decoration:none'>1</span></a></span></p>
+
+				<p class=MsoToc1><span class=MsoHyperlink><a href="#_Toc183679552">DeleteOne()
+							and DeleteMany()<span style='color:windowtext;display:none;text-decoration:
+none'> </span><span style='color:windowtext;display:none;text-decoration:none'>1</span></a></span></p>
+
+				<p class=MsoToc1><span class=MsoHyperlink><a href="#_Toc183679553">MongoDB
+							Compass<span style='color:windowtext;display:none;text-decoration:none'>. </span><span
+								style='color:windowtext;display:none;text-decoration:none'>1</span></a></span></p>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<h1 style='page-break-before:always'><a name="_Toc183679542">Five steps to
+						create database in MongoDB Atlas</a></h1>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoListParagraph style='margin-left:18.0pt;text-indent:-18.0pt'>1)<span
+						style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Create
+					cluster</p>
+
+				<p class=MsoNormal><img width=602 height=266 id="Picture 1"
+						src="Getting%20started%20with%20MongoDB%20database.files/image001.png"></p>
+
+				<p class=MsoListParagraph style='margin-left:18.0pt;text-indent:-18.0pt'>2)<span
+						style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Create
+					database user</p>
+
+				<p class=MsoNormal><img width=602 height=266 id="Picture 2"
+						src="Getting%20started%20with%20MongoDB%20database.files/image002.png"></p>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal><img width=602 height=402 id="Picture 3"
+						src="Getting%20started%20with%20MongoDB%20database.files/image003.png"></p>
+
+				<p class=MsoListParagraph style='margin-left:18.0pt;text-indent:-18.0pt'>3)<span
+						style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Add IP
+					address of your computer and device</p>
+
+				<p class=MsoNormal><img width=602 height=490 id="Picture 4"
+						src="Getting%20started%20with%20MongoDB%20database.files/image004.png"></p>
+
+				<p class=MsoListParagraphCxSpFirst style='margin-left:18.0pt;text-indent:-18.0pt'>4)<span
+						style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Load
+					sample data</p>
+
+				<p class=MsoListParagraphCxSpLast style='margin-left:18.0pt;text-indent:-18.0pt'>5)<span
+						style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Connect to
+					your Mongo cluster</p>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<h1><a name="_Toc183679543">How to connect to MongoDB Atlas</a></h1>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal><img width=602 height=610 id="Picture 5"
+						src="Getting%20started%20with%20MongoDB%20database.files/image005.png"></p>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal><b>Connect to your application</b></p>
+
+				<p class=MsoNormal>You can also connect your own custom application. This
+					application may be built using any technology (.NET, Java, PHP, Node, Python,
+					etc), it doesn't matter.</p>
+
+				<p class=MsoNormal><b>MongoDB Compass</b></p>
+
+				<p class=MsoNormal>MongoDB Compass is a GUI (Graphical User Interface) for
+					querying, visualizing and modifying database data. Behind the scenes, both the
+					Shell and Compass issues the same commands to the database server.</p>
+
+				<p class=MsoNormal><b>MongoDB Shell</b></p>
+
+				<p class=MsoNormal>MongoDB Shell is an interactive JavaScript interface for
+					querying and modifying database data. We can also use it to perform
+					administrative operations like creating databases, collections etc.</p>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal><img width=602 height=310 id="Picture 10"
+						src="Getting%20started%20with%20MongoDB%20database.files/image006.jpg"></p>
+
+				<p class=MsoNormal>P.S. Shell is case sensitive. </p>
+
+				<p class=MsoNormal>cls to clear the screen</p>
+
+				<p class=MsoNormal><img width=602 height=310 id="Picture 12"
+						src="Getting%20started%20with%20MongoDB%20database.files/image007.jpg"></p>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<h1><a name="_Toc183679544">Common Mongo Shell Commands</a></h1>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal>show dbs : Print a list of all databases on the server.</p>
+
+				<p class=MsoNormal>use &lt;dbname&gt; : Switch current database to
+					&lt;dbname&gt;. </p>
+
+				<p class=MsoNormal>db : Displays the current database in use.</p>
+
+				<p class=MsoNormal>show collections : Prints the list of collections in the
+					current database.</p>
+
+				<p class=MsoNormal>db.createCollection() : Creates a new collection</p>
+
+				<p class=MsoNormal>db.collection.drop() : Drops or removes the collection
+					completely.</p>
+
+				<p class=MsoNormal>db.collection.insertOne() : Insert a new document into the
+					collection.</p>
+
+				<p class=MsoNormal>db.collection.insertMany() : Insert multiple new documents
+					into the collection.</p>
+
+				<p class=MsoNormal>db.collection.updateOne() : Update a single existing
+					document in the collection.</p>
+
+				<p class=MsoNormal>db.collection.updateMany() : Update multiple existing
+					documents in the collection.</p>
+
+				<p class=MsoNormal>db.collection.deleteOne() : Delete a single document from
+					the collection.</p>
+
+				<p class=MsoNormal>db.collection.deleteMany() : Delete documents from the
+					collection.</p>
+
+				<p class=MsoNormal>db.collection.createIndex() : Create a new index on the
+					collection if the index does not exist; otherwise, the operation has no effect.</p>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal><img width=601 height=401 id="Picture 13"
+						src="Getting%20started%20with%20MongoDB%20database.files/image008.jpg"></p>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'>db</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#5F6364'>.</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'>studentcourses</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#5F6364'>.</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#2F9C0A'>insertMany</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#5F6364'>([</span></p>
+
+				<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'>� </span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#5F6364'>{</span></p>
+
+				<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'>���
+					</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#2F9C0A'>&quot;name&quot;</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#A67F59'>:</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'> </span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#2F9C0A'>&quot;Mary&quot;</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#5F6364'>,</span></p>
+
+				<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'>���
+					</span><span style='font-size:11.5pt;font-family:Consolas;color:#2F9C0A'>&quot;age&quot;</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#A67F59'>:</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'> </span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#C92C2C'>28</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#5F6364'>,</span></p>
+
+				<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'>���
+					</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#2F9C0A'>&quot;gender&quot;</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#A67F59'>:</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'> </span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#2F9C0A'>&quot;Female&quot;</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#5F6364'>,</span></p>
+
+				<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'>���
+					</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#2F9C0A'>&quot;graduated&quot;</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#A67F59'>:</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'> </span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#C92C2C'>true</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#5F6364'>,</span></p>
+
+				<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'>���
+					</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#2F9C0A'>&quot;address&quot;</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#A67F59'>:</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'> </span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#5F6364'>{</span></p>
+
+				<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'>�����
+					</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#2F9C0A'>&quot;street&quot;</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#A67F59'>:</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'> </span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#2F9C0A'>&quot;99 George
+						Street&quot;</span><span style='font-size:11.5pt;font-family:Consolas;
+color:#5F6364'>,</span></p>
+
+				<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'>�����
+					</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#2F9C0A'>&quot;city&quot;</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#A67F59'>:</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'> </span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#2F9C0A'>&quot;Super
+						City&quot;</span></p>
+
+				<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'>���
+					</span><span style='font-size:11.5pt;font-family:Consolas;color:#5F6364'>},</span></p>
+
+				<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'>���
+					</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#2F9C0A'>&quot;courses&quot;</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#A67F59'>:</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'> </span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#5F6364'>[</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'> </span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#2F9C0A'>&quot;ASP.NET&quot;</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#5F6364'>,</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'> </span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#2F9C0A'>&quot;LINQ&quot;</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#5F6364'>,</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'> </span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#2F9C0A'>&quot;Angular&quot;</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'> </span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#5F6364'>]</span></p>
+
+				<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'>� </span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#5F6364'>},</span></p>
+
+				<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'>� </span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#5F6364'>{</span></p>
+
+				<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'>���
+					</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#2F9C0A'>&quot;name&quot;</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#A67F59'>:</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'> </span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#2F9C0A'>&quot;Pam&quot;</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#5F6364'>,</span></p>
+
+				<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'>���
+					</span><span style='font-size:11.5pt;font-family:Consolas;color:#2F9C0A'>&quot;age&quot;</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#A67F59'>:</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'> </span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#C92C2C'>29</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#5F6364'>,</span></p>
+
+				<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'>���
+					</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#2F9C0A'>&quot;gender&quot;</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#A67F59'>:</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'> </span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#2F9C0A'>&quot;Female&quot;</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#5F6364'>,</span></p>
+
+				<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'>���
+					</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#2F9C0A'>&quot;graduated&quot;</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#A67F59'>:</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'> </span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#C92C2C'>false</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#5F6364'>,</span></p>
+
+				<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'>���
+					</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#2F9C0A'>&quot;address&quot;</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#A67F59'>:</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'> </span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#5F6364'>{</span></p>
+
+				<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'>�����
+					</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#2F9C0A'>&quot;street&quot;</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#A67F59'>:</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'> </span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#2F9C0A'>&quot;101 King
+						Street&quot;</span><span style='font-size:11.5pt;font-family:Consolas;color:#5F6364'>,</span>
+				</p>
+
+				<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'>�����
+					</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#2F9C0A'>&quot;city&quot;</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#A67F59'>:</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'> </span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#2F9C0A'>&quot;Mongo
+						City&quot;</span></p>
+
+				<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'>���
+					</span><span style='font-size:11.5pt;font-family:Consolas;color:#5F6364'>},</span></p>
+
+				<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'>���
+					</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#2F9C0A'>&quot;courses&quot;</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#A67F59'>:</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'> </span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#5F6364'>[</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'> </span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#2F9C0A'>&quot;.NET
+						Core&quot;</span><span style='font-size:11.5pt;font-family:Consolas;color:#5F6364'>,</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'> </span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#2F9C0A'>&quot;C++&quot;</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#5F6364'>,</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'> </span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#2F9C0A'>&quot;Bootstrap&quot;</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'> </span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#5F6364'>]</span></p>
+
+				<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'>� </span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#5F6364'>},</span></p>
+
+				<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'>� </span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#5F6364'>{</span></p>
+
+				<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'>���
+					</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#2F9C0A'>&quot;name&quot;</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#A67F59'>:</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'> </span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#2F9C0A'>&quot;Ben&quot;</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#5F6364'>,</span></p>
+
+				<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'>���
+					</span><span style='font-size:11.5pt;font-family:Consolas;color:#2F9C0A'>&quot;age&quot;</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#A67F59'>:</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'> </span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#C92C2C'>31</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#5F6364'>,</span></p>
+
+				<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'>���
+					</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#2F9C0A'>&quot;gender&quot;</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#A67F59'>:</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'> </span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#2F9C0A'>&quot;Male&quot;</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#5F6364'>,</span></p>
+
+				<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'>���
+					</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#2F9C0A'>&quot;graduated&quot;</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#A67F59'>:</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'> </span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#C92C2C'>true</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#5F6364'>,</span></p>
+
+				<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'>���
+					</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#2F9C0A'>&quot;address&quot;</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#A67F59'>:</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'> </span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#5F6364'>{</span></p>
+
+				<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'>�����
+					</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#2F9C0A'>&quot;street&quot;</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#A67F59'>:</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'> </span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#2F9C0A'>&quot;35 Queen
+						Street&quot;</span><span style='font-size:11.5pt;font-family:Consolas;
+color:#5F6364'>,</span></p>
+
+				<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'>�����
+					</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#2F9C0A'>&quot;city&quot;</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#A67F59'>:</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'> </span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#2F9C0A'>&quot;London&quot;</span></p>
+
+				<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'>���
+					</span><span style='font-size:11.5pt;font-family:Consolas;color:#5F6364'>},</span></p>
+
+				<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'>���
+					</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#2F9C0A'>&quot;courses&quot;</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#A67F59'>:</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'> </span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#5F6364'>[</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'> </span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#2F9C0A'>&quot;JavaScript&quot;</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#5F6364'>,</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'> </span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#2F9C0A'>&quot;C#&quot;</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#5F6364'>,</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'> </span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#2F9C0A'>&quot;HTML&quot;</span><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'> </span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#5F6364'>]</span></p>
+
+				<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+						style='font-size:11.5pt;font-family:Consolas;color:black;background:#FDFDFD'>� </span><span
+						style='font-size:11.5pt;font-family:Consolas;color:#5F6364'>}</span></p>
+
+				<p class=MsoNormal><span style='font-size:11.5pt;line-height:107%;font-family:
+Consolas;color:#5F6364'>]);</span></p>
+
+				<p class=MsoNormal><span style='font-size:11.5pt;line-height:107%;font-family:
+Consolas;color:#5F6364'>&nbsp;</span></p>
+
+				<p class=MsoNormal><img width=601 height=401 id="Picture 14"
+						src="Getting%20started%20with%20MongoDB%20database.files/image009.jpg"></p>
+
+				<h1><a name="_Toc183679545">Collection find()</a></h1>
+
+				<p class=MsoListParagraphCxSpFirst style='margin-left:18.0pt;text-indent:-18.0pt'><span
+						style='font-family:Symbol'>�<span
+							style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						</span></span>Use find() method to find documents in a collection.</p>
+
+				<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span
+						style='font-family:Symbol'>�<span
+							style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						</span></span>find() method has two parameters - query &amp; projection.</p>
+
+				<p class=MsoListParagraphCxSpLast style='margin-left:18.0pt;text-indent:-18.0pt'><span
+						style='font-family:Symbol'>�<span
+							style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						</span></span>Both are optional parameters.</p>
+
+				<p class=MsoNormal><img width=602 height=293 id="Picture 6"
+						src="Getting%20started%20with%20MongoDB%20database.files/image010.png"></p>
+
+				<p class=MsoListParagraphCxSpFirst style='margin-left:18.0pt;text-indent:-18.0pt'><span
+						style='font-family:Symbol'>�<span
+							style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						</span></span>Use the query parameter to filter data.</p>
+
+				<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span
+						style='font-family:Symbol'>�<span
+							style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						</span></span>You can think of it as a WHERE clause in SQL.</p>
+
+				<p class=MsoListParagraphCxSpLast style='margin-left:18.0pt;text-indent:-18.0pt'><span
+						style='font-family:Symbol'>�<span
+							style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						</span></span>find() method returns all the documents in a collection, if we do
+					not include the query parameter or pass an empty object ({}).</p>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal>Find all documents in studentcourses collection where name
+					is Ben</p>
+
+				<p class=MsoNormal><span style='font-size:11.5pt;line-height:107%;font-family:
+Consolas;color:black;background:#FDFDFD'># db</span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>.</span></span><span
+						style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'>studentcourses</span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>.</span></span><span
+						class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#2F9C0A'>find</span></span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#5F6364'>({</span></span><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'>name</span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#A67F59'>:</span></span><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'> </span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#2F9C0A'>&quot;Ben&quot;</span></span><span class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#5F6364'>})</span></span></p>
+
+				<p class=MsoNormal>Find all documents in studentcourses collection where age is
+					28</p>
+
+				<p class=MsoNormal><span style='font-size:11.5pt;line-height:107%;font-family:
+Consolas;color:black;background:#FDFDFD'># db</span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>.</span></span><span
+						style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'>studentcourses</span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>.</span></span><span
+						class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#2F9C0A'>find</span></span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#5F6364'>({</span></span><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'>age</span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#A67F59'>:</span></span><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'> </span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#C92C2C'>28</span></span><span class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#5F6364'>})</span></span></p>
+
+				<p class=MsoNormal>Find all documents where age is less than or equal to 30</p>
+
+				<p class=MsoNormal><span style='font-size:11.5pt;line-height:107%;font-family:
+Consolas;color:black;background:#FDFDFD'># db</span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>.</span></span><span
+						style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'>studentcourses</span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>.</span></span><span
+						class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#2F9C0A'>find</span></span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#5F6364'>({</span></span><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'>age</span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#A67F59'>:</span></span><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'> </span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#5F6364'>{</span></span><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'>$lte</span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#A67F59'>:</span></span><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'> </span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#C92C2C'>30</span></span><span class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#5F6364'>}})</span></span></p>
+
+				<p class=MsoNormal><span class=token><span style='font-size:11.5pt;line-height:
+107%;font-family:Consolas;color:#5F6364'>&nbsp;</span></span></p>
+
+				<h1><a name="_Toc183679546">Query operators</a></h1>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal><img width=354 height=412 id="Picture 7"
+						src="Getting%20started%20with%20MongoDB%20database.files/image011.png"></p>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal>Find all documents where age in [ 28, 29, 30 ]</p>
+
+				<p class=MsoNormal># <span style='font-size:11.5pt;line-height:107%;font-family:
+Consolas;color:black;background:#FDFDFD'>db</span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>.</span></span><span
+						style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'>studentcourses</span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>.</span></span><span
+						class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#2F9C0A'>find</span></span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#5F6364'>({</span></span><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'>age</span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#A67F59'>:</span></span><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'> </span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#5F6364'>{</span></span><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'>$</span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#1990B8'>in</span></span><span class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#A67F59'>:</span></span><span style='font-size:11.5pt;line-height:107%;
+font-family:Consolas;color:black;background:#FDFDFD'> </span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>[</span></span><span
+						class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#C92C2C'>28</span></span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#5F6364'>,</span></span><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'> </span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#C92C2C'>29</span></span><span class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#5F6364'>,</span></span><span style='font-size:11.5pt;line-height:107%;
+font-family:Consolas;color:black;background:#FDFDFD'> </span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#C92C2C'>30</span></span><span
+						class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#5F6364'>]}})</span></span></p>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<h1><a name="_Toc183679547">Find() projection</a>&nbsp;</h1>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+					style='border-collapse:collapse;border:none'>
+					<tr>
+						<td width=160 valign=top style='width:120.25pt;border:none;padding:0cm 5.4pt 0cm 5.4pt'>
+							<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><img width=155 height=148
+									id="Picture 8"
+									src="Getting%20started%20with%20MongoDB%20database.files/image012.jpg"
+									alt="mongodb find projection example"></p>
+						</td>
+						<td width=441 valign=top style='width:330.55pt;border:none;padding:0cm 5.4pt 0cm 5.4pt'>
+							<p class=MsoListParagraphCxSpFirst style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:18.0pt;text-indent:-18.0pt;line-height:normal'><span style='font-family:Symbol'>�<span
+										style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									</span></span>By default, queries in MongoDB return all fields in matching
+								documents. </p>
+							<p class=MsoListParagraphCxSpMiddle style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:18.0pt;text-indent:-18.0pt;line-height:normal'><span style='font-family:Symbol'>�<span
+										style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									</span></span>To limit the amount of data that MongoDB returns, you can
+								include a projection.</p>
+							<p class=MsoListParagraphCxSpMiddle style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:18.0pt;text-indent:-18.0pt;line-height:normal'><span style='font-family:Symbol'>�<span
+										style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									</span></span>A projection basically tells what fields to include or exclude
+								in the matching documents.</p>
+							<p class=MsoListParagraphCxSpLast style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:18.0pt;text-indent:-18.0pt;line-height:normal'><span style='font-family:Symbol'>�<span
+										style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									</span></span>Use 1 to include a field and 0 to exclude a field.</p>
+							<p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+						</td>
+					</tr>
+				</table>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal>Include only name and age fields in the result</p>
+
+				<p class=MsoNormal># <span style='font-size:11.5pt;line-height:107%;font-family:
+Consolas;color:black;background:#FDFDFD'>db</span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>.</span></span><span
+						style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'>studentcourses</span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>.</span></span><span
+						class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#2F9C0A'>find</span></span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#5F6364'>({</span></span><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'>age</span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#A67F59'>:</span></span><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'> </span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#5F6364'>{</span></span><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'>$lte</span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#A67F59'>:</span></span><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'> </span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#C92C2C'>30</span></span><span class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#5F6364'>}},</span></span><span style='font-size:11.5pt;line-height:107%;
+font-family:Consolas;color:black;background:#FDFDFD'> </span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>{</span></span><span
+						style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'>name</span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#A67F59'>:</span></span><span class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#C92C2C'>1</span></span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#5F6364'>,</span></span><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'> age</span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#A67F59'>:</span></span><span class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#C92C2C'>1</span></span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#5F6364'>})</span></span></p>
+
+				<p class=MsoNormal><span class=token><span style='font-size:11.5pt;line-height:
+107%;font-family:Consolas;color:#5F6364'>&nbsp;</span></span></p>
+
+				<p class=MsoNormal>_id field is always returned. To exclude it, you have to
+					explicitly specify it using an exclusion projection (_id:0) as shown below.</p>
+
+				<p class=MsoNormal><span style='font-size:11.5pt;line-height:107%;font-family:
+Consolas;color:black;background:#FDFDFD'>db</span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>.</span></span><span
+						style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'>studentcourses</span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>.</span></span><span
+						class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#2F9C0A'>find</span></span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#5F6364'>({</span></span><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'>age</span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#A67F59'>:</span></span><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'> </span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#5F6364'>{</span></span><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'>$lte</span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#A67F59'>:</span></span><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'> </span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#C92C2C'>30</span></span><span class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#5F6364'>}},</span></span><span style='font-size:11.5pt;line-height:107%;
+font-family:Consolas;color:black;background:#FDFDFD'> </span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>{</span></span><span
+						style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'>name</span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#A67F59'>:</span></span><span class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#C92C2C'>1</span></span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#5F6364'>,</span></span><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'> age</span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#A67F59'>:</span></span><span class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#C92C2C'>1</span></span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#5F6364'>,</span></span><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'> _id</span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#A67F59'>:</span></span><span class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#C92C2C'>0</span></span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#5F6364'>})</span></span></p>
+
+				<h1><a name="_Toc183679548">Inclusion and exclusion projection</a></h1>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoListParagraphCxSpFirst style='margin-left:18.0pt;text-indent:-18.0pt'><span
+						style='font-family:Symbol'>�<span
+							style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						</span></span>You cannot specify the fields that you want to include and
+					exclude at the same time in a projection except _id field.</p>
+
+				<p class=MsoListParagraphCxSpLast style='margin-left:18.0pt;text-indent:-18.0pt'><span
+						style='font-family:Symbol'>�<span
+							style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						</span></span>You can only specify an inclusion projection OR exclusion
+					projection.</p>
+
+				<p class=MsoNormal><img width=602 height=303 id="Picture 9"
+						src="Getting%20started%20with%20MongoDB%20database.files/image013.jpg"></p>
+
+				<p class=MsoNormal>The following projection results in error - Cannot do
+					exclusion on field age in inclusion projection like below</p>
+
+				<p class=MsoNormal>�<span class=token><span style='font-size:11.5pt;line-height:
+107%;font-family:Consolas;color:#5F6364'>{</span></span><span style='font-size:
+11.5pt;line-height:107%;font-family:Consolas;color:black;background:#FDFDFD'>name</span><span class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#A67F59'>:</span></span><span style='font-size:11.5pt;line-height:107%;
+font-family:Consolas;color:black;background:#FDFDFD'> </span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#C92C2C'>1</span></span><span
+						class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#5F6364'>,</span></span><span style='font-size:11.5pt;line-height:107%;
+font-family:Consolas;color:black;background:#FDFDFD'> age</span><span class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#A67F59'>:</span></span><span style='font-size:11.5pt;line-height:107%;
+font-family:Consolas;color:black;background:#FDFDFD'> </span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#C92C2C'>0</span></span><span
+						class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#5F6364'>}</span></span></p>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<h1><a name="_Toc183679549">Find() in nested object</a></h1>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal><img width=602 height=254 id="Picture 11"
+						src="Getting%20started%20with%20MongoDB%20database.files/image014.jpg"
+						alt="mongodb find in nested object"></p>
+
+				<p class=MsoListParagraphCxSpFirst style='margin-left:18.0pt;text-indent:-18.0pt'><span
+						style='font-family:Symbol'>�<span
+							style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						</span></span>address is a nested JSON document.</p>
+
+				<p class=MsoListParagraphCxSpLast style='margin-left:18.0pt;text-indent:-18.0pt'><span
+						style='font-family:Symbol'>�<span
+							style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						</span></span>Find all documents where city is Star City.</p>
+
+				<p class=MsoNormal># <span style='font-size:11.5pt;line-height:107%;font-family:
+Consolas;color:black;background:#FDFDFD'>db</span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>.</span></span><span
+						style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'>studentcourses</span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>.</span></span><span
+						class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#2F9C0A'>find</span></span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#5F6364'>({</span></span><span class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#2F9C0A'>&quot;address.city&quot;</span></span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#A67F59'>:</span></span><span
+						style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'> </span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#2F9C0A'>&quot;Star City&quot;</span></span><span class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#5F6364'>})</span></span></p>
+
+				<p class=MsoNormal><span class=token><span style='font-size:11.5pt;line-height:
+107%;font-family:Consolas;color:#5F6364'>&nbsp;</span></span></p>
+
+				<h1><a name="_Toc183679550">Find() cursor</a></h1>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal><img width=294 height=130 id="Picture 16"
+						src="Getting%20started%20with%20MongoDB%20database.files/image015.png"></p>
+
+				<p class=MsoListParagraphCxSpFirst style='margin-left:18.0pt;text-indent:-18.0pt'><span
+						style='font-family:Symbol'>�<span
+							style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						</span></span>find() method returns a cursor.</p>
+
+				<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span
+						style='font-family:Symbol'>�<span
+							style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						</span></span>You can think of the cursor as a virtual object that stores the
+					documents returned by the find() method.</p>
+
+				<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span
+						style='font-family:Symbol'>�<span
+							style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						</span></span>So, this means along with the find() method we can also use
+					methods like count, sort, skip, limit etc.</p>
+
+				<p class=MsoListParagraphCxSpLast style='margin-left:18.0pt;text-indent:-18.0pt'><span
+						style='font-family:Symbol'>�<span
+							style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						</span></span>These 3 methods - sort, skip and limit are particularly useful to
+					implement server-side sorting and paging.</p>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal>Find the total count of documents in a collection</p>
+
+				<p class=MsoNormal># <span style='font-size:11.5pt;line-height:107%;font-family:
+Consolas;color:black;background:#FDFDFD'>db</span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>.</span></span><span
+						style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'>studentcourses</span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>.</span></span><span
+						class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#2F9C0A'>find</span></span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#5F6364'>().</span></span><span class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#2F9C0A'>count</span></span><span class=token><span style='font-size:
+11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>()</span></span></p>
+
+				<p class=MsoNormal><span class=token><span style='font-size:11.5pt;line-height:
+107%;font-family:Consolas;color:#5F6364'>&nbsp;</span></span></p>
+
+				<p class=MsoNormal>Find the total count of documents where gender is Female</p>
+
+				<p class=MsoNormal># <span style='font-size:11.5pt;line-height:107%;font-family:
+Consolas;color:black;background:#FDFDFD'>db</span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>.</span></span><span
+						style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'>studentcourses</span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>.</span></span><span
+						class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#2F9C0A'>find</span></span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#5F6364'>({</span></span><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'>gender</span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#A67F59'>:</span></span><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'> </span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#2F9C0A'>&quot;Female&quot;</span></span><span class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#5F6364'>}).</span></span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#2F9C0A'>count</span></span><span class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#5F6364'>()</span></span></p>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal>To sort documents in MongoDB use sort() method. 1 to sort in
+					ascending order and -1 in descending order.</p>
+
+				<p class=MsoNormal># <span style='font-size:11.5pt;line-height:107%;font-family:
+Consolas;color:black;background:#FDFDFD'>db</span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>.</span></span><span
+						style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'>studentcourses</span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>.</span></span><span
+						class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#2F9C0A'>find</span></span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#5F6364'>().</span></span><span class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#2F9C0A'>sort</span></span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#5F6364'>({</span></span><span class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#2F9C0A'>&quot;age&quot;</span></span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#A67F59'>:-</span></span><span
+						class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#C92C2C'>1</span></span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#5F6364'>})</span></span></p>
+
+				<p class=MsoNormal>Sort documents by age field in descending order and then by
+					name in ascending order.</p>
+
+				<p class=MsoNormal># <span style='font-size:11.5pt;line-height:107%;font-family:
+Consolas;color:black;background:#FDFDFD'>db</span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>.</span></span><span
+						style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'>studentcourses</span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>.</span></span><span
+						class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#2F9C0A'>find</span></span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#5F6364'>().</span></span><span class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#2F9C0A'>sort</span></span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#5F6364'>({</span></span><span class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#2F9C0A'>&quot;age&quot;</span></span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#A67F59'>:-</span></span><span
+						class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#C92C2C'>1</span></span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#5F6364'>,</span></span><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'> </span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#2F9C0A'>&quot;name&quot;</span></span><span class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#A67F59'>:</span></span><span style='font-size:11.5pt;line-height:107%;
+font-family:Consolas;color:black;background:#FDFDFD'> </span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#C92C2C'>1</span></span><span
+						class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#5F6364'>})</span></span></p>
+
+				<p class=MsoNormal>Sort by age field in descending order, skip first 1 document
+					and take only the next 2 documents</p>
+
+				<p class=MsoNormal><span style='font-size:11.5pt;line-height:107%;font-family:
+Consolas;color:black;background:#FDFDFD'># db</span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>.</span></span><span
+						style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'>studentcourses</span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>.</span></span><span
+						class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#2F9C0A'>find</span></span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#5F6364'>().</span></span><span class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#2F9C0A'>sort</span></span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#5F6364'>({</span></span><span class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#2F9C0A'>&quot;age&quot;</span></span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#A67F59'>:-</span></span><span
+						class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#C92C2C'>1</span></span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#5F6364'>}).</span></span><span class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#2F9C0A'>skip</span></span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#5F6364'>(</span></span><span class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#C92C2C'>1</span></span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#5F6364'>).</span></span><span class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#2F9C0A'>limit</span></span><span class=token><span style='font-size:
+11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>(</span></span><span class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#C92C2C'>2</span></span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#5F6364'>)</span></span></p>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<h1><a name="_Toc183679551">UpdateOne() and UpdateMany()</a></h1>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal>Update name to Sara and age to 100 where name is Mary.</p>
+
+				<p class=MsoNormal># <span style='font-size:11.5pt;line-height:107%;font-family:
+Consolas;color:black;background:#FDFDFD'>db</span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>.</span></span><span
+						style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'>studentcourses</span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>.</span></span><span
+						class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#2F9C0A'>updateOne</span></span><span class=token><span style='font-size:
+11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>({</span></span><span class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#2F9C0A'>&quot;name&quot;</span></span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#A67F59'>:</span></span><span
+						class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#2F9C0A'>&quot;Mary&quot;</span></span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>},{</span></span><span
+						style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'>$</span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#1990B8'>set</span></span><span class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#A67F59'>:</span></span><span style='font-size:11.5pt;line-height:107%;
+font-family:Consolas;color:black;background:#FDFDFD'> </span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>{</span></span><span
+						class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#2F9C0A'>&quot;name&quot;</span></span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#A67F59'>:</span></span><span
+						class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#2F9C0A'>&quot;Sara&quot;</span></span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>,</span></span><span
+						style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'> </span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#2F9C0A'>&quot;age&quot;</span></span><span class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#A67F59'>:</span></span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#C92C2C'>100</span></span><span class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#5F6364'>}})</span></span></p>
+
+				<p class=MsoNormal><span class=token><span style='font-size:11.5pt;line-height:
+107%;font-family:Consolas;color:#5F6364'>&nbsp;</span></span></p>
+
+				<p class=MsoNormal>Update gender in all documents to Unknown where gender is
+					Female</p>
+
+				<p class=MsoNormal># <span style='font-size:11.5pt;line-height:107%;font-family:
+Consolas;color:black;background:#FDFDFD'>db</span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>.</span></span><span
+						style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'>studentcourses</span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>.</span></span><span
+						class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#2F9C0A'>updateMany</span></span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>({</span></span><span
+						class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#2F9C0A'>&quot;gender&quot;</span></span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#A67F59'>:</span></span><span
+						class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#2F9C0A'>&quot;Female&quot;</span></span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>},{</span></span><span
+						style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'>$</span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#1990B8'>set</span></span><span class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#A67F59'>:</span></span><span style='font-size:11.5pt;line-height:107%;
+font-family:Consolas;color:black;background:#FDFDFD'> </span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>{</span></span><span
+						class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#2F9C0A'>&quot;gender&quot;</span></span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#A67F59'>:</span></span><span
+						class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#2F9C0A'>&quot;Unknown&quot;</span></span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>}})</span></span>
+				</p>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<h1><a name="_Toc183679552">DeleteOne() and DeleteMany()</a></h1>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal>Delete one document where name is Sara</p>
+
+				<p class=MsoNormal># <span style='font-size:11.5pt;line-height:107%;font-family:
+Consolas;color:black;background:#FDFDFD'>db</span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>.</span></span><span
+						style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'>studentcourses</span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>.</span></span><span
+						class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#2F9C0A'>deleteOne</span></span><span class=token><span style='font-size:
+11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>({</span></span><span class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#2F9C0A'>&quot;name&quot;</span></span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#A67F59'>:</span></span><span
+						class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#2F9C0A'>&quot;Sara&quot;</span></span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>})</span></span>
+				</p>
+
+				<p class=MsoNormal>Delete all document where age is less than 31</p>
+
+				<p class=MsoNormal># <span style='font-size:11.5pt;line-height:107%;font-family:
+Consolas;color:black;background:#FDFDFD'>db</span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>.</span></span><span
+						style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:black;
+background:#FDFDFD'>studentcourses</span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>.</span></span><span
+						class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#2F9C0A'>deleteMany</span></span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#5F6364'>({</span></span><span
+						class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#2F9C0A'>&quot;age&quot;</span></span><span class=token><span
+							style='font-size:11.5pt;line-height:107%;font-family:Consolas;color:#A67F59'>:</span></span><span
+						class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#5F6364'>{</span></span><span style='font-size:11.5pt;line-height:107%;
+font-family:Consolas;color:black;background:#FDFDFD'>$lt</span><span class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#A67F59'>:</span></span><span class=token><span style='font-size:11.5pt;
+line-height:107%;font-family:Consolas;color:#C92C2C'>31</span></span><span class=token><span style='font-size:11.5pt;line-height:107%;font-family:Consolas;
+color:#5F6364'>}})</span></span></p>
+
+				<p class=MsoNormal><span class=token><span style='font-size:11.5pt;line-height:
+107%;font-family:Consolas;color:#5F6364'>&nbsp;</span></span></p>
+
+				<h1><a name="_Toc183679553">MongoDB Compass</a>&nbsp;</h1>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal><img width=602 height=343 id="Picture 17"
+						src="Getting%20started%20with%20MongoDB%20database.files/image016.jpg"></p>
+
+				<p class=MsoNormal><img width=602 height=343 id="Picture 18"
+						src="Getting%20started%20with%20MongoDB%20database.files/image017.jpg"></p>
+
+				<p class=MsoNormal><img width=602 height=343 id="Picture 19"
+						src="Getting%20started%20with%20MongoDB%20database.files/image018.jpg"></p>
+
+			</div>
+		</section>
+
+	</main><!-- End #main -->
+
+	<!-- ======= Footer ======= -->
+	<div w3-include-html="footer.htm"></div>
+	<script>includeHTML();</script>
+
+	<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+			class="bi bi-arrow-up-short"></i></a>
+
+	<!-- Vendor JS Files -->
+	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Template Main JS File -->
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+	<title>My Portfolio</title>
+	<meta content="" name="description">
+	<meta content="" name="keywords">
+
+	<!-- Favicons -->
+	<link href="assets/img/favicon.png" rel="icon">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.gstatic.com" rel="preconnect">
+	<link
+		href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+		rel="stylesheet">
+
+	<!-- Vendor CSS Files -->
+	<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+	<!-- Template Main CSS File -->
+	<link href="assets/css/style.css" rel="stylesheet">
+
+	<script src="assets/js/layout.js"></script>
+</head>
+
+<body>
+
+	<!-- ======= Header ======= -->
+	<header id="header" class="header fixed-top d-flex align-items-center">
+
+		<div class="d-flex align-items-center justify-content-between">
+			<i class="bi bi-list toggle-sidebar-btn"></i>
+		</div><!-- End Logo -->
+
+		<nav class="header-nav ms-auto">
+
+			<ul class="d-flex align-items-center">
+				<div w3-include-html="header.htm"></div>
+			</ul>
+		</nav><!-- End Icons Navigation -->
+	</header><!-- End Header -->
+
+	<!-- ======= Sidebar ======= -->
+	<div w3-include-html="sidebar.htm"></div>
+
+	<main id="main" class="main">
+
+
+
+		<section class="section dashboard">
+			<div class="row">
+
+				<p class=MsoTocHeading>Table of Contents</p>
+
+				<p class=MsoToc1><span lang=EN-US><span class=MsoHyperlink><a href="#_Toc183679073">Relational
+								Database<span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+									style='color:windowtext;display:none;text-decoration:none'>2</span></a></span></span>
+				</p>
+
+				<p class=MsoToc1><span class=MsoHyperlink><span lang=EN-US><a href="#_Toc183679074">MongoDB<span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+									style='color:windowtext;display:none;text-decoration:none'>2</span></a></span></span>
+				</p>
+
+				<p class=MsoToc1><span class=MsoHyperlink><span lang=EN-US><a href="#_Toc183679075">JSON<span style='color:windowtext;display:none;
+text-decoration:none'>.. </span><span
+									style='color:windowtext;display:none;text-decoration:none'>4</span></a></span></span>
+				</p>
+
+				<p class=MsoToc1><span class=MsoHyperlink><span lang=EN-US><a href="#_Toc183679076"><span lang=EN-GB>Why
+									did MongoDB invent BSON?</span><span
+									style='color:windowtext;display:none;text-decoration:none'>. </span><span
+									style='color:windowtext;display:none;text-decoration:none'>4</span></a></span></span>
+				</p>
+
+				<p class=MsoToc1><span class=MsoHyperlink><span lang=EN-US><a href="#_Toc183679077">Relational vs <span
+									lang=EN-GB>Non-relational</span><span
+									style='color:windowtext;display:none;text-decoration:none'> </span><span
+									style='color:windowtext;display:none;text-decoration:none'>5</span></a></span></span>
+				</p>
+
+				<p class=MsoToc1><span class=MsoHyperlink><span lang=EN-US><a href="#_Toc183679078">What is NoSQL?<span
+									style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+									style='color:windowtext;display:none;text-decoration:none'>7</span></a></span></span>
+				</p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<h1 style='page-break-before:always'><a name="_Toc183679073"><span lang=EN-US>Relational
+							Database</span></a></h1>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal>In a relational database like SQL server or&nbsp;oracle, a
+					database is a collection of tables, that is, it contains one or more
+					tables&nbsp;and it is these tables that store data, simply put a relational
+					database is a collection&nbsp;of one or more tables. A database table contains one
+					or more rows, that is it's a collection of&nbsp;rows. A table row contains one
+					or more columns.&nbsp;&nbsp;</p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US><img width=537 height=294 id="Picture 6"
+							src="MongoDB%20101.files/image001.gif"></span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US><img width=554 height=297 id="Picture 7"
+							src="MongoDB%20101.files/image002.gif"></span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<h1><a name="_Toc183679074"><span lang=EN-US>MongoDB</span></a></h1>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal>In a non-relational database, like MongoDB for&nbsp;example,
+					we do not have tables, instead we have&nbsp;&nbsp;</p>
+
+				<p class=MsoNormal>collections and documents. A collection as the&nbsp;name
+					implies is a collection of one or more&nbsp;&nbsp;</p>
+
+				<p class=MsoNormal>documents. If you're from a relational
+					database&nbsp;background you can think of a collection as a&nbsp;&nbsp;</p>
+
+				<p class=MsoNormal>table and documents as table rows, so in MongoDB&nbsp;a
+					database contains one or more collections,&nbsp;&nbsp;</p>
+
+				<p class=MsoNormal>a collection is made up of one or more documents,&nbsp;and
+					each document is made up of one or more&nbsp;&nbsp;</p>
+
+				<p class=MsoNormal>fields.</p>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal><img width=554 height=228 id="Picture 8" src="MongoDB%20101.files/image003.gif"></p>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal><img width=554 height=293 id="Picture 9" src="MongoDB%20101.files/image004.gif"></p>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal><span lang=EN-US><img width=554 height=272 id="Picture 5"
+							src="MongoDB%20101.files/image005.jpg"></span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US><img width=554 height=327 id="Picture 11"
+							src="MongoDB%20101.files/image006.gif"></span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal>In MongoDB we do not have tables, instead we
+					have&nbsp;documents, so data in MongoDB is stored in BSON&nbsp;documents, BSON
+					is Binary JSON.&nbsp;</p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<h1><a name="_Toc183679075"><span lang=EN-US>JSON</span></a></h1>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>JSON stands for JavaScript Object Natation</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US><img width=554 height=163 id="Picture 1"
+							src="MongoDB%20101.files/image007.gif"></span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US><img width=554 height=101 id="Picture 4"
+							src="MongoDB%20101.files/image008.jpg"></span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<h1>&nbsp;</h1>
+
+				<h1><a name="_Toc183679076">Why did MongoDB invent BSON?</a>&nbsp;&nbsp;</h1>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal>JSON only supports a limited number of basic&nbsp;data types
+					- string, Boolean, number, array, also&nbsp;JSON is a text-based format and
+					parsing json text is very slow, we want database engines to be fast,&nbsp;we
+					don't want text parsing to slow it down,&nbsp;hence MongoDB invented BSON, the
+					following&nbsp;are the three primary differences between JSON and BSON. </p>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal><img width=317 height=250 id="Picture 12" src="MongoDB%20101.files/image009.gif"></p>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal>At this point you might be wondering&nbsp;should I now learn
+					this new binary BSON format?&nbsp; </p>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal>Now as developers we still use JSON format and MongoDB takes
+					care of converting it to BSON and saving it on the disk.&nbsp;</p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US><img width=554 height=230 id="Picture 13"
+							src="MongoDB%20101.files/image010.gif"></span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<h1><a name="_Toc183679077"><span lang=EN-US>Relational vs </span></a>Non-relational</h1>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal>Now, let's take a look at a very simple but a&nbsp;real-world
+					use case. Let's say we're developing an application for a training institute
+					and we&nbsp;have a page that displays student names and the courses they have
+					enrolled in on a web page as you&nbsp;can see right here. To model something
+					like this&nbsp;in a relational database world like SQL Server&nbsp;or Oracle we
+					typically create three tables.&nbsp;&nbsp;&nbsp;On the application side, to&nbsp;be
+					able to display this database data we may have&nbsp;a class that looks like the
+					following.&nbsp;</p>
+
+				<p class=MsoNormal><span style='font-size:12.0pt;font-family:Roboto'>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US><img width=554 height=308 id="Picture 14"
+							src="MongoDB%20101.files/image011.gif"></span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>Now, let's see how the same data may be
+						stored in a non-relational database like MongoDB.&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US><img width=554 height=361 id="Picture 16"
+							src="MongoDB%20101.files/image012.gif"></span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal>The same students and&nbsp;courses data that we have across
+					three tables in a relational database can be stored in a single&nbsp;collection
+					in mongo as shown right here, for any&nbsp;application this data is very easy
+					to work with, no complex joins and mapping layers are required,&nbsp;our
+					application code will be much cleaner, simpler and easier to maintain.</p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US><img width=554 height=286 id="Picture 17"
+							src="MongoDB%20101.files/image013.gif"></span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal>The obvious benefit of&nbsp;this approach is, we have all
+					the data we need&nbsp;in one place and there is no need to
+					traverse&nbsp;multiple related documents, here's the important&nbsp;bit, we can
+					define relationships or references&nbsp;in MongoDB, we can even completely
+					normalize&nbsp;schema in MongoDB just like a relational database.&nbsp;</p>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal>But the question is, if you want to normalize and&nbsp;use a
+					non-relational database like a relational&nbsp;database, why use a
+					non-relational database?&nbsp; </p>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal>Well,&nbsp;relational databases are still the best
+					choice&nbsp;if the data is predictable in terms of structure,&nbsp;size and
+					frequency of access, also if&nbsp;relationships between entities are important,
+					relational databases are the best choice,&nbsp;normalization in a relational
+					database reduces&nbsp;the size of the data on disk by limiting
+					duplicate&nbsp;data and anomalies, in non-relational database documents are
+					embedded within documents which&nbsp;helps keep data that will be accessed
+					together <span lang=EN-US>in the same place.</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal>On the other hand, if you want&nbsp;a flexible schema for
+					the data that is in terms of&nbsp;shape or size or if it needs to be open to
+					change&nbsp;in the future then a non-relational database&nbsp;is the
+					answer.&nbsp;</p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal>Non-relational databases have been designed from the ground
+					up for the cloud&nbsp;which makes them naturally good for horizontal scaling
+					where lots of small servers can be spun&nbsp;up to handle increased load.</p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<h1><a name="_Toc183679078"><span lang=EN-US>What is NoSQL?</span></a></h1>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span style='font-size:12.0pt;font-family:Roboto'>The term NoSQL
+						stands for Not Only SQL, and it means a&nbsp;non-relational database is a
+						non-tabular database&nbsp;and stores data differently than
+						relational&nbsp;table.</span></p>
+
+				<p class=MsoNormal><span style='font-size:12.0pt;font-family:Roboto'>&nbsp;</span></p>
+
+				<p class=MsoNormal><span style='font-size:12.0pt;font-family:Roboto'><img width=354 height=176
+							id="Picture 18" src="MongoDB%20101.files/image014.gif"></span></p>
+
+				<p class=MsoNormal><span style='font-size:12.0pt;font-family:Roboto'>&nbsp;</span></p>
+
+				<p class=MsoNormal><span style='font-size:12.0pt;font-family:Roboto'><img width=554 height=343
+							id="Picture 19" src="MongoDB%20101.files/image015.gif"></span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><b>Document Database</b>&nbsp;- As the name implies data is
+					stored in documents, for example in JSON documents. Examples of document
+					databases are MongoDB and CouchDB.</p>
+
+				<p class=MsoNormal><b>&nbsp;</b></p>
+
+				<p class=MsoNormal><b>Key-Value Database</b>&nbsp;- It stores data as a
+					collection of key-value pairs in which a key is used as a unique identifier.
+					Both keys and values can be anything, ranging from simple objects to complex
+					compound objects. Examples are DynamoDB and Redis.</p>
+
+				<p class=MsoNormal><b>&nbsp;</b></p>
+
+				<p class=MsoNormal><b>Wide-Column store</b>&nbsp;- It is similar to a
+					relational database in the sense it stores data in rows and columns, however
+					the columns are dynamic and each row does not have to have the same columns.
+					Examples are HBase and Cassandra.</p>
+
+				<p class=MsoNormal><b>&nbsp;</b></p>
+
+				<p class=MsoNormal><b>Graph database</b>&nbsp;- It is used to store and
+					navigate relationships. There is no limit to the kind and number of
+					relationships. Heavily used in fraud detection and social networking. It is
+					easy to create relationships between data entities and quickly query these
+					relationships, for example you can find out who the &quot;friends of
+					friends&quot; of a particular person are. Examples - Dgraph and OrientDB.</p>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal><img width=554 height=348 id="Picture 20" src="MongoDB%20101.files/image016.gif"></p>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal><strong><span lang=EN-US style='font-size:14.5pt;font-family:
+"PT Serif",serif;color:#333333;background:white'>Easy to use data model:</span></strong><span lang=EN-US
+						style='color:black;background:white'>&nbsp;In a document database
+						like MongoDB, we do not have tables and rows, instead we have collections and
+						documents. The data that we typically store across many relational database
+						tables can be stored in a single collection. For an application this data is
+						very easy to work with. No complex joins and mapping layers are required. Our
+						application code will be much cleaner, simpler and easier to maintain.</span></p>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal><strong><span lang=EN-US style='font-size:14.5pt;font-family:
+"PT Serif",serif;color:#333333;background:white'>Flexible schema:</span></strong><span lang=EN-US
+						style='color:black;background:white'>&nbsp;JSON documents that
+						actually store data have a flexible schema which means it is perfectly okay and
+						normal for 2 documents to have different fields. In the following example, we
+						have 2 documents with student data.</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><span lang=EN-US><img width=554 height=152 id="Picture 22"
+							src="MongoDB%20101.files/image017.jpg" alt="mongodb flexible schema"></span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><strong><span lang=EN-US style='font-size:14.5pt;font-family:
+"PT Serif",serif;color:#333333;background:white'>Feature rich query language:</span></strong><span lang=EN-US
+						style='color:black;background:white'>&nbsp;MongoDB Query Language
+						(MQL) is based on JavaScript and very easy to learn. When querying data, you
+						have a wide range of options, operators, expressions and filters. Data is very
+						easy to query and you rarely need joins or transactions. The MongoDB Query
+						Language (MQL) is a full-featured, powerful language that allows you to query
+						deep into documents, and even use the aggregation framework to perform complex
+						analytics with just a few lines. Indexing is also supported which means
+						documents can be retrieved quickly.</span></p>
+
+				<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+				<p class=MsoNormal><strong><span lang=EN-US style='font-size:14.5pt;font-family:
+"PT Serif",serif;color:#333333;background:white'>Easy horizontal scaling:</span></strong><span lang=EN-US
+						style='color:black;background:white'>&nbsp;Most SQL databases allow
+						only vertical scaling which is also commonly called scaling up. Vertical scaling
+						involves adding more resources (like memory, storage etc) to the existing
+						database server. Vertical scaling has an upper limit beyond which you cannot
+						just add more CPU, memory etc. There is also downtime involved. You have to
+						shut the database server down to add more hardware.</span></p>
+
+				<p class=MsoNormal><span lang=EN-US><img width=554 height=190 id="Picture 21"
+							src="MongoDB%20101.files/image018.gif"></span></p>
+
+			</div>
+		</section>
+
+	</main><!-- End #main -->
+
+	<!-- ======= Footer ======= -->
+	<div w3-include-html="footer.htm"></div>
+	<script>includeHTML();</script>
+
+	<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+			class="bi bi-arrow-up-short"></i></a>
+
+	<!-- Vendor JS Files -->
+	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Template Main JS File -->
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

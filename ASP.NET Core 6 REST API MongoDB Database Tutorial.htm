@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+	<title>My Portfolio</title>
+	<meta content="" name="description">
+	<meta content="" name="keywords">
+
+	<!-- Favicons -->
+	<link href="assets/img/favicon.png" rel="icon">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.gstatic.com" rel="preconnect">
+	<link
+		href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+		rel="stylesheet">
+
+	<!-- Vendor CSS Files -->
+	<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+	<!-- Template Main CSS File -->
+	<link href="assets/css/style.css" rel="stylesheet">
+
+	<script src="assets/js/layout.js"></script>
+</head>
+
+<body>
+
+	<!-- ======= Header ======= -->
+	<header id="header" class="header fixed-top d-flex align-items-center">
+
+		<div class="d-flex align-items-center justify-content-between">
+			<i class="bi bi-list toggle-sidebar-btn"></i>
+		</div><!-- End Logo -->
+
+		<nav class="header-nav ms-auto">
+
+			<ul class="d-flex align-items-center">
+				<div w3-include-html="header.htm"></div>
+			</ul>
+		</nav><!-- End Icons Navigation -->
+	</header><!-- End Header -->
+
+	<!-- ======= Sidebar ======= -->
+	<div w3-include-html="sidebar.htm"></div>
+
+	<main id="main" class="main">
+
+
+
+		<section class="section dashboard">
+			<div class="row">
+
+				<p class=MsoNormal>Building a RESTful API service using Visual Studio 2022,
+					ASP.NET 6 and MongoDB database.</p>
+
+				<h1 style='margin-left:18.0pt;text-indent:-18.0pt'>1.<span
+						style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+					</span>Create new ASP.NET Core Web API project</h1>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal><img width=497 height=370 id="Picture 2"
+						src="ASP.NET%20Core%206%20REST%20API%20MongoDB%20Database%20Tutorial.files/image001.png"></p>
+
+				<h1 style='margin-left:18.0pt;text-indent:-18.0pt'>2.<span
+						style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+					</span>Install MongoDB.Driver nuget package</h1>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal><img width=602 height=373 id="Picture 1"
+						src="ASP.NET%20Core%206%20REST%20API%20MongoDB%20Database%20Tutorial.files/image002.jpg"></p>
+
+				<h1 style='margin-left:18.0pt;text-indent:-18.0pt'>3.<span
+						style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+					</span>Map MongoDB to C# objects</h1>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal><img width=602 height=458 id="Picture 4"
+						src="ASP.NET%20Core%206%20REST%20API%20MongoDB%20Database%20Tutorial.files/image003.png"></p>
+
+				<p class=MsoListParagraphCxSpFirst style='margin-left:18.0pt;text-indent:-18.0pt'><span
+						style='font-family:Symbol'>�<span
+							style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						</span></span><b>[BsonId]</b> attribute specifies that this is the Id field or
+					property. In this example, the property Id maps to _id field in Mongo document.</p>
+
+				<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span
+						style='font-family:Symbol'>�<span
+							style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						</span></span><b>[BsonRepresentation]</b> attribute automatically converts
+					Mongo data type to a .Net data type and vice-versa. In this example, Mongo data
+					type ObjectId is automatically converted to string datatype and vice-versa.</p>
+
+				<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span
+						style='font-family:Symbol'>�<span
+							style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						</span></span>Name property is decorated with the <b>[BsonElement]</b>
+					attribute. So this means, Name property corresponds to name field in Mongo
+					document. So, <b>[BsonElement] </b>attribute specifies the field in the Mongo
+					document the decorated property corresponds to.</p>
+
+				<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt'><span
+						style='font-family:Symbol'>�<span
+							style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						</span></span>The property names (Name, Courses, Gender, Age) have the same
+					name as the fields in the Mongo document (name, courses, gender, age). However
+					the casing is different. In C# the properties start with an uppercase letter
+					whereas in Mongo the field starts with lowercase. There are several approaches
+					to handle this case sensitive mapping. One of the easiest and cleanest
+					approaches is to use <b>[BsonElement] </b>attribute.</p>
+
+				<p class=MsoListParagraphCxSpLast style='margin-left:18.0pt;text-indent:-18.0pt'><span
+						style='font-family:Symbol'>�<span
+							style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						</span></span>What to do if the JSON document in MongoDB contains more fields
+					than the properties in the corresponding C# class? Well, we can use <b>[BsonIgnoreExtraElements]</b>
+					attribute and instruct the serializer to ignore the extra elements.</p>
+
+				<h1 style='margin-left:18.0pt;text-indent:-18.0pt'>4.<span
+						style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+					</span>MongoDB connection string in ASP.NET Core</h1>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>{</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>� </span><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:#2E75B6'>&quot;StudentStoreDatabaseSettings&quot;</span><span
+							style='font-size:9.5pt;font-family:"Cascadia Mono";color:black'>: {</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>��� </span><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:#2E75B6'>&quot;StudentCoursesCollectionName&quot;</span><span
+							style='font-size:9.5pt;font-family:"Cascadia Mono";color:black'>: </span><span
+							style='font-size:9.5pt;font-family:"Cascadia Mono";color:#A31515'>&quot;studentcourses&quot;</span><span
+							style='font-size:9.5pt;font-family:"Cascadia Mono";color:black'>,</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>��� </span><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:#2E75B6'>&quot;ConnectionString&quot;</span><span style='font-size:9.5pt;
+font-family:"Cascadia Mono";color:black'>: </span><span
+							style='font-size:9.5pt;
+font-family:"Cascadia Mono";color:#A31515'>&quot;mongodb+srv://sa:Vr7Dql45xR4jDa5X@cluster000.nzuki.mongodb.net/?retryWrites=true&amp;w=majority&amp;appName=Cluster000&quot;</span><span
+							style='font-size:9.5pt;font-family:"Cascadia Mono";color:black'>,</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>��� </span><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:#2E75B6'>&quot;DatabaseName&quot;</span><span style='font-size:9.5pt;
+font-family:"Cascadia Mono";color:black'>: </span><span style='font-size:9.5pt;
+font-family:"Cascadia Mono";color:#A31515'>&quot;test&quot;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>� },</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>� </span><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:#2E75B6'>&quot;Logging&quot;</span><span style='font-size:9.5pt;
+font-family:"Cascadia Mono";color:black'>: {</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>��� </span><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:#2E75B6'>&quot;LogLevel&quot;</span><span style='font-size:9.5pt;
+font-family:"Cascadia Mono";color:black'>: {</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>����� </span><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:#2E75B6'>&quot;Default&quot;</span><span style='font-size:9.5pt;
+font-family:"Cascadia Mono";color:black'>: </span><span style='font-size:9.5pt;
+font-family:"Cascadia Mono";color:#A31515'>&quot;Information&quot;</span><span
+							style='font-size:9.5pt;font-family:"Cascadia Mono";color:black'>,</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>����� </span><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:#2E75B6'>&quot;Microsoft.AspNetCore&quot;</span><span style='font-size:
+9.5pt;font-family:"Cascadia Mono";color:black'>: </span><span style='font-size:
+9.5pt;font-family:"Cascadia Mono";color:#A31515'>&quot;Warning&quot;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>��� }</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>� },</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>� </span><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:#2E75B6'>&quot;AllowedHosts&quot;</span><span style='font-size:9.5pt;
+font-family:"Cascadia Mono";color:black'>: </span><span style='font-size:9.5pt;
+font-family:"Cascadia Mono";color:#A31515'>&quot;*&quot;</span></p>
+
+					<p class=MsoNormal style='border:none;padding:0cm'><span style='font-size:9.5pt;
+line-height:107%;font-family:"Cascadia Mono";color:black'>}</span></p>
+
+				</div>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal><img width=602 height=169 id="Picture 6"
+						src="ASP.NET%20Core%206%20REST%20API%20MongoDB%20Database%20Tutorial.files/image004.png"></p>
+
+				<h1 style='margin-left:18.0pt;text-indent:-18.0pt'>5.<span
+						style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+					</span>Read MongoDB connection information</h1>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal>Add the following 2 files in the Models folder. This
+					interface and the class provide strongly typed access to MongoDB connection
+					information.</p>
+
+				<p class=MsoNormal>IStudentStoreDatabaseSettings.cs</p>
+
+				<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>namespace StudentManagement.Models</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>{</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>��� public interface IStudentStoreDatabaseSettings</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>��� {</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� string StudentCoursesCollectionName { get; set; }</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� string ConnectionString { get; set; }</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� string DatabaseName { get; set; }</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>��� }</span></p>
+
+					<p class=MsoNormal style='border:none;padding:0cm'><span style='font-size:9.5pt;
+line-height:107%;font-family:"Cascadia Mono";color:black'>}</span></p>
+
+				</div>
+
+				<p class=MsoNormal>StudentStoreDatabaseSettings.cs</p>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>namespace StudentManagement.Models</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>{</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>��� public class StudentStoreDatabaseSettings :
+							IStudentStoreDatabaseSettings</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>��� {</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� public string StudentCoursesCollectionName { get; set; } =
+							String.Empty;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� public string ConnectionString { get; set; } =
+							String.Empty;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� public string DatabaseName { get; set; } = String.Empty;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>��� }</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>&nbsp;</span></p>
+
+					<p class=MsoNormal style='border:none;padding:0cm'><span style='font-size:9.5pt;
+line-height:107%;font-family:"Cascadia Mono";color:black'>}</span></p>
+
+				</div>
+
+				<h1 style='margin-left:18.0pt;text-indent:-18.0pt'>6.<span
+						style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+					</span>How to call MongoDB API from C#</h1>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal><img width=301 height=354 id="Picture 7"
+						src="ASP.NET%20Core%206%20REST%20API%20MongoDB%20Database%20Tutorial.files/image005.png"></p>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal>For separation of concerns we will keep the code that calls
+					Mongo API in a separate service layer.</p>
+
+				<p class=MsoNormal>ASP.NET Web API Controller calls this service. </p>
+
+				<p class=MsoNormal>Add Services folder and place the 2 files in it
+					(IStudentService.cs and StudentService.cs)</p>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>using StudentManagement.Models;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>&nbsp;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>namespace StudentManagement.Services</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>{</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>��� public interface IStudentService</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>��� {</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� List&lt;Student&gt; Get();</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� Student Get(string id);</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� Student Create(Student student);</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� void Update(string id, Student student);</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� void Remove(string id);</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>��� }</span></p>
+
+					<p class=MsoNormal style='border:none;padding:0cm'><span style='font-size:9.5pt;
+line-height:107%;font-family:"Cascadia Mono";color:black'>}</span></p>
+
+				</div>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>using StudentManagement.Models;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>using MongoDB.Driver;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>&nbsp;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>namespace StudentManagement.Services</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>{</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>��� public class StudentService : IStudentService</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>��� {</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� private IMongoCollection&lt;Student&gt; _students;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>&nbsp;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� public StudentService(IStudentStoreDatabaseSettings
+							settings, IMongoClient mongoClient)</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� {</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>����������� var database =
+							mongoClient.GetDatabase(settings.DatabaseName);</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>����������� _students =
+							database.GetCollection&lt;Student&gt;(settings.StudentCoursesCollectionName);</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� }</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� public Student Create(Student student)</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� {</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>����������� _students.InsertOne(student);</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>����������� return student;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� }</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>&nbsp;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� public List&lt;Student&gt; Get()</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� {</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>����������� return _students.Find(student =&gt; true).ToList();</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� }</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>&nbsp;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� public Student Get(string id)</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� {</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>����������� return _students.Find(student =&gt; student.Id ==
+							id).FirstOrDefault();</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>&nbsp;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� }</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>&nbsp;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� public void Remove(string id)</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� {</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>����������� _students.DeleteOne(student =&gt; student.Id == id);</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� }</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>&nbsp;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� public void Update(string id, Student student)</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� {</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>����������� _students.ReplaceOne(student =&gt; student.Id == id,
+							student);</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� }</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>��� }</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>}</span></p>
+
+				</div>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<h1 style='margin-left:18.0pt;text-indent:-18.0pt'>7.<span
+						style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+					</span>ASP.NET Core REST API Controller</h1>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal>Configure Services </p>
+
+				<p class=MsoNormal>In Program.cs file, configure the required services.</p>
+
+				<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>using Microsoft.Extensions.Options;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>using MongoDB.Driver;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>using StudentManagement.Models;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>using StudentManagement.Services;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>&nbsp;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>var builder = WebApplication.CreateBuilder(args);</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>&nbsp;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>// Add services to the container.</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>builder.Services.Configure&lt;StudentStoreDatabaseSettings&gt;(</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>���������������
+							builder.Configuration.GetSection(nameof(StudentStoreDatabaseSettings)));</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>&nbsp;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>builder.Services.AddSingleton&lt;IStudentStoreDatabaseSettings&gt;(sp
+							=&gt;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>���
+							sp.GetRequiredService&lt;IOptions&lt;StudentStoreDatabaseSettings&gt;&gt;().Value);</span>
+					</p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>&nbsp;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>builder.Services.AddSingleton&lt;IMongoClient&gt;(s =&gt;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� new
+							MongoClient(builder.Configuration.GetValue&lt;string&gt;(&quot;StudentStoreDatabaseSettings:ConnectionString&quot;)));</span>
+					</p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>&nbsp;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>builder.Services.AddScoped&lt;IStudentService,
+							StudentService&gt;();</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>&nbsp;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>builder.Services.AddControllers();</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>// Learn more about configuring Swagger/OpenAPI at
+							https://aka.ms/aspnetcore/swashbuckle</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>builder.Services.AddEndpointsApiExplorer();</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>builder.Services.AddSwaggerGen();</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>&nbsp;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>var app = builder.Build();</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>&nbsp;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>// Configure the HTTP request pipeline.</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>if (app.Environment.IsDevelopment())</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>{</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>��� app.UseSwagger();</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>��� app.UseSwaggerUI();</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>}</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>&nbsp;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>app.UseHttpsRedirection();</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>&nbsp;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>app.UseAuthorization();</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>&nbsp;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>app.MapControllers();</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>&nbsp;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>app.Run();</span></p>
+
+				</div>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal>Add the following StudentsController.cs file in the
+					Controllers folder.</p>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<div style='border:solid windowtext 1.0pt;padding:1.0pt 1.0pt 1.0pt 1.0pt'>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>using Microsoft.AspNetCore.Mvc;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>using StudentManagement.Models;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>using StudentManagement.Services;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>&nbsp;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>// For more information on enabling Web API for empty projects,
+							visit https://go.microsoft.com/fwlink/?LinkID=397860</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>&nbsp;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>namespace StudentManagement.Controllers</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>{</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>�� �[Route(&quot;api/[controller]&quot;)]</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>��� [ApiController]</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>��� public class StudentsController : ControllerBase</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>��� {</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� private readonly IStudentService studentService;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>&nbsp;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� public StudentsController(IStudentService studentService)</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� {</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>����������� this.studentService = studentService;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� }</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>&nbsp;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� // GET: api/&lt;StudentsController&gt;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� [HttpGet]</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� public ActionResult&lt;List&lt;Student&gt;&gt; Get()</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� {</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>����������� return studentService.Get();</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� }</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>&nbsp;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� // GET api/&lt;StudentsController&gt;/5</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� [HttpGet(&quot;{id}&quot;)]</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� public ActionResult&lt;Student&gt; Get(string id)</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� {</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>����������� var student = studentService.Get(id);</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>����������� if (student == null)</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>����������� {</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>��������������� return NotFound($&quot;Student with id {id} not
+							found&quot;);</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>����������� }</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>����������� return student;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� }</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>&nbsp;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� // POST api/&lt;StudentsController&gt;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� [HttpPost]</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� public ActionResult&lt;Student&gt; Post([FromBody] Student
+							student)</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� {</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>����������� studentService.Create(student);</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>����������� return CreatedAtAction(nameof(Get), new { id =
+							student.Id }, student);</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� }</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>&nbsp;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� // PUT api/&lt;StudentsController&gt;/5</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� [HttpPut(&quot;{id}&quot;)]</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� public ActionResult Put(string id, [FromBody] Student
+							student)</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� {</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>����������� var existingStudent = studentService.Get(id);</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>����������� if (existingStudent == null)</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>����������� {</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>��������������� return NotFound($&quot;Student with id {id} not
+							found&quot;);</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>����������� }</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>����������� studentService.Update(id, student);</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>����������� return NoContent();</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� }</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>&nbsp;</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� // DELETE api/&lt;StudentsController&gt;/5</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� [HttpDelete(&quot;{id}&quot;)]</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� public ActionResult Delete(string id)</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� {</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>����������� var existingStudent = studentService.Get(id);</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>����������� if (existingStudent == null)</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>����������� {</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>��������������� return NotFound($&quot;Student with id {id} not
+							found&quot;);</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>����������� }</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>����������� studentService.Remove(id);</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>����������� return Ok($&quot;Student with id {id} deleted&quot;);</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>������� }</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>��� }</span></p>
+
+					<p class=MsoNormal style='margin-bottom:0cm;line-height:normal;text-autospace:
+none;border:none;padding:0cm'><span style='font-size:9.5pt;font-family:"Cascadia Mono";
+color:black'>}</span></p>
+
+				</div>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<h1 style='margin-left:18.0pt;text-indent:-18.0pt'>8.<span
+						style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+					</span>Test REST API using Swagger</h1>
+
+				<p class=MsoNormal><img width=602 height=418 id="Picture 9"
+						src="ASP.NET%20Core%206%20REST%20API%20MongoDB%20Database%20Tutorial.files/image006.jpg"></p>
+
+				<p class=MsoNormal>&nbsp;</p>
+
+				<p class=MsoNormal><img width=602 height=418 id="Picture 10"
+						src="ASP.NET%20Core%206%20REST%20API%20MongoDB%20Database%20Tutorial.files/image007.jpg"></p>
+
+			</div>
+		</section>
+
+	</main><!-- End #main -->
+
+	<!-- ======= Footer ======= -->
+	<div w3-include-html="footer.htm"></div>
+	<script>includeHTML();</script>
+
+	<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+			class="bi bi-arrow-up-short"></i></a>
+
+	<!-- Vendor JS Files -->
+	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Template Main JS File -->
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
